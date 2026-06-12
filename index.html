@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACXklEQVR4nOWbXXKEIAzH0ekVfO7eaj2ix/K5HsI+4VAWMN+J099MZ9qumPDfEAng9P7+OdM/ZvZ2wJsvSqNtX5r/X18HyxmObar9CToERoYlHbK2fSsAxTjVGQ/bXQEkjGMc8bLfTILSxrH3tLT/IYCGccy9re3PdxdYYmG/tmE6DxjlAS/xLwG0HYjU+dKeSQRE6nzNrO1E1M5n26oRELXzJdN5nqrVYE8EqAC5vZZg6gKkRIuEVhsNEUwESOl+Kpw7B71OCjMBUvKtDnuYToSkHJdcdzBfEYomgukQqMGMd+7TpIerAFg0RHjUoqjGWuRssZApiaQI6+t4VgRkJEWYqQ294YqQr3tkBGQkIuESIGoUUKfGo3blZ6EjIDuqIULmjwCRoqD2RUqE+u/mxsi2L2ozLyhU+6N2rc/Ae4NYR7hwVpNISRCL9nDh7AJjvpzQSdBCBJYATzwPUDPMAbVxjXW68p7UznJE6kZA66baW9ZanRzB3h6XHgaSIkB8684DsM6N2vXw+MZrRM8HSJ4CsdpV+hCgZxhbZkLxFqGZA7Dz8Lv2d3iK0H0KrK/j+tF0AHIvTR9IE6FtXy7D5e8llERllfhK0AJoF0Eaj7oRqGrQqkCB3E8Ks2LoLp/UWK07iAiA6Vg0EdgCeK4LSIASAFu8eB6rh0JeEhsBKaMh7bDtKYgnQW4tYR0dogJoHH7QFoT0ykwL7/cLqKjPAyIlvBaiSRCT/KiJUhrRCICO3SjHZFMSzAEZ64OOXB55TlCSEDtDnonS/ZUZ76eEeQRYTnIgqNQCTyJEDvDkF/WKgISAL54KAAAAAElFTkSuQmCC">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'inceste en France — Briser le silence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #0D0A1A; --ink-2: #2E2A40; --ink-3: #7A748F; --ink-4: #D33A4B;
+    --paper: #F5F3FA; --paper-2: #EAE6F5;
+    --red: #571FEA; --red-light: #EDE6FD;
+    --amber: #0071ff; --amber-light: #FDEAF1;
+    --teal: #0EA882; --teal-light: #DFFAF3;
+    --border: rgba(87,31,234,0.12);
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+    --mono: 'DM Mono', monospace;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.6; font-size: 16px; }
+
+  /* HERO */
+  .hero { background: var(--ink); color: var(--paper); overflow: hidden; position: relative; min-height: 100vh; display: flex; flex-direction: column; padding-top: 42px; }
+  .hero-nav { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 4rem; border-bottom: 1px solid rgba(255,255,255,0.12); flex-shrink: 0; position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(13,10,26,0.97); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+  .hero-nav .logo { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,245,240,0.5); }
+  .hero-nav .nav-links { display: flex; gap: 0.5rem; list-style: none; }
+  .hero-nav .nav-links a { font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.6); text-decoration: none; padding: 0.35rem 0.9rem; border-radius: 2rem; border: 1px solid transparent; transition: all 0.18s; font-weight: 500; }
+  .hero-nav .nav-links a:hover { color: #fff; background: rgba(87,31,234,0.55); border-color: rgba(87,31,234,0.7); }
+  .hero-body { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 6rem 4rem 4rem; }
+  .hero-eyebrow { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); margin-bottom: 1.5rem; }
+  .hero-headline { font-family: var(--serif); font-size: clamp(3rem, 8vw, 7rem); line-height: 0.95; letter-spacing: -0.02em; max-width: 900px; margin-bottom: 2rem; }
+  .hero-headline em { font-style: italic; color: rgba(247,245,240,0.45); }
+  .hero-sub { font-size: 1.05rem; color: rgba(247,245,240,0.65); max-width: 560px; line-height: 1.7; margin-bottom: 3rem; }
+  .hero-scroll { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(247,245,240,0.35); display: flex; align-items: center; gap: 0.75rem; }
+  .hero-scroll::before { content: ''; display: block; width: 32px; height: 1px; background: rgba(247,245,240,0.25); }
+  .ticker-bar { background: var(--red); color: white; padding: 0.6rem 4rem; font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.06em; display: flex; align-items: center; gap: 1.5rem; flex-shrink: 0; flex-wrap: wrap; }
+  .ticker-label { white-space: nowrap; font-weight: 500; text-transform: uppercase; }
+  .ticker-value { font-size: 1.05rem; font-weight: 600; min-width: 5ch; }
+  .ticker-sep { opacity: 0.4; }
+
+  /* SECTIONS */
+  .section { padding: 6rem 4rem; max-width: 1200px; margin: 0 auto; }
+  .section-full { padding: 6rem 4rem; }
+  .section-eyebrow { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
+  .section-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--ink-3); }
+  h2 { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.1; letter-spacing: -0.01em; margin-bottom: 1rem; }
+  .section-intro { font-size: 1.05rem; color: var(--ink-2); max-width: 620px; line-height: 1.75; margin-bottom: 3rem; }
+
+  /* STATS */
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 3rem; }
+  .stat-card { background: var(--paper); padding: 2rem 1.75rem; transition: background 0.2s; }
+  .stat-card:hover { background: white; }
+  .stat-number { font-family: var(--serif); font-size: clamp(2.8rem, 5vw, 4.5rem); line-height: 1; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
+  .stat-number.red { color: var(--red); }
+  .stat-number.teal { color: var(--teal); }
+  .stat-number.amber { color: var(--amber); }
+  .stat-label { font-size: 0.9rem; color: var(--ink-2); line-height: 1.5; margin-bottom: 0.75rem; }
+  .stat-source { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.06em; color: var(--ink-3); text-transform: uppercase; }
+
+  /* COMPTEUR */
+  .counter-section { background: var(--ink); color: var(--paper); }
+  .counter-inner { max-width: 1200px; margin: 0 auto; padding: 6rem 4rem; }
+  .counter-eyebrow { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
+  .counter-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--red); }
+  .counter-headline { font-family: var(--serif); font-size: clamp(1.8rem, 3.5vw, 2.8rem); margin-bottom: 1rem; }
+  .counter-sub { font-size: 0.95rem; color: rgba(247,245,240,0.55); margin-bottom: 3rem; max-width: 520px; }
+  .counter-controls { display: flex; gap: 0.5rem; margin-bottom: 3rem; flex-wrap: wrap; }
+  .counter-btn { background: transparent; border: 1px solid rgba(247,245,240,0.2); color: rgba(247,245,240,0.55); padding: 0.5rem 1.25rem; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: all 0.15s; }
+  .counter-btn:hover { border-color: rgba(247,245,240,0.5); color: var(--paper); }
+  .counter-btn.active { background: var(--red); border-color: var(--red); color: white; }
+  .counter-display { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: rgba(247,245,240,0.08); margin-bottom: 1.5rem; }
+  .counter-cell { background: rgba(13,10,26,0.65); padding: 2.5rem 2rem; }
+  .counter-cell-label { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(247,245,240,0.4); margin-bottom: 1rem; }
+  .counter-big { font-family: var(--serif); font-size: clamp(2.5rem, 5vw, 5rem); line-height: 1; letter-spacing: -0.03em; color: var(--paper); }
+  .counter-big.red { color: #8B5CF6; }
+  .counter-context { font-size: 0.85rem; color: rgba(247,245,240,0.5); margin-top: 0.75rem; line-height: 1.5; }
+  .counter-note { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.05em; color: rgba(247,245,240,0.3); line-height: 1.6; }
+
+  /* IMPUNITÉ */
+  .impunity-section { background: var(--red-light); }
+  .funnel { display: flex; flex-direction: column; gap: 2px; max-width: 680px; margin: 2rem 0 3rem; }
+  .funnel-step { display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem 1.75rem; background: white; transition: transform 0.15s; }
+  .funnel-step:hover { transform: translateX(4px); }
+  .funnel-pct { font-family: var(--serif); font-size: 2.5rem; line-height: 1; letter-spacing: -0.03em; min-width: 100px; flex-shrink: 0; }
+  .funnel-pct.full { color: var(--ink); }
+  .funnel-pct.high { color: var(--red); }
+  .funnel-pct.med { color: var(--amber); }
+  .funnel-pct.low { color: var(--teal); }
+  .funnel-text { flex: 1; }
+  .funnel-title { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.2rem; }
+  .funnel-desc { font-size: 0.85rem; color: var(--ink-2); }
+  .funnel-bar { height: 3px; background: var(--paper-2); margin-top: 0.75rem; border-radius: 2px; overflow: hidden; }
+  .funnel-bar-fill { height: 100%; border-radius: 2px; transition: width 1s ease; width: 0; }
+  .funnel-bar-fill.red-fill { background: var(--red); }
+  .funnel-bar-fill.amber-fill { background: var(--amber); }
+  .funnel-bar-fill.teal-fill { background: var(--teal); }
+
+  /* COMPARAISONS */
+  .compare-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2.5rem 0; }
+  .compare-card { border: 1px solid var(--border); padding: 1.75rem; background: white; }
+  .compare-card.highlighted { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+  .compare-icon { font-size: 1.5rem; margin-bottom: 1rem; display: block; }
+  .compare-label { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 0.5rem; }
+  .compare-card.highlighted .compare-label { color: rgba(247,245,240,0.45); }
+  .compare-number { font-family: var(--serif); font-size: 2.6rem; line-height: 1; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+  .compare-card.highlighted .compare-number { color: #8B5CF6; }
+  .compare-desc { font-size: 0.85rem; color: var(--ink-2); line-height: 1.5; }
+  .compare-card.highlighted .compare-desc { color: rgba(247,245,240,0.65); }
+  .compare-source { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.05em; color: var(--ink-3); text-transform: uppercase; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+  .compare-card.highlighted .compare-source { color: rgba(247,245,240,0.3); border-color: rgba(247,245,240,0.1); }
+
+  /* CONSÉQUENCES */
+  .consequences-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+  .consequence-item { background: var(--paper); padding: 2rem 1.75rem; display: flex; gap: 1.25rem; align-items: flex-start; transition: background 0.2s; }
+  .consequence-item:hover { background: white; }
+  .consequence-num { font-family: var(--serif); font-size: 1.75rem; line-height: 1; color: var(--red); min-width: 60px; flex-shrink: 0; letter-spacing: -0.02em; }
+  .consequence-text { font-size: 0.9rem; color: var(--ink-2); line-height: 1.6; }
+  .consequence-text strong { display: block; font-weight: 600; color: var(--ink); margin-bottom: 0.25rem; font-size: 0.95rem; }
+
+  /* JUSTICE */
+  .justice-section { background: var(--ink); color: var(--paper); }
+  .justice-inner { max-width: 1200px; margin: 0 auto; padding: 6rem 4rem; }
+  .justice-eyebrow { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(247,245,240,0.4); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
+  .justice-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: rgba(247,245,240,0.3); }
+  .justice-headline { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.2rem); color: var(--paper); margin-bottom: 1rem; }
+  .justice-intro { font-size: 1.05rem; color: rgba(247,245,240,0.6); max-width: 640px; line-height: 1.75; margin-bottom: 3.5rem; }
+  .justice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1px; background: rgba(247,245,240,0.08); margin-bottom: 3rem; }
+  .justice-stat { background: rgba(13,10,26,0.55); padding: 2rem 1.75rem; transition: background 0.2s; }
+  .justice-stat:hover { background: rgba(50,20,100,0.6); }
+  .justice-stat-num { font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 3.5rem); line-height: 1; letter-spacing: -0.03em; margin-bottom: 0.5rem; color: #8B5CF6; }
+  .justice-stat-num.amber { color: #E8356D; }
+  .justice-stat-num.teal { color: #0EA882; }
+  .justice-stat-label { font-size: 0.88rem; color: rgba(247,245,240,0.65); line-height: 1.5; margin-bottom: 0.6rem; }
+  .justice-stat-src { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.06em; color: rgba(247,245,240,0.3); text-transform: uppercase; }
+  .justice-bars { margin: 0 0 3rem; }
+  .justice-bars-title { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,245,240,0.4); margin-bottom: 1.25rem; }
+  .jbar-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem; }
+  .jbar-label { font-size: 0.82rem; color: rgba(247,245,240,0.6); min-width: 130px; flex-shrink: 0; }
+  .jbar-track { flex: 1; height: 26px; background: rgba(247,245,240,0.06); overflow: hidden; }
+  .jbar-fill { height: 100%; display: flex; align-items: center; padding: 0 0.6rem; font-family: var(--mono); font-size: 0.7rem; font-weight: 500; white-space: nowrap; transition: width 1.2s ease; width: 0; }
+  .jbar-fill.france { background: var(--red); color: white; }
+  .jbar-fill.europe { background: rgba(247,245,240,0.25); color: rgba(247,245,240,0.8); }
+  .jbar-fill.allemagne { background: #E8356D; color: var(--ink); }
+  .jbar-fill.italie { background: rgba(255,255,255,0.12); color: rgba(247,245,240,0.7); }
+  .justice-annotation { background: rgba(247,245,240,0.05); border-left: 3px solid #8B5CF6; padding: 1.5rem 1.75rem; margin-bottom: 2rem; }
+  .justice-annotation p { font-size: 0.9rem; color: rgba(247,245,240,0.7); line-height: 1.7; }
+  .justice-annotation strong { color: var(--paper); font-weight: 600; }
+
+  /* AGIR */
+  .agir-section { background: var(--paper); }
+  .agir-inner { max-width: 1200px; margin: 0 auto; padding: 6rem 4rem; }
+  .agir-eyebrow { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--teal); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
+  .agir-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--teal); }
+  .agir-intro { font-size: 1.05rem; color: var(--ink-2); max-width: 640px; line-height: 1.75; margin-bottom: 3.5rem; }
+  .agir-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+  .agir-card { border: 1px solid var(--border); background: white; padding: 1.75rem; display: flex; flex-direction: column; gap: 0.75rem; position: relative; transition: box-shadow 0.2s; }
+  .agir-card:hover { box-shadow: 0 4px 20px rgba(87,31,234,0.07); }
+  .agir-card-num { font-family: var(--serif); font-size: 3rem; line-height: 1; letter-spacing: -0.04em; color: var(--paper-2); position: absolute; top: 1rem; right: 1.25rem; }
+  .agir-card-level { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: white; padding: 0.25rem 0.6rem; display: inline-block; align-self: flex-start; }
+  .agir-card-level.zero { background: var(--teal); }
+  .agir-card-level.low { background: var(--amber); }
+  .agir-card-level.med { background: var(--ink-4); }
+  .agir-card-title { font-weight: 600; font-size: 1rem; padding-right: 2.5rem; }
+  .agir-card-desc { font-size: 0.85rem; color: var(--ink-2); line-height: 1.65; flex: 1; }
+  .agir-card-action { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.06em; color: var(--teal); display: flex; align-items: center; gap: 0.4rem; text-decoration: none; font-weight: 500; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+  .agir-card-action:hover { color: var(--ink); }
+  .agir-card-action::after { content: '→'; }
+  .petition-banner { background: var(--teal); color: white; padding: 2.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; margin-bottom: 3rem; }
+  .petition-banner-text h3 { font-family: var(--serif); font-size: 1.5rem; margin-bottom: 0.4rem; }
+  .petition-banner-text p { font-size: 0.88rem; opacity: 0.8; line-height: 1.6; max-width: 540px; }
+  .petition-btn { display: inline-block; background: white; color: var(--teal); padding: 0.9rem 2rem; font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; text-decoration: none; white-space: nowrap; transition: all 0.15s; flex-shrink: 0; }
+  .petition-btn:hover { background: var(--paper); }
+
+  /* RESSOURCES */
+  .resources-section { background: var(--paper-2); }
+  .resources-tabs { display: flex; gap: 0; border-bottom: 2px solid var(--border); margin-bottom: 3rem; flex-wrap: wrap; }
+  .res-tab { background: transparent; border: none; padding: 1rem 2rem; font-family: var(--sans); font-size: 0.9rem; font-weight: 500; color: var(--ink-3); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.15s; }
+  .res-tab:hover { color: var(--ink); }
+  .res-tab.active { color: var(--ink); border-bottom-color: var(--ink); }
+  .res-panel { display: none; }
+  .res-panel.active { display: block; }
+  .res-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+  .res-card { background: white; border: 1px solid var(--border); padding: 1.75rem; display: flex; flex-direction: column; gap: 0.75rem; }
+  .res-card-tag { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: white; background: var(--ink-3); padding: 0.25rem 0.6rem; display: inline-block; align-self: flex-start; }
+  .res-card-tag.urgent { background: var(--red); }
+  .res-card-tag.info { background: var(--teal); }
+  .res-card-tag.action { background: var(--amber); }
+  .res-card-title { font-weight: 600; font-size: 1rem; }
+  .res-card-phone { font-family: var(--mono); font-size: 1.3rem; font-weight: 500; color: var(--red); letter-spacing: 0.05em; }
+  .res-card-desc { font-size: 0.85rem; color: var(--ink-2); line-height: 1.6; flex: 1; }
+  .res-card-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; font-weight: 500; color: var(--teal); text-decoration: none; margin-top: auto; }
+  .res-card-link:hover { text-decoration: underline; }
+  .res-card-link::after { content: '→'; }
+  .res-alert { background: var(--teal-light); border-left: 3px solid var(--teal); padding: 1.25rem 1.5rem; margin-bottom: 2rem; font-size: 0.9rem; color: var(--teal); line-height: 1.6; }
+  .res-alert strong { font-weight: 600; }
+
+  /* SOURCES */
+  .sources-section { background: var(--ink); color: var(--paper); padding: 4rem; }
+  .sources-inner { max-width: 1200px; margin: 0 auto; }
+  .sources-title { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(247,245,240,0.4); margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem; }
+  .sources-title::before { content: ''; display: block; width: 24px; height: 1px; background: rgba(247,245,240,0.4); }
+  .sources-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; }
+  .sources-list li { font-size: 0.8rem; color: rgba(247,245,240,0.45); line-height: 1.6; padding-left: 1rem; border-left: 1px solid rgba(247,245,240,0.1); }
+  .sources-list li a { color: rgba(247,245,240,0.6); text-decoration: none; }
+  .sources-list li a:hover { color: var(--paper); text-decoration: underline; }
+
+  /* FOOTER */
+  .footer { background: var(--ink); border-top: 1px solid rgba(247,245,240,0.08); padding: 2rem 4rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-note { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.06em; color: rgba(247,245,240,0.25); text-transform: uppercase; }
+
+  /* BARRES */
+  .bar-chart { display: flex; flex-direction: column; gap: 1rem; margin: 2.5rem 0; }
+  .bar-row { display: flex; align-items: center; gap: 1rem; }
+  .bar-label { font-size: 0.82rem; color: var(--ink-2); min-width: 200px; flex-shrink: 0; }
+  .bar-track { flex: 1; height: 28px; background: var(--paper-2); overflow: hidden; }
+  .bar-fill { height: 100%; display: flex; align-items: center; padding: 0 0.75rem; font-family: var(--mono); font-size: 0.72rem; font-weight: 500; color: white; white-space: nowrap; transition: width 1.2s ease; width: 0; }
+  .bar-fill.red-fill { background: var(--red); }
+  .bar-fill.amber-fill { background: var(--amber); }
+  .bar-fill.teal-fill { background: var(--teal); }
+  .bar-fill.ink-fill { background: var(--ink); }
+
+  .section-divider { border: none; border-top: 1px solid var(--border); }
+  .pull-quote { border-left: 3px solid var(--ink); padding: 1.25rem 1.75rem; margin: 2.5rem 0; background: white; }
+  .pull-quote p { font-family: var(--serif); font-size: 1.3rem; line-height: 1.5; font-style: italic; margin-bottom: 0.5rem; }
+  .pull-quote cite { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); font-style: normal; }
+
+
+  /* ══ A — MYTHES VS RÉALITÉ ══════════════════════════════ */
+  .mythes-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:1.5rem; margin:2.5rem 0; }
+  .mythe-card { border:1px solid var(--border); overflow:hidden; display:flex; flex-direction:column; }
+  .mythe-face { padding:1.5rem 1.75rem; }
+  .mythe-face.myth-side { background:#0e0820; border-bottom:2px solid rgba(139,92,246,0.35); }
+  .mythe-face.truth-side { background:#fff; flex:1; }
+  .mythe-badge { font-family:var(--mono); font-size:0.58rem; letter-spacing:0.14em; text-transform:uppercase; padding:0.18rem 0.55rem; display:inline-block; margin-bottom:0.85rem; border-radius:2px; }
+  .myth-badge { background:rgba(139,92,246,0.18); color:#c4b5fd; border:1px solid rgba(139,92,246,0.35); }
+  .truth-badge { background:var(--teal-light); color:#0a7a5f; border:1px solid rgba(14,168,130,0.3); }
+  .mythe-text { font-size:0.9rem; line-height:1.7; }
+  .mythe-face.myth-side .mythe-text { color:rgba(247,245,240,0.72); font-style:italic; }
+  .mythe-face.truth-side .mythe-text { color:var(--ink-2); }
+  .mythe-face.truth-side .mythe-text strong { color:var(--ink); font-weight:600; }
+  .mythe-source { font-family:var(--mono); font-size:0.6rem; letter-spacing:0.05em; color:var(--ink-3); text-transform:uppercase; margin-top:1rem; padding-top:0.75rem; border-top:1px solid var(--border); line-height:1.6; }
+  .mythe-source a { color:var(--teal); text-decoration:none; }
+  .mythe-source a:hover { text-decoration:underline; }
+  .mythes-caveat { background:var(--paper-2); border-left:3px solid var(--ink-3); padding:1rem 1.5rem; font-size:0.78rem; color:var(--ink-3); line-height:1.65; font-family:var(--mono); letter-spacing:0.02em; margin-top:1.5rem; }
+
+  /* ══ B — GÉNÉRATEUR D'EMAIL ══════════════════════════════ */
+  .elu-section { background:var(--red-light); }
+  .elu-inner { max-width:860px; margin:0 auto; padding:6rem 4rem; }
+  .elu-eyebrow { font-family:var(--mono); font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--red); margin-bottom:1rem; display:flex; align-items:center; gap:0.75rem; }
+  .elu-eyebrow::before { content:''; display:block; width:24px; height:1px; background:var(--red); }
+  .elu-intro { font-size:0.95rem; color:var(--ink-2); max-width:640px; line-height:1.75; margin-bottom:2rem; }
+  .elu-form { display:grid; grid-template-columns:1fr 1fr; gap:0.85rem; margin-bottom:1rem; }
+  .elu-field { display:flex; flex-direction:column; gap:0.35rem; }
+  .elu-field.full { grid-column:1/-1; }
+  .elu-label { font-family:var(--mono); font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-3); }
+  .elu-input, .elu-select { background:white; border:1px solid var(--border); padding:0.65rem 0.9rem; font-family:var(--sans); font-size:0.9rem; color:var(--ink); outline:none; transition:border-color 0.15s; width:100%; -webkit-appearance:none; appearance:none; border-radius:0; }
+  .elu-input:focus, .elu-select:focus { border-color:var(--red); box-shadow:0 0 0 3px rgba(87,31,234,0.07); }
+  .elu-input::placeholder { color:var(--ink-3); }
+  .elu-btn { background:var(--ink); color:white; border:none; padding:0.8rem 2rem; font-family:var(--mono); font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:background 0.15s; width:100%; margin-top:0.25rem; }
+  .elu-btn:hover { background:var(--red); }
+  .elu-output { display:none; margin-top:1.75rem; }
+  .elu-output.visible { display:block; }
+  .elu-output-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem; flex-wrap:wrap; gap:0.5rem; }
+  .elu-output-label { font-family:var(--mono); font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-3); }
+  .elu-email-box { background:white; border:1px solid var(--border); padding:1.75rem; font-size:0.875rem; color:var(--ink-2); line-height:1.8; white-space:pre-wrap; font-family:var(--sans); max-height:360px; overflow-y:auto; }
+  .elu-copy-btn { background:var(--teal); color:white; border:none; padding:0.55rem 1.25rem; font-family:var(--mono); font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; cursor:pointer; transition:background 0.15s; }
+  .elu-copy-btn:hover { background:#0b8a6b; }
+  .elu-copy-btn.copied { background:var(--ink); }
+  .elu-counter { font-family:var(--mono); font-size:0.68rem; letter-spacing:0.06em; color:var(--ink-3); margin-top:1.25rem; }
+  .elu-counter strong { color:var(--red); }
+  .elu-notice { font-size:0.78rem; color:var(--ink-3); line-height:1.6; margin-top:0.75rem; }
+  .elu-privacy-notice { background: rgba(14,168,130,0.07); border: 1px solid rgba(14,168,130,0.2); padding: 0.85rem 1.1rem; font-size: 0.8rem; color: var(--ink-3); line-height: 1.6; margin-bottom: 1.75rem; display: flex; align-items: flex-start; gap: 0.6rem; }
+  .elu-privacy-icon { flex-shrink: 0; font-size: 0.9rem; margin-top: 0.05rem; }
+  .elu-dept-link { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.06em; color: var(--teal); margin-left: 1rem; }
+  .elu-dept-link a { color: var(--teal); text-decoration: none; }
+  .elu-dept-link a:hover { text-decoration: underline; }
+
+  /* ══ C — COÛT DU DÉNI ════════════════════════════════════ */
+  .cout-section { background:#070211; color:var(--paper); }
+  .cout-inner { max-width:1200px; margin:0 auto; padding:6rem 4rem; }
+  .cout-eyebrow { font-family:var(--mono); font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:#fbbf24; margin-bottom:1rem; display:flex; align-items:center; gap:0.75rem; }
+  .cout-eyebrow::before { content:''; display:block; width:24px; height:1px; background:#fbbf24; }
+  .cout-headline { font-family:var(--serif); font-size:clamp(1.8rem,3.5vw,2.8rem); color:var(--paper); margin-bottom:0.75rem; }
+  .cout-sub { font-size:0.95rem; color:rgba(247,245,240,0.55); margin-bottom:3rem; max-width:580px; line-height:1.75; }
+  .cout-display { display:grid; grid-template-columns:1fr 1fr; gap:2px; background:rgba(251,191,36,0.12); margin-bottom:1.75rem; }
+  .cout-cell { background:rgba(7,2,17,0.85); padding:2.5rem 2rem; }
+  .cout-cell-label { font-family:var(--mono); font-size:0.62rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(247,245,240,0.35); margin-bottom:1rem; }
+  .cout-big { font-family:var(--serif); font-size:clamp(2rem,4vw,3.6rem); line-height:1; letter-spacing:-0.03em; }
+  .cout-big.gold { color:#fbbf24; }
+  .cout-big.muted { color:rgba(247,245,240,0.75); }
+  .cout-context { font-size:0.8rem; color:rgba(247,245,240,0.38); margin-top:0.75rem; line-height:1.55; }
+  .cout-gap-box { background:rgba(251,191,36,0.07); border:1px solid rgba(251,191,36,0.2); padding:1.5rem 1.75rem; margin-bottom:1.5rem; display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; }
+  .cout-gap-num { font-family:var(--serif); font-size:3rem; color:#fbbf24; letter-spacing:-0.04em; flex-shrink:0; line-height:1; }
+  .cout-gap-text { font-size:0.88rem; color:rgba(247,245,240,0.6); line-height:1.65; }
+  .cout-gap-text strong { color:var(--paper); }
+  .cout-note { font-family:var(--mono); font-size:0.63rem; letter-spacing:0.04em; color:rgba(247,245,240,0.25); line-height:1.65; }
+
+  /* ══ D — PARTAGER CE CHIFFRE ════════════════════════════ */
+  .partager-section { background:var(--paper-2); }
+  .partager-inner { max-width:1200px; margin:0 auto; padding:6rem 4rem; }
+  .partager-eyebrow { font-family:var(--mono); font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--ink-3); margin-bottom:1rem; display:flex; align-items:center; gap:0.75rem; }
+  .partager-eyebrow::before { content:''; display:block; width:24px; height:1px; background:var(--ink-3); }
+  .partager-intro { font-size:0.95rem; color:var(--ink-2); max-width:600px; line-height:1.75; margin-bottom:2.5rem; }
+  .share-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:1px; background:var(--border); border:1px solid var(--border); margin-bottom:1.5rem; }
+  .share-card { background:white; padding:1.5rem; display:flex; flex-direction:column; gap:0.65rem; transition:background 0.15s; }
+  .share-card:hover { background:var(--paper); }
+  .share-stat { font-family:var(--serif); font-size:2.4rem; line-height:1; letter-spacing:-0.03em; color:var(--red); }
+  .share-label { font-size:0.83rem; color:var(--ink-2); line-height:1.55; flex:1; }
+  .share-source-tag { font-family:var(--mono); font-size:0.58rem; letter-spacing:0.07em; color:var(--ink-3); text-transform:uppercase; }
+  .share-btn { background:var(--ink); color:white; border:none; padding:0.5rem 0.9rem; font-family:var(--mono); font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:background 0.15s; display:inline-flex; align-items:center; gap:0.4rem; align-self:flex-start; margin-top:auto; }
+  .share-btn:hover { background:var(--red); }
+  /* modal */
+  .share-overlay { display:none; position:fixed; inset:0; background:rgba(13,10,26,0.82); z-index:500; align-items:center; justify-content:center; padding:1.5rem; }
+  .share-overlay.open { display:flex; }
+  .share-modal { background:var(--ink); padding:1.75rem; max-width:500px; width:100%; display:flex; flex-direction:column; gap:1rem; }
+  .share-canvas-wrap { width:100%; aspect-ratio:1/1; background:#080312; display:flex; align-items:center; justify-content:center; }
+  .share-canvas-wrap canvas { width:100%!important; height:auto!important; display:block; }
+  .share-modal-btns { display:flex; gap:0.75rem; flex-wrap:wrap; }
+  .share-dl-btn { background:var(--red); color:white; border:none; padding:0.7rem 1.5rem; font-family:var(--mono); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; flex:1; transition:opacity 0.15s; }
+  .share-dl-btn:hover { opacity:0.85; }
+  .share-close-btn { background:transparent; border:1px solid rgba(247,245,240,0.2); color:rgba(247,245,240,0.55); padding:0.7rem 1rem; font-family:var(--mono); font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; cursor:pointer; transition:all 0.15s; }
+  .share-close-btn:hover { border-color:rgba(247,245,240,0.5); color:var(--paper); }
+  .share-modal-note { font-family:var(--mono); font-size:0.62rem; color:rgba(247,245,240,0.28); line-height:1.6; }
+  .partager-notice { font-size:0.78rem; color:var(--ink-3); line-height:1.6; font-family:var(--mono); letter-spacing:0.02em; }
+
+  @media (max-width:768px) {
+    .elu-form { grid-template-columns:1fr; }
+    .cout-display { grid-template-columns:1fr; }
+    .elu-inner, .cout-inner, .partager-inner { padding-left:1.5rem; padding-right:1.5rem; }
+    .mythes-grid { grid-template-columns:1fr; }
+    .cout-gap-box { flex-direction:column; gap:0.75rem; }
+  }
+
+  @media (max-width: 768px) {
+    .hero-nav, .hero-body, .section, .section-full { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .hero-nav { padding-top: 0.6rem; padding-bottom: 0.6rem; }
+    .counter-inner, .justice-inner, .agir-inner, .sources-section, .footer { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .ticker-bar { padding: 0.6rem 1.5rem; }
+    .bar-label { min-width: 120px; font-size: 0.75rem; }
+    .counter-display { grid-template-columns: 1fr; }
+    .hero-nav .nav-links { display: none; }
+    .funnel-step { flex-direction: column; gap: 0.75rem; }
+    .funnel-pct { min-width: unset; font-size: 2rem; }
+    .petition-banner { flex-direction: column; }
+    .jbar-label { min-width: 90px; font-size: 0.75rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .bar-fill, .funnel-bar-fill, .jbar-fill { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV FIXE -->
+<nav class="hero-nav">
+  <span class="logo">Inceste France — Données & Ressources</span>
+  <ul class="hero-nav nav-links">
+    <li><a href="#chiffres">Chiffres</a></li>
+    <li><a href="#mythes">Mythes</a></li>
+    <li><a href="#impunite">Impunité</a></li>
+    <li><a href="#justice">Justice</a></li>
+    <li><a href="#agir">J'agis</a></li>
+    <li><a href="#ressources">Ressources</a></li>
+    <li><a href="#partager" style="border-color:rgba(87,31,234,0.5);background:rgba(87,31,234,0.18)">Partager</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-body">
+    <p class="hero-eyebrow">Rapport CIIVISE 2023 · Sondage Ipsos · CEPEJ 2024</p>
+    <h1 class="hero-headline">L'inceste<br><em>n'est pas</em><br>un tabou.<br>C'est un crime.</h1>
+    <p class="hero-sub">En France, 1 personne sur 10 a été victime d'inceste. Les données officielles dressent un état des lieux sans équivoque — et pourtant largement ignoré.</p>
+    <span class="hero-scroll">Défiler pour découvrir les données</span>
+  </div>
+  <div class="ticker-bar">
+    <span class="ticker-label">Depuis minuit :</span>
+    <span class="ticker-value" id="ticker-val">0</span>
+    <span class="ticker-label">nouveaux enfants victimes</span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-label" style="color:rgba(255,255,255,0.75)">Coût du déni :</span>
+    <span class="ticker-value" id="ticker-cost" style="color:#fbbf24">0 €</span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-label" style="opacity:0.5">9,7 Mds€/an · CIIVISE 2023</span>
+  </div>
+</header>
+
+
+<!-- CHIFFRES CLÉS -->
+<section id="chiffres">
+  <div class="section">
+    <p class="section-eyebrow">Ampleur du phénomène</p>
+    <h2>Des chiffres qui défient le déni</h2>
+    <p class="section-intro">Données issues uniquement de sources institutionnelles françaises vérifiées : CIIVISE (rapport public nov. 2023), sondages Ipsos pour Face à l'inceste et l'AIVI, enquête Virage (Ined 2015, publiée 2021). Chaque chiffre est associé à sa source.</p>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number red">7,4 M</div>
+        <p class="stat-label">Français déclarent avoir été victimes d'inceste — soit <strong>11 % de la population adulte</strong> (65 % de femmes, 35 % d'hommes).</p>
+        <p class="stat-source">Sondage Ipsos pour Face à l'inceste, oct. 2023</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number red">160 000</div>
+        <p class="stat-label">Enfants victimes de violences sexuelles chaque année en France, <strong>le plus souvent en contexte incestueux</strong>, répétées et durant plusieurs années.</p>
+        <p class="stat-source">CIIVISE, rapport public nov. 2023</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number teal">3 min</div>
+        <p class="stat-label">Un enfant est victime de violences sexuelles en France <strong>toutes les trois minutes</strong>, selon la cheffe du service de police dédié aux violences sur mineurs.</p>
+        <p class="stat-source">CNEWS/AFP, déc. 2023 · CIIVISE 2023</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number amber">3</div>
+        <p class="stat-label"> <strong>Enfants</strong> par classe de 30 élèves ont été ou sont victimes d'inceste — <strong>l'équivalent d'un rang entier</strong>.</p>
+        <p class="stat-source">CIIVISE 2023 · Sondage Ipsos pour Face à l'inceste, 2020 &amp; 2023</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number red">8,5 ans</div>
+        <p class="stat-label">C'est l'âge moyen auquel débutent les violences sexuelles. Dans 86 % des cas, elles sont <strong>répétées</strong> ; dans 51 % des cas, elles durent <strong>plus d'un an</strong>.</p>
+        <p class="stat-source">CIIVISE, rapport public nov. 2023</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number teal">9,7 Mds €</div>
+        <p class="stat-label">Par an : le coût pour la société du déni, de l'impunité et de l'absence de soutien aux victimes. <strong>Les deux tiers</strong> résultent des conséquences à long terme sur la santé.</p>
+        <p class="stat-source">CIIVISE, avis "Le coût du déni", 12 juin 2023</p>
+      </div>
+    </div>
+    <div class="pull-quote">
+      <p>« L'impunité des agresseurs et l'absence de soutien social donné aux victimes coûtent 9,7 milliards d'euros chaque année en dépenses publiques. »</p>
+      <cite>CIIVISE, Rapport public nov. 2023</cite>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ══ A — MYTHES VS RÉALITÉ ══════════════════════════════ -->
+<section id="mythes">
+  <div class="section">
+    <p class="section-eyebrow">Ce que dit la science</p>
+    <h2>Mythes vs Réalité</h2>
+    <p class="section-intro">Certaines représentations sur l'inceste sont fausses — et dangereuses. Elles retardent les signalements et permettent aux agresseurs de rester dans l'impunité. Ces cartes confrontent l'idée reçue aux données scientifiques vérifiées, multisources et convergentes.</p>
+    <div class="mythes-grid">
+
+      <div class="mythe-card">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Mythe</span>
+          <p class="mythe-text">« L'inceste est un problème des milieux défavorisés ou des familles en difficulté sociale. »</p>
+        </div>
+        <div class="mythe-face truth-side">
+          <span class="mythe-badge truth-badge">Ce que dit la science</span>
+          <p class="mythe-text">Trois études épidémiologiques indépendantes convergent : enquête Virage (Ined, 2015), Charruault et al. (2021), Marsican/Bajos/Pousson (2023). <strong>Aucune ne documente de sur-représentation d'une catégorie socioprofessionnelle.</strong> L'enquête Virage enregistre des déclarations dans tous les milieux sans corrélation statistiquement significative avec le revenu, le diplôme ou la zone géographique.</p>
+          <p class="mythe-source">Enquête Virage, Ined 2015 (pub. 2021) · Charruault et al., Rev. Épidémiol. Santé Publique, 2021 · Marsican/Bajos/Pousson, 2023 · <a href="https://www.rcf.fr/articles/economie-et-societe/rapport-de-la-ciivise-160-000-enfants-sont-victimes-chaque-annee-de" target="_blank" rel="noopener">RCF · Rapport CIIVISE</a></p>
+        </div>
+      </div>
+
+      <div class="mythe-card">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Mythe</span>
+          <p class="mythe-text">« Les agresseurs ont un profil psychologique reconnaissable — on peut les repérer. »</p>
+        </div>
+        <div class="mythe-face truth-side">
+          <span class="mythe-badge truth-badge">Ce que dit la science</span>
+          <p class="mythe-text"><strong>Il n'existe pas de profil psychologique caractéristique</strong> des auteurs de violences sexuelles intrafamiliales. Une question parlementaire au gouvernement (17<sup>e</sup> législature, QG856) le confirme explicitement : ils « sévissent dans tous les milieux et ne sont pas l'apanage des milieux défavorisés ». L'absence de profil type est précisément ce qui rend le déni social si efficace — et si dangereux.</p>
+          <p class="mythe-source"><a href="https://www.assemblee-nationale.fr/dyn/17/questions/QANR5L17QG856.pdf" target="_blank" rel="noopener">Assemblée nationale, QG856, 17<sup>e</sup> législature</a> · CIIVISE, rapport nov. 2023</p>
+        </div>
+      </div>
+
+      <div class="mythe-card">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Mythe</span>
+          <p class="mythe-text">« Les fausses accusations sont fréquentes — les enfants inventent ou sont manipulés. »</p>
+        </div>
+        <div class="mythe-face truth-side">
+          <span class="mythe-badge truth-badge">Ce que dit la science</span>
+          <p class="mythe-text">La littérature clinique et l'AIVI établissent que <strong>les fausses allégations spontanées d'abus sexuels sur mineurs représentent moins de 1 cas pour 1 000.</strong> La prise de parole d'un enfant est un signal à traiter sans délai. L'emprise, la honte et la dépendance affective à l'agresseur rendent le mensonge dans ce sens extrêmement rare.</p>
+          <p class="mythe-source">AIVI · Littérature clinique en psychotraumatologie · CIIVISE, rapport nov. 2023</p>
+        </div>
+      </div>
+
+      <div class="mythe-card">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Mythe</span>
+          <p class="mythe-text">« L'inceste, c'est rare — ça n'arrive pas dans les familles "normales". »</p>
+        </div>
+        <div class="mythe-face truth-side">
+          <span class="mythe-badge truth-badge">Ce que dit la science</span>
+          <p class="mythe-text">L'inceste touche <strong>11 % des Français adultes</strong> (7,4 millions). 160 000 enfants en sont victimes chaque année. Dans <strong>80 % des cas, l'auteur est un membre de la famille.</strong> Un tiers des Français déclare connaître au moins une victime dans son entourage (Ipsos, 2023). Ce n'est pas rare : c'est massivement tu.</p>
+          <p class="mythe-source">Sondage Ipsos pour Face à l'inceste, oct. 2023 · CIIVISE, rapport nov. 2023 · <a href="https://www.lejdd.fr/societe/inceste-et-violences-sexuelles-les-agresseurs-coutent-chaque-annee-97-milliards-deuros-la-societe-136642" target="_blank" rel="noopener">JDD</a></p>
+        </div>
+      </div>
+
+      <div class="mythe-card">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Mythe</span>
+          <p class="mythe-text">« Si ça s'était passé, l'enfant en aurait parlé — le silence prouve l'innocence. »</p>
+        </div>
+        <div class="mythe-face truth-side">
+          <span class="mythe-badge truth-badge">Ce que dit la science</span>
+          <p class="mythe-text">Quand un enfant révèle des violences, <strong>92 % ne reçoivent pas de réponse protectrice</strong> (CIIVISE, 2023). Le silence n'est pas une preuve d'innocence : il est le produit de l'emprise, de la honte, de la peur des conséquences familiales et de la dépendance affective à l'agresseur. Le délai entre premières violences et première parole se compte souvent en décennies.</p>
+          <p class="mythe-source">CIIVISE, rapport nov. 2023 · Fondation Jean-Jaurès, avr. 2026</p>
+        </div>
+      </div>
+
+      <div class="mythe-card">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Mythe</span>
+          <p class="mythe-text">« L'inceste est lié à une culture, une religion ou une origine géographique particulière. »</p>
+        </div>
+        <div class="mythe-face truth-side">
+          <span class="mythe-badge truth-badge">Ce que dit la science</span>
+          <p class="mythe-text">Les données disponibles <strong>n'établissent aucune corrélation statistiquement significative</strong> entre appartenance religieuse, origine culturelle ou zone géographique et prévalence de l'inceste. Cette représentation détourne l'attention du phénomène majoritaire. Le seul facteur documenté est le genre : <strong>97 % des auteurs sont des hommes</strong> (CIIVISE, 2023).</p>
+          <p class="mythe-source">Enquête Virage, Ined 2015 (pub. 2021) · CIIVISE, rapport nov. 2023 · <a href="https://www.rcf.fr/articles/economie-et-societe/rapport-de-la-ciivise-160-000-enfants-sont-victimes-chaque-annee-de" target="_blank" rel="noopener">RCF</a></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="mythes-caveat">Note méthodologique — Ces affirmations s'appuient sur des études épidémiologiques françaises et des données institutionnelles vérifiées. L'absence de corrélation documentée ne signifie pas l'absence du phénomène dans un milieu particulier, mais l'impossibilité de prédire son occurrence à partir d'un profil social. Sources primaires citées sur chaque carte.</div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ══ C — COÛT DU DÉNI EN TEMPS RÉEL ════════════════════ -->
+<section class="cout-section">
+  <div class="cout-inner">
+    <p class="cout-eyebrow">Coût du déni — en temps réel</p>
+    <h2 class="cout-headline">307 euros s'écoulent chaque seconde.</h2>
+    <p class="cout-sub">La CIIVISE a calculé que l'impunité des agresseurs et l'absence de soutien aux victimes coûtent <strong style="color:var(--paper)">9,7 milliards d'euros par an</strong> à la société française. Ci-dessous : le montant cumulé depuis minuit, mis en regard avec le budget annuel de l'État consacré à la lutte contre les VSS.</p>
+    <div class="cout-display">
+      <div class="cout-cell">
+        <p class="cout-cell-label">Coût du déni — cumulé depuis minuit</p>
+        <div class="cout-big gold" id="cout-val">calcul…</div>
+        <p class="cout-context">9,7 Mds€/an ÷ 31 557 600 s = 307,4 €/s · CIIVISE, avis "Le coût du déni", 12 juin 2023</p>
+      </div>
+      <div class="cout-cell">
+        <p class="cout-cell-label">Budget État — lutte contre les VSS (annuel)</p>
+        <div class="cout-big muted">~50 M€</div>
+        <p class="cout-context">PLF 2024, prog. 137 DGCS (Égalité femmes/hommes) + action CIPDR. Hors budget Justice global.</p>
+      </div>
+    </div>
+    <div class="cout-gap-box">
+      <div class="cout-gap-num">×194</div>
+      <div class="cout-gap-text">Le coût social annuel du déni est <strong>194 fois supérieur</strong> au budget alloué à la lutte contre les VSS. La CIIVISE le formule clairement : <em>« Traiter le problème coûte moins cher que de l'ignorer. »</em> Le gouvernement a reconnu ce chiffre — la loi intégrale n'a pas encore été adoptée.</div>
+    </div>
+    <p class="cout-note">Sources : CIIVISE, avis "Le coût du déni", 12 juin 2023 · PLF 2024, prog. 137 (DGCS) et action CIPDR · Les 9,7 Mds€ comprennent pertes de productivité, coûts de santé à long terme, recours à la justice et prestations sociales. Les deux tiers résultent des conséquences sur la santé mentale et physique des victimes.</p>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- COMPTEUR INTERACTIF (existant) -->
+<section class="counter-section">
+  <div class="counter-inner">
+    <p class="counter-eyebrow">Données en temps réel</p>
+    <h2 class="counter-headline" style="color:var(--paper)">Combien de victimes en…</h2>
+    <p class="counter-sub">Basé sur la donnée CIIVISE 2023 : 160 000 nouveaux enfants victimes par an en France. Sélectionnez une unité de temps.</p>
+    <div class="counter-controls">
+      <button class="counter-btn" data-unit="minute">1 minute</button>
+      <button class="counter-btn" data-unit="heure">1 heure</button>
+      <button class="counter-btn active" data-unit="jour">1 jour</button>
+      <button class="counter-btn" data-unit="semaine">1 semaine</button>
+      <button class="counter-btn" data-unit="mois">1 mois</button>
+    </div>
+    <div class="counter-display">
+      <div class="counter-cell">
+        <p class="counter-cell-label">Nouveaux enfants victimes</p>
+        <div class="counter-big red" id="counter-main">438</div>
+        <p class="counter-context" id="counter-ctx">En un seul jour, dans toute la France</p>
+      </div>
+      <div class="counter-cell">
+        <p class="counter-cell-label">Comparaison : accidents mortels de la route</p>
+        <div class="counter-big" id="counter-compare">10</div>
+        <p class="counter-context" id="counter-compare-ctx">Décès sur la route sur la même période (3 524 en 2023)</p>
+      </div>
+    </div>
+    <p class="counter-note">Sources : CIIVISE, rapport nov. 2023 (160 000 victimes/an) · Sécurité Routière, bilan 2023 (3 524 tués). Les chiffres de la route sont des décès ; les victimes d'inceste sont des enfants qui vivent avec ce traumatisme des années durant.</p>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- IMPUNITÉ -->
+<section id="impunite" class="section-full impunity-section">
+  <div class="section" style="padding-top:0;padding-bottom:0">
+    <p class="section-eyebrow">Le parcours judiciaire</p>
+    <h2>L'entonnoir de l'impunité</h2>
+    <p class="section-intro">Sur 100 enfants victimes d'inceste en France, voici ce que révèlent les données officielles sur leur chance d'obtenir justice.</p>
+    <div class="funnel" id="funnel">
+      <div class="funnel-step">
+        <div class="funnel-pct full">100</div>
+        <div class="funnel-text">
+          <p class="funnel-title">Enfants victimes d'inceste</p>
+          <p class="funnel-desc">Point de départ : 100 enfants victimes.</p>
+          <div class="funnel-bar"><div class="funnel-bar-fill" style="background:var(--ink);width:0" data-width="100%"></div></div>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-pct high">12</div>
+        <div class="funnel-text">
+          <p class="funnel-title">Portent plainte</p>
+          <p class="funnel-desc">Seulement 12 % des victimes d'inceste déposent une plainte. La PPL intégrale (déc. 2025) cite un taux de 94 % de classements sans suite pour les viols en général.</p>
+          <div class="funnel-bar"><div class="funnel-bar-fill red-fill" style="width:0" data-width="55%"></div></div>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-pct high">3,1</div>
+        <div class="funnel-text">
+          <p class="funnel-title">Plainte non classée sans suite</p>
+          <p class="funnel-desc">Au moins 70 % des plaintes pour violences sexuelles sur mineurs sont classées sans suite (co-président CIIVISE, Édouard Durand, JDD). Sur les 12 qui déposent plainte, il en reste ≈ 3.</p>
+          <div class="funnel-bar"><div class="funnel-bar-fill red-fill" style="width:0" data-width="35%"></div></div>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-pct med">1,5</div>
+        <div class="funnel-text">
+          <p class="funnel-title">Affaire instruite non déqualifiée</p>
+          <p class="funnel-desc">Près de la moitié des affaires instruites pour viol sont requalifiées en infraction moins grave, empêchant le jugement en cour d'assises.</p>
+          <div class="funnel-bar"><div class="funnel-bar-fill amber-fill" style="width:0" data-width="22%"></div></div>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-pct low">&lt;1%</div>
+        <div class="funnel-text">
+          <p class="funnel-title">Condamnation prononcée</p>
+          <p class="funnel-desc">La CIIVISE (nov. 2023) et la Fondation Jean-Jaurès (avr. 2026) confirment que moins de 1 % des affaires d'inceste aboutissent à une condamnation. Édouard Durand évoque environ 1 000 condamnations par an pour 160 000 victimes.</p>
+          <div class="funnel-bar"><div class="funnel-bar-fill teal-fill" style="width:0" data-width="12%"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="pull-quote">
+      <p>« On ne peut pas se satisfaire du traitement actuel de ces affaires, avec 70 % de plaintes classées sans suite et 1 000 condamnations par an pour 160 000 victimes. »</p>
+      <cite>Édouard Durand, co-président de la CIIVISE, Journal du Dimanche</cite>
+    </div>
+    <p style="font-size:0.8rem;color:var(--ink-3);font-family:var(--mono);letter-spacing:0.04em">Sources : CIIVISE rapport nov. 2023 · Fondation Jean-Jaurès, avr. 2026 · Édouard Durand, JDD · PPL intégrale AN n°2169, déc. 2025 · Sénat, exposé des motifs PPL n°127, nov. 2025.</p>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- COMPARAISONS -->
+<section id="comparaisons">
+  <div class="section">
+    <p class="section-eyebrow">Mise en perspective</p>
+    <h2>L'invisible fléau de santé publique</h2>
+    <p class="section-intro">Pour saisir l'ampleur du phénomène, comparons avec d'autres problèmes de société bénéficiant de plans nationaux, de budgets dédiés et d'une forte visibilité médiatique.</p>
+    <div class="compare-grid">
+      <div class="compare-card highlighted">
+        <span class="compare-icon">⚠</span>
+        <p class="compare-label">Inceste — victimes adultes vivantes</p>
+        <p class="compare-number">7 400 000</p>
+        <p class="compare-desc">Français ayant déclaré avoir été victimes d'inceste dans leur enfance — une population équivalente à Paris et sa petite couronne.</p>
+        <p class="compare-source">Sondage Ipsos / Face à l'inceste, oct. 2023</p>
+      </div>
+      <div class="compare-card">
+        <span class="compare-icon">🚗</span>
+        <p class="compare-label">Accidentés de la route — 2023</p>
+        <p class="compare-number">195 000</p>
+        <p class="compare-desc">Victimes d'accidents de la route en 2023. Ce fléau bénéficie d'un budget national dédié, de campagnes permanentes et d'un comité interministériel.</p>
+        <p class="compare-source">Sécurité Routière, bilan 2023</p>
+      </div>
+      <div class="compare-card">
+        <span class="compare-icon">🎗</span>
+        <p class="compare-label">Nouveaux cas de cancer — par an</p>
+        <p class="compare-number">433 000</p>
+        <p class="compare-desc">Nouveaux cas diagnostiqués chaque année. Le Plan Cancer dispose d'un budget de plusieurs milliards d'euros par mandature.</p>
+        <p class="compare-source">Institut National du Cancer, 2023</p>
+      </div>
+      <div class="compare-card">
+        <span class="compare-icon">💊</span>
+        <p class="compare-label">Diabétiques traités en France</p>
+        <p class="compare-number">4 200 000</p>
+        <p class="compare-desc">Personnes traitées pour diabète, bénéficiant d'un plan national de santé publique et d'une mobilisation institutionnelle continue.</p>
+        <p class="compare-source">Santé Publique France, 2022</p>
+      </div>
+    </div>
+    <div class="bar-chart" id="bar-chart">
+      <p style="font-family:var(--mono);font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:0.5rem">Victimes ou patients · comparaison d'échelle (France)</p>
+      <div class="bar-row">
+        <span class="bar-label">Victimes d'inceste (adultes)</span>
+        <div class="bar-track"><div class="bar-fill red-fill" data-pct="100">7,4 millions</div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Diabétiques traités</span>
+        <div class="bar-track"><div class="bar-fill ink-fill" data-pct="57">4,2 millions</div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Nouveaux cancers / an</span>
+        <div class="bar-track"><div class="bar-fill amber-fill" data-pct="6">433 000</div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Accidentés de la route / an</span>
+        <div class="bar-track"><div class="bar-fill teal-fill" data-pct="3">195 000</div></div>
+      </div>
+    </div>
+    <p style="font-size:0.75rem;color:var(--ink-3);font-family:var(--mono);margin-top:0.75rem">Comparaisons d'ordre de grandeur à des fins pédagogiques — les chiffres ne sont pas directement comparables mais illustrent l'absence de réponse publique proportionnée au phénomène incestueux.</p>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- CONSÉQUENCES -->
+<section>
+  <div class="section">
+    <p class="section-eyebrow">Impact sur les victimes</p>
+    <h2>Des traumatismes qui durent toute une vie</h2>
+    <p class="section-intro">L'inceste n'est pas un événement passager. Ses conséquences sont documentées sur la santé physique, mentale et sociale des victimes sur des décennies.</p>
+    <div class="consequences-grid">
+      <div class="consequence-item">
+        <span class="consequence-num">+50%</span>
+        <div class="consequence-text"><strong>Tentatives de suicide</strong>Plus d'une victime sur deux effectue au moins une tentative de suicide au cours de sa vie. Confirmé par la Fondation Jean-Jaurès (avr. 2026) et l'exposé des motifs PPL n°127 (Sénat, nov. 2025).<br><span style="font-size:0.78rem;color:var(--ink-3);font-family:var(--mono)">Enquête Ipsos pour AIVI, mai 2010</span></div>
+      </div>
+      <div class="consequence-item">
+        <span class="consequence-num">×15</span>
+        <div class="consequence-text"><strong>Risque de tentative de suicide</strong>Les victimes d'inceste sont 15 fois plus nombreuses que la population générale à faire une tentative de suicide au cours de leur vie.<br><span style="font-size:0.78rem;color:var(--ink-3);font-family:var(--mono)">G. Lopez, Institut de victimologie de Paris, 2015</span></div>
+      </div>
+      <div class="consequence-item">
+        <span class="consequence-num">×4</span>
+        <div class="consequence-text"><strong>Risque de dépression sévère</strong>Les victimes sont 4 fois plus nombreuses que la population générale à développer une dépression chronique.<br><span style="font-size:0.78rem;color:var(--ink-3);font-family:var(--mono)">G. Lopez, Institut de victimologie de Paris, 2015</span></div>
+      </div>
+      <div class="consequence-item">
+        <span class="consequence-num">86%</span>
+        <div class="consequence-text"><strong>Des violences sont répétées</strong>Dans 86 % des cas les agressions sont multiples ; dans 51 % des cas elles durent plus d'un an, dans 25 % elles se prolongent sur plus de cinq ans.<br><span style="font-size:0.78rem;color:var(--ink-3);font-family:var(--mono)">CIIVISE, rapport nov. 2023</span></div>
+      </div>
+      <div class="consequence-item">
+        <span class="consequence-num">8,5 ans</span>
+        <div class="consequence-text"><strong>Âge moyen au début des violences</strong>Les premières agressions débutent en moyenne à 8 ans et demi. 97 % des auteurs sont des hommes, souvent socialement intégrés et exerçant une forme d'autorité.<br><span style="font-size:0.78rem;color:var(--ink-3);font-family:var(--mono)">CIIVISE, rapport nov. 2023 · Infostat Justice n°205, nov. 2025</span></div>
+      </div>
+      <div class="consequence-item">
+        <span class="consequence-num">75%</span>
+        <div class="consequence-text"><strong>Des témoignages portent sur des faits prescrits</strong>En 2023, les trois quarts des témoignages recueillis par la CIIVISE concernaient des faits pour lesquels toute poursuite est désormais impossible.<br><span style="font-size:0.78rem;color:var(--ink-3);font-family:var(--mono)">CIIVISE 2023 · Sénat, exposé des motifs PPL n°127, nov. 2025</span></div>
+      </div>
+      <div class="consequence-item">
+        <span class="consequence-num">92%</span>
+        <div class="consequence-text"><strong>N'ont pas bénéficié d'un soutien protecteur</strong>Lorsque des enfants révèlent les violences, 92 % ne reçoivent pas la réponse « Je te crois, je te protège ».<br><span style="font-size:0.78rem;color:var(--ink-3);font-family:var(--mono)">CIIVISE, rapport intermédiaire 2022–2023</span></div>
+      </div>
+      <div class="consequence-item">
+        <span class="consequence-num">5–6%</span>
+        <div class="consequence-text"><strong>Des parents déposent plainte après révélation</strong>Lorsque l'enfant parle, seulement 5 % des pères et 6 % des mères déposent plainte. Moins de 2 parents sur 10 tentent de protéger l'enfant.<br><span style="font-size:0.78rem;color:var(--ink-3);font-family:var(--mono)">Enquête Parents protecteurs–parents complices, Face à l'inceste, 2022</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- SOUS-FINANCEMENT DE LA JUSTICE -->
+<section id="justice" class="justice-section">
+  <div class="justice-inner">
+    <p class="justice-eyebrow">Pourquoi l'impunité persiste</p>
+    <h2 class="justice-headline">Une justice structurellement sous-dotée</h2>
+    <p class="justice-intro">L'entonnoir de l'impunité ne s'explique pas uniquement par des dysfonctionnements humains : il est le produit d'un sous-investissement chronique dans la justice française, documenté et chiffré par le rapport officiel de la Commission européenne pour l'efficacité de la justice (CEPEJ 2024).</p>
+
+    <div class="justice-grid">
+      <div class="justice-stat">
+        <div class="justice-stat-num">3,2</div>
+        <p class="justice-stat-label">Procureurs pour 100 000 habitants en France (2022) — contre une médiane européenne de <strong style="color:var(--paper)">11,2</strong> et une moyenne de 12,2. La France se situe à <strong style="color:var(--paper)">l'avant-dernier rang européen</strong>.</p>
+        <p class="justice-stat-src">CEPEJ, rapport oct. 2024 (données 2022) · Min. de la Justice, oct. 2024</p>
+      </div>
+      <div class="justice-stat">
+        <div class="justice-stat-num">11,3</div>
+        <p class="justice-stat-label">Juges professionnels pour 100 000 habitants — contre une <strong style="color:var(--paper)">médiane de 17,6</strong> et une moyenne de 21,9 en Europe. Stable depuis 2012 (10,7), loin de combler l'écart.</p>
+        <p class="justice-stat-src">CEPEJ, rapport oct. 2024 · Gazette du Palais, oct. 2024</p>
+      </div>
+      <div class="justice-stat">
+        <div class="justice-stat-num amber">6,4</div>
+        <p class="justice-stat-label">Affaires pénales traitées pour 100 habitants par les parquets français — contre une <strong style="color:var(--paper)">médiane européenne de 2,3</strong>. Chaque procureur français supporte une charge <strong style="color:var(--paper)">presque 3 fois supérieure</strong> à la médiane européenne.</p>
+        <p class="justice-stat-src">CEPEJ, rapport oct. 2024 · Actu-Juridique, oct. 2024</p>
+      </div>
+      <div class="justice-stat">
+        <div class="justice-stat-num teal">0,20%</div>
+        <p class="justice-stat-label">Du PIB consacré à la Justice en France (2022) — contre <strong style="color:var(--paper)">0,28 %</strong> pour la médiane européenne, 0,30 % en Allemagne et 0,31 % en Italie. L'écart représente plus de <strong style="color:var(--paper)">4 milliards d'euros manquants chaque année</strong>.</p>
+        <p class="justice-stat-src">CEPEJ, rapport oct. 2024 · Min. de la Justice, oct. 2024</p>
+      </div>
+    </div>
+
+    <div class="justice-bars">
+      <p class="justice-bars-title">Procureurs pour 100 000 habitants — comparaison européenne (CEPEJ 2024, données 2022)</p>
+      <div class="jbar-row">
+        <span class="jbar-label">France</span>
+        <div class="jbar-track"><div class="jbar-fill france" data-pct="29" style="width:0">3,2</div></div>
+      </div>
+      <div class="jbar-row">
+        <span class="jbar-label">Espagne</span>
+        <div class="jbar-track"><div class="jbar-fill italie" data-pct="45" style="width:0">5,1</div></div>
+      </div>
+      <div class="jbar-row">
+        <span class="jbar-label">Allemagne</span>
+        <div class="jbar-track"><div class="jbar-fill allemagne" data-pct="68" style="width:0">7,7</div></div>
+      </div>
+      <div class="jbar-row">
+        <span class="jbar-label">Médiane Europe</span>
+        <div class="jbar-track"><div class="jbar-fill europe" data-pct="100" style="width:0">11,2</div></div>
+      </div>
+    </div>
+
+    <div class="justice-annotation">
+      <p>Malgré une loi de programmation 2023-2027 qui prévoyait une augmentation historique des crédits, le budget justice 2024 a été réduit de <strong>328 millions d'euros</strong> par décret en février 2024. <strong>La CIIVISE estimait que le « coût du déni » dépasse 9,7 milliards d'euros par an</strong> — soit davantage que le budget total du ministère de la Justice. Traiter le problème coûterait moins cher que de l'ignorer.</p>
+    </div>
+    <div class="justice-annotation" style="border-color:#E8356D">
+      <p>La France détient aussi un triste record annexe : <strong>75 % des affaires pénales classées pour auteur non identifié</strong>, contre une médiane européenne de 38 % — signe direct d'un manque de moyens d'enquête (CEPEJ 2024, cité par le syndicat Unité Magistrats SNM-FO, oct. 2024).</p>
+    </div>
+    <p style="font-family:var(--mono);font-size:0.66rem;letter-spacing:0.05em;color:rgba(247,245,240,0.3);margin-top:1rem">Sources : CEPEJ rapport oct. 2024 (données 2022) · Min. de la Justice, communiqué oct. 2024 · Gazette du Palais, oct. 2024 · Actu-Juridique, oct. 2024 · Syndicat Unité Magistrats SNM-FO, oct. 2024 · CIIVISE, avis "Le coût du déni", juin 2023 · Fondation IFRAP, juin 2026.</p>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- J'AGIS -->
+<section id="agir" class="agir-section">
+  <div class="agir-inner">
+    <p class="agir-eyebrow">Actions citoyennes</p>
+    <h2>J'agis</h2>
+    <p class="agir-intro">L'inceste est un problème de société — et les sociétés changent par l'accumulation d'actes individuels. Ces propositions sont concrètes, légales en France, et accessibles sans moyens particuliers. Elles s'inscrivent dans trois registres complémentaires : informer, interpeller et soutenir.</p>
+
+    <div class="petition-banner">
+      <div class="petition-banner-text">
+        <h3>Signer la pétition pour une loi intégrale</h3>
+        <p>109 députés de 8 groupes politiques ont déposé une proposition de loi-cadre contre les violences sexistes et sexuelles en décembre 2025. Rejoignez la mobilisation citoyenne portée par la Fondation des Femmes et 60 associations féministes pour en exiger l'adoption.</p>
+      </div>
+      <a href="https://fondationdesfemmes.org/" target="_blank" rel="noopener" class="petition-btn">Signer la pétition</a>
+    </div>
+
+    <div class="agir-grid">
+      <div class="agir-card">
+        <span class="agir-card-num">01</span>
+        <span class="agir-card-level zero">Gratuit</span>
+        <p class="agir-card-title">Parler autour de soi — briser la loi du silence</p>
+        <p class="agir-card-desc">La CIIVISE a documenté que 92 % des enfants qui révèlent n'obtiennent pas de réponse protectrice. Parler de l'inceste dans votre entourage — en famille, entre amis, sur les réseaux — normalise le sujet et prépare les adultes à bien réagir quand un enfant parle. Le silence des adultes est une condition d'existence du crime.</p>
+      </div>
+      <div class="agir-card">
+        <span class="agir-card-num">02</span>
+        <span class="agir-card-level zero">Gratuit</span>
+        <p class="agir-card-title">Apprendre les signaux d'alerte</p>
+        <p class="agir-card-desc">Les violences incestueuses surviennent dans l'entourage proche. Tout adulte en contact régulier avec des enfants (famille, école, sport, loisirs) peut apprendre à identifier des changements comportementaux et à accueillir la parole d'un enfant sans la mettre en doute. Le kit CIIVISE « Mélissa et les autres » est gratuit et accessible en ligne.</p>
+        <a href="https://www.ciivise.fr/outils" target="_blank" rel="noopener" class="agir-card-action">Accéder au kit CIIVISE</a>
+      </div>
+      <div class="agir-card">
+        <span class="agir-card-num">03</span>
+        <span class="agir-card-level zero">Gratuit</span>
+        <p class="agir-card-title">Signaler si vous êtes témoin ou si un enfant vous parle</p>
+        <p class="agir-card-desc">En France, tout citoyen peut signaler une situation d'enfant en danger au 119 (Allô Enfance en Danger), 24h/24, gratuit et confidentiel. Le signalement est un acte citoyen légalement prévu et protégé — vous n'avez pas besoin d'être certain·e, juste d'avoir des inquiétudes fondées.</p>
+        <a href="https://www.allo119.gouv.fr" target="_blank" rel="noopener" class="agir-card-action">Site du 119</a>
+      </div>
+      <div class="agir-card">
+        <span class="agir-card-num">04</span>
+        <span class="agir-card-level zero">Gratuit</span>
+        <p class="agir-card-title">Écrire à son député ou son sénateur</p>
+        <p class="agir-card-desc">En novembre 2023, le gouvernement n'a retenu que 41 des 82 recommandations de la CIIVISE. La PPL intégrale (AN, déc. 2025, 109 signataires) n'a pas encore été inscrite à l'ordre du jour. Un email d'une dizaine de lignes à son élu·e est un acte démocratique direct, peu pratiqué mais très visible pour les parlementaires.</p>
+        <a href="https://www.assemblee-nationale.fr/dyn/vos-deputes" target="_blank" rel="noopener" class="agir-card-action">Trouver mon député</a>
+      </div>
+      <div class="agir-card">
+        <span class="agir-card-num">05</span>
+        <span class="agir-card-level low">Rapide</span>
+        <p class="agir-card-title">Partager des données fiables, pas des rumeurs</p>
+        <p class="agir-card-desc">La désinformation sur l'inceste — minimisation, mythes sur les "fausses accusations", confusion avec la pédophilie de rue — fragilise les victimes. L'AIVI rappelle que les fausses allégations ne représentent qu'un cas sur mille. Partager des sources vérifiées contribue à un débat public éclairé, qui conditionne les réponses législatives.</p>
+        <a href="https://www.ciivise.fr" target="_blank" rel="noopener" class="agir-card-action">Sources CIIVISE</a>
+      </div>
+      <div class="agir-card">
+        <span class="agir-card-num">06</span>
+        <span class="agir-card-level low">Rapide</span>
+        <p class="agir-card-title">Soutenir une association de victimes</p>
+        <p class="agir-card-desc">Face à l'inceste et l'AIVI fonctionnent en grande partie grâce à des dons de particuliers. Un don défiscalisé à 66 % permet de financer des heures d'écoute et de soutien. Ce soutien financier compense, en partie, le sous-financement public documenté dans ce rapport.</p>
+        <a href="https://facealinceste.fr/soutenir" target="_blank" rel="noopener" class="agir-card-action">Faire un don</a>
+      </div>
+      <div class="agir-card">
+        <span class="agir-card-num">07</span>
+        <span class="agir-card-level med">Je m'engage</span>
+        <p class="agir-card-title">Demander une formation dans son établissement ou entreprise</p>
+        <p class="agir-card-desc">La PPL intégrale (nov. 2025) prévoit de rendre obligatoire la formation des salariés à la prévention des VSS. En attendant, tout salarié, parent d'élève ou membre d'une association peut demander une sensibilisation. Les outils CIIVISE et MIPROF sont libres de droits pour toute formation non commerciale.</p>
+        <a href="https://arretonslesviolences.gouv.fr/je-suis-professionnel/violences-sexuelles" target="_blank" rel="noopener" class="agir-card-action">Outils de formation MIPROF</a>
+      </div>
+      <div class="agir-card">
+        <span class="agir-card-num">08</span>
+        <span class="agir-card-level med">Je m'engage</span>
+        <p class="agir-card-title">Rejoindre ou soutenir une coalition citoyenne locale</p>
+        <p class="agir-card-desc">Des collectifs organisent des actions de sensibilisation (stands, projections-débats, formations) dans plusieurs villes françaises. Rejoindre ou initier un groupe local produit un effet de visibilité dans l'espace public que les pétitions en ligne ne peuvent remplacer.</p>
+        <a href="https://www.loi-integrale.fr" target="_blank" rel="noopener" class="agir-card-action">Coalition loi intégrale</a>
+      </div>
+      <div class="agir-card">
+        <span class="agir-card-num">09</span>
+        <span class="agir-card-level med">Je m'engage</span>
+        <p class="agir-card-title">Interpeller les candidats aux élections</p>
+        <p class="agir-card-desc">À l'occasion de toute élection (municipales, législatives, régionales), poser publiquement la question de la politique de protection de l'enfance aux candidats oblige à prendre position. Une question posée en réunion publique est une pratique documentée comme efficace pour inscrire un sujet dans l'agenda politique local. <p><strong> > Utiliser notre générateur de courrier ci-dessous</strong></p>
+      </div>
+    </div>
+    <p style="font-size:0.82rem;color:var(--ink-3);line-height:1.7;max-width:640px;font-family:var(--mono);letter-spacing:0.03em">Ces propositions s'appuient sur les recommandations de la CIIVISE (2023), la PPL intégrale (AN, déc. 2025), et les pratiques documentées des associations Face à l'inceste, AIVI et de la coalition loi-integrale.fr.</p>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- RESSOURCES -->
+<section id="ressources" class="section-full resources-section">
+  <div class="section" style="padding-top:0;padding-bottom:0">
+    <p class="section-eyebrow">Agir selon sa situation</p>
+    <h2>Ressources et soutien</h2>
+    <p class="section-intro">Selon votre situation — victime, proche ou témoin, professionnel, ou citoyen souhaitant agir — voici les ressources disponibles en France.</p>
+    <div class="resources-tabs" role="tablist">
+      <button class="res-tab active" role="tab" aria-selected="true" data-tab="victimes">Victimes & proches</button>
+      <button class="res-tab" role="tab" aria-selected="false" data-tab="professionnels">Professionnels</button>
+      <button class="res-tab" role="tab" aria-selected="false" data-tab="public">Grand public</button>
+    </div>
+    <div class="res-panel active" id="panel-victimes">
+      <div class="res-alert"><strong>Si vous êtes en danger immédiat</strong>, appelez le <strong>17</strong> (Police) ou le <strong>15</strong> (SAMU). Ces lignes sont disponibles 24h/24.</div>
+      <div class="res-grid">
+        <div class="res-card">
+          <span class="res-card-tag urgent">Urgence</span>
+          <p class="res-card-title">119 — Allô Enfance en Danger</p>
+          <p class="res-card-phone">119</p>
+          <p class="res-card-desc">Ligne nationale dédiée à la protection des enfants en danger. Disponible 24h/24, 7j/7. Appel gratuit et confidentiel. Pour les enfants victimes et les adultes témoins de situations de maltraitance.</p>
+          <a href="https://www.allo119.gouv.fr" class="res-card-link" target="_blank" rel="noopener">allo119.gouv.fr</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag urgent">Écoute</span>
+          <p class="res-card-title">Ligne CIIVISE — Écoute victimes</p>
+          <p class="res-card-phone">0 800 05 95 95</p>
+          <p class="res-card-desc">Ligne d'écoute des victimes de violences sexuelles dans l'enfance, maintenue en partenariat avec le Collectif Féministe Contre le Viol. Gratuite. Plus de 7 000 appels depuis 2021, renouvelée pour 2025.</p>
+          <a href="https://www.ciivise.fr" class="res-card-link" target="_blank" rel="noopener">ciivise.fr</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag info">Association</span>
+          <p class="res-card-title">Face à l'inceste</p>
+          <p class="res-card-desc">Association de référence fondée par des victimes. Ressources, forum d'entraide, informations juridiques et mobilisation nationale. À l'origine des sondages Ipsos sur l'inceste en France (2015, 2020, 2023, 2025).</p>
+          <a href="https://facealinceste.fr" class="res-card-link" target="_blank" rel="noopener">facealinceste.fr</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag info">Association</span>
+          <p class="res-card-title">AIVI — Association internationale des victimes de l'inceste</p>
+          <p class="res-card-desc">Accompagnement des victimes adultes, groupes de parole, ressources pour les proches. Commanditaire de l'enquête Ipsos 2010 sur les conséquences de l'inceste.</p>
+          <a href="https://www.aivi.org" class="res-card-link" target="_blank" rel="noopener">aivi.org</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag info">Signalement</span>
+          <p class="res-card-title">Signalement en ligne — service-public.fr</p>
+          <p class="res-card-desc">Le ministère de l'Intérieur permet de signaler des faits de violence sexuelle sur mineur. Le signalement est transmis directement aux forces de l'ordre compétentes.</p>
+          <a href="https://www.service-public.fr/particuliers/vosdroits/F1789" class="res-card-link" target="_blank" rel="noopener">service-public.fr</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag info">Témoignages</span>
+          <p class="res-card-title">Libres de le dire — CIIVISE</p>
+          <p class="res-card-desc">Espace de témoignage ouvert par la CIIVISE pour recueillir la parole des victimes, contribuer à la documentation du phénomène et ne plus être seul·e face à cette histoire.</p>
+          <a href="https://www.ciivise.fr/temoigner" class="res-card-link" target="_blank" rel="noopener">ciivise.fr/temoigner</a>
+        </div>
+      </div>
+    </div>
+    <div class="res-panel" id="panel-professionnels">
+      <div class="res-alert" style="border-color:var(--teal);background:var(--teal-light);color:var(--teal)"><strong>Obligation légale de signalement.</strong> Tout professionnel ayant connaissance de faits de maltraitance sur mineur est tenu de les signaler (art. 434-3 du Code pénal). Le secret professionnel ne fait pas obstacle à ce signalement.</div>
+      <div class="res-grid">
+        <div class="res-card">
+          <span class="res-card-tag info">Kit formation</span>
+          <p class="res-card-title">« Mélissa et les autres » — CIIVISE</p>
+          <p class="res-card-desc">Livret de formation et court-métrage conçus par la CIIVISE à destination des professionnels en contact avec des enfants. Gratuit et déjà téléchargé par plus de 8 000 organismes de formation.</p>
+          <a href="https://www.ciivise.fr/outils" class="res-card-link" target="_blank" rel="noopener">ciivise.fr/outils</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag info">Éducation nationale</span>
+          <p class="res-card-title">Guide éduscol — Repérer et signaler</p>
+          <p class="res-card-desc">Guide du ministère de l'Éducation nationale : repérage des signes, accueil de la parole de l'enfant, procédure de signalement, séquences pédagogiques de la grande section à la terminale.</p>
+          <a href="https://eduscol.education.fr/2959" class="res-card-link" target="_blank" rel="noopener">eduscol.education.fr</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag info">Outils MIPROF</span>
+          <p class="res-card-title">Kits de formation violences sexuelles</p>
+          <p class="res-card-desc">Kits pédagogiques (film + livret) libres de droits pour la formation initiale et continue, destinés aux professionnels de santé, du droit et du travail social.</p>
+          <a href="https://arretonslesviolences.gouv.fr/je-suis-professionnel/violences-sexuelles" class="res-card-link" target="_blank" rel="noopener">arretonslesviolences.gouv.fr</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag info">Cadre légal</span>
+          <p class="res-card-title">Loi du 21 avril 2021</p>
+          <p class="res-card-desc">Loi visant à protéger les mineurs des crimes et délits sexuels et de l'inceste : seuil de non-consentement à 15 ans (18 ans en cas d'inceste), définition légale de l'inceste, allongement des délais de prescription.</p>
+          <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043396944" class="res-card-link" target="_blank" rel="noopener">legifrance.gouv.fr</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag info">Signalement</span>
+          <p class="res-card-title">Procédure IP/CRIP</p>
+          <p class="res-card-desc">Toute situation préoccupante concernant un mineur doit faire l'objet d'une Information Préoccupante transmise à la Cellule de Recueil d'Informations Préoccupantes (CRIP) du Conseil départemental.</p>
+          <a href="https://www.enfance-en-danger.gouv.fr" class="res-card-link" target="_blank" rel="noopener">enfance-en-danger.gouv.fr</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag info">Rapport de référence</span>
+          <p class="res-card-title">Rapport CIIVISE 2023 — Version intégrale</p>
+          <p class="res-card-desc">756 pages, 30 000 témoignages, 82 recommandations. Document de référence pour tout professionnel souhaitant approfondir la compréhension du phénomène et des réponses institutionnelles nécessaires.</p>
+          <a href="https://www.ciivise.fr/le-rapport-public-de-2023" class="res-card-link" target="_blank" rel="noopener">Rapport CIIVISE 2023</a>
+        </div>
+      </div>
+    </div>
+    <div class="res-panel" id="panel-public">
+      <div class="res-alert" style="border-color:var(--amber);background:var(--amber-light);color:#92400e"><strong>Un tiers des Français connaît au moins une victime d'inceste dans son entourage</strong> (Sondage Ipsos pour Face à l'inceste, 2023). Vous n'êtes pas spectateur passif.</div>
+      <div class="res-grid">
+        <div class="res-card">
+          <span class="res-card-tag action">Pétition</span>
+          <p class="res-card-title">Loi intégrale — Fondation des Femmes</p>
+          <p class="res-card-desc">La coalition citoyenne portée par la Fondation des Femmes et 60 associations féministes soutient la PPL intégrale déposée à l'Assemblée en décembre 2025 par 109 députés. 90 % des Français sont favorables à l'imprescriptibilité des crimes d'inceste (Ipsos, 2023).</p>
+          <a href="https://fondationdesfemmes.org/" class="res-card-link" target="_blank" rel="noopener">fondationdesfemmes.org</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag action">S'informer</span>
+          <p class="res-card-title">Comprendre l'inceste en France</p>
+          <p class="res-card-desc">Le site de la CIIVISE présente les chiffres, les mécanismes et le travail de la commission. Point d'entrée pour comprendre ce que signifient vraiment les données et comment la société peut y répondre.</p>
+          <a href="https://www.ciivise.fr" class="res-card-link" target="_blank" rel="noopener">ciivise.fr</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag action">Soutenir</span>
+          <p class="res-card-title">Face à l'inceste — Soutenir l'association</p>
+          <p class="res-card-desc">Association de référence fondée par des victimes. Don défiscalisé à 66 %, bénévolat, partage de campagnes. Chaque euro contribue à rompre l'invisibilité sociale de l'inceste.</p>
+          <a href="https://facealinceste.fr/soutenir" class="res-card-link" target="_blank" rel="noopener">facealinceste.fr/soutenir</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag action">Élus</span>
+          <p class="res-card-title">Interpeller ses représentants</p>
+          <p class="res-card-desc">Le gouvernement n'a retenu que 41 des 82 recommandations de la CIIVISE. Écrire à son député ou sénateur pour demander l'inscription de la PPL intégrale à l'ordre du jour est un acte citoyen direct et visible.</p>
+          <a href="https://www.assemblee-nationale.fr/dyn/vos-deputes" class="res-card-link" target="_blank" rel="noopener">Trouver mon député</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag action">Comprendre</span>
+          <p class="res-card-title">Pourquoi les victimes ne parlent pas</p>
+          <p class="res-card-desc">Comprendre les mécanismes de l'emprise et du silence aide à mieux accueillir les révélations et à ne pas minimiser. Ressources de l'association AIVI.</p>
+          <a href="https://www.aivi.org" class="res-card-link" target="_blank" rel="noopener">aivi.org</a>
+        </div>
+        <div class="res-card">
+          <span class="res-card-tag action">Coalition</span>
+          <p class="res-card-title">Loi intégrale — La mobilisation citoyenne</p>
+          <p class="res-card-desc">60 associations, 109 députés, plus de 100 personnalités publiques soutiennent une loi-cadre. Suivre et rejoindre la mobilisation via le site de la coalition.</p>
+          <a href="https://www.loi-integrale.fr" class="res-card-link" target="_blank" rel="noopener">loi-integrale.fr</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ B — GÉNÉRATEUR D'EMAIL À SON ÉLU ══════════════════ -->
+<section id="elu" class="elu-section">
+  <div class="elu-inner">
+    <p class="elu-eyebrow">Acte citoyen direct</p>
+    <h2>Écrivez à votre député·e</h2>
+    <p class="elu-intro">Le gouvernement n'a retenu que 41 des 82 recommandations de la CIIVISE. La PPL intégrale (109 signataires, déc. 2025) n'est pas encore inscrite à l'ordre du jour. Un courrier personnalisé adressé à son représentant est l'un des actes démocratiques les plus directs — peu pratiqué, donc particulièrement visible. Renseignez les trois champs ci-dessous ; l'email est généré instantanément, prêt à copier.</p>
+
+    <div class="elu-privacy-notice">
+      <span class="elu-privacy-icon">🔒</span>
+      <span>Confidentialité — Aucune donnée n'est collectée ni stockée. Votre nom, département et sujet sont utilisés uniquement pour générer le texte de l'email dans votre navigateur, et supprimés dès que vous quittez la page. Rien n'est transmis à un serveur.</span>
+    </div>
+
+    <div class="elu-form">
+      <div class="elu-field">
+        <label class="elu-label" for="elu-nom">Votre prénom et nom <span style="color:var(--ink-3);font-weight:400">(figurera en signature)</span></label>
+        <input class="elu-input" type="text" id="elu-nom" placeholder="Marie Dupont" autocomplete="name">
+      </div>
+      <div class="elu-field">
+        <label class="elu-label" for="elu-dept">Numéro de département <span style="color:var(--ink-3);font-weight:400">(pour identifier votre élu·e)</span></label>
+        <select class="elu-select" id="elu-dept">
+          <option value="">— Sélectionnez —</option>
+          <option value="01">01 — Ain</option><option value="02">02 — Aisne</option><option value="03">03 — Allier</option><option value="04">04 — Alpes-de-Haute-Provence</option><option value="05">05 — Hautes-Alpes</option><option value="06">06 — Alpes-Maritimes</option><option value="07">07 — Ardèche</option><option value="08">08 — Ardennes</option><option value="09">09 — Ariège</option><option value="10">10 — Aube</option><option value="11">11 — Aude</option><option value="12">12 — Aveyron</option><option value="13">13 — Bouches-du-Rhône</option><option value="14">14 — Calvados</option><option value="15">15 — Cantal</option><option value="16">16 — Charente</option><option value="17">17 — Charente-Maritime</option><option value="18">18 — Cher</option><option value="19">19 — Corrèze</option><option value="21">21 — Côte-d'Or</option><option value="22">22 — Côtes-d'Armor</option><option value="23">23 — Creuse</option><option value="24">24 — Dordogne</option><option value="25">25 — Doubs</option><option value="26">26 — Drôme</option><option value="27">27 — Eure</option><option value="28">28 — Eure-et-Loir</option><option value="29">29 — Finistère</option><option value="2A">2A — Corse-du-Sud</option><option value="2B">2B — Haute-Corse</option><option value="30">30 — Gard</option><option value="31">31 — Haute-Garonne</option><option value="32">32 — Gers</option><option value="33">33 — Gironde</option><option value="34">34 — Hérault</option><option value="35">35 — Ille-et-Vilaine</option><option value="36">36 — Indre</option><option value="37">37 — Indre-et-Loire</option><option value="38">38 — Isère</option><option value="39">39 — Jura</option><option value="40">40 — Landes</option><option value="41">41 — Loir-et-Cher</option><option value="42">42 — Loire</option><option value="43">43 — Haute-Loire</option><option value="44">44 — Loire-Atlantique</option><option value="45">45 — Loiret</option><option value="46">46 — Lot</option><option value="47">47 — Lot-et-Garonne</option><option value="48">48 — Lozère</option><option value="49">49 — Maine-et-Loire</option><option value="50">50 — Manche</option><option value="51">51 — Marne</option><option value="52">52 — Haute-Marne</option><option value="53">53 — Mayenne</option><option value="54">54 — Meurthe-et-Moselle</option><option value="55">55 — Meuse</option><option value="56">56 — Morbihan</option><option value="57">57 — Moselle</option><option value="58">58 — Nièvre</option><option value="59">59 — Nord</option><option value="60">60 — Oise</option><option value="61">61 — Orne</option><option value="62">62 — Pas-de-Calais</option><option value="63">63 — Puy-de-Dôme</option><option value="64">64 — Pyrénées-Atlantiques</option><option value="65">65 — Hautes-Pyrénées</option><option value="66">66 — Pyrénées-Orientales</option><option value="67">67 — Bas-Rhin</option><option value="68">68 — Haut-Rhin</option><option value="69">69 — Rhône</option><option value="70">70 — Haute-Saône</option><option value="71">71 — Saône-et-Loire</option><option value="72">72 — Sarthe</option><option value="73">73 — Savoie</option><option value="74">74 — Haute-Savoie</option><option value="75">75 — Paris</option><option value="76">76 — Seine-Maritime</option><option value="77">77 — Seine-et-Marne</option><option value="78">78 — Yvelines</option><option value="79">79 — Deux-Sèvres</option><option value="80">80 — Somme</option><option value="81">81 — Tarn</option><option value="82">82 — Tarn-et-Garonne</option><option value="83">83 — Var</option><option value="84">84 — Vaucluse</option><option value="85">85 — Vendée</option><option value="86">86 — Vienne</option><option value="87">87 — Haute-Vienne</option><option value="88">88 — Vosges</option><option value="89">89 — Yonne</option><option value="90">90 — Territoire de Belfort</option><option value="91">91 — Essonne</option><option value="92">92 — Hauts-de-Seine</option><option value="93">93 — Seine-Saint-Denis</option><option value="94">94 — Val-de-Marne</option><option value="95">95 — Val-d'Oise</option><option value="971">971 — Guadeloupe</option><option value="972">972 — Martinique</option><option value="973">973 — Guyane</option><option value="974">974 — La Réunion</option><option value="976">976 — Mayotte</option>
+        </select>
+      </div>
+      <div class="elu-field full">
+        <label class="elu-label" for="elu-sujet">Sujet principal de votre courrier</label>
+        <select class="elu-select" id="elu-sujet">
+          <option value="">— Choisissez un sujet —</option>
+          <option value="prescriptibilite">Imprescriptibilité des crimes d'inceste</option>
+          <option value="ppl">Inscription de la PPL intégrale à l'ordre du jour</option>
+          <option value="ciivise">Mise en œuvre des 82 recommandations CIIVISE</option>
+          <option value="budget">Inadéquation budgétaire — 9,7 Mds€ de coût social vs 50 M€ alloués</option>
+          <option value="formation">Formation obligatoire des professionnels au repérage</option>
+          <option value="signalement">Réforme du traitement judiciaire des plaintes</option>
+        </select>
+      </div>
+    </div>
+    <button class="elu-btn" id="elu-generate-btn">Générer mon courrier</button>
+
+    <div class="elu-output" id="elu-output">
+      <div class="elu-output-header">
+        <div>
+          <span class="elu-output-label">Courrier prêt à copier</span>
+          <span class="elu-dept-link" id="elu-dept-link"></span>
+        </div>
+        <button class="elu-copy-btn" id="elu-copy-btn">Copier</button>
+      </div>
+      <div class="elu-email-box" id="elu-email-box"></div>
+      <p class="elu-notice">Ce texte est une base rédigée — vous pouvez l'adapter avant envoi. Pour trouver l'adresse email ou postale de votre député·e : <a href="https://www.assemblee-nationale.fr/dyn/vos-deputes" target="_blank" rel="noopener">assemblee-nationale.fr/dyn/vos-deputes</a>. Ce courrier peut aussi être adressé à votre sénateur·rice : <a href="https://www.senat.fr/elus/senateurs.html" target="_blank" rel="noopener">senat.fr/elus/senateurs</a>.</p>
+      <p class="elu-counter" id="elu-counter"></p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ══ D — PARTAGER CE CHIFFRE ══════════════════════════ -->
+<section id="partager" class="partager-section">
+  <div class="partager-inner">
+    <p class="partager-eyebrow">Diffusion citoyenne</p>
+    <h2>Partagez un chiffre</h2>
+    <p class="partager-intro">Chaque statistique ci-dessous peut être téléchargée en image carrée 1080×1080 px, prête pour Instagram, LinkedIn ou X. Cliquez sur « Générer », prévisualisez, téléchargez. Zéro friction — maximum de diffusion organique.</p>
+    <div class="share-grid">
+      <div class="share-card">
+        <div class="share-stat">7,4 M</div>
+        <p class="share-label">Français adultes victimes d'inceste — 1 personne sur 10</p>
+        <p class="share-source-tag">Ipsos · Face à l'inceste, oct. 2023</p>
+        <button class="share-btn" onclick="openShareModal(0)">▼ Générer l'image</button>
+      </div>
+      <div class="share-card">
+        <div class="share-stat">160 000</div>
+        <p class="share-label">Enfants victimes chaque année en France</p>
+        <p class="share-source-tag">CIIVISE, rapport nov. 2023</p>
+        <button class="share-btn" onclick="openShareModal(1)">▼ Générer l'image</button>
+      </div>
+      <div class="share-card">
+        <div class="share-stat">&lt; 1 %</div>
+        <p class="share-label">Des affaires d'inceste aboutissent à une condamnation</p>
+        <p class="share-source-tag">CIIVISE 2023 · Sénat PPL n°127, 2025</p>
+        <button class="share-btn" onclick="openShareModal(2)">▼ Générer l'image</button>
+      </div>
+      <div class="share-card">
+        <div class="share-stat">9,7 Mds€</div>
+        <p class="share-label">Le coût annuel du déni pour la société française</p>
+        <p class="share-source-tag">CIIVISE, avis juin 2023</p>
+        <button class="share-btn" onclick="openShareModal(3)">▼ Générer l'image</button>
+      </div>
+      <div class="share-card">
+        <div class="share-stat">92 %</div>
+        <p class="share-label">Des enfants qui parlent ne reçoivent pas de réponse protectrice</p>
+        <p class="share-source-tag">CIIVISE, rapport intermédiaire 2022–2023</p>
+        <button class="share-btn" onclick="openShareModal(4)">▼ Générer l'image</button>
+      </div>
+      <div class="share-card">
+        <div class="share-stat">97 %</div>
+        <p class="share-label">Des auteurs d'inceste sont des hommes — tous milieux confondus</p>
+        <p class="share-source-tag">CIIVISE 2023 · Enquête Virage, Ined 2015</p>
+        <button class="share-btn" onclick="openShareModal(5)">▼ Générer l'image</button>
+      </div>
+    </div>
+    <p class="partager-notice">Images générées localement dans votre navigateur — aucune donnée transmise à un serveur. Format 1080×1080 px, fond sombre, lisibles sur tous les réseaux. Source et URL intégrées automatiquement.</p>
+  </div>
+</section>
+
+<!-- Overlay de prévisualisation -->
+<div class="share-overlay" id="share-overlay" role="dialog" aria-modal="true" aria-label="Aperçu image à partager">
+  <div class="share-modal">
+    <div class="share-canvas-wrap">
+      <canvas id="share-canvas" width="1080" height="1080"></canvas>
+    </div>
+    <div class="share-modal-btns">
+      <button class="share-dl-btn" id="share-dl-btn">Télécharger (PNG 1080×1080)</button>
+      <button class="share-close-btn" id="share-close-btn">Fermer</button>
+    </div>
+    <p class="share-modal-note">Image générée localement · Chiffre, source et URL inclus · Libre de diffusion à des fins de sensibilisation non commerciale</p>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- SOURCES -->
+<footer>
+<div class="sources-section">
+  <div class="sources-inner">
+    <p class="sources-title">Sources et méthodologie</p>
+    <ul class="sources-list">
+      <li><strong style="color:rgba(247,245,240,0.7)">CIIVISE, rapport public nov. 2023</strong> — 160 000 victimes/an, 5,4 M d'adultes, 9,7 Mds€ coût du déni, 1 % de condamnations, 92 % sans soutien, 8,5 ans âge moyen, 86 % violences répétées, 97 % auteurs masculins. <a href="https://www.ciivise.fr/le-rapport-public-de-2023" target="_blank" rel="noopener">ciivise.fr</a></li>
+      <li><strong style="color:rgba(247,245,240,0.7)">Sondage Ipsos pour Face à l'inceste, oct. 2023</strong> — 11 % des Français (7,4 M) victimes, 65 % femmes / 35 % hommes, 3 enfants par classe. 90 % favorables à l'imprescriptibilité. <a href="https://facealinceste.fr/blog/enquete/sondage-ipsos-2023" target="_blank" rel="noopener">facealinceste.fr</a></li>
+      <li><strong style="color:rgba(247,245,240,0.7)">Sondage Ipsos pour AIVI, mai 2010</strong> — 98 % dépression, +50 % tentatives de suicide. <a href="https://www.ipsos.com/fr-fr/linceste-un-drame-qui-poursuit-ses-victimes-toute-leur-vie" target="_blank" rel="noopener">ipsos.com</a></li>
+      <li><strong style="color:rgba(247,245,240,0.7)">Fondation Jean-Jaurès, avr. 2026</strong> — Synthèse sur les victimes d'hier et d'aujourd'hui. Confirme : 1 % condamnations (citant CIIVISE nov. 2023), 50 % tentatives de suicide. <a href="https://www.jean-jaures.org/publication/victimes-dhier-et-daujourdhui-deux-priorites-pour-une-veritable-reponse-publique-face-a-linceste/" target="_blank" rel="noopener">jean-jaures.org</a></li>
+      <li><strong style="color:rgba(247,245,240,0.7)">Infostat Justice n°205, nov. 2025</strong> — Viol et agression sexuelle sur mineur 2017-2024. Confirme : 8,5 ans âge moyen au début des violences. <a href="https://www.justice.gouv.fr/sites/default/files/2025-11/Infostat_Justice_205.pdf" target="_blank" rel="noopener">justice.gouv.fr</a></li>
+      <li><strong style="color:rgba(247,245,240,0.7)">Édouard Durand, co-président CIIVISE, JDD</strong> — "70 % de plaintes classées sans suite et 1 000 condamnations par an pour 160 000 victimes."</li>
+      <li><strong style="color:rgba(247,245,240,0.7)">Sénat, PPL n°127, exposé des motifs, nov. 2025</strong> — "Moins de 1 % des plaintes aboutissent à une condamnation." 75 % des témoignages CIIVISE prescrits. <a href="https://www.senat.fr/leg/exposes-des-motifs/ppl25-127-expose.html" target="_blank" rel="noopener">senat.fr</a></li>
+      <li><strong style="color:rgba(247,245,240,0.7)">PPL intégrale AN n°2169, déc. 2025</strong> — 109 députés, 8 groupes, 94 % de classements sans suite pour viols. <a href="https://www.assemblee-nationale.fr/dyn/17/textes/l17b2169_proposition-loi" target="_blank" rel="noopener">assemblee-nationale.fr</a></li>
+      <li><strong style="color:rgba(247,245,240,0.7)">Enquête Parents protecteurs–complices, Face à l'inceste, 2022</strong> — 5 % des pères et 6 % des mères déposent plainte après révélation.</li>
+      <li><strong style="color:rgba(247,245,240,0.7)">CEPEJ, rapport oct. 2024 (données 2022)</strong> — 3,2 procureurs/100 000 hab. (médiane EU : 11,2), 11,3 juges (médiane : 17,6), 0,20 % PIB (médiane : 0,28 %), 6,4 affaires/100 hab. (médiane : 2,3), 75 % affaires classées auteur non identifié. <a href="https://www.justice.gouv.fr/actualites/espace-presse/publication-du-rapport-2024-commission-europeenne-levaluation-systemes-judiciaires" target="_blank" rel="noopener">justice.gouv.fr</a></li>
+      <li><strong style="color:rgba(247,245,240,0.7)">Syndicat Unité Magistrats SNM-FO, oct. 2024</strong> — Rabot de 328 M€ sur le budget justice 2024. <a href="https://unite-magistrats.org/publications/budget-justice-2025-des-coupes-budgetaires-et-un-manque-de-vision-strategique-persistant" target="_blank" rel="noopener">unite-magistrats.org</a></li>
+      <li><strong style="color:rgba(247,245,240,0.7)">G. Lopez, Institut de victimologie de Paris, 2015</strong> — ×15 tentatives de suicide, ×4 dépression vs population générale.</li>
+      <li><strong style="color:rgba(247,245,240,0.7)">Sécurité Routière, bilan 2023</strong> — 3 524 tués, 195 000 accidentés.</li>
+      <li><strong style="color:rgba(247,245,240,0.7)">Institut National du Cancer, 2023</strong> — 433 000 nouveaux cas/an. <a href="https://www.e-cancer.fr" target="_blank" rel="noopener">e-cancer.fr</a></li>
+    </ul>
+  </div>
+</div>
+<div class="footer">
+  <span class="footer-note">Page de sensibilisation · Données issues de sources officielles françaises · Mise à jour : juin 2026</span>
+  <span class="footer-note">Cette page ne constitue pas un acte de conseil juridique ou médical</span>
+</div>
+</footer>
+
+<script>
+// ── TICKER : victimes depuis minuit ──────────────────────
+const RATE_PER_DAY = 160000 / 365;
+const RATE_PER_MS  = RATE_PER_DAY / (24 * 60 * 60 * 1000);
+// Coût du déni : 9,7 Mds€/an = 307,44 €/s
+const COUT_PER_S   = 9700000000 / (365 * 24 * 3600);
+
+function getMsSinceMidnight() {
+  const now = new Date(), midnight = new Date(now);
+  midnight.setHours(0, 0, 0, 0);
+  return now - midnight;
+}
+
+const tickerEl = document.getElementById('ticker-val');
+const coutEl   = document.getElementById('ticker-cost');
+
+function updateTicker() {
+  const ms = getMsSinceMidnight();
+  tickerEl.textContent = Math.floor(ms * RATE_PER_MS).toLocaleString('fr-FR');
+  if (coutEl) {
+    const euros = Math.floor(ms / 1000 * COUT_PER_S);
+    coutEl.textContent = euros.toLocaleString('fr-FR') + ' €';
+  }
+  requestAnimationFrame(updateTicker);
+}
+requestAnimationFrame(updateTicker);
+
+// ── COMPTEUR COÛT DU DÉNI (section dédiée) ──────────────
+const coutValEl = document.getElementById('cout-val');
+function updateCout() {
+  if (!coutValEl) return;
+  const euros = Math.floor(getMsSinceMidnight() / 1000 * COUT_PER_S);
+  coutValEl.textContent = euros.toLocaleString('fr-FR') + ' €';
+  requestAnimationFrame(updateCout);
+}
+requestAnimationFrame(updateCout);
+
+// ── COMPTEUR INTERACTIF ──────────────────────────────────
+const counters = {
+  minute:  { main: '< 1', compare: '< 0,01', ctx: 'En une seule minute, en France', cctx: 'Décès sur la route sur la même période' },
+  heure:   { main: Math.round(160000/8760), compare: (3524/8760).toFixed(2), ctx: 'En une seule heure, en France', cctx: 'Décès sur la route sur la même période' },
+  jour:    { main: Math.round(160000/365), compare: Math.round(3524/365), ctx: 'En un seul jour, dans toute la France', cctx: 'Décès sur la route sur la même période (3 524 en 2023)' },
+  semaine: { main: Math.round(160000/52),  compare: Math.round(3524/52),  ctx: 'En une semaine, dans toute la France', cctx: 'Décès sur la route sur la même période' },
+  mois:    { main: Math.round(160000/12),  compare: Math.round(3524/12),  ctx: 'En un mois, dans toute la France', cctx: 'Décès sur la route sur la même période' },
+};
+const mainEl   = document.getElementById('counter-main');
+const ctxEl    = document.getElementById('counter-ctx');
+const cmpEl    = document.getElementById('counter-compare');
+const cmpCtxEl = document.getElementById('counter-compare-ctx');
+
+document.querySelectorAll('.counter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.counter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const d = counters[btn.dataset.unit];
+    mainEl.textContent = d.main; ctxEl.textContent = d.ctx;
+    cmpEl.textContent = d.compare; cmpCtxEl.textContent = d.cctx;
+  });
+});
+
+// ── TABS RESSOURCES ──────────────────────────────────────
+document.querySelectorAll('.res-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.res-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+    document.querySelectorAll('.res-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active'); tab.setAttribute('aria-selected','true');
+    document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+  });
+});
+
+// ── ANIMATIONS BARRES ────────────────────────────────────
+const firedSections = new Set();
+function fireAllBarsIn(container) {
+  if (firedSections.has(container)) return;
+  firedSections.add(container);
+  container.querySelectorAll('.funnel-bar-fill').forEach(el => { el.style.width = el.dataset.width; });
+  container.querySelectorAll('.bar-fill').forEach(el => { el.style.width = (el.dataset.pct || '0') + '%'; });
+  container.querySelectorAll('.jbar-fill').forEach(el => { el.style.width = (el.dataset.pct || '0') + '%'; });
+}
+function checkVisibility() {
+  document.querySelectorAll('#impunite, #comparaisons, #justice, .counter-section').forEach(s => {
+    if (firedSections.has(s)) return;
+    const r = s.getBoundingClientRect();
+    if (r.top < window.innerHeight && r.bottom > 0) fireAllBarsIn(s);
+  });
+}
+const pollInterval = setInterval(() => { checkVisibility(); if (firedSections.size >= 4) clearInterval(pollInterval); }, 200);
+window.addEventListener('scroll', checkVisibility, { passive: true });
+document.addEventListener('scroll', checkVisibility, { passive: true });
+window.addEventListener('load', checkVisibility);
+setTimeout(checkVisibility, 100); setTimeout(checkVisibility, 500); setTimeout(checkVisibility, 1000);
+
+// ── B — GÉNÉRATEUR D'EMAIL ───────────────────────────────
+let eluGeneratedCount = 0;
+
+// Département → nom affiché + lien AN
+const deptData = {
+  '01':'l\'Ain','02':'l\'Aisne','03':'l\'Allier','04':'les Alpes-de-Haute-Provence','05':'les Hautes-Alpes','06':'les Alpes-Maritimes','07':'l\'Ardèche','08':'les Ardennes','09':'l\'Ariège','10':'l\'Aube','11':'l\'Aude','12':'l\'Aveyron','13':'les Bouches-du-Rhône','14':'le Calvados','15':'le Cantal','16':'la Charente','17':'la Charente-Maritime','18':'le Cher','19':'la Corrèze','21':'la Côte-d\'Or','22':'les Côtes-d\'Armor','23':'la Creuse','24':'la Dordogne','25':'le Doubs','26':'la Drôme','27':'l\'Eure','28':'l\'Eure-et-Loir','29':'le Finistère','2A':'la Corse-du-Sud','2B':'la Haute-Corse','30':'le Gard','31':'la Haute-Garonne','32':'le Gers','33':'la Gironde','34':'l\'Hérault','35':'l\'Ille-et-Vilaine','36':'l\'Indre','37':'l\'Indre-et-Loire','38':'l\'Isère','39':'le Jura','40':'les Landes','41':'le Loir-et-Cher','42':'la Loire','43':'la Haute-Loire','44':'la Loire-Atlantique','45':'le Loiret','46':'le Lot','47':'le Lot-et-Garonne','48':'la Lozère','49':'le Maine-et-Loire','50':'la Manche','51':'la Marne','52':'la Haute-Marne','53':'la Mayenne','54':'la Meurthe-et-Moselle','55':'la Meuse','56':'le Morbihan','57':'la Moselle','58':'la Nièvre','59':'le Nord','60':'l\'Oise','61':'l\'Orne','62':'le Pas-de-Calais','63':'le Puy-de-Dôme','64':'les Pyrénées-Atlantiques','65':'les Hautes-Pyrénées','66':'les Pyrénées-Orientales','67':'le Bas-Rhin','68':'le Haut-Rhin','69':'le Rhône','70':'la Haute-Saône','71':'la Saône-et-Loire','72':'la Sarthe','73':'la Savoie','74':'la Haute-Savoie','75':'Paris','76':'la Seine-Maritime','77':'la Seine-et-Marne','78':'les Yvelines','79':'les Deux-Sèvres','80':'la Somme','81':'le Tarn','82':'le Tarn-et-Garonne','83':'le Var','84':'le Vaucluse','85':'la Vendée','86':'la Vienne','87':'la Haute-Vienne','88':'les Vosges','89':'l\'Yonne','90':'le Territoire de Belfort','91':'l\'Essonne','92':'les Hauts-de-Seine','93':'la Seine-Saint-Denis','94':'le Val-de-Marne','95':'le Val-d\'Oise','971':'la Guadeloupe','972':'la Martinique','973':'la Guyane','974':'la Réunion','976':'Mayotte'
+};
+
+const emailTemplates = {
+
+  prescriptibilite: (nom, deptNom, deptCode) =>
+`${nom}
+Citoyen·ne de ${deptNom} (département ${deptCode})
+
+Madame la Députée, Monsieur le Député,
+
+Je me permets de vous adresser ce courrier pour vous soumettre une préoccupation qui, je l'espère, retiendra votre attention : l'imprescriptibilité des crimes d'inceste commis sur mineurs.
+
+La CIIVISE (Commission Indépendante sur l'Inceste et les Violences Sexuelles faites aux Enfants) a rendu public en novembre 2023 un rapport fondé sur 30 000 témoignages. Il établit que 7,4 millions de Français adultes ont été victimes d'inceste dans leur enfance — soit 11 % de la population. Parmi les témoignages recueillis, 75 % portaient sur des faits prescrits au moment de la prise de parole (Sénat, PPL n°127, exposé des motifs, novembre 2025). La prescription légale prive ainsi la grande majorité des victimes de tout accès à la justice — non en raison de l'absence de preuves, mais uniquement du fait du temps écoulé entre des violences subies dans l'enfance et la capacité, souvent tardive, d'en parler.
+
+Ce délai est documenté et compris. Les mécanismes de l'emprise, de la honte et de la dépendance affective à l'agresseur expliquent que la parole des victimes intervienne fréquemment des décennies après les faits. La loi actuelle ne prend pas en compte cette réalité clinique.
+
+La Proposition de loi intégrale contre les violences sexistes et sexuelles (AN n°2169, décembre 2025), cosignée par 109 député·es de 8 groupes politiques, prévoit l'imprescriptibilité des crimes d'inceste commis sur mineurs. Un sondage Ipsos réalisé pour l'association Face à l'inceste en octobre 2023 indique que 90 % des Français se déclarent favorables à cette mesure.
+
+Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ce sujet, et, le cas échéant, les démarches que vous entendez entreprendre pour que cette proposition soit inscrite à l'ordre du jour de l'Assemblée nationale.
+
+Je vous prie de croire, Madame la Députée, Monsieur le Député, à l'expression de ma haute considération.
+
+${nom}`,
+
+  ppl: (nom, deptNom, deptCode) =>
+`${nom}
+Citoyen·ne de ${deptNom} (département ${deptCode})
+
+Madame la Députée, Monsieur le Député,
+
+Je me permets de vous adresser ce courrier pour vous alerter sur l'absence d'inscription à l'ordre du jour de la Proposition de loi intégrale contre les violences sexistes et sexuelles (PPL AN n°2169, décembre 2025).
+
+Cette proposition a été cosignée par 109 député·es issus de 8 groupes politiques distincts. Elle constitue la traduction législative des 82 recommandations formulées par la CIIVISE à l'issue de deux années de travaux et de 30 000 témoignages recueillis. En novembre 2023, le gouvernement n'en a retenu que 41. Quarante et une recommandations demeurent à ce jour sans suite réglementaire ou législative, tandis que 160 000 enfants continuent d'être victimes de violences sexuelles chaque année en France, le plus souvent dans un contexte intrafamilial (CIIVISE, rapport public, novembre 2023).
+
+Les données judiciaires disponibles sont préoccupantes : moins de 1 % des affaires d'inceste aboutissent à une condamnation (CIIVISE, 2023 ; Fondation Jean-Jaurès, avril 2026 ; Sénat, PPL n°127). Par ailleurs, la CIIVISE a évalué le coût social de l'impunité à 9,7 milliards d'euros par an (avis « Le coût du déni », 12 juin 2023), soit 194 fois le budget annuel que l'État consacre à la lutte contre les violences sexistes et sexuelles. Ces chiffres posent une question d'efficacité de la dépense publique autant qu'une question de principe.
+
+Je souhaiterais connaître votre position sur l'inscription de cette PPL à l'ordre du jour de l'Assemblée nationale, et votre appréciation des conditions dans lesquelles son examen pourrait être organisé dans les prochains mois.
+
+Dans l'attente de votre réponse, je vous prie d'agréer, Madame la Députée, Monsieur le Député, l'expression de mes respectueuses salutations.
+
+${nom}`,
+
+  ciivise: (nom, deptNom, deptCode) =>
+`${nom}
+Citoyen·ne de ${deptNom} (département ${deptCode})
+
+Madame la Députée, Monsieur le Député,
+
+Je me permets de vous adresser ce courrier pour vous soumettre une question relative à la mise en œuvre des recommandations de la CIIVISE, dont le suivi me semble insuffisant au regard de l'ampleur du problème documenté.
+
+En novembre 2023, la Commission Indépendante sur l'Inceste et les Violences Sexuelles faites aux Enfants a rendu un rapport fondé sur 30 000 témoignages et deux ans d'auditions. Elle y formule 82 recommandations concrètes, articulées autour de quatre axes : prévention, repérage, protection judiciaire et soutien aux victimes. Le gouvernement n'en a retenu que 41. Les recommandations écartées couvrent notamment l'imprescriptibilité des crimes sur mineurs, le renforcement des parquets spécialisés, la formation obligatoire des professionnels et le financement pérenne des associations d'aide aux victimes.
+
+Le bilan chiffré actuel est le suivant : 160 000 enfants victimes par an, moins de 1 % des affaires aboutissant à une condamnation, et un coût social évalué à 9,7 milliards d'euros annuels, dont les deux tiers résultent des conséquences à long terme sur la santé physique et mentale des victimes (CIIVISE, avis juin 2023). Ce constat n'est pas partisan : il est formulé par une instance créée par le gouvernement lui-même, dont les conclusions ont été saluées par l'ensemble du spectre politique lors de leur présentation.
+
+Je vous serais reconnaissant·e de bien vouloir m'indiquer votre position sur les recommandations non retenues, et si vous entendez, dans le cadre de votre mandat, soutenir leur adoption par voie législative ou réglementaire — que ce soit via la PPL intégrale (AN n°2169, déc. 2025) ou tout autre vecteur approprié.
+
+Avec l'expression de mes respectueuses salutations,
+
+${nom}`,
+
+  budget: (nom, deptNom, deptCode) =>
+`${nom}
+Citoyen·ne de ${deptNom} (département ${deptCode})
+
+Madame la Députée, Monsieur le Député,
+
+Je vous adresse ce courrier afin d'attirer votre attention sur une réalité budgétaire documentée qui me paraît appeler une réponse politique claire lors des prochaines discussions financières.
+
+En juin 2023, la CIIVISE a publié un avis intitulé « Le coût du déni », dans lequel elle évalue à 9,7 milliards d'euros le coût annuel pour la société française de l'impunité des agresseurs et de l'absence de soutien structuré aux victimes. Cette évaluation repose sur des données économiques et épidémiologiques reconnues ; elle intègre les pertes de productivité, les coûts de santé à long terme, les dépenses de justice et les prestations sociales. Les deux tiers de ce montant résultent des séquelles psychiques et physiques portées par les victimes tout au long de leur vie.
+
+Dans le même temps, le budget consacré par l'État à la lutte contre les violences sexistes et sexuelles — programme 137 de la DGCS et action CIPDR — s'établit à environ 50 millions d'euros par an (PLF 2024). L'écart entre le coût documenté du problème et les moyens publics qui lui sont alloués est d'un facteur 194.
+
+La CIIVISE formule cette conclusion sobrement : « Traiter le problème coûte moins cher que de l'ignorer. » Il ne s'agit pas d'une posture idéologique, mais d'un calcul économique construit par une commission gouvernementale, à partir de méthodologies reconnues en économie de la santé.
+
+Je souhaiterais connaître votre appréciation de cet écart budgétaire, et savoir si vous envisagez de défendre, dans le cadre des prochaines lois de finances, une révision substantielle des crédits alloués à la protection de l'enfance et au traitement judiciaire des violences sexuelles sur mineurs.
+
+Je vous prie d'agréer, Madame la Députée, Monsieur le Député, l'expression de mes respectueuses salutations.
+
+${nom}`,
+
+  formation: (nom, deptNom, deptCode) =>
+`${nom}
+Citoyen·ne de ${deptNom} (département ${deptCode})
+
+Madame la Députée, Monsieur le Député,
+
+Je me permets de vous adresser ce courrier pour appeler votre attention sur un angle spécifique de la politique de protection de l'enfance : la formation des professionnels au repérage des violences sexuelles sur mineurs.
+
+La CIIVISE a documenté que 92 % des enfants qui révèlent des violences ne reçoivent pas de réponse protectrice de la part des adultes professionnels qui les entourent (rapport intermédiaire, 2022-2023). Ce chiffre reflète un déficit de formation structurel qui touche l'ensemble des professions en contact régulier avec des enfants : personnels de l'Éducation nationale, professionnels de santé, travailleurs sociaux, officiers de police judiciaire, magistrats.
+
+Les outils existent et sont disponibles. Le programme pédagogique « Mélissa et les autres », conçu par la CIIVISE, est en accès libre et a été téléchargé par plus de 8 000 organismes de formation. Les ressources produites par la MIPROF (Mission Interministérielle pour la Protection des Femmes) couvrent les professionnels de santé et du droit. Ce qui fait défaut, c'est le cadre légal rendant cette formation obligatoire et son financement garanti dans la durée.
+
+La Proposition de loi intégrale contre les violences sexistes et sexuelles (AN n°2169, décembre 2025) prévoit précisément cette obligation. En l'absence d'inscription à l'ordre du jour, la mesure demeure inappliquée : les professionnels continuent d'agir sans socle commun de formation sur un sujet qui touche statistiquement au moins un enfant dans chaque classe de trente élèves.
+
+Pourriez-vous me faire connaître votre position sur cette mesure, et les initiatives que vous envisagez de soutenir afin que la formation au repérage des violences sexuelles sur mineurs devienne effective et obligatoire ?
+
+Dans l'attente de votre réponse, je vous prie d'agréer, Madame la Députée, Monsieur le Député, l'expression de mes respectueuses salutations.
+
+${nom}`,
+
+  signalement: (nom, deptNom, deptCode) =>
+`${nom}
+Citoyen·ne de ${deptNom} (département ${deptCode})
+
+Madame la Députée, Monsieur le Député,
+
+Je vous adresse ce courrier pour appeler votre attention sur le traitement judiciaire des plaintes pour violences sexuelles sur mineurs, et sur les réformes qui me semblent nécessaires pour remédier à une situation dont les données chiffrées sont, à ce stade, particulièrement préoccupantes.
+
+Plusieurs sources convergentes permettent d'établir le constat suivant. Édouard Durand, co-président de la CIIVISE, relevait que 70 % des plaintes pour violences sexuelles sur mineurs sont classées sans suite. Au terme du parcours judiciaire complet, moins de 1 % des affaires d'inceste aboutissent à une condamnation (CIIVISE, novembre 2023 ; Sénat, PPL n°127, novembre 2025 ; Fondation Jean-Jaurès, avril 2026). Ce résultat ne s'explique pas principalement par la faiblesse des dossiers ou l'absence de preuves, mais par des contraintes structurelles documentées.
+
+La France compte en effet 3,2 procureurs pour 100 000 habitants, contre une médiane européenne de 11,2 et une moyenne de 12,2 (Commission Européenne pour l'efficacité de la justice — CEPEJ, rapport octobre 2024, données 2022). Chaque magistrat du parquet français traite une charge de travail près de trois fois supérieure à la médiane européenne. Ce contexte est aggravé par la réduction de 328 millions d'euros du budget du ministère de la Justice intervenue par décret en 2024.
+
+Les victimes déposent plainte. La capacité institutionnelle de traiter ces plaintes dans des délais et avec des moyens d'investigation adaptés est, en l'état, insuffisante. Il s'agit d'une question de politique budgétaire et d'organisation judiciaire autant que d'une question de droit.
+
+Je vous serais reconnaissant·e de bien vouloir me préciser votre position sur le renforcement des moyens des parquets spécialisés dans les affaires de crimes sexuels sur mineurs, ainsi que sur les dispositions de la PPL intégrale (AN n°2169) relatives à la réforme du traitement judiciaire de ces plaintes.
+
+Avec l'expression de mes respectueuses salutations,
+
+${nom}`,
+};
+
+const generateBtn = document.getElementById('elu-generate-btn');
+const outputDiv   = document.getElementById('elu-output');
+const emailBox    = document.getElementById('elu-email-box');
+const copyBtn     = document.getElementById('elu-copy-btn');
+const counterEl   = document.getElementById('elu-counter');
+const deptLinkEl  = document.getElementById('elu-dept-link');
+
+if (generateBtn) {
+  generateBtn.addEventListener('click', () => {
+    const nom       = document.getElementById('elu-nom').value.trim() || '[Votre prénom et nom]';
+    const deptCode  = document.getElementById('elu-dept').value;
+    const sujet     = document.getElementById('elu-sujet').value;
+    if (!deptCode) { document.getElementById('elu-dept').focus(); return; }
+    if (!sujet)    { document.getElementById('elu-sujet').focus(); return; }
+    const deptNom   = deptData[deptCode] || ('le département ' + deptCode);
+    const template  = emailTemplates[sujet];
+    if (!template) return;
+    const text = template(nom, deptNom, deptCode);
+    emailBox.textContent = text;
+    outputDiv.classList.add('visible');
+    // Show link to find deputies for this department
+    if (deptLinkEl) {
+      // L'AN ne filtre pas par ?departement= — on pointe vers la recherche par code postal
+      deptLinkEl.innerHTML = `→ <a href="https://www.assemblee-nationale.fr/dyn/vos-deputes#recherche" target="_blank" rel="noopener">Trouver les député·es de ${deptNom} sur assemblee-nationale.fr</a>`;
+    }
+    eluGeneratedCount++;
+    if (counterEl) {
+      counterEl.innerHTML = `<strong>${eluGeneratedCount}</strong> courrier${eluGeneratedCount > 1 ? 's' : ''} généré${eluGeneratedCount > 1 ? 's' : ''} depuis le chargement de cette page. — 🔒 Aucune donnée conservée.`;
+    }
+    outputDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    copyBtn.textContent = 'Copier'; copyBtn.classList.remove('copied');
+  });
+}
+
+if (copyBtn) {
+  copyBtn.addEventListener('click', () => {
+    const text = emailBox.textContent;
+    if (!text) return;
+    navigator.clipboard.writeText(text).then(() => {
+      copyBtn.textContent = 'Copié ✓'; copyBtn.classList.add('copied');
+      setTimeout(() => { copyBtn.textContent = 'Copier'; copyBtn.classList.remove('copied'); }, 2500);
+    }).catch(() => {
+      const sel = window.getSelection(), range = document.createRange();
+      range.selectNodeContents(emailBox); sel.removeAllRanges(); sel.addRange(range);
+      document.execCommand('copy');
+      copyBtn.textContent = 'Copié ✓'; copyBtn.classList.add('copied');
+      setTimeout(() => { copyBtn.textContent = 'Copier'; copyBtn.classList.remove('copied'); }, 2500);
+    });
+  });
+}
+
+// ── D — GÉNÉRATEUR D'IMAGE À PARTAGER ───────────────────
+const shareData = [
+  { stat: '7,4 millions', label: 'de Français adultes victimes d\'inceste', sublabel: '1 personne sur 10', source: 'Ipsos · Face à l\'inceste, oct. 2023' },
+  { stat: '160 000', label: 'enfants victimes chaque année en France', sublabel: 'soit 1 enfant toutes les 3 minutes', source: 'CIIVISE, rapport public nov. 2023' },
+  { stat: '< 1 %', label: 'des affaires d\'inceste aboutissent', sublabel: 'à une condamnation', source: 'CIIVISE 2023 · Sénat PPL n°127, 2025' },
+  { stat: '9,7 milliards €', label: 'le coût annuel du déni', sublabel: 'pour la société française', source: 'CIIVISE, avis "Le coût du déni", juin 2023' },
+  { stat: '92 %', label: 'des enfants qui parlent', sublabel: 'ne reçoivent pas de réponse protectrice', source: 'CIIVISE, rapport intermédiaire 2022–2023' },
+  { stat: '97 %', label: 'des auteurs d\'inceste sont des hommes', sublabel: 'tous milieux sociaux confondus', source: 'CIIVISE 2023 · Enquête Virage, Ined 2015' },
+];
+
+let currentShareIdx = 0;
+const overlay   = document.getElementById('share-overlay');
+const canvas    = document.getElementById('share-canvas');
+const dlBtn     = document.getElementById('share-dl-btn');
+const closeBtn  = document.getElementById('share-close-btn');
+
+function openShareModal(idx) {
+  currentShareIdx = idx;
+  drawShareImage(idx);
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeShareModal() {
+  overlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+if (closeBtn) closeBtn.addEventListener('click', closeShareModal);
+if (overlay)  overlay.addEventListener('click', e => { if (e.target === overlay) closeShareModal(); });
+
+function drawShareImage(idx) {
+  if (!canvas) return;
+  const d   = shareData[idx];
+  const ctx = canvas.getContext('2d');
+  const W = 1080, H = 1080;
+  canvas.width = W; canvas.height = H;
+
+  // Background
+  ctx.fillStyle = '#080312';
+  ctx.fillRect(0, 0, W, H);
+
+  // Top accent line
+  ctx.fillStyle = '#571FEA';
+  ctx.fillRect(0, 0, W, 6);
+
+  // Noise texture (subtle grid)
+  ctx.strokeStyle = 'rgba(87,31,234,0.07)';
+  ctx.lineWidth = 1;
+  for (let x = 0; x < W; x += 60) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+  for (let y = 0; y < H; y += 60) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+
+  // Eyebrow
+  ctx.fillStyle = 'rgba(87,31,234,0.6)';
+  ctx.fillRect(80, 120, 40, 2);
+  ctx.fillStyle = 'rgba(245,243,250,0.4)';
+  ctx.font = '500 22px "DM Mono", monospace';
+  ctx.letterSpacing = '0.12em';
+  ctx.fillText('INCESTE EN FRANCE · DONNÉES OFFICIELLES', 135, 128);
+  ctx.letterSpacing = '0';
+
+  // Main stat
+  ctx.fillStyle = '#571FEA';
+  ctx.font = `bold ${d.stat.length > 8 ? '120' : '160'}px "DM Serif Display", Georgia, serif`;
+  ctx.textAlign = 'left';
+  ctx.fillText(d.stat, 80, 360);
+
+  // Label
+  ctx.fillStyle = '#F5F3FA';
+  ctx.font = '500 52px "Inter", sans-serif';
+  const labelLines = wrapText(ctx, d.label, W - 160);
+  labelLines.forEach((line, i) => ctx.fillText(line, 80, 460 + i * 68));
+
+  // Sublabel
+  ctx.fillStyle = 'rgba(245,243,250,0.55)';
+  ctx.font = '400 40px "Inter", sans-serif';
+  const subY = 460 + labelLines.length * 68 + 30;
+  ctx.fillText(d.sublabel, 80, subY);
+
+  // Source
+  ctx.fillStyle = 'rgba(245,243,250,0.3)';
+  ctx.font = '400 26px "DM Mono", monospace';
+  ctx.fillText('Source : ' + d.source, 80, H - 130);
+
+  // URL
+  ctx.fillStyle = 'rgba(87,31,234,0.8)';
+  ctx.fillRect(80, H - 100, W - 160, 1);
+  ctx.fillStyle = 'rgba(245,243,250,0.45)';
+  ctx.font = '400 24px "DM Mono", monospace';
+  ctx.fillText('inceste-france.org · Libre de diffusion · Sensibilisation non commerciale', 80, H - 60);
+
+  ctx.textAlign = 'left';
+}
+
+function wrapText(ctx, text, maxW) {
+  const words = text.split(' '), lines = [];
+  let cur = '';
+  for (const w of words) {
+    const test = cur ? cur + ' ' + w : w;
+    if (ctx.measureText(test).width > maxW && cur) { lines.push(cur); cur = w; }
+    else cur = test;
+  }
+  if (cur) lines.push(cur);
+  return lines;
+}
+
+if (dlBtn) {
+  dlBtn.addEventListener('click', () => {
+    const a = document.createElement('a');
+    a.download = `inceste-france-chiffre-${currentShareIdx + 1}.png`;
+    a.href = canvas.toDataURL('image/png');
+    a.click();
+  });
+}
+</script>
+</body>
+ <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "284b55177d064f73b5eeadfce08342cc"}'></script><!-- End Cloudflare Web Analytics -->
+</html>
