@@ -26,7 +26,7 @@
 
   /* HERO */
   .hero { background: var(--ink); color: var(--paper); overflow: hidden; position: relative; min-height: 100vh; display: flex; flex-direction: column; padding-top: 42px; }
-  .hero-nav { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 4rem; border-bottom: 1px solid rgba(255,255,255,0.12); flex-shrink: 0; position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(13,10,26,0.97); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+  .hero-nav { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 4rem; border-bottom: 1px solid rgb(88, 31, 234); flex-shrink: 0; position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgb(88, 31, 234); }
   .hero-nav .logo { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,245,240,0.5); }
   .hero-nav .nav-links { display: flex; gap: 0.5rem; list-style: none; }
   .hero-nav .nav-links a { font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.6); text-decoration: none; padding: 0.35rem 0.9rem; border-radius: 2rem; border: 1px solid transparent; transition: all 0.18s; font-weight: 500; }
@@ -358,7 +358,6 @@
 
 <!-- NAV FIXE -->
 <nav class="hero-nav">
-  <span class="logo">Inceste France — Données & Ressources</span>
   <ul class="hero-nav nav-links">
     <li><a href="#chiffres">Chiffres</a></li>
     <li><a href="#mythes">Mythes</a></li>
@@ -373,7 +372,6 @@
 <!-- HERO -->
 <header class="hero" id="top">
   <div class="hero-body">
-    <p class="hero-eyebrow">Rapport CIIVISE 2023 · Sondage Ipsos · CEPEJ 2024</p>
     <h1 class="hero-headline">L'inceste<br><em>n'est pas</em><br>un tabou.<br>C'est un crime.</h1>
     <p class="hero-sub">En France, 1 personne sur 10 a été victime d'inceste. Les données officielles dressent un état des lieux sans équivoque — et pourtant largement ignoré.</p>
     <span class="hero-scroll">Défiler pour découvrir les données</span>
@@ -1541,7 +1539,7 @@ function drawShareImage(idx) {
   ctx.fillRect(80, H - 100, W - 160, 1);
   ctx.fillStyle = 'rgba(245,243,250,0.45)';
   ctx.font = '400 24px "DM Mono", monospace';
-  ctx.fillText('inceste-france.org · Libre de diffusion · Sensibilisation non commerciale', 80, H - 60);
+  ctx.fillText('unenfantsurdix.com · Libre de diffusion · Sensibilisation non commerciale', 80, H - 60);
 
   ctx.textAlign = 'left';
 }
@@ -1561,7 +1559,7 @@ function wrapText(ctx, text, maxW) {
 if (dlBtn) {
   dlBtn.addEventListener('click', () => {
     const a = document.createElement('a');
-    a.download = `inceste-france-chiffre-${currentShareIdx + 1}.png`;
+    a.download = `unenfantsurdix-chiffre-${currentShareIdx + 1}.png`;
     a.href = canvas.toDataURL('image/png');
     a.click();
   });
