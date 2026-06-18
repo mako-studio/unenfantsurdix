@@ -2129,6 +2129,7 @@ if (dlBtn) {
     if (deptLinkEl) deptLinkEl.innerHTML = `→ <a href="https://www.assemblee-nationale.fr/dyn/vos-deputes#recherche" target="_blank" rel="noopener noreferrer">Trouver les député·es de ${deptNom}</a>`;
     eluGeneratedCount++;
     if (counterEl) counterEl.innerHTML = `<strong>${eluGeneratedCount}</strong> courrier${eluGeneratedCount > 1 ? 's' : ''} généré${eluGeneratedCount > 1 ? 's' : ''} depuis le chargement. — 🔒 Aucune donnée conservée.`;
+    if (typeof umami !== 'undefined') umami.track('lettre_generee');
     outputDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     copyBtn.textContent = 'Copier'; copyBtn.classList.remove('copied');
   });
