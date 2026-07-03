@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "description": "{{ site.description }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "inLanguage": "fr"
+}
+</script>
+</head>
+<body>
+
+{% include nav.html %}
+
+<main id="main-content">
+{{ content }}
+</main>
+
+{% include partager.html %}
+
+{% include share-overlay.html %}
+
+{% include footer-sources.html %}
+
+<!-- BOUTON FLOTTANT - ÉCRIRE À UN ÉLU -->
+<div class="elu-float" id="elu-float">
+  <button class="elu-float-close" id="elu-float-close" aria-label="Masquer ce bouton">×</button>
+  <a href="/ecrire-a-mon-elu/" class="elu-float-btn">✍️ Écrire à mon élu·e</a>
+</div>
+
+{% if page.url == '/votes-deputes/' %}
+<!-- Données embarquées : votes des député·es sur la protection de l'enfance (17e législature) -->
+<script type="application/json" id="votes-data">
+{% include votes-data.json %}
+</script>
+{% endif %}
+
+<script defer src="https://cloud.umami.is/script.js" data-website-id="db716e39-c53b-4a7a-a845-3e0b55be0218"></script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+{% if page.url == '/votes-deputes/' %}
+<script src="{{ '/assets/js/votes-logic.js' | relative_url }}"></script>
+{% endif %}
+
+</body>
+</html>

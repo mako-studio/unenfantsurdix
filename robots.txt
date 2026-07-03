@@ -1,4 +1,3 @@
+Sitemap: https://unenfantsurdix.com/sitemap.xml
 User-agent: *
 Allow: /
-
-Sitemap: https://unenfantsurdix.com/sitemap.xml

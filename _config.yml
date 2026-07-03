@@ -1,0 +1,10 @@
+title: "Un enfant sur dix"
+description: "Inceste en France : chiffres officiels CIIVISE 2023, mythes vs réalité, votes des député·es sur la protection de l'enfance, générateur de courrier aux élu·es et ressources d'aide aux victimes."
+url: "https://unenfantsurdix.com"
+lang: fr
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
