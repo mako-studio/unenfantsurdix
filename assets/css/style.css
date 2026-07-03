@@ -17,8 +17,15 @@
   /* HERO */
   .hero { background: var(--ink); color: var(--paper); overflow: hidden; position: relative; min-height: 100vh; display: flex; flex-direction: column; padding-top: 42px; }
   .hero-nav { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 4rem; border-bottom: 1px solid rgb(88, 31, 234); flex-shrink: 0; position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgb(88, 31, 234); }
-  .hero-nav .logo { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,245,240,0.5); }
+  .hero-nav .logo { font-family: var(--mono); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.92); flex-shrink: 0; }
+  .hero-nav .logo:hover { color: #fff; text-decoration: underline; }
   .hero-nav .nav-links { display: flex; gap: 0.5rem; list-style: none; }
+  .breadcrumb { padding: 88px 4rem 1rem; font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.03em; color: rgba(13,10,26,0.5); background: var(--paper); }
+  .breadcrumb a { color: var(--red); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb-sep { margin: 0 0.5rem; opacity: 0.5; }
+  .breadcrumb-current { color: rgba(13,10,26,0.75); }
+  @media (max-width:768px) { .breadcrumb { padding: 76px 1.5rem 0.85rem; font-size: 0.7rem; } }
   .hero-nav .nav-links a { font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.6); text-decoration: none; padding: 0.35rem 0.9rem; border-radius: 2rem; border: 1px solid transparent; transition: all 0.18s; font-weight: 500; }
   .hero-nav .nav-links a:hover { color: #fff; background: rgba(87,31,234,0.55); border-color: rgba(87,31,234,0.7); }
   .hero-body { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 6rem 4rem 4rem; }
@@ -341,6 +348,12 @@
   .mobile-menu a { font-family:var(--mono); font-size:1rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(247,245,240,0.65); text-decoration:none; padding:1rem 2rem; width:100%; max-width:320px; text-align:center; border:1px solid rgba(87,31,234,0.2); transition:all 0.15s; }
   .mobile-menu a:hover, .mobile-menu a:active { color:white; background:rgba(87,31,234,0.4); border-color:rgba(87,31,234,0.7); }
   .mobile-menu a.highlight { color:white; background:rgba(87,31,234,0.3); border-color:rgba(87,31,234,0.5); }
+
+  /* ── NAV DÉBORDEMENT (≤1300px) — bascule vers le menu burger avant que les 9 liens ne wrappent ── */
+  @media (max-width:1300px) {
+    .hero-nav .nav-links { display:none; }
+    .burger-btn { display:flex; }
+  }
 
   /* ── TABLETTE (≤1024px) ──────────────────────────────────── */
   @media (max-width:1024px) {
