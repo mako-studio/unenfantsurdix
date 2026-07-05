@@ -96,7 +96,10 @@ def main(amo_dir, scr_dir, out_path):
             o = organes.get(oref)
             label = (o and o['abrev']) or ORGANES_HISTORIQUES.get(oref) or 'Autre'
             dn = grp.find(f'{NS}vote/{NS}decompteNominatif')
-            v = ventil.setdefault(label, {'P':0,'C':0,'A':0,'N':0})
+            v = ventil.setdefault(label, {'E':0,'P':0,'C':0,'A':0,'N':0})
+            # Effectif officiel du groupe au moment du vote (nombreMembresGroupe) :
+            # permet d'afficher les absent·es (E - P - C - A - N) dans le graphique.
+            v['E'] += int(grp.findtext(NS+'nombreMembresGroupe') or 0)
             for cat, code in CAT:
                 node = dn.find(NS+cat)
                 if node is None: continue
