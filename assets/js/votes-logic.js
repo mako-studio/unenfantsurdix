@@ -148,29 +148,45 @@
 
     // Ventilation officielle du scrutin : groupe au moment du vote, tous les
     // votants comptés (y compris député·es ayant quitté l'Assemblée depuis).
+    // Base des pourcentages : l'effectif officiel du groupe au moment du vote
+    // (champ E = nombreMembresGroupe), pour que les absent·es soient visibles
+    // et comptés — un groupe dont 10 % des membres votent « pour » n'affiche
+    // plus 100 %.
     const groupCounts = s.ventilation;
+    function base(c) { return c.E || (c.P + c.C + c.A + c.N); } // repli si E absent (anciennes données)
     const order = Object.keys(groupCounts).sort((a, b) => {
       const ca = groupCounts[a], cb = groupCounts[b];
-      const expA = ca.P + ca.C + ca.A, expB = cb.P + cb.C + cb.A;
-      const pctA = expA ? ca.P / expA : -1, pctB = expB ? cb.P / expB : -1;
+      const bA = base(ca), bB = base(cb);
+      const pctA = bA ? ca.P / bA : -1, pctB = bB ? cb.P / bB : -1;
       return pctB - pctA;
     });
-    chartEl.innerHTML = order.map(code => {
+    chartEl.innerHTML = '<div class="gbar-legend">' +
+      '<span><span class="gbar-dot" style="background:#0EA882"></span>Pour</span>' +
+      '<span><span class="gbar-dot" style="background:#D33A4B"></span>Contre</span>' +
+      '<span><span class="gbar-dot" style="background:#E8A33C"></span>Abstention</span>' +
+      '<span><span class="gbar-dot" style="background:#8A84A3"></span>Non-votant·e</span>' +
+      '<span><span class="gbar-dot gbar-dot-abs"></span>Absent·e</span>' +
+      '</div>' +
+    order.map(code => {
       const c = groupCounts[code];
-      const exprimes = c.P + c.C + c.A;
-      const pct = exprimes ? Math.round(c.P / exprimes * 100) : null;
-      const segs = exprimes
-        ? '<div class="gbar-item-seg" style="width:' + (c.P/exprimes*100) + '%;background:#0EA882" title="' + c.P + ' pour"></div>' +
-          '<div class="gbar-item-seg" style="width:' + (c.C/exprimes*100) + '%;background:#D33A4B" title="' + c.C + ' contre"></div>' +
-          '<div class="gbar-item-seg" style="width:' + (c.A/exprimes*100) + '%;background:#E8A33C" title="' + c.A + ' abstention"></div>'
+      const eff = base(c);
+      const absents = Math.max(0, eff - c.P - c.C - c.A - c.N);
+      const pct = eff ? Math.round(c.P / eff * 100) : null;
+      const seg = (n, color, label) => n
+        ? '<div class="gbar-item-seg" style="width:' + (n/eff*100) + '%;background:' + color + '" title="' + n + ' ' + label + '"></div>'
+        : '';
+      const segs = eff
+        ? seg(c.P, '#0EA882', 'pour') + seg(c.C, '#D33A4B', 'contre') + seg(c.A, '#E8A33C', 'abstention') +
+          seg(c.N, '#8A84A3', 'non-votant·e·s') +
+          (absents ? '<div class="gbar-item-seg gbar-item-seg-abs" style="width:' + (absents/eff*100) + '%" title="' + absents + ' absent·e·s"></div>' : '')
         : '';
       return '<div class="gbar-item">' +
-        '<div class="gbar-item-top"><span class="gbar-item-name">' + code + '</span><span class="gbar-item-pct">' + (pct === null ? 'n/d' : pct + '%') + '</span></div>' +
+        '<div class="gbar-item-top"><span class="gbar-item-name">' + code + '</span><span class="gbar-item-pct" title="Part du groupe ayant voté pour, absent·es compté·es">' + (pct === null ? 'n/d' : pct + '% pour') + '</span></div>' +
         '<div class="gbar-item-track">' + segs + '</div>' +
-        '<div class="gbar-item-count">' + c.P + ' pour · ' + c.C + ' contre · ' + c.A + ' abst. · ' + c.N + ' non-votant·e·s</div>' +
+        '<div class="gbar-item-count">' + c.P + ' pour · ' + c.C + ' contre · ' + c.A + ' abst. · ' + c.N + ' non-votant·e·s · ' + absents + ' absent·e·s — sur ' + eff + ' membres</div>' +
         '</div>';
     }).join('') +
-    '<p class="gbar-note">Ventilation officielle du scrutin : groupes au moment du vote, tous les votants comptés (y compris député·es remplacé·es ou parti·es depuis). Les absent·es ne figurent pas dans le décompte officiel.</p>';
+    '<p class="gbar-note">Ventilation officielle du scrutin : groupes et effectifs au moment du vote, tous les votants comptés (y compris député·es remplacé·es ou parti·es depuis). Les pourcentages sont calculés sur l\'effectif du groupe, absent·es incluses. « Absent·e » recouvre absence, empêchement, mission ou siège alors occupé par un·e suppléant·e — cela n\'équivaut pas à un vote contre.</p>';
   }
   selScrutin.addEventListener('change', () => renderChart(selScrutin.value));
   if (scrutinUids.length) { selScrutin.value = scrutinUids[scrutinUids.length - 1]; renderChart(selScrutin.value); }
