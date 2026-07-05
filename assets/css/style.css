@@ -429,13 +429,15 @@
   .vote-pill.C { background: #D33A4B; }
   .vote-pill.A { background: #E8A33C; }
   .vote-pill.N { background: #D8D5E3; }
+  .vote-pill.X { background: repeating-linear-gradient(45deg, #EDEBF2, #EDEBF2 3px, #FBFAFD 3px, #FBFAFD 6px); border: 1px solid #DDD9E6; }
   .vote-card-toggle { font-family: var(--mono); font-size: 0.66rem; color: var(--red); cursor: pointer; text-decoration: underline; background: none; border: none; padding: 0; }
   .vote-card-detail { display: none; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--border); font-size: 0.76rem; line-height: 1.6; }
   .vote-card-detail.open { display: block; }
   .vote-card-detail-row { display: flex; justify-content: space-between; gap: 0.75rem; padding: 0.35rem 0; border-bottom: 1px solid rgba(87,31,234,0.06); }
   .vote-card-detail-row span:first-child { flex: 1; min-width: 0; }
   .vote-card-detail-pos { font-family: var(--mono); font-weight: 600; flex-shrink: 0; }
-  .vote-card-detail-pos.P { color: #0EA882; } .vote-card-detail-pos.C { color: #D33A4B; } .vote-card-detail-pos.A { color: #b8791f; } .vote-card-detail-pos.N { color: var(--ink-3); }
+  .vote-card-detail-pos.P { color: #0EA882; } .vote-card-detail-pos.C { color: #D33A4B; } .vote-card-detail-pos.A { color: #b8791f; } .vote-card-detail-pos.N { color: var(--ink-3); } .vote-card-detail-pos.X { color: var(--ink-3); font-weight: 400; font-style: italic; }
+  .vote-map-note { display: block; font-size: 0.68rem; color: var(--ink-3); font-style: italic; margin-top: 0.15rem; }
   .votes-empty { padding: 3rem 1.5rem; text-align: center; color: var(--ink-3); font-family: var(--mono); font-size: 0.85rem; grid-column: 1/-1; background: white; }
 
   .votes-chart-block { background: var(--ink); color: var(--paper); padding: 2.5rem; margin-bottom: 2rem; }
@@ -451,6 +453,7 @@
   .gbar-item-track { height: 9px; border-radius: 5px; background: rgba(247,245,240,0.08); display: flex; overflow: hidden; }
   .gbar-item-seg { height: 100%; transition: width 0.6s ease; }
   .gbar-item-count { font-family: var(--mono); font-size: 0.62rem; color: rgba(247,245,240,0.4); margin-top: 0.3rem; }
+  .gbar-note { grid-column: 1/-1; font-size: 0.68rem; color: rgba(247,245,240,0.45); line-height: 1.5; margin-top: 0.5rem; }
 
   .votes-methodo { margin-top: 1rem; }
   .votes-methodo summary { cursor: pointer; font-family: var(--mono); font-size: 0.75rem; color: var(--red); text-transform: uppercase; letter-spacing: 0.05em; padding: 0.5rem 0; }
