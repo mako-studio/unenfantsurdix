@@ -459,6 +459,21 @@ if (dlBtn) {
   }
   if (deptSelEl && deputeSel && contactsDepts) deptSelEl.addEventListener('change', refreshDeputes);
 
+  // Pré-remplissage depuis l'URL — liens « Écrire à ce·tte député·e » du tracker
+  // de votes (/ecrire-a-mon-elu/?dept=69&circo=7)
+  if (deptSelEl && contactsDepts) {
+    const params = new URLSearchParams(window.location.search);
+    const pDept = params.get('dept'), pCirco = params.get('circo');
+    if (pDept && contactsDepts[pDept]) {
+      deptSelEl.value = pDept;
+      refreshDeputes();
+      if (pCirco && deputeSel && !deputeSel.disabled) {
+        const idx = contactsDepts[pDept].findIndex(d => d.circo === pCirco);
+        if (idx >= 0) deputeSel.value = String(idx);
+      }
+    }
+  }
+
   genBtn.addEventListener('click', () => {
     const nom      = (document.getElementById('elu-nom-t').value || '').trim();
     const deptCode = document.getElementById('elu-dept-t').value;

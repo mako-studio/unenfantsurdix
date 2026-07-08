@@ -117,7 +117,7 @@
         '<div class="vote-fingerprint">' + fingerprint(ref) + '</div>' +
         '<button class="vote-card-toggle" data-ref="' + ref + '">Voir le détail des 15 votes</button>' +
         '<div class="vote-card-detail" id="detail-' + ref + '">' + detailRows(ref) + '</div>' +
-        '<a href="/ecrire-a-mon-elu/" style="display:block;margin-top:0.6rem;text-align:center;font-size:0.85rem;font-weight:700;color:var(--red);text-decoration:none">✍️ Écrire à ce·tte député·e →</a></div>';
+        '<a href="/ecrire-a-mon-elu/?dept=' + encodeURIComponent(d.numDept) + '&circo=' + encodeURIComponent(d.circo) + '" style="display:block;margin-top:0.6rem;text-align:center;font-size:0.85rem;font-weight:700;color:var(--red);text-decoration:none">✍️ Écrire à ce·tte député·e →</a></div>';
     }).join('');
 
     if (!isFiltering && refs.length > 24) {
