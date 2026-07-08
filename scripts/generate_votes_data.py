@@ -58,6 +58,14 @@ def main(amo_dir, scr_dir, out_path):
         uid = r.findtext(NS+'uid')
         ident = r.find(f'{NS}etatCivil/{NS}ident')
         nom = f"{ident.findtext(NS+'prenom')} {ident.findtext(NS+'nom')}"
+        civ = (ident.findtext(NS+'civ') or '').strip()  # 'M.' ou 'Mme'
+        # Adresse mail officielle @assemblee-nationale.fr (référentiel AMO10)
+        email = ''
+        for adr in r.iter(NS+'adresse'):
+            val = adr.findtext(NS+'valElec') or ''
+            if (adr.findtext(NS+'typeLibelle') or '').strip() == 'Mèl' and val.endswith('@assemblee-nationale.fr'):
+                email = val.strip()
+                break
         mandat_ass, groupe = None, 'NI'
         for m in r.iter(NS+'mandat'):
             to, leg, fin = m.findtext(NS+'typeOrgane'), m.findtext(NS+'legislature'), m.findtext(NS+'dateFin')
@@ -72,6 +80,8 @@ def main(amo_dir, scr_dir, out_path):
         el = mandat_ass.find(NS+'election')
         deputes[uid] = {
             'nom': nom,
+            'civ': civ,
+            'email': email,
             'dept': el.findtext(f'{NS}lieu/{NS}departement'),
             'numDept': el.findtext(f'{NS}lieu/{NS}numDepartement'),
             'circo': el.findtext(f'{NS}lieu/{NS}numCirco'),
@@ -149,10 +159,32 @@ def main(amo_dir, scr_dir, out_path):
         'scrutins': scrutins,
         'votes': votes,
         'misesAuPoint': maps}
+    # --- deputes-contacts.json (générateur de courrier) ---
+    # Fichier léger écrit à côté de la sortie principale : liste des député·es
+    # en exercice avec adresse mail officielle, indexée par numéro de département.
+    # civ/email sont retirés de votes-data.json (inutiles sur la page votes).
+    contacts = {}
+    for d in deputes.values():
+        contacts.setdefault(d['numDept'], []).append({
+            'nom': d['nom'], 'civ': d['civ'], 'circo': d['circo'],
+            'groupe': d['groupe'], 'email': d['email']})
+    sans_mail = sum(1 for d in deputes.values() if not d['email'])
+    for d in deputes.values():
+        del d['civ'], d['email']
+
     with open(out_path, 'w') as f:
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
     print(f"OK : {len(deputes)} deputes, {len(groupes)} groupes, {len(SCRUTINS)} scrutins, "
           f"mises au point sur {len(maps)} scrutins -> {out_path} ({os.path.getsize(out_path)//1024} Ko)")
+    for lst in contacts.values():
+        lst.sort(key=lambda x: int(x['circo'] or 0))
+    contacts_path = os.path.join(os.path.dirname(out_path) or '.', 'deputes-contacts.json')
+    with open(contacts_path, 'w') as f:
+        json.dump({'meta': {'source': data['meta']['source'], 'genereLe': data['meta']['genereLe'],
+                            'note': 'Adresses mail officielles @assemblee-nationale.fr du referentiel AMO10.'},
+                   'departements': contacts}, f, ensure_ascii=False, separators=(',', ':'))
+    print(f"OK : deputes-contacts.json ({os.path.getsize(contacts_path)//1024} Ko), "
+          f"{sans_mail} depute(s) sans adresse mail dans AMO10")
 
 if __name__ == '__main__':
     if len(sys.argv) != 4:

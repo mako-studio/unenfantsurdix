@@ -46,10 +46,37 @@
 </script>
 {% endif %}
 
+{% if page.url == '/ecrire-a-mon-elu/' %}
+<!-- Données embarquées : contacts officiels des député·es (référentiel AMO10, open data AN) -->
+<script type="application/json" id="deputes-contacts">
+{% include deputes-contacts.json %}
+</script>
+{% endif %}
+
+{% if page.url == '/observatoire-ciivise/' %}
+<!-- Données embarquées : suivi officiel des 82 recommandations CIIVISE (bilan du 15 juin 2026, licence etalab-2.0) -->
+<script type="application/json" id="observatoire-data">
+{% include observatoire-data.json %}
+</script>
+{% endif %}
+
+{% if page.url == '/votes-senateurs/' %}
+<!-- Données embarquées : votes des sénateur·rices (pages officielles senat.fr + référentiel ODSEN) -->
+<script type="application/json" id="senat-votes-data">
+{% include senat-votes-data.json %}
+</script>
+{% endif %}
+
 <script defer src="https://cloud.umami.is/script.js" data-website-id="db716e39-c53b-4a7a-a845-3e0b55be0218"></script>
 <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 {% if page.url == '/votes-deputes/' %}
 <script src="{{ '/assets/js/votes-logic.js' | relative_url }}"></script>
+{% endif %}
+{% if page.url == '/observatoire-ciivise/' %}
+<script src="{{ '/assets/js/observatoire-logic.js' | relative_url }}"></script>
+{% endif %}
+{% if page.url == '/votes-senateurs/' %}
+<script src="{{ '/assets/js/votes-senat-logic.js' | relative_url }}"></script>
 {% endif %}
 
 </body>

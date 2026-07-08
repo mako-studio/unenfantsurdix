@@ -128,7 +128,18 @@ let eluGeneratedCount = 0;
 
 // Département → nom affiché + lien AN
 const deptData = {
-  '01':'l\'Ain','02':'l\'Aisne','03':'l\'Allier','04':'les Alpes-de-Haute-Provence','05':'les Hautes-Alpes','06':'les Alpes-Maritimes','07':'l\'Ardèche','08':'les Ardennes','09':'l\'Ariège','10':'l\'Aube','11':'l\'Aude','12':'l\'Aveyron','13':'les Bouches-du-Rhône','14':'le Calvados','15':'le Cantal','16':'la Charente','17':'la Charente-Maritime','18':'le Cher','19':'la Corrèze','21':'la Côte-d\'Or','22':'les Côtes-d\'Armor','23':'la Creuse','24':'la Dordogne','25':'le Doubs','26':'la Drôme','27':'l\'Eure','28':'l\'Eure-et-Loir','29':'le Finistère','2A':'la Corse-du-Sud','2B':'la Haute-Corse','30':'le Gard','31':'la Haute-Garonne','32':'le Gers','33':'la Gironde','34':'l\'Hérault','35':'l\'Ille-et-Vilaine','36':'l\'Indre','37':'l\'Indre-et-Loire','38':'l\'Isère','39':'le Jura','40':'les Landes','41':'le Loir-et-Cher','42':'la Loire','43':'la Haute-Loire','44':'la Loire-Atlantique','45':'le Loiret','46':'le Lot','47':'le Lot-et-Garonne','48':'la Lozère','49':'le Maine-et-Loire','50':'la Manche','51':'la Marne','52':'la Haute-Marne','53':'la Mayenne','54':'la Meurthe-et-Moselle','55':'la Meuse','56':'le Morbihan','57':'la Moselle','58':'la Nièvre','59':'le Nord','60':'l\'Oise','61':'l\'Orne','62':'le Pas-de-Calais','63':'le Puy-de-Dôme','64':'les Pyrénées-Atlantiques','65':'les Hautes-Pyrénées','66':'les Pyrénées-Orientales','67':'le Bas-Rhin','68':'le Haut-Rhin','69':'le Rhône','70':'la Haute-Saône','71':'la Saône-et-Loire','72':'la Sarthe','73':'la Savoie','74':'la Haute-Savoie','75':'Paris','76':'la Seine-Maritime','77':'la Seine-et-Marne','78':'les Yvelines','79':'les Deux-Sèvres','80':'la Somme','81':'le Tarn','82':'le Tarn-et-Garonne','83':'le Var','84':'le Vaucluse','85':'la Vendée','86':'la Vienne','87':'la Haute-Vienne','88':'les Vosges','89':'l\'Yonne','90':'le Territoire de Belfort','91':'l\'Essonne','92':'les Hauts-de-Seine','93':'la Seine-Saint-Denis','94':'le Val-de-Marne','95':'le Val-d\'Oise','971':'la Guadeloupe','972':'la Martinique','973':'la Guyane','974':'la Réunion','976':'Mayotte'
+  '01':'l\'Ain','02':'l\'Aisne','03':'l\'Allier','04':'les Alpes-de-Haute-Provence','05':'les Hautes-Alpes','06':'les Alpes-Maritimes','07':'l\'Ardèche','08':'les Ardennes','09':'l\'Ariège','10':'l\'Aube','11':'l\'Aude','12':'l\'Aveyron','13':'les Bouches-du-Rhône','14':'le Calvados','15':'le Cantal','16':'la Charente','17':'la Charente-Maritime','18':'le Cher','19':'la Corrèze','21':'la Côte-d\'Or','22':'les Côtes-d\'Armor','23':'la Creuse','24':'la Dordogne','25':'le Doubs','26':'la Drôme','27':'l\'Eure','28':'l\'Eure-et-Loir','29':'le Finistère','2A':'la Corse-du-Sud','2B':'la Haute-Corse','30':'le Gard','31':'la Haute-Garonne','32':'le Gers','33':'la Gironde','34':'l\'Hérault','35':'l\'Ille-et-Vilaine','36':'l\'Indre','37':'l\'Indre-et-Loire','38':'l\'Isère','39':'le Jura','40':'les Landes','41':'le Loir-et-Cher','42':'la Loire','43':'la Haute-Loire','44':'la Loire-Atlantique','45':'le Loiret','46':'le Lot','47':'le Lot-et-Garonne','48':'la Lozère','49':'le Maine-et-Loire','50':'la Manche','51':'la Marne','52':'la Haute-Marne','53':'la Mayenne','54':'la Meurthe-et-Moselle','55':'la Meuse','56':'le Morbihan','57':'la Moselle','58':'la Nièvre','59':'le Nord','60':'l\'Oise','61':'l\'Orne','62':'le Pas-de-Calais','63':'le Puy-de-Dôme','64':'les Pyrénées-Atlantiques','65':'les Hautes-Pyrénées','66':'les Pyrénées-Orientales','67':'le Bas-Rhin','68':'le Haut-Rhin','69':'le Rhône','70':'la Haute-Saône','71':'la Saône-et-Loire','72':'la Sarthe','73':'la Savoie','74':'la Haute-Savoie','75':'Paris','76':'la Seine-Maritime','77':'la Seine-et-Marne','78':'les Yvelines','79':'les Deux-Sèvres','80':'la Somme','81':'le Tarn','82':'le Tarn-et-Garonne','83':'le Var','84':'le Vaucluse','85':'la Vendée','86':'la Vienne','87':'la Haute-Vienne','88':'les Vosges','89':'l\'Yonne','90':'le Territoire de Belfort','91':'l\'Essonne','92':'les Hauts-de-Seine','93':'la Seine-Saint-Denis','94':'le Val-de-Marne','95':'le Val-d\'Oise','971':'la Guadeloupe','972':'la Martinique','973':'la Guyane','974':'la Réunion','975':'Saint-Pierre-et-Miquelon','976':'Mayotte','977':'Saint-Barthélemy et Saint-Martin','986':'Wallis-et-Futuna','987':'la Polynésie française','988':'la Nouvelle-Calédonie','099':'l\'étranger (Français établis hors de France)'
+};
+
+// Objets de mail par sujet (utilisés par le bouton « Ouvrir dans ma messagerie »)
+const emailSubjects = {
+  session2026: 'Inscription de la PPL intégrale à la session extraordinaire 2026',
+  prescriptibilite: 'Imprescriptibilité des crimes d\'inceste commis sur mineurs',
+  ppl: 'Inscription de la PPL intégrale contre les violences sexistes et sexuelles à l\'ordre du jour',
+  ciivise: 'Mise en œuvre des 82 recommandations de la CIIVISE',
+  budget: 'Budget consacré à la lutte contre les violences sexuelles faites aux enfants',
+  formation: 'Formation obligatoire des professionnels au repérage des violences',
+  signalement: 'Traitement judiciaire des violences sexuelles sur mineurs'
 };
 
 const emailTemplates = {
@@ -413,7 +424,40 @@ if (dlBtn) {
   const copyBtn   = document.getElementById('elu-copy-btn-t');
   const counterEl = document.getElementById('elu-counter-t');
   const deptLinkEl = document.getElementById('elu-dept-link-t');
+  const mailtoBtn = document.getElementById('elu-mailto-btn-t');
+  const deputeSel = document.getElementById('elu-depute-t');
   if (!genBtn) return;
+
+  // Contacts officiels des député·es (embarqués sur la page par le layout,
+  // source : référentiel AMO10, open data Assemblée nationale)
+  let contactsDepts = null;
+  const contactsRaw = document.getElementById('deputes-contacts');
+  if (contactsRaw) {
+    try { contactsDepts = JSON.parse(contactsRaw.textContent).departements; } catch (e) { contactsDepts = null; }
+  }
+
+  const deptSelEl = document.getElementById('elu-dept-t');
+  const deputeField = document.getElementById('elu-depute-field-t');
+  function refreshDeputes() {
+    if (!deputeSel || !contactsDepts) return;
+    const deptCode = deptSelEl.value;
+    const list = (deptCode && contactsDepts[deptCode]) || [];
+    deputeSel.innerHTML = '';
+    if (!deptCode || !list.length) {
+      // champ masqué tant qu'aucun département n'est choisi (sobriété du formulaire)
+      if (deputeField) deputeField.style.display = 'none';
+      deputeSel.disabled = true;
+      deputeSel.innerHTML = '<option value="">— Sélectionnez d\'abord un département —</option>';
+      return;
+    }
+    if (deputeField) deputeField.style.display = '';
+    deputeSel.disabled = false;
+    deputeSel.innerHTML = '<option value="">Je choisirai moi-même (courrier générique)</option>' +
+      list.map((d, i) =>
+        '<option value="' + i + '">Circo ' + d.circo + ' — ' + d.nom + ' (' + d.groupe + ')</option>'
+      ).join('');
+  }
+  if (deptSelEl && deputeSel && contactsDepts) deptSelEl.addEventListener('change', refreshDeputes);
 
   genBtn.addEventListener('click', () => {
     const nom      = (document.getElementById('elu-nom-t').value || '').trim();
@@ -423,14 +467,44 @@ if (dlBtn) {
     const deptNom  = deptData[deptCode] || ('le département ' + deptCode);
     const template = emailTemplates[sujet];
     if (!template) return;
-    emailBox.textContent = template(nom, deptNom, deptCode);
+
+    // Député·e ciblé·e (facultatif)
+    let depute = null;
+    if (deputeSel && contactsDepts && deputeSel.value !== '' && contactsDepts[deptCode]) {
+      depute = contactsDepts[deptCode][parseInt(deputeSel.value, 10)] || null;
+    }
+
+    let lettre = template(nom, deptNom, deptCode);
+    if (depute && depute.civ) {
+      // Adapte la civilité générique « Madame la Députée, Monsieur le Député »
+      const civilite = depute.civ === 'Mme' ? 'Madame la Députée' : 'Monsieur le Député';
+      lettre = lettre.split('Madame la Députée, Monsieur le Député').join(civilite);
+    }
+    emailBox.textContent = lettre;
     outputDiv.classList.add('visible');
-    if (deptLinkEl) deptLinkEl.innerHTML = `→ <a href="https://www.assemblee-nationale.fr/dyn/vos-deputes#recherche" target="_blank" rel="noopener noreferrer">Trouver les député·es de ${deptNom}</a>`;
+
+    if (depute && depute.email) {
+      if (deptLinkEl) deptLinkEl.innerHTML = '→ ' + depute.nom + ' · <a href="mailto:' + depute.email + '">' + depute.email + '</a>';
+      if (mailtoBtn) {
+        mailtoBtn.href = 'mailto:' + depute.email +
+          '?subject=' + encodeURIComponent(emailSubjects[sujet] || 'Protection de l\'enfance') +
+          '&body=' + encodeURIComponent(lettre);
+        mailtoBtn.style.display = '';
+      }
+    } else {
+      if (deptLinkEl) deptLinkEl.innerHTML = `→ <a href="https://www.assemblee-nationale.fr/dyn/vos-deputes#recherche" target="_blank" rel="noopener noreferrer">Trouver les député·es de ${deptNom}</a>`;
+      if (mailtoBtn) mailtoBtn.style.display = 'none';
+    }
+
     eluGeneratedCount++;
     if (counterEl) counterEl.innerHTML = `<strong>${eluGeneratedCount}</strong> courrier${eluGeneratedCount > 1 ? 's' : ''} généré${eluGeneratedCount > 1 ? 's' : ''} depuis le chargement. — 🔒 Aucune donnée conservée.`;
     if (typeof umami !== 'undefined') umami.track('lettre_generee');
     outputDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     copyBtn.textContent = 'Copier'; copyBtn.classList.remove('copied');
+  });
+
+  if (mailtoBtn) mailtoBtn.addEventListener('click', () => {
+    if (typeof umami !== 'undefined') umami.track('lettre_mailto');
   });
 
   copyBtn && copyBtn.addEventListener('click', () => {

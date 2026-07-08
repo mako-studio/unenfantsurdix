@@ -1,0 +1,46 @@
+<section id="votes-senateurs" class="votes-section" aria-labelledby="votes-senat-titre">
+  <div class="votes-inner">
+    <p class="section-eyebrow" aria-hidden="true">Le vote, pas l'intention</p>
+    <div class="chambre-toggle" role="navigation" aria-label="Choisir la chambre">
+      <a href="/votes-deputes/">Assemblée nationale</a>
+      <a href="/votes-senateurs/" class="active" aria-current="page">Sénat</a>
+    </div>
+    <h2 style="font-family:var(--serif);font-size:clamp(2rem, 4vw, 3.2rem);margin-bottom:1rem" id="votes-senat-titre">Comment vote votre sénateur·rice&nbsp;?</h2>
+    <p class="votes-intro">Ces 6 scrutins publics « sur l'ensemble » — sessions 2024-2025 et 2025-2026, périmètre aligné sur le tracker des député·es — couvrent les violences sexuelles, la protection de l'enfance et la justice des mineurs. Positions officielles uniquement, aucune interprétation. Contrairement à l'Assemblée, le Sénat ne distingue pas l'absence du non-vote : une seule catégorie officielle, « n'a pas pris part au vote ».</p>
+
+    <div class="votes-legend">
+      <span><span class="vote-pill P" aria-hidden="true"></span>Pour</span>
+      <span><span class="vote-pill C" aria-hidden="true"></span>Contre</span>
+      <span><span class="vote-pill A" aria-hidden="true"></span>Abstention</span>
+      <span><span class="vote-pill N" aria-hidden="true"></span>N'a pas pris part au vote (catégorie officielle, absence comprise)</span>
+      <span><span class="vote-pill X" aria-hidden="true"></span>Pas encore en fonction à cette date</span>
+    </div>
+
+    <div class="votes-toolbar">
+      <input type="text" id="senat-search" placeholder="Rechercher par nom ou circonscription (département)…" aria-label="Rechercher un·e sénateur·rice">
+      <select id="senat-filter-groupe" aria-label="Filtrer par groupe politique">
+        <option value="">Tous les groupes</option>
+      </select>
+    </div>
+    <p class="votes-count" id="senat-count" aria-live="polite"></p>
+    <div class="votes-grid" id="senat-grid"></div>
+
+    <div class="votes-chart-block">
+      <p class="votes-chart-title">Résultat par groupe politique, scrutin par scrutin</p>
+      <select class="votes-chart-select" id="senat-chart-select" aria-label="Choisir un scrutin à afficher"></select>
+      <div class="votes-chart-current" id="senat-chart-current"></div>
+      <div class="gbar-grid" id="senat-chart"></div>
+    </div>
+
+    <details class="votes-methodo">
+      <summary>Méthodologie et liste des 6 scrutins suivis</summary>
+      <div class="votes-methodo-content">
+        <p>Le Sénat ne publie pas ses scrutins en open data : les données ci-dessus sont extraites des pages officielles de chaque scrutin public (senat.fr/scrutin-public/). Le périmètre est aligné sur celui du tracker des député·es : scrutins publics relatifs à la protection de l'enfance, aux violences sexuelles et sexistes et aux mineurs depuis juillet 2024 — mais seuls les votes « sur l'ensemble » d'un texte sont retenus, comme à l'Assemblée. Beaucoup de textes du périmètre ont été adoptés à main levée au Sénat et ne laissent aucune trace nominative : ils ne peuvent pas figurer ici (c'est le cas notamment de la proposition de loi sur l'exposition des mineurs aux réseaux sociaux, présente dans le tracker Assemblée).</p>
+        <ul id="senat-scrutins-list"></ul>
+        <p>« N'a pas pris part au vote » est la catégorie officielle unique du Sénat : elle couvre sans distinction possible l'absence, l'empêchement, la délégation non exercée ou le choix de ne pas voter (dont le président de séance, par usage) — elle n'équivaut pas à un vote contre. Pour chaque groupe, pour + contre + abstentions + « n'a pas pris part au vote » = effectif du groupe au moment du vote. Le groupe affiché sur les fiches individuelles est le groupe actuel du/de la sénateur·rice (référentiel officiel ODSEN) ; le graphique par groupe utilise la ventilation officielle au moment de chaque vote, tous votants compris — y compris sénateur·rices ayant quitté le Sénat depuis, dont les votes ne sont pas attribués nominativement. Lorsqu'une mise au point a été publiée en séance, elle est signalée sous le scrutin — le vote enregistré fait foi.</p>
+        <p>Après le renouvellement partiel de septembre 2026 (sénatoriales), une partie des sénateur·rices de cette page ne siégera plus : les fiches seront alors mises à jour sur le modèle du traitement des ex-député·es.</p>
+        <p style="font-family:var(--mono);font-size:0.66rem;letter-spacing:0.05em;color:var(--ink-3);margin-top:1rem">Sources : senat.fr (pages officielles des scrutins publics, consultées le 6 juillet 2026) · data.senat.fr, base « Sénateurs » ODSEN (licence open data Sénat) · Généré le 6 juillet 2026.</p>
+      </div>
+    </details>
+  </div>
+</section>
