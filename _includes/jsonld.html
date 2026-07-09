@@ -1,0 +1,262 @@
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://unenfantsurdix.com/#website",
+   "url": "https://unenfantsurdix.com/",
+   "name": "Un enfant sur dix",
+   "alternateName": ["unenfantsurdix.com", "1 enfant sur 10", "Un enfant sur 10"],
+   "description": "Site de sensibilisation sur les violences sexuelles intrafamiliales en France, fondé sur des données institutionnelles vérifiées (CIIVISE, Ipsos, INED, CEPEJ, Assemblée nationale).",
+   "inLanguage": "fr-FR",
+   "publisher": { "@id": "https://unenfantsurdix.com/#organization" }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://unenfantsurdix.com/#organization",
+   "name": "Un enfant sur dix",
+   "url": "https://unenfantsurdix.com/",
+   "knowsAbout": ["Inceste", "Violences sexuelles sur mineurs", "CIIVISE", "Protection de l'enfance en France", "Droit pénal français", "Votes du Parlement français"]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://unenfantsurdix.com{{ page.url }}#webpage",
+   "url": "https://unenfantsurdix.com{{ page.url }}",
+   "name": {{ page.title | jsonify }},
+   "description": {{ page.description | jsonify }},
+   "inLanguage": "fr-FR",
+   "isPartOf": { "@id": "https://unenfantsurdix.com/#website" },
+   "dateModified": "{{ site.time | date: '%Y-%m-%d' }}",
+   "breadcrumb": { "@id": "https://unenfantsurdix.com{{ page.url }}#breadcrumb" }{% if page.url == '/' %},
+   "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".hero-headline", ".hero-sub", ".section-intro", ".pull-quote p"]
+   }{% endif %}
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://unenfantsurdix.com{{ page.url }}#breadcrumb",
+   "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://unenfantsurdix.com/" }{% unless page.url == '/' %},
+    { "@type": "ListItem", "position": 2, "name": {{ page.title | split: ' — ' | first | jsonify }}, "item": "https://unenfantsurdix.com{{ page.url }}" }{% endunless %}
+   ]
+  }{% case page.url %}{% when '/' %},
+  {
+   "@type": "Thing",
+   "@id": "https://unenfantsurdix.com/#topic-inceste",
+   "name": "Inceste en France",
+   "description": "L'inceste désigne les violences sexuelles commises au sein de la famille. En France, 7,4 millions d'adultes déclarent en avoir été victimes dans leur enfance, soit 11 % de la population adulte.",
+   "sameAs": ["https://fr.wikipedia.org/wiki/Inceste", "https://www.wikidata.org/wiki/Q93304"]
+  }{% when '/chiffres/' %},
+  {
+   "@type": "Article",
+   "@id": "https://unenfantsurdix.com/chiffres/#article",
+   "isPartOf": { "@id": "https://unenfantsurdix.com/chiffres/#webpage" },
+   "headline": "Inceste en France : les chiffres officiels — CIIVISE, Ipsos, rapport d'enquête de l'Assemblée nationale 2026",
+   "alternativeHeadline": "Violences sexuelles intrafamiliales en France : ampleur, impunité judiciaire, coût social",
+   "description": "Analyse sourcée des données institutionnelles françaises sur les violences sexuelles intrafamiliales : prévalence, taux de condamnation, coût social.",
+   "inLanguage": "fr-FR",
+   "datePublished": "2024-01-01T00:00:00+01:00",
+   "dateModified": "{{ site.time | date: '%Y-%m-%d' }}",
+   "author": { "@id": "https://unenfantsurdix.com/#organization" },
+   "publisher": { "@id": "https://unenfantsurdix.com/#organization" },
+   "mainEntityOfPage": { "@id": "https://unenfantsurdix.com/chiffres/#webpage" },
+   "keywords": ["inceste France", "CIIVISE 2023", "violences sexuelles enfants", "impunité", "coût social inceste", "rapport commission d'enquête inceste 2026"],
+   "about": [
+    { "@type": "Thing", "name": "Inceste", "sameAs": "https://fr.wikipedia.org/wiki/Inceste" },
+    { "@type": "Organization", "name": "CIIVISE", "url": "https://www.ciivise.fr" }
+   ],
+   "citation": [
+    { "@type": "CreativeWork", "name": "Rapport public CIIVISE « Violences sexuelles faites aux enfants : on vous croit », novembre 2023", "url": "https://www.ciivise.fr/le-rapport-public-de-2023" },
+    { "@type": "CreativeWork", "name": "CIIVISE, avis « Le coût du déni », 12 juin 2023", "url": "https://www.ciivise.fr" },
+    { "@type": "CreativeWork", "name": "Sondage Ipsos pour Face à l'inceste, octobre 2023", "url": "https://facealinceste.fr" },
+    { "@type": "CreativeWork", "name": "Rapport d'enquête n° 3005 sur le traitement judiciaire des violences sexuelles incestueuses parentales, Assemblée nationale, juillet 2026", "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/ceinceste/l17b3005-t1_rapport-enquete" }
+   ]
+  },
+  {
+   "@type": "DataCatalog",
+   "@id": "https://unenfantsurdix.com/chiffres/#datacatalog",
+   "name": "Données sur les violences sexuelles intrafamiliales en France",
+   "description": "Compilation de données institutionnelles vérifiées sur l'inceste et les violences sexuelles sur mineurs en France (CIIVISE, Ipsos, INED, CEPEJ, Infostat Justice, Assemblée nationale).",
+   "url": "https://unenfantsurdix.com/chiffres/",
+   "creator": { "@id": "https://unenfantsurdix.com/#organization" },
+   "dataset": [
+    {
+     "@type": "Dataset",
+     "name": "Prévalence de l'inceste en France",
+     "description": "7,4 millions de Français adultes victimes d'inceste (11 % de la population adulte)",
+     "measurementTechnique": "Sondage représentatif national",
+     "creator": { "@type": "Organization", "name": "Ipsos" },
+     "citation": "Sondage Ipsos pour Face à l'inceste, octobre 2023",
+     "license": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    {
+     "@type": "Dataset",
+     "name": "Victimes annuelles de violences sexuelles sur mineurs",
+     "description": "160 000 enfants victimes par an en France, soit un toutes les 3 minutes ; 81 % de ces violences sont commises au sein de la famille",
+     "creator": { "@type": "Organization", "name": "CIIVISE" },
+     "citation": "CIIVISE, rapport public novembre 2023 ; repris par le rapport d'enquête AN n° 3005, juillet 2026",
+     "license": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    {
+     "@type": "Dataset",
+     "name": "Réponse pénale aux violences sexuelles intrafamiliales sur mineurs (2024)",
+     "description": "19 254 faits de violences sexuelles intrafamiliales sur mineur enregistrés en 2024, 1 406 condamnations pour viols ou agressions sexuelles incestueuses dont 380 pour viol incestueux, environ 41 % de classements sans suite pour les viols incestueux",
+     "creator": { "@type": "Organization", "name": "Assemblée nationale — commission d'enquête sur le traitement judiciaire de l'inceste" },
+     "citation": "Rapport d'enquête n° 3005, Assemblée nationale, juillet 2026",
+     "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://unenfantsurdix.com/chiffres/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Combien de personnes sont victimes d'inceste en France ?",
+     "acceptedAnswer": { "@type": "Answer", "text": "7,4 millions de Français adultes déclarent avoir été victimes d'inceste dans leur enfance, soit 11 % de la population adulte (65 % de femmes, 35 % d'hommes). Source : Sondage Ipsos pour Face à l'inceste, octobre 2023." }
+    },
+    {
+     "@type": "Question",
+     "name": "Combien d'enfants sont victimes de violences sexuelles chaque année en France ?",
+     "acceptedAnswer": { "@type": "Answer", "text": "160 000 enfants sont victimes de violences sexuelles chaque année en France, soit un enfant toutes les 3 minutes. Dans 81 % des cas, l'agresseur est un membre de la famille. Sources : CIIVISE, rapport public novembre 2023 ; rapport d'enquête de l'Assemblée nationale n° 3005, juillet 2026." }
+    },
+    {
+     "@type": "Question",
+     "name": "Quel est le taux de condamnation pour inceste en France ?",
+     "acceptedAnswer": { "@type": "Answer", "text": "Moins de 1 % des affaires d'inceste aboutissent à une condamnation en France. Le rapport d'enquête de l'Assemblée nationale (n° 3005, juillet 2026) chiffre précisément cette quasi-impunité : 19 254 faits de violences sexuelles intrafamiliales sur mineur enregistrés en 2024, pour 1 406 condamnations pour viols ou agressions sexuelles incestueuses — dont 380 pour viol incestueux — et environ 41 % de classements sans suite pour les viols incestueux. Sources : CIIVISE 2023 ; rapport d'enquête AN n° 3005, juillet 2026." }
+    },
+    {
+     "@type": "Question",
+     "name": "Quel est le coût social de l'inceste en France ?",
+     "acceptedAnswer": { "@type": "Answer", "text": "9,7 milliards d'euros par an : c'est le coût pour la société française du déni, de l'impunité et de l'absence de soutien aux victimes. Les deux tiers résultent des conséquences à long terme sur la santé physique et mentale des victimes. Source : CIIVISE, avis « Le coût du déni », 12 juin 2023." }
+    }
+   ]
+  }{% when '/mythes-vs-realite/' %},
+  {
+   "@type": "FAQPage",
+   "@id": "https://unenfantsurdix.com/mythes-vs-realite/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "L'inceste est-il plus fréquent dans certains milieux sociaux ?",
+     "acceptedAnswer": { "@type": "Answer", "text": "Non. Trois études épidémiologiques indépendantes convergent : l'enquête Virage (INED, 2015), Charruault et al. (2021) et Marsican/Bajos/Pousson (2023). Aucune ne documente de sur-représentation d'une catégorie socioprofessionnelle. L'inceste touche tous les milieux sociaux, sans corrélation statistiquement significative avec le revenu, le diplôme ou la zone géographique." }
+    },
+    {
+     "@type": "Question",
+     "name": "Quelles sont les conséquences de l'inceste sur la santé des victimes ?",
+     "acceptedAnswer": { "@type": "Answer", "text": "Les conséquences de l'inceste sont graves et durables : plus de 50 % des victimes effectuent au moins une tentative de suicide au cours de leur vie (risque multiplié par 15 par rapport à la population générale), risque de dépression chronique multiplié par 4, traumatismes persistants sur des décennies. Dans 92 % des cas, les enfants qui révèlent les violences ne reçoivent pas de réponse protectrice. Sources : Ipsos/AIVI, 2010 ; G. Lopez, Institut de victimologie de Paris, 2015 ; CIIVISE 2023." }
+    },
+    {
+     "@type": "Question",
+     "name": "Pourquoi les victimes d'inceste parlent-elles si tard ?",
+     "acceptedAnswer": { "@type": "Answer", "text": "La parole des victimes intervient fréquemment des décennies après les faits, en raison des mécanismes d'emprise, de honte et de dépendance affective à l'agresseur. En 2023, 75 % des témoignages recueillis par la CIIVISE portaient sur des faits prescrits, privant ainsi la grande majorité des victimes de tout accès à la justice. La loi française actuelle ne prend pas suffisamment en compte cette réalité clinique. Source : CIIVISE 2023 ; Sénat, exposé des motifs PPL n°127, novembre 2025." }
+    }
+   ]
+  }{% when '/ressources/' %},
+  {
+   "@type": "FAQPage",
+   "@id": "https://unenfantsurdix.com/ressources/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Quel numéro appeler si un enfant est en danger ou victime d'inceste ?",
+     "acceptedAnswer": { "@type": "Answer", "text": "Le 119 (Allô Enfance en Danger) est disponible 24h/24, 7j/7, gratuit et confidentiel. Il est ouvert à toute personne témoin ou victime. Pour un danger immédiat : le 17 (Police / Gendarmerie) ou le 15 (SAMU). Les adultes victimes peuvent aussi contacter le 3018 (cyberharcèlement) ou l'association Face à l'inceste via facealinceste.fr." }
+    }
+   ]
+  },
+  {
+   "@type": "HowTo",
+   "@id": "https://unenfantsurdix.com/ressources/#howto-agir",
+   "name": "Comment agir contre l'inceste en France ?",
+   "description": "Actions citoyennes concrètes, légales et accessibles pour lutter contre l'inceste et les violences sexuelles intrafamiliales en France.",
+   "totalTime": "PT10M",
+   "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Parler autour de soi", "text": "Parler de l'inceste dans votre entourage normalise le sujet et prépare les adultes à bien réagir quand un enfant révèle des violences. 92 % des enfants qui parlent n'obtiennent pas de réponse protectrice.", "url": "https://unenfantsurdix.com/ressources/#agir" },
+    { "@type": "HowToStep", "position": 2, "name": "Signaler au 119", "text": "Si vous êtes témoin ou si un enfant vous parle, appelez le 119 (Allô Enfance en Danger), disponible 24h/24, gratuit et confidentiel.", "url": "https://www.allo119.gouv.fr" },
+    { "@type": "HowToStep", "position": 3, "name": "Partager les données officielles", "text": "Téléchargez les infographies vérifiées du site et partagez-les sur les réseaux sociaux pour sensibiliser votre entourage aux chiffres officiels.", "url": "https://unenfantsurdix.com/mythes-vs-realite/" },
+    { "@type": "HowToStep", "position": 4, "name": "Écrire à son élu·e", "text": "Utilisez le générateur de courrier pour interpeller votre député·e ou sénateur·rice sur les 49 recommandations de la commission d'enquête sur l'inceste, la PPL intégrale et les recommandations de la CIIVISE.", "url": "https://unenfantsurdix.com/ecrire-a-mon-elu/" }
+   ]
+  }{% when '/votes-deputes/' %},
+  {
+   "@type": "Dataset",
+   "@id": "https://unenfantsurdix.com/votes-deputes/#dataset",
+   "name": "Votes des député·es sur la protection de l'enfance (17e législature)",
+   "description": "Positions nominatives des 577 député·es sur 15 scrutins publics relatifs à l'inceste, aux violences sexuelles, à la protection de l'enfance et aux violences faites aux femmes, depuis juillet 2024.",
+   "url": "https://unenfantsurdix.com/votes-deputes/",
+   "measurementTechnique": "Audit exhaustif des scrutins publics officiels de la 17e législature",
+   "creator": { "@type": "Organization", "name": "Assemblée nationale (open data)", "url": "https://data.assemblee-nationale.fr" },
+   "citation": "data.assemblee-nationale.fr, jeux de données Scrutins et Acteurs/Organes, 17e législature",
+   "temporalCoverage": "2024-07/..",
+   "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+   "inLanguage": "fr-FR"
+  }{% when '/votes-senateurs/' %},
+  {
+   "@type": "Dataset",
+   "@id": "https://unenfantsurdix.com/votes-senateurs/#dataset",
+   "name": "Votes des sénateur·rices sur la protection de l'enfance (sessions 2024-2026)",
+   "description": "Positions nominatives des 348 sénateur·rices sur 6 scrutins publics « sur l'ensemble » relatifs aux violences sexuelles, à la protection de l'enfance et à la justice des mineurs.",
+   "url": "https://unenfantsurdix.com/votes-senateurs/",
+   "measurementTechnique": "Dépouillement des pages officielles de scrutins publics de senat.fr et du référentiel ODSEN (data.senat.fr)",
+   "creator": { "@type": "Organization", "name": "Sénat", "url": "https://www.senat.fr" },
+   "citation": "senat.fr, scrutins publics des sessions 2024-2026 ; data.senat.fr, référentiel ODSEN",
+   "temporalCoverage": "2024-10/..",
+   "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+   "inLanguage": "fr-FR"
+  }{% when '/observatoire-ciivise/' %},
+  {
+   "@type": "Dataset",
+   "@id": "https://unenfantsurdix.com/observatoire-ciivise/#dataset",
+   "name": "Suivi des 82 recommandations de la CIIVISE (bilan officiel au 30 avril 2026)",
+   "description": "Statut officiel de mise en œuvre de chacune des 82 recommandations formulées par la CIIVISE en novembre 2023 : 23 pleinement effectives, 39 partielles, 12 en arbitrage ou avis défavorable, 8 non mises en place. Classement officiel de la CIIVISE, sans interprétation.",
+   "url": "https://unenfantsurdix.com/observatoire-ciivise/",
+   "creator": { "@type": "Organization", "name": "CIIVISE", "url": "https://www.ciivise.fr" },
+   "citation": "CIIVISE, « Analyse des mises en œuvre par le Gouvernement des recommandations de la CIIVISE », bilan publié le 15 juin 2026, arrêté au 30 avril 2026",
+   "temporalCoverage": "2023-11/2026-04",
+   "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+   "inLanguage": "fr-FR"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://unenfantsurdix.com/observatoire-ciivise/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Qu'est-ce que la CIIVISE ?",
+     "acceptedAnswer": { "@type": "Answer", "text": "La CIIVISE (Commission Indépendante sur l'Inceste et les Violences Sexuelles faites aux Enfants) est une commission créée par le gouvernement français. Après avoir recueilli plus de 30 000 témoignages sur deux ans, elle a publié en novembre 2023 un rapport public formulant 82 recommandations concrètes. Le 15 juin 2026, elle a publié son bilan de mise en œuvre : deux ans et demi après, 23 recommandations sur 82 sont pleinement effectives." }
+    }
+   ]
+  }{% when '/observatoire-commission-enquete/' %},
+  {
+   "@type": "Dataset",
+   "@id": "https://unenfantsurdix.com/observatoire-commission-enquete/#dataset",
+   "name": "Suivi des 49 recommandations de la commission d'enquête de l'Assemblée nationale sur l'inceste (juillet 2026)",
+   "description": "Les 49 recommandations du rapport d'enquête n° 3005 sur le traitement judiciaire des violences sexuelles incestueuses parentales, avec le suivi de leur traduction législative, établi par recoupement avec les textes officiellement déposés au Parlement.",
+   "url": "https://unenfantsurdix.com/observatoire-commission-enquete/",
+   "creator": { "@type": "Organization", "name": "Assemblée nationale — commission d'enquête sur le traitement judiciaire de l'inceste", "url": "https://www.assemblee-nationale.fr" },
+   "citation": "Rapport d'enquête n° 3005 (Tome 1), Assemblée nationale, déposé le 1er juillet 2026, rendu public le 9 juillet 2026. Rapporteur : Christian Baptiste ; présidente : Maud Petit",
+   "temporalCoverage": "2026-07/..",
+   "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+   "inLanguage": "fr-FR"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://unenfantsurdix.com/observatoire-commission-enquete/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Qu'est-ce que la commission d'enquête de l'Assemblée nationale sur l'inceste ?",
+     "acceptedAnswer": { "@type": "Answer", "text": "Commission d'enquête de trente député·es sur le traitement judiciaire des violences sexuelles incestueuses parentales commises contre les enfants et la situation des parents protecteurs, présidée par Maud Petit, avec Christian Baptiste pour rapporteur. Elle a travaillé de février à juillet 2026 (43 auditions, 132 personnes entendues) et rendu public son rapport le 9 juillet 2026." }
+    },
+    {
+     "@type": "Question",
+     "name": "Que propose le rapport de la commission d'enquête sur l'inceste de juillet 2026 ?",
+     "acceptedAnswer": { "@type": "Answer", "text": "Le rapport n° 3005 formule 49 recommandations, dont : l'imprescriptibilité des crimes commis sur mineurs, une peine de trente ans pour viol incestueux, l'obligation de mener les principaux actes d'enquête sous trois mois, un avocat systématique pour le mineur victime dès la plainte, l'éloignement de l'auteur présumé plutôt que de l'enfant, un statut du parent protecteur et des moyens budgétaires à la hauteur des besoins. Son constat : « un crime de masse, une réponse pénale dérisoire, et un temps judiciaire qui épuise les victimes »." }
+    }
+   ]
+  }{% endcase %}
+ ]
+}
+</script>

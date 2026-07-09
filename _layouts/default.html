@@ -7,16 +7,7 @@
 {% seo %}
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "{{ site.title }}",
-  "description": "{{ site.description }}",
-  "url": "{{ site.url }}{{ page.url }}",
-  "inLanguage": "fr"
-}
-</script>
+{% include jsonld.html %}
 </head>
 <body>
 
@@ -60,6 +51,13 @@
 </script>
 {% endif %}
 
+{% if page.url == '/observatoire-commission-enquete/' %}
+<!-- Données embarquées : suivi des 49 recommandations du rapport d'enquête AN n° 3005 (9 juillet 2026) -->
+<script type="application/json" id="observatoire-an-data">
+{% include observatoire-an-data.json %}
+</script>
+{% endif %}
+
 {% if page.url == '/votes-senateurs/' %}
 <!-- Données embarquées : votes des sénateur·rices (pages officielles senat.fr + référentiel ODSEN) -->
 <script type="application/json" id="senat-votes-data">
@@ -74,6 +72,9 @@
 {% endif %}
 {% if page.url == '/observatoire-ciivise/' %}
 <script src="{{ '/assets/js/observatoire-logic.js' | relative_url }}"></script>
+{% endif %}
+{% if page.url == '/observatoire-commission-enquete/' %}
+<script src="{{ '/assets/js/observatoire-an-logic.js' | relative_url }}"></script>
 {% endif %}
 {% if page.url == '/votes-senateurs/' %}
 <script src="{{ '/assets/js/votes-senat-logic.js' | relative_url }}"></script>

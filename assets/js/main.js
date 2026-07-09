@@ -133,7 +133,7 @@ const deptData = {
 
 // Objets de mail par sujet (utilisés par le bouton « Ouvrir dans ma messagerie »)
 const emailSubjects = {
-  session2026: 'Inscription de la PPL intégrale à la session extraordinaire 2026',
+  rapport2026: 'Traduction législative des 49 recommandations de la commission d\'enquête sur l\'inceste',
   prescriptibilite: 'Imprescriptibilité des crimes d\'inceste commis sur mineurs',
   ppl: 'Inscription de la PPL intégrale contre les violences sexistes et sexuelles à l\'ordre du jour',
   ciivise: 'Mise en œuvre des 82 recommandations de la CIIVISE',
@@ -182,21 +182,21 @@ Dans l'attente de votre réponse, je vous prie d'agréer, Madame la Députée, M
 
 ${nom}`,
 
-  session2026: (nom, deptNom, deptCode) =>
+  rapport2026: (nom, deptNom, deptCode) =>
 `${nom}
 Citoyen·ne de ${deptNom} (département ${deptCode})
 
 Madame la Députée, Monsieur le Député,
 
-Je vous écris à la suite des événements tragiques qui ont marqué le pays début juin 2026, pour vous demander de soutenir l'inscription de la Proposition de loi intégrale contre les violences sexistes et sexuelles (PPL AN n°2169, décembre 2025) à l'ordre du jour de la session extraordinaire du Parlement.
+Je vous écris au sujet du rapport de la commission d'enquête sur le traitement judiciaire des violences sexuelles incestueuses parentales (rapport n°3005), rendu public le 9 juillet 2026 par son rapporteur Christian Baptiste et sa présidente Maud Petit, à l'issue de 43 auditions et de l'audition de 132 personnes.
 
-Le 8 juin 2026, la présidente de l'Assemblée nationale a elle-même demandé au gouvernement l'inscription de ce texte, cosigné par plus de 100 député·es de huit groupes politiques, lors de la session extraordinaire de juillet ou de septembre. Cette demande transpartisane fait suite à la reconnaissance, par le procureur général près la Cour de cassation, d'un « échec collectif » et d'une « crise systémique » dans le traitement judiciaire des violences sexuelles sur mineurs.
+Le constat de la commission, adopté par ses membres issus de l'ensemble des groupes politiques, est sans appel : « un crime de masse, une réponse pénale dérisoire, et un temps judiciaire qui épuise les victimes ». Le rapport chiffre cette quasi-impunité : 19 254 faits de violences sexuelles intrafamiliales sur mineur enregistrés en 2024, pour seulement 1 406 condamnations pour viols ou agressions sexuelles incestueuses — dont 380 pour viol incestueux — et environ 41 % de classements sans suite pour les viols incestueux.
 
-Le 15 juin 2026, la CIIVISE a publié son bilan de mise en œuvre des 82 recommandations formulées en novembre 2023 : deux ans et demi après, seules 23 d'entre elles (28 %) sont pleinement effectives, et 3 seulement sur les 17 mesures jugées prioritaires sont aujourd'hui totalement opérationnelles. Le volet judiciaire reste le plus en retard, avec l'inceste toujours non reconnu comme infraction autonome et l'imprescriptibilité des crimes sexuels sur mineurs toujours en suspens.
+La commission formule 49 recommandations, parmi lesquelles l'imprescriptibilité des crimes commis à l'encontre de mineurs, l'obligation de mener les principaux actes d'enquête dans un délai de trois mois, la désignation systématique d'un avocat pour le mineur victime dès le dépôt de plainte, et le principe d'éloignement de l'auteur présumé plutôt que de l'enfant.
 
-Au-delà de l'émotion légitime suscitée par l'actualité récente, c'est cette lenteur structurelle qui appelle une réponse politique au moment précis où le Parlement aura l'occasion de se saisir du texte.
+Certaines de ces mesures figurent déjà dans le projet de loi relatif à la protection des enfants, examiné en séance publique à partir du 15 juillet 2026 ; d'autres pourraient être reprises dans la proposition de loi intégrale contre les violences sexistes et sexuelles attendue à l'automne. Mais la plupart des 49 recommandations restent à ce jour sans traduction législative.
 
-Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur l'inscription de cette proposition de loi à la session extraordinaire de 2026, et les démarches que vous entendez entreprendre en ce sens.
+Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ces recommandations, et les initiatives que vous entendez soutenir — dans le cadre des textes en cours d'examen comme des lois de finances à venir — pour leur donner une suite concrète.
 
 Je vous prie de croire, Madame la Députée, Monsieur le Député, à l'expression de ma haute considération.
 
