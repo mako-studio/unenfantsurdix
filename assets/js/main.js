@@ -135,7 +135,7 @@ const deptData = {
 const emailSubjects = {
   rapport2026: 'Traduction législative des 49 recommandations de la commission d\'enquête sur l\'inceste',
   prescriptibilite: 'Imprescriptibilité des crimes d\'inceste commis sur mineurs',
-  ppl: 'Inscription de la PPL intégrale contre les violences sexistes et sexuelles à l\'ordre du jour',
+  ppl: 'Projet de loi relatif à la protection des enfants — examen en séance publique dès le 15 juillet 2026',
   ciivise: 'Mise en œuvre des 82 recommandations de la CIIVISE',
   budget: 'Budget consacré à la lutte contre les violences sexuelles faites aux enfants',
   formation: 'Formation obligatoire des professionnels au repérage des violences',
@@ -170,15 +170,15 @@ Citoyen·ne de ${deptNom} (département ${deptCode})
 
 Madame la Députée, Monsieur le Député,
 
-Je me permets de vous adresser ce courrier pour vous alerter sur l'absence d'inscription à l'ordre du jour de la Proposition de loi intégrale contre les violences sexistes et sexuelles (PPL AN n°2169, décembre 2025).
+Je me permets de vous adresser ce courrier à l'occasion de l'examen en séance publique, à partir du 15 juillet 2026, du projet de loi relatif à la protection des enfants.
 
-Cette proposition a été cosignée par 109 député·es issus de 8 groupes politiques distincts. Elle constitue la traduction législative des 82 recommandations formulées par la CIIVISE à l'issue de deux années de travaux et de 30 000 témoignages recueillis. En novembre 2023, le gouvernement n'en a retenu que 41. Quarante et une recommandations demeurent à ce jour sans suite réglementaire ou législative, tandis que 160 000 enfants continuent d'être victimes de violences sexuelles chaque année en France, le plus souvent dans un contexte intrafamilial (CIIVISE, rapport public, novembre 2023).
+Le texte, adopté par la commission spéciale le 6 juillet après intégration d'une lettre rectificative du gouvernement (accélération des enquêtes, durcissement des sanctions pour crimes sexuels sur mineurs, renforcement du contrôle des établissements accueillant des mineurs), reprend plusieurs recommandations du rapport de la commission d'enquête sur le traitement judiciaire des violences sexuelles incestueuses parentales (rapport n°3005, 9 juillet 2026) : une ordonnance de protection de l'enfant permettant sa mise en sécurité dès la révélation des faits, l'obligation de mener les principaux actes d'enquête dans un délai de trois mois, et la dépénalisation de la non-représentation d'enfant en cas de suspicion de violences sexuelles.
 
-Les données judiciaires disponibles sont préoccupantes : moins de 1 % des affaires d'inceste aboutissent à une condamnation (CIIVISE, 2023 ; Fondation Jean-Jaurès, avril 2026 ; Sénat, PPL n°127). Par ailleurs, la CIIVISE a évalué le coût social de l'impunité à 9,7 milliards d'euros par an (avis « Le coût du déni », 12 juin 2023), soit 194 fois le budget annuel que l'État consacre à la lutte contre les violences sexistes et sexuelles. Ces chiffres posent une question d'efficacité de la dépense publique autant qu'une question de principe.
+Ces mesures répondent à un constat documenté par la commission d'enquête : 19 254 faits de violences sexuelles intrafamiliales sur mineur ont été enregistrés en 2024, pour seulement 1 406 condamnations et environ 41 % de classements sans suite pour les viols incestueux (rapport n°3005). La Proposition de loi intégrale contre les violences sexistes et sexuelles (AN n°2169, décembre 2025, 109 signataires), qui portait une réponse plus large à ces enjeux, est désormais attendue à l'automne : ce projet de loi sur la protection des enfants constitue donc, dans l'intervalle, le véhicule législatif le plus proche pour traduire ces recommandations en droit.
 
-Je souhaiterais connaître votre position sur l'inscription de cette PPL à l'ordre du jour de l'Assemblée nationale, et votre appréciation des conditions dans lesquelles son examen pourrait être organisé dans les prochains mois.
+Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ces dispositions, et si vous soutiendrez leur maintien lors de l'examen en séance.
 
-Dans l'attente de votre réponse, je vous prie d'agréer, Madame la Députée, Monsieur le Député, l'expression de mes respectueuses salutations.
+Je vous prie de croire, Madame la Députée, Monsieur le Député, à l'expression de ma haute considération.
 
 ${nom}`,
 
