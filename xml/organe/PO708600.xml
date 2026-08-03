@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO708600</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>La filière munitions</libelle>
+  <libelleEdition>de la mission d'information sur la filière munitions</libelleEdition>
+  <libelleAbrege>Filière munitions</libelleAbrege>
+  <libelleAbrev>MUNIT</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2014-12-17</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2015-12-16</dateFin>
+  </viMoDe>
+  <organeParent>PO59046</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>14</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

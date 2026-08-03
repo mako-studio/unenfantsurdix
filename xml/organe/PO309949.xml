@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO309949</uid>
+  <codeType>GE</codeType>
+  <libelle>Groupe d'études sur le financement de la production audiovisuelle</libelle>
+  <libelleEdition>du groupe d'études sur le financement de la production audiovisuelle</libelleEdition>
+  <libelleAbrege>Production audiovisuelle</libelleAbrege>
+  <libelleAbrev>AUDIO</libelleAbrev>
+  <viMoDe>
+    <dateDebut xsi:nil="true"/>
+    <dateAgrement>2004-12-14</dateAgrement>
+    <dateFin>2007-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>12</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

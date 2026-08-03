@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO742273</uid>
+  <codeType>CNPE</codeType>
+  <libelle>Commission d’enquête chargée d’examiner les décisions de l’État en matière de politique industrielle, au regard des fusions d’entreprises intervenues récemment, notamment dans les cas d’Alstom, d’Alcatel et de STX, ainsi que les moyens susceptibles de protéger nos fleurons industriels nationaux dans un contexte commercial mondialisé</libelle>
+  <libelleEdition>de la commission d’enquête chargée d’examiner les décisions de l’État en matière de politique industrielle, au regard des fusions d’entreprises intervenues récemment, notamment dans les cas d’Alstom, d’Alcatel et de STX, ainsi que les moyens susceptibles de protéger nos fleurons industriels nationaux dans un contexte commercial mondialisé</libelleEdition>
+  <libelleAbrege>Commission d'enquête sur la politique industrielle</libelleAbrege>
+  <libelleAbrev>CEPOLIND</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2017-10-31</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2018-04-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

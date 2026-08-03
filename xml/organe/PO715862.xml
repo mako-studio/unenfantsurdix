@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO715862</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'État, auprès du ministère de la défense, chargé des anciens combattants et de la mémoire</libelle>
+  <libelleEdition>, auprès du ministre de la défense, chargé des anciens combattants et de la mémoire</libelleEdition>
+  <libelleAbrege>Anciens combattants et mémoire</libelleAbrege>
+  <libelleAbrev>ACO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2016-12-07</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-05-17</dateFin>
+  </viMoDe>
+  <organeParent>PO715793</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

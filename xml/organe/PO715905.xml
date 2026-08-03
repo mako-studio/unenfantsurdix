@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO715905</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'État, auprès du ministère du travail, de l'emploi, de la formation professionnelle et du dialogue social, chargé de la formation professionnelle et de l’apprentissage</libelle>
+  <libelleEdition>, auprès de la ministre du travail, de l’emploi, de la formation professionnelle et du dialogue social, chargée de la formation professionnelle et de l’apprentissage</libelleEdition>
+  <libelleAbrege>Formation professionnelle et apprentissage</libelleAbrege>
+  <libelleAbrev>FOR</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2016-12-07</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-05-17</dateFin>
+  </viMoDe>
+  <organeParent>PO715793</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

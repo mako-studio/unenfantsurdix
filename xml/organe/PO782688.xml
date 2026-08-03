@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO782688</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission flash sur l'application de l'article 122-1 du code pénal</libelle>
+  <libelleEdition>de la mission flash sur l'application de l'article 122-1 du code pénal</libelleEdition>
+  <libelleAbrege>Article 122-1 code pénal</libelleAbrege>
+  <libelleAbrev>ART 122-1</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2021-05-04</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2021-06-30</dateFin>
+  </viMoDe>
+  <organeParent>PO59051</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

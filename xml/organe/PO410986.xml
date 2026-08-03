@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO410986</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'Etat au commerce extérieur, auprès de la ministre de l'économie, de l'industrie et de l'emploi</libelle>
+  <libelleEdition>au commerce extérieur, auprès de la ministre de l'économie, de l'industrie et de l'emploi</libelleEdition>
+  <libelleAbrege>Commerce extérieur</libelleAbrege>
+  <libelleAbrev>CEX</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2008-03-18</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2010-11-13</dateFin>
+  </viMoDe>
+  <organeParent>PO384206</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

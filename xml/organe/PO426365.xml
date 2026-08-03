@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO426365</uid>
+  <codeType>CMP</codeType>
+  <libelle>commission mixte paritaire chargée de proposer un texte sur les dispositions restant en discussion de la proposition de loi portant diverses dispositions d'adaptation de la législation au droit communautaire</libelle>
+  <libelleEdition>de la proposition de loi portant diverses dispositions d'adaptation de la législation au droit communautaire</libelleEdition>
+  <libelleAbrege>Adaptation de la législation </libelleAbrege>
+  <libelleAbrev>693-09-10</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2010-12-20</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2010-12-23</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

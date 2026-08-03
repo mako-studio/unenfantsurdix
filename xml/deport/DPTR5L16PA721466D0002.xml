@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA721466D0002</uid>
+  <chronotag>2</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA721466</refActeur>
+  <dateCreation>2023-10-05T13:47:01.891055+00:00</dateCreation>
+  <datePublication>2023-10-05T13:47:27.607169+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>L1</code>
+    <libelle>Première lecture</libelle>
+  </lecture>
+  <instance>
+    <code>SEA</code>
+    <libelle>Séance publique</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>ART</code>
+      <libelle>Article(s)</libelle>
+    </type>
+    <referenceTextuelle>Projet de loi visant à sécuriser et réguler l’espace numérique - article 15</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;En raison de la fonction de cadre de mon &amp;eacute;pouse &amp;agrave; la Fran&amp;ccedil;aise des Jeux, je souhaite me d&amp;eacute;porter de cet article 15 afin d&amp;#39;&amp;eacute;viter tout conflit d&amp;#39;int&amp;eacute;r&amp;ecirc;t potentiel avec cet article qui porte sur les jeux num&amp;eacute;riques en ligne.&amp;nbsp;&lt;/p&gt;</explication>
+</deport>

@@ -5,6 +5,7 @@
   const DATA = JSON.parse(raw.textContent);
   const groupes = DATA.groupes, deputes = DATA.deputes, scrutins = DATA.scrutins, votes = DATA.votes;
   const misesAuPoint = DATA.misesAuPoint || {};
+  const suppleances = DATA.suppleances || {};
   const scrutinUids = DATA.meta.ordre;
 
   // Table ville -> département (préfectures + grandes villes de France)
@@ -24,6 +25,17 @@
   function mapNote(ref, uid) {
     const mp = misesAuPoint[uid] && misesAuPoint[uid][ref];
     return mp ? ' — mise au point déposée : souhaitait « ' + mapLabel[mp] + ' »' : '';
+  }
+
+  // Vote exprimé par le/la suppléant·e pendant qu'iel occupait le siège (ministre,
+  // mission prolongée...) — jamais fusionné avec la position du/de la titulaire.
+  // Cf. votes_deputes.html § méthodologie.
+  function suppleance(ref, uid) {
+    return suppleances[uid] && suppleances[uid][ref];
+  }
+  function suppleanceLabel(s) {
+    return 'Siège occupé par ' + s.nom + ', son ou sa suppléant·e, du ' + s.debut +
+      ' au ' + (s.fin || "aujourd'hui") + ' — a voté ' + posLabel[s.pos].toLowerCase();
   }
 
   const selGroupe = document.getElementById('votes-filter-groupe');
@@ -57,15 +69,32 @@
     return scrutinUids.map(uid => {
       const pos = votes[uid][ref] || null;
       const s = scrutins[uid];
+      if (!pos) {
+        const sup = suppleance(ref, uid);
+        if (sup) {
+          return '<span class="vote-pill S-' + sup.pos + '" title="' + escAttr(s.date + ' — ' + s.titre + ' — ' + suppleanceLabel(sup)) + '"></span>';
+        }
+      }
       const label = (pos ? posLabel[pos] : noKeyLabel(ref, uid)) + (pos ? mapNote(ref, uid) : '');
       return '<span class="vote-pill ' + (pos || 'X') + '" title="' + escAttr(s.date + ' — ' + s.titre + ' — ' + label) + '"></span>';
     }).join('');
+  }
+
+  function detailRowSuppleance(s, sup) {
+    const tiret = '—', interp = '·';
+    return '<div class="vote-card-detail-row"><span>' + s.date + ' ' + tiret + ' ' + s.titre +
+      '<em class="vote-map-note">' + suppleanceLabel(sup) + '</em>' +
+      '</span><span class="vote-card-detail-pos S-' + sup.pos + '">' + posLabel[sup.pos] + ' (suppl' + 'é' + 'ant' + interp + 'e)</span></div>';
   }
 
   function detailRows(ref) {
     return scrutinUids.map(uid => {
       const pos = votes[uid][ref];
       const s = scrutins[uid];
+      if (!pos) {
+        const sup = suppleance(ref, uid);
+        if (sup) return detailRowSuppleance(s, sup);
+      }
       const label = pos ? posLabel[pos] : noKeyLabel(ref, uid);
       const note = pos ? mapNote(ref, uid) : '';
       return '<div class="vote-card-detail-row"><span>' + s.date + ' — ' + s.titre +

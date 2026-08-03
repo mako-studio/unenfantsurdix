@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L17PA793992D0003</uid>
+  <chronotag>1</chronotag>
+  <legislature>17</legislature>
+  <refActeur>PA793992</refActeur>
+  <dateCreation>2025-12-09T12:57:00.851961+00:00</dateCreation>
+  <datePublication xsi:nil="true"/>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>ART</code>
+      <libelle>Article(s)</libelle>
+    </type>
+    <referenceTextuelle>Article 2 du projet de loi de financement de la sécurité sociale pour 2026</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication/>
+</deport>

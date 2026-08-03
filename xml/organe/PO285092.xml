@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO285092</uid>
+  <codeType>GE</codeType>
+  <libelle>Groupe d'études sur la protection des animaux</libelle>
+  <libelleEdition>du groupe d'études sur la protection des animaux</libelleEdition>
+  <libelleAbrege>Protection des animaux</libelleAbrege>
+  <libelleAbrev>ANIMAUX</libelleAbrev>
+  <viMoDe>
+    <dateDebut xsi:nil="true"/>
+    <dateAgrement>2002-10-16</dateAgrement>
+    <dateFin>2007-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>12</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

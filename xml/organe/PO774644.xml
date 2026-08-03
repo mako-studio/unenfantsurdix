@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO774644</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d'information relative à la mise en application de la loi n° 2020-105 du 10 février 2020 relative à la lutte contre le gaspillage et à l’économie circulaire</libelle>
+  <libelleEdition xsi:nil="true"/>
+  <libelleAbrege>Application loi PLEC</libelleAbrege>
+  <libelleAbrev>AP PLEC</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2019-10-09</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2020-09-30</dateFin>
+  </viMoDe>
+  <organeParent>PO419865</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

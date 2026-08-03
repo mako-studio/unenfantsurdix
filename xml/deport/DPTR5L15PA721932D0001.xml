@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L15PA721932D0001</uid>
+  <chronotag>2</chronotag>
+  <legislature>15</legislature>
+  <refActeur>PA721932</refActeur>
+  <dateCreation>2020-05-28T09:34:45.502149+00:00</dateCreation>
+  <datePublication>2020-05-28T09:35:06.399079+00:00</datePublication>
+  <portee>
+    <code>COMPLET</code>
+    <libelle>Être absent pour la totalité du processus législatif concerné</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA</code>
+    <libelle>Séance publique</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>TEXTE</code>
+      <libelle>Projet ou proposition de loi ou de résolution, dans son intégralité</libelle>
+    </type>
+    <referenceTextuelle>n°3014 Pôle public du médicament</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Le travail de d&amp;eacute;l&amp;eacute;gu&amp;eacute; m&amp;eacute;dical de Mme le d&amp;eacute;put&amp;eacute; risquerait d&amp;#39;entra&amp;icirc;ner des possibles accusations de conflit d&amp;#39;int&amp;eacute;r&amp;ecirc;t. Le d&amp;eacute;put&amp;eacute; pr&amp;eacute;f&amp;egrave;re se retirer.&lt;/p&gt;</explication>
+</deport>

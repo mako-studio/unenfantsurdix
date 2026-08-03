@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO874906</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d’information sur « création, diffusion et acquisition des connaissances : comment l’intelligence artificielle transforme notre éducation et notre culture »</libelle>
+  <libelleEdition>de la mission d’information sur « création, diffusion et acquisition des connaissances : comment l’intelligence artificielle transforme notre éducation et notre culture »</libelleEdition>
+  <libelleAbrege>comment l’intelligence artificielle transforme notre éducation et notre culture</libelleAbrege>
+  <libelleAbrev>IA SAVOIRS</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-11-04</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2026-07-06</dateFin>
+  </viMoDe>
+  <organeParent>PO419604</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

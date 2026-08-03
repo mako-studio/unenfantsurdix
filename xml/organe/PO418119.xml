@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO418119</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Haut-commissariat aux solidarités actives contre la pauvreté et Haut-commissariat à la jeunesse</libelle>
+  <libelleEdition>aux solidarités actives contre la pauvreté et Haut-commissaire à la jeunesse</libelleEdition>
+  <libelleAbrege>Solidarités actives contre la pauvreté et jeunesse</libelleAbrege>
+  <libelleAbrev>SPJ</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2009-01-12</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2010-03-22</dateFin>
+  </viMoDe>
+  <organeParent>PO384206</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

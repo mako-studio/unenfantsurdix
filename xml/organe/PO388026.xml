@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO388026</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère d'Etat, Ministre de l'écologie, du développement et de l'aménagement durables</libelle>
+  <libelleEdition>de l'écologie, du développement et de l'aménagement durables</libelleEdition>
+  <libelleAbrege>Écologie, développement et aménagement durables</libelleAbrege>
+  <libelleAbrev>EDA</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2007-06-19</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2008-03-17</dateFin>
+  </viMoDe>
+  <organeParent>PO384206</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO424487</uid>
+  <codeType>DELEGBUREAU</codeType>
+  <libelle>Groupe de travail sur le régime de pension des députés</libelle>
+  <libelleEdition>du groupe de travail sur le régime de pension des députés</libelleEdition>
+  <libelleAbrege>Régime de pension des députés</libelleAbrege>
+  <libelleAbrev>GTRD</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2010-06-16</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2010-10-27</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

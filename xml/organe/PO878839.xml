@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO878839</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission flash sur l’impact des taxes et redevances qui s’appliquent au transport aérien desservant les outre-mer</libelle>
+  <libelleEdition>Mission flash sur l'impact des taxes et redevances concernant le transport aérien desservant les outre-mer</libelleEdition>
+  <libelleAbrege>Impact taxes redevances qui s’appliquent transport aérien desservant outre-mer</libelleAbrege>
+  <libelleAbrev>IMPACTTAXE</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2026-02-12</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin xsi:nil="true"/>
+  </viMoDe>
+  <organeParent>PO675659</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

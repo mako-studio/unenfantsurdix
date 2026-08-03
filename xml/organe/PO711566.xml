@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO711566</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de l’aménagement du territoire, de la ruralité et des collectivités territoriales</libelle>
+  <libelleEdition>de l’aménagement du territoire, de la ruralité et des collectivités territoriales</libelleEdition>
+  <libelleAbrege>Aménagement du territoire, ruralité et collectivités territoriales</libelleAbrege>
+  <libelleAbrev>ATR</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2016-02-12</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2016-12-06</dateFin>
+  </viMoDe>
+  <organeParent>PO702883</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

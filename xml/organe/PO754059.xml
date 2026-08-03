@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO754059</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d’information sur l’assujettissement à la fiscalité américaine des Français nés aux États-Unis</libelle>
+  <libelleEdition xsi:nil="true"/>
+  <libelleAbrege>Assujettissement à la fiscalité américaine des Français nés aux États-Unis</libelleAbrege>
+  <libelleAbrev>USACCIDENT</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2018-03-21</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2019-05-15</dateFin>
+  </viMoDe>
+  <organeParent>PO59048</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

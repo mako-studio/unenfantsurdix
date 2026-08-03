@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO230631</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>3ème circonscription de la Loire</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>42 Loire (° 3°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2002-06-19</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2007-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>12</legislature>
+  <numero>3</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Auvergne-Rhône-Alpes</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>42</code>
+      <libelle>Loire</libelle>
+    </departement>
+  </lieu>
+</organe>

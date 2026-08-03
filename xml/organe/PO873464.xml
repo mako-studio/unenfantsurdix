@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO873464</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère des sports, de la jeunesse et de la vie associative</libelle>
+  <libelleEdition>des sports, de la jeunesse et de la vie associative</libelleEdition>
+  <libelleAbrege>Sports, jeunesse et vie associative</libelleAbrege>
+  <libelleAbrev>SPO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-10-05</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2025-10-10</dateFin>
+  </viMoDe>
+  <organeParent>PO873418</organeParent>
+  <preseance>17</preseance>
+  <organePrecedentRef>PO855109</organePrecedentRef>
+</organe>

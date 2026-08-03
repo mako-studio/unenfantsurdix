@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO774082</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'État auprès du ministre de l'économie, des finances et de la relance, chargé de l'économie sociale, solidaire et responsable</libelle>
+  <libelleEdition>auprès du ministre de l'économie, des finances et de la relance, chargée de l'économie sociale, solidaire et responsable</libelleEdition>
+  <libelleAbrege>Économie sociale, solidaire et responsable</libelleAbrege>
+  <libelleAbrev>ESS</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2020-07-27</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2022-05-16</dateFin>
+  </viMoDe>
+  <organeParent>PO773371</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

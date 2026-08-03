@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExtraParlementaire_type">
+  <uid>PO60212</uid>
+  <codeType>ORGEXTPARL</codeType>
+  <libelle>Comité central d'enquête sur le coût et le rendement des services publics</libelle>
+  <libelleEdition>du Comité central d'enquête sur le coût et le rendement des services publics</libelleEdition>
+  <libelleAbrege>Services publics, coût et rendement</libelleAbrege>
+  <libelleAbrev>69</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1975-04-08</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-06-28</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature xsi:nil="true"/>
+  <regimeJuridique>Article D. 320-2 du code des juridictions financières</regimeJuridique>
+  <siteInternet xsi:nil="true"/>
+  <nombreReunionsAnnuelles xsi:nil="true"/>
+</organe>

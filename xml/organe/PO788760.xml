@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO788760</uid>
+  <codeType>CMP</codeType>
+  <libelle>Commission mixte paritaire chargée de proposer un texte sur les dispositions restant en discussion du projet de loi renforçant les outils de gestion de la crise sanitaire et modifiant le code de la santé publique</libelle>
+  <libelleEdition>de la commission mixte paritaire chargée de proposer un texte sur les dispositions restant en discussion du projet de loi renforçant les outils de gestion de la crise sanitaire et modifiant le code de la santé publique</libelleEdition>
+  <libelleAbrege>Outils gestion crise sanitaire</libelleAbrege>
+  <libelleAbrev>4857</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2022-01-11</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2022-01-23</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO873650</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de l’enseignement supérieur, de la recherche et de l’espace</libelle>
+  <libelleEdition>de l’enseignement supérieur, de la recherche et de l’espace</libelleEdition>
+  <libelleAbrege>Enseignement supérieur, recherche et espace</libelleAbrege>
+  <libelleAbrev>ESR</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-10-13</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin xsi:nil="true"/>
+  </viMoDe>
+  <organeParent>PO873634</organeParent>
+  <preseance>17</preseance>
+  <organePrecedentRef>PO855053</organePrecedentRef>
+</organe>

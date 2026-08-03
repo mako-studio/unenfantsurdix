@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO854205</uid>
+  <codeType>GE</codeType>
+  <libelle>Insertion professionnelle des jeunes</libelle>
+  <libelleEdition>INSERTION PROFESSIONNELLE DES JEUNES</libelleEdition>
+  <libelleAbrege>INSERTION PROFESSIONNELLE DES JEUNES</libelleAbrege>
+  <libelleAbrev>INSERJEUNE</libelleAbrev>
+  <viMoDe>
+    <dateDebut xsi:nil="true"/>
+    <dateAgrement>2024-12-18</dateAgrement>
+    <dateFin xsi:nil="true"/>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01>M. Leopold Dubreuil</secretaire01>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

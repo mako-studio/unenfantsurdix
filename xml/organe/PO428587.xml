@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO428587</uid>
+  <codeType>MISINFOPRE</codeType>
+  <libelle>Mission d'information relative à l'analyse des causes des accidents de la circulation et à la prévention routière</libelle>
+  <libelleEdition>de la mission d'information relative à l'analyse des causes des accidents de la circulation et à la prévention routière</libelleEdition>
+  <libelleAbrege>Accidents circulation</libelleAbrege>
+  <libelleAbrev>ACCIDENTS</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2011-05-25</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2011-10-21</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

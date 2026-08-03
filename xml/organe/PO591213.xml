@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO591213</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère des sports, de la jeunesse, de l'éducation populaire et de la vie associative</libelle>
+  <libelleEdition>Ministère des sports, de la jeunesse, de l'éducation populaire et de la vie associative</libelleEdition>
+  <libelleAbrege>Sports, jeunesse, éducation populaire et vie associative</libelleAbrege>
+  <libelleAbrev>SPO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2012-05-17</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2012-06-18</dateFin>
+  </viMoDe>
+  <organeParent>PO590011</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

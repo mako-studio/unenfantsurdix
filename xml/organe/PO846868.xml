@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO846868</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d'information sur la semaine de quatre jours</libelle>
+  <libelleEdition xsi:nil="true"/>
+  <libelleAbrege>SEM4JOURS</libelleAbrege>
+  <libelleAbrev>SEM4JOURS</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2024-07-24</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2024-10-16</dateFin>
+  </viMoDe>
+  <organeParent>PO420120</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

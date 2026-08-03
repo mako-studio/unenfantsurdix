@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO717832</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>4ème circonscription de la Loire</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>42 Loire (° 4°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2017-06-21</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2022-06-21</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <numero>4</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Auvergne-Rhône-Alpes</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>42</code>
+      <libelle>Loire</libelle>
+    </departement>
+  </lieu>
+</organe>

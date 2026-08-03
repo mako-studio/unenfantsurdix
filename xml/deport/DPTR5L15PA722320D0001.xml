@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L15PA722320D0001</uid>
+  <chronotag>4</chronotag>
+  <legislature>15</legislature>
+  <refActeur>PA722320</refActeur>
+  <dateCreation>2021-11-23T13:19:37.615436+00:00</dateCreation>
+  <datePublication>2021-11-23T13:20:40.537173+00:00</datePublication>
+  <portee>
+    <code>COMPLET</code>
+    <libelle>Être absent pour la totalité du processus législatif concerné</libelle>
+  </portee>
+  <lecture>
+    <code>L1</code>
+    <libelle>Première lecture</libelle>
+  </lecture>
+  <instance>
+    <code>SEA</code>
+    <libelle>Séance publique</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>TEXTE</code>
+      <libelle>Projet ou proposition de loi ou de résolution, dans son intégralité</libelle>
+    </type>
+    <referenceTextuelle>Proposition de loi n4623 pour un accès plus juste, plus simple et plus transparent au marché de l'assurance emprunteur</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;D&amp;eacute;port eu &amp;eacute;gard &amp;agrave; ma profession d&amp;#39;assureur.&amp;nbsp;&lt;/p&gt;</explication>
+</deport>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO848112</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère délégué auprès du ministre des solidarités, de l'autonomie et de l'égalité entre les femmes et les hommes, chargé des personnes en situation de handicap</libelle>
+  <libelleEdition>auprès du ministre des solidarités, de l'autonomie et de l'égalité entre les femmes et les hommes, chargé des personnes en situation de handicap</libelleEdition>
+  <libelleAbrege>Personnes en situation de handicap</libelleAbrege>
+  <libelleAbrev>SAEPH</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2024-09-28</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2024-12-13</dateFin>
+  </viMoDe>
+  <organeParent>PO847639</organeParent>
+  <preseance>37</preseance>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

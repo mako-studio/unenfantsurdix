@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO277087</uid>
+  <codeType>CMP</codeType>
+  <libelle>CMP sur le projet de loi modifiant la loi n° 85-99 du 25 janvier 1985 relative aux administrateurs judiciaires, mandataires judiciaires à la liquidation des entreprises et experts en diagnostic d'entreprise</libelle>
+  <libelleEdition>sur le projet de loi modifiant la loi n° 85-99 du 25 janvier 1985 relative aux administrateurs judiciaires, mandataires judiciaires à la liquidation des entreprises et experts en diagnostic d'entreprise</libelleEdition>
+  <libelleAbrege>administrateurs judiciaires</libelleAbrege>
+  <libelleAbrev>2544</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2002-10-09</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2002-12-04</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>12</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

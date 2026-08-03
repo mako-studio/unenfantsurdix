@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO51386</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>8ème circonscription de la Loire-Atlantique</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>44 Loire-Atlantique (° 8°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1967-04-03</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>1968-05-30</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>3</legislature>
+  <numero>8</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Pays de la Loire</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>44</code>
+      <libelle>Loire-Atlantique</libelle>
+    </departement>
+  </lieu>
+</organe>

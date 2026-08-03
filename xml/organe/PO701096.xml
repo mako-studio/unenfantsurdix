@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO701096</uid>
+  <codeType>CMP</codeType>
+  <libelle>Commission mixte paritaire chargée de proposer un texte sur les dispositions restant en discussion du projet de loi portant transposition de la directive 2012/13/UE du Parlement européen et du Conseil du 22 mai 2012 relative au droit à l'information dans le cadre des procédures pénales</libelle>
+  <libelleEdition>du projet de loi portant transposition de la directive 2012/13/UE du Parlement européen et du Conseil du 22 mai 2012 relative au droit à l'information dans le cadre des procédures pénales</libelleEdition>
+  <libelleAbrege>Transposition directive procédure pénale</libelleAbrege>
+  <libelleAbrev>303-13-14</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2014-05-06</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2014-05-15</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>14</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

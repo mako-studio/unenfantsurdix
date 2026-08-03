@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO855067</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère délégué auprès de la ministre du travail, de la santé, de la solidarité et des familles, chargé de l'autonomie et du handicap</libelle>
+  <libelleEdition>auprès de la ministre du travail, de la santé, de la solidarité et des familles, chargée de l'autonomie et du handicap</libelleEdition>
+  <libelleAbrege>Autonomie et handicap</libelleAbrege>
+  <libelleAbrev>TSSAH</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2024-12-24</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2025-09-09</dateFin>
+  </viMoDe>
+  <organeParent>PO855052</organeParent>
+  <preseance>23</preseance>
+  <organePrecedentRef>PO848112</organePrecedentRef>
+</organe>

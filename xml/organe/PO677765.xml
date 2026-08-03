@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExtraParlementaire_type">
+  <uid>PO677765</uid>
+  <codeType>ORGEXTPARL</codeType>
+  <libelle>Commission chargée de l'élaboration du livre blanc sur la défense et la sécurité nationale</libelle>
+  <libelleEdition>de la Commission chargée de l'élaboration du livre blanc sur la défense et la sécurité nationale</libelleEdition>
+  <libelleAbrege>Livre blanc défense</libelleAbrege>
+  <libelleAbrev>301</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2012-07-26</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-06-22</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature xsi:nil="true"/>
+  <regimeJuridique>Article 3 du décret n° 2012-913 du 26 juillet 2012</regimeJuridique>
+  <siteInternet xsi:nil="true"/>
+  <nombreReunionsAnnuelles xsi:nil="true"/>
+</organe>

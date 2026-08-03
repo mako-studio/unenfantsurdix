@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO773071</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Problématiques de sécurité associées à la présence de mineurs non accompagnés</libelle>
+  <libelleEdition>de la mission d'information sur les problématiques de sécurité associées à la présence sur le territoire de mineurs non accompagnés</libelleEdition>
+  <libelleAbrege>Problématiques de sécurité associées à la présence de mineurs non accompagnés</libelleAbrege>
+  <libelleAbrev>SECURMNA</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2020-07-01</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2021-03-11</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

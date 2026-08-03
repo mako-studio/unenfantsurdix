@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO778818</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d’évaluation de la loi n° 2016-1828 du 23 décembre 2016 portant adaptation du deuxième cycle de l’enseignement supérieur français au système Licence Master-Doctorat</libelle>
+  <libelleEdition>de la mission d’évaluation de la loi n° 2016-1828 du 23 décembre 2016 portant adaptation du deuxième cycle de l’enseignement supérieur français au système Licence Master-Doctorat </libelleEdition>
+  <libelleAbrege>Evaluation de la loi n° 2016-1828 du 23 décembre 2016</libelleAbrege>
+  <libelleAbrev>SYSTEMELMD</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2020-12-02</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2021-05-19</dateFin>
+  </viMoDe>
+  <organeParent>PO419604</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

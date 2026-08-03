@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO702926</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de la justice</libelle>
+  <libelleEdition xsi:nil="true"/>
+  <libelleAbrege>Justice</libelleAbrege>
+  <libelleAbrev>JUS</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2014-08-27</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2016-01-27</dateFin>
+  </viMoDe>
+  <organeParent>PO702883</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

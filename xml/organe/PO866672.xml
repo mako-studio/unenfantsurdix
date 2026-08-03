@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO866672</uid>
+  <codeType>CNPS</codeType>
+  <libelle>Commission spéciale chargée d'examiner le projet de loi relatif à la résilience des infrastructures critiques et au renforcement de la cybersécurité</libelle>
+  <libelleEdition>de la commission spéciale chargée d'examiner le projet de loi relatif à la résilience des infrastructures critiques et au renforcement de la cybersécurité</libelleEdition>
+  <libelleAbrege>CS PJL Cybersécurité</libelleAbrege>
+  <libelleAbrev>CSCYBER</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-03-11</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin xsi:nil="true"/>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L17PA720146D0002</uid>
+  <chronotag>2</chronotag>
+  <legislature>17</legislature>
+  <refActeur>PA720146</refActeur>
+  <dateCreation>2026-04-13T13:53:22.061477+00:00</dateCreation>
+  <datePublication>2026-04-13T13:53:30.307347+00:00</datePublication>
+  <portee>
+    <code>COMPLET</code>
+    <libelle>Être absent pour la totalité du processus législatif concerné</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>TEXTE</code>
+      <libelle>Projet ou proposition de loi ou de résolution, dans son intégralité</libelle>
+    </type>
+    <referenceTextuelle>Projet de loi n° 2630 actualisant la programmation militaire pour les années 2024 à 2030 et portant diverses dispositions intéressant la défense</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Je suis actuellement en disponibilit&amp;eacute; de l&amp;#39;entreprise THALES.&lt;/p&gt;</explication>
+</deport>

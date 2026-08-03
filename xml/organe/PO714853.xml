@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO714853</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Évaluation de la loi n° 2014-640 du 20 juin 2014 relative à la réforme des procédures de révision et de réexamen d’une condamnation pénale définitive</libelle>
+  <libelleEdition xsi:nil="true"/>
+  <libelleAbrege>Réforme des procédures de révision et réexamen condamnation pénale définitive</libelleAbrege>
+  <libelleAbrev>CONPEN</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2016-09-21</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2016-12-14</dateFin>
+  </viMoDe>
+  <organeParent>PO59051</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>14</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

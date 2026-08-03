@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO52348</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>5ème circonscription de la Sarthe</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>72 Sarthe (° 5°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1997-06-12</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2002-06-18</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>11</legislature>
+  <numero>5</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Pays de la Loire</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>72</code>
+      <libelle>Sarthe</libelle>
+    </departement>
+  </lieu>
+</organe>

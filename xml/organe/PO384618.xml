@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO384618</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>9ème circonscription du Bas-Rhin</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>67 Bas-Rhin (° 9°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2007-06-20</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2012-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <numero>9</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Grand Est</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>67</code>
+      <libelle>Bas-Rhin</libelle>
+    </departement>
+  </lieu>
+</organe>

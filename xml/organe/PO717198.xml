@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO717198</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de l’agriculture et de l’alimentation</libelle>
+  <libelleEdition>de l’agriculture et de l’alimentation</libelleEdition>
+  <libelleAbrege>Agriculture et alimentation</libelleAbrege>
+  <libelleAbrev>AGR</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2017-05-18</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-06-19</dateFin>
+  </viMoDe>
+  <organeParent>PO717173</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

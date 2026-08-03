@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO425738</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de l'intérieur, de l'outre-mer, des collectivités territoriales et de l'immigration</libelle>
+  <libelleEdition>de l'intérieur, de l'outre-mer, des collectivités territoriales et de l'immigration</libelleEdition>
+  <libelleAbrege>Intérieur, outre-mer, collectivités territoriales et immigration</libelleAbrege>
+  <libelleAbrev>INT</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2010-11-14</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2011-02-27</dateFin>
+  </viMoDe>
+  <organeParent>PO425695</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

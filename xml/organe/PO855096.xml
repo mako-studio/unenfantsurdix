@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO855096</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère auprès du ministre de l’économie, des finances et de la souveraineté industrielle et numérique, chargé de l’industrie et de l’énergie</libelle>
+  <libelleEdition>auprès du ministre de l’économie, des finances et de la souveraineté industrielle et numérique, chargé de l’industrie et de l’énergie</libelleEdition>
+  <libelleAbrege>Industrie et énergie</libelleAbrege>
+  <libelleAbrev>ECOIE</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2024-12-24</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2025-09-09</dateFin>
+  </viMoDe>
+  <organeParent>PO855052</organeParent>
+  <preseance>25</preseance>
+  <organePrecedentRef>PO847724</organePrecedentRef>
+</organe>

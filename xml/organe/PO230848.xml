@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO230848</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>19ème circonscription de Paris</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>75 Paris (°19°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2002-06-19</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2007-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>12</legislature>
+  <numero>19</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Ile-de-France</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>75</code>
+      <libelle>Paris</libelle>
+    </departement>
+  </lieu>
+</organe>

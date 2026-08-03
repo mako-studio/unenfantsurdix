@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO382992</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'Etat chargé de la prospective et de l'évaluation des politiques publiques</libelle>
+  <libelleEdition>chargé de la prospective et de l'évaluation des politiques publiques</libelleEdition>
+  <libelleAbrege>prospective et évaluation des politiques publiques</libelleAbrege>
+  <libelleAbrev>PRO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2007-05-18</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2007-06-18</dateFin>
+  </viMoDe>
+  <organeParent>PO382939</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

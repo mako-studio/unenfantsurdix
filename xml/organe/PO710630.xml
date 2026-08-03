@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO710630</uid>
+  <codeType>PARPOL</codeType>
+  <libelle>Rautahi - Rassemblement pour la Polynésie française</libelle>
+  <libelleEdition>Rautahi - Rassemblement pour la Polynésie française</libelleEdition>
+  <libelleAbrege>Rautahi - Rassemblement pour la Polynésie française</libelleAbrege>
+  <libelleAbrev>RAUTA</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2015-12-01</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2025-12-03</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO759809</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'État auprès du ministre d'État, ministre de la transition écologique et solidaire</libelle>
+  <libelleEdition>auprès du ministre d'État, ministre de la transition écologique et solidaire</libelleEdition>
+  <libelleAbrege>Transition écologique et solidaire (Mme Wargon, SE auprès du ministre d'État)</libelleAbrege>
+  <libelleAbrev>TRE</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2018-10-17</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2019-07-16</dateFin>
+  </viMoDe>
+  <organeParent>PO725688</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

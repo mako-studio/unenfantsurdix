@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO422492</uid>
+  <codeType>CNPS</codeType>
+  <libelle>Commission spéciale chargée d'examiner la proposition de loi renforçant la protection des victimes et la prévention et la répression des violences faites aux femmes</libelle>
+  <libelleEdition>de la commission spéciale chargée d'examiner la proposition de loi renforçant la protection des victimes et la prévention et la répression des violences faites aux femmes</libelleEdition>
+  <libelleAbrege>Commission spéciale violence faites aux femmes</libelleAbrege>
+  <libelleAbrev>CSFEMMES</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2009-12-08</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2010-07-06</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

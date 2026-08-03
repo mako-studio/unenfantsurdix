@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO708672</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'État, auprès de la ministre de l'éducation nationale, de l'enseignement supérieur et de la recherche, chargé de l'enseignement supérieur et de la recherche</libelle>
+  <libelleEdition>, auprès de la ministre de l'éducation nationale, de l'enseignement supérieur et de la recherche, chargé de l'enseignement supérieur et de la recherche</libelleEdition>
+  <libelleAbrege>Enseignement supérieur et recherche</libelleAbrege>
+  <libelleAbrev>ENS</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2015-06-18</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2016-12-06</dateFin>
+  </viMoDe>
+  <organeParent>PO702883</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

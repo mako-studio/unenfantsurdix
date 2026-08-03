@@ -2,19 +2,25 @@
 """Génère _includes/votes-data.json depuis les archives open data de l'Assemblée nationale.
 
 Usage :
-    python3 generate_votes_data.py <dossier_amo10> <dossier_scrutins> <sortie.json>
+    python3 generate_votes_data.py <dossier_amo30> <dossier_scrutins> <sortie.json>
 
-- <dossier_amo10>   : dossier décompressé de AMO10_deputes_actifs_mandats_actifs_organes.xml.zip
+- <dossier_amo30>   : dossier décompressé de AMO30_tous_acteurs_tous_mandats_tous_organes_historique.xml.zip
                       (doit contenir xml/acteur/ et xml/organe/)
 - <dossier_scrutins>: dossier décompressé de Scrutins.xml.zip (doit contenir xml/VTANR5L17Vxxx.xml)
 - <sortie.json>     : chemin du votes-data.json à écrire
 
-Principes (issus de l'audit du 2026-07-05) :
-- La liste des député·es vient du référentiel AMO10 (tous les mandats ASSEMBLEE actifs),
-  PAS des votants des scrutins — sinon les député·es n'ayant participé à aucun des 15
+Principes (issus de l'audit du 2026-07-05, complétés le 2026-08-03 — suppléances) :
+- La liste des député·es vient du référentiel (tous les mandats ASSEMBLEE actifs),
+  PAS des votants des scrutins — sinon les député·es n'ayant participé à aucun des
   scrutins disparaissent du site.
+- Depuis le 2026-08-03 : AMO30 (tous acteurs/mandats depuis 1997) remplace AMO10
+  (mandats actifs uniquement). Nécessaire pour retrouver, via le mandat ASSEMBLEE
+  propre d'un·e suppléant·e (motif « remplacement... », clos depuis), les votes
+  qu'iel a exprimés pendant qu'iel siégeait à la place du/de la titulaire — cf. `suppleances`.
 - Le graphique par groupe utilise la ventilation officielle du scrutin (groupe au moment
   du vote, tous les votants y compris ex-député·es), embarquée dans `scrutins[uid].ventilation`.
+  Cette ventilation compte déjà les votes de suppléant·es (elle somme tous les votants du
+  scrutin, sans filtrer sur la liste des député·es actif·ves) — rien à changer là.
 - Les mises au point officielles (vote enregistré ≠ intention déclarée) sont embarquées
   dans `misesAuPoint`.
 - Abréviations de groupes officielles (UDR, EcoS, Dem…).
@@ -24,11 +30,12 @@ import xml.etree.ElementTree as ET
 
 NS = '{http://schemas.assemblee-nationale.fr/referentiel}'
 
-# Les 15 scrutins retenus (audit thématique — voir passation)
+# Les 18 scrutins retenus (audit thématique — voir passation)
 SCRUTINS = ["VTANR5L17V657","VTANR5L17V805","VTANR5L17V1018","VTANR5L17V1196",
             "VTANR5L17V1624","VTANR5L17V1725","VTANR5L17V4714","VTANR5L17V4723",
             "VTANR5L17V5192","VTANR5L17V5226","VTANR5L17V5244","VTANR5L17V5283",
-            "VTANR5L17V6563","VTANR5L17V7258","VTANR5L17V7904"]
+            "VTANR5L17V6563","VTANR5L17V7258","VTANR5L17V7904","VTANR5L17V8308",
+            "VTANR5L17V8429","VTANR5L17V8430"]
 
 COULEURS = {  # couleurs officielles conservées de la V1 (clés = abréviations officielles)
     "EPR":"#7B4591","SOC":"#C4547D","RN":"#313567","DR":"#4A7AB5","UDR":"#3367A7",
@@ -43,40 +50,71 @@ ORGANES_HISTORIQUES = {"PO847173": "UDR"}
 
 def main(amo_dir, scr_dir, out_path):
     # --- organes ---
-    organes = {}
-    for f in glob.glob(os.path.join(amo_dir, 'xml/organe/*.xml')):
-        r = ET.parse(f).getroot()
-        organes[r.findtext(NS+'uid')] = {
-            'type': r.findtext(NS+'codeType'),
-            'abrev': r.findtext(NS+'libelleAbrege') or '',
-            'lib': r.findtext(NS+'libelle') or ''}
+    # Chargement paresseux (et non plus un glob exhaustif) : AMO30 contient ~10 800
+    # organes (tous types, depuis 1997) contre une poignée réellement consultée ici
+    # (les groupes politiques référencés par les mandats GP et les ventilations de
+    # scrutin). Le fichier est nommé <organeRef>.xml, lookup direct par uid.
+    _organe_cache = {}
+    def organe_get(oref, default=None):
+        if oref not in _organe_cache:
+            path = os.path.join(amo_dir, 'xml', 'organe', f'{oref}.xml')
+            if os.path.exists(path):
+                r = ET.parse(path).getroot()
+                _organe_cache[oref] = {
+                    'type': r.findtext(NS+'codeType'),
+                    'abrev': r.findtext(NS+'libelleAbrege') or '',
+                    'lib': r.findtext(NS+'libelle') or ''}
+            else:
+                _organe_cache[oref] = None
+        return _organe_cache[oref] if _organe_cache[oref] is not None else default
+    class _OrganesDict:
+        def get(self, oref, default=None):
+            return organe_get(oref, default)
+    organes = _OrganesDict()
 
     # --- député·es : tous les mandats ASSEMBLEE actifs de la législature 17 ---
+    # + registre complet (actifs ET clos) de tous les acteurs, nécessaire pour
+    # résoudre les suppléances (AMO30 contient les acteurs depuis 1997, dont les
+    # suppléant·es ayant siégé puis rendu leur siège — absent·es d'AMO10).
     deputes, groupes_vus = {}, {}
+    mandats_assemblee_leg17 = {}   # uid_acteur -> [mandat ASSEMBLEE leg17, ...] (tous, actifs ou clos)
+    noms_acteurs = {}              # uid_acteur -> nom complet (affichage suppléant·es)
+    suppleants_designes = {}       # uid_titulaire (actif) -> {suppleantRef, ...} désigné·es sur ses mandats
     for f in glob.glob(os.path.join(amo_dir, 'xml/acteur/*.xml')):
         r = ET.parse(f).getroot()
         uid = r.findtext(NS+'uid')
         ident = r.find(f'{NS}etatCivil/{NS}ident')
         nom = f"{ident.findtext(NS+'prenom')} {ident.findtext(NS+'nom')}"
+        noms_acteurs[uid] = nom
         civ = (ident.findtext(NS+'civ') or '').strip()  # 'M.' ou 'Mme'
-        # Adresse mail officielle @assemblee-nationale.fr (référentiel AMO10)
+        # Adresse mail officielle @assemblee-nationale.fr
         email = ''
         for adr in r.iter(NS+'adresse'):
             val = adr.findtext(NS+'valElec') or ''
             if (adr.findtext(NS+'typeLibelle') or '').strip() == 'Mèl' and val.endswith('@assemblee-nationale.fr'):
                 email = val.strip()
                 break
-        mandat_ass, groupe = None, 'NI'
+        mandat_ass, groupe, mandats_leg17 = None, 'NI', []
         for m in r.iter(NS+'mandat'):
             to, leg, fin = m.findtext(NS+'typeOrgane'), m.findtext(NS+'legislature'), m.findtext(NS+'dateFin')
-            if to == 'ASSEMBLEE' and leg == '17' and not fin:
-                mandat_ass = m
+            if to == 'ASSEMBLEE' and leg == '17':
+                mandats_leg17.append(m)
+                if not fin:
+                    mandat_ass = m
+                sup = m.find(NS+'suppleants')
+                if sup is not None:
+                    for s in sup.findall(NS+'suppleant'):
+                        ref = s.findtext(NS+'suppleantRef')
+                        if ref:
+                            suppleants_designes.setdefault(uid, set()).add(ref)
             if to == 'GP' and not fin:
                 o = organes.get(m.find(f'{NS}organes/{NS}organeRef').text, {})
                 groupe = o.get('abrev') or 'NI'
                 groupes_vus[groupe] = o.get('lib', groupe)
+        if mandats_leg17:
+            mandats_assemblee_leg17[uid] = mandats_leg17
         if mandat_ass is None:
-            continue  # pas député·e en exercice (AMO10 ne devrait pas en contenir)
+            continue  # pas député·e en exercice
         el = mandat_ass.find(NS+'election')
         deputes[uid] = {
             'nom': nom,
@@ -86,21 +124,49 @@ def main(amo_dir, scr_dir, out_path):
             'numDept': el.findtext(f'{NS}lieu/{NS}numDepartement'),
             'circo': el.findtext(f'{NS}lieu/{NS}numCirco'),
             'groupe': groupe,
-            'mandatDebut': mandat_ass.findtext(NS+'dateDebut')}
+            # datePriseFonction plutôt que dateDebut : pour un mandat repris après
+            # remplacement (ex-suppléant·e devenu·e titulaire), dateDebut reste la date
+            # de l'élection générale d'origine (2024) alors que la personne n'a pris
+            # ses fonctions que plus tard — utiliser dateDebut ferait passer pour
+            # « n'a pas pris part au vote » des scrutins antérieurs à sa prise de
+            # fonction réelle, qui devraient afficher « pas encore élu·e ».
+            'mandatDebut': (mandat_ass.findtext(f'{NS}mandature/{NS}datePriseFonction')
+                             or mandat_ass.findtext(NS+'dateDebut'))}
     groupes_vus.setdefault('NI', 'Non inscrit')
+
+    # --- suppléances confirmées : un·e titulaire peut désigner un·e suppléant·e sans
+    # jamais avoir besoin de lui/elle (l'écrasante majorité des cas). On ne retient que
+    # les suppléant·es ayant un mandat ASSEMBLEE propre (leg17) au motif "remplacement...",
+    # avec la période réelle d'occupation (datePriseFonction -> dateFin).
+    suppleances_confirmees = {}  # uid_titulaire -> [(datePriseFonction, dateFin, suppleantRef, nom), ...]
+    for uid_tit, refs in suppleants_designes.items():
+        if uid_tit not in deputes:
+            continue  # titulaire lui/elle-même plus en exercice : hors périmètre de la fiche
+        for ref in refs:
+            for m in mandats_assemblee_leg17.get(ref, []):
+                cause = (m.findtext(f'{NS}election/{NS}causeMandat') or '').lower()
+                if 'remplacement' not in cause:
+                    continue
+                dpf = m.findtext(f'{NS}mandature/{NS}datePriseFonction')
+                dfin = m.findtext(NS+'dateFin')
+                if not dpf:
+                    continue
+                suppleances_confirmees.setdefault(uid_tit, []).append(
+                    (dpf, dfin, ref, noms_acteurs.get(ref, ref)))
 
     groupes = {g: {'nom': lib if g != 'NI' else 'Non inscrit',
                    'couleur': COULEURS.get(g, '#888888')}
                for g, lib in groupes_vus.items()}
 
     # --- scrutins ---
-    scrutins, votes, maps = {}, {}, {}
+    scrutins, votes, maps, suppleances = {}, {}, {}, {}
     CAT = [('pours','P'),('contres','C'),('abstentions','A'),
            ('nonVotants','N'),('nonVotantsVolontaires','N')]
     for sid in SCRUTINS:
         r = ET.parse(os.path.join(scr_dir, f'xml/{sid}.xml')).getroot()
         syn = r.find(NS+'syntheseVote')
-        vmap, ventil = {}, {}
+        d_scrutin = r.findtext(NS+'dateScrutin')
+        vmap, vmap_brut, ventil = {}, {}, {}
         for grp in r.iter(NS+'groupe'):
             oref = grp.findtext(NS+'organeRef')
             o = organes.get(oref)
@@ -116,6 +182,7 @@ def main(amo_dir, scr_dir, out_path):
                 for votant in node.findall(NS+'votant'):
                     a = votant.findtext(NS+'acteurRef')
                     v[code] += 1
+                    vmap_brut[a] = code  # tous les votants, y compris suppléant·es
                     if a in deputes:
                         vmap[a] = code
         # mises au point officielles (vote enregistré ≠ intention déclarée)
@@ -141,24 +208,45 @@ def main(amo_dir, scr_dir, out_path):
         votes[sid] = vmap
         if mps: maps[sid] = mps
 
+        # suppléances : si le/la titulaire n'a pas voté personnellement sur CE scrutin,
+        # et que la date du scrutin tombe dans une période de remplacement confirmée,
+        # on va chercher le vote du/de la suppléant·e (sous sa propre référence) dans
+        # vmap_brut — jamais fusionné avec le vote du/de la titulaire.
+        for uid_tit, periodes in suppleances_confirmees.items():
+            if uid_tit in vmap:
+                continue
+            for (dpf, dfin, ref, nom_sup) in periodes:
+                if dpf <= d_scrutin and (not dfin or d_scrutin <= dfin):
+                    pos = vmap_brut.get(ref)
+                    if pos:
+                        suppleances.setdefault(sid, {})[uid_tit] = {
+                            'pos': pos, 'nom': nom_sup, 'debut': dpf, 'fin': dfin}
+                    break
+
     data = {
         'meta': {
             'legislature': 17,
-            'genereLe': '2026-07-05',
-            'source': 'data.assemblee-nationale.fr (open data officiel, jeu "Votes" et référentiel AMO10 du 2026-07-01)',
+            'genereLe': '2026-08-03',
+            'source': 'data.assemblee-nationale.fr (open data officiel, jeu "Votes" et referentiel AMO30 du 2026-05-18)',
             'perimetre': "Scrutins publics nominatifs de la 17e legislature (depuis juillet 2024) relatifs a la protection de l'enfance, aux violences faites aux femmes et aux enfants, et a la famille. Liste etablie par audit exhaustif des 7906 scrutins de la legislature.",
             'note': ("P=pour, C=contre, A=abstention, N=non-votant (categorie officielle). "
                      "Absence de cle pour un depute sur un scrutin = n'a pas pris part au vote "
-                     "(absence, mission, siege alors occupe par un-e suppleant-e) ou pas encore elu-e a cette date. "
+                     "(absence, mission) ou pas encore elu-e a cette date, SAUF si une entree "
+                     "existe pour ce depute dans `suppleances[scrutin]` : dans ce cas le siege "
+                     "etait occupe par un-e suppleant-e dont la position est indiquee separement "
+                     "(jamais fusionnee avec celle du/de la titulaire). "
                      "La ventilation par groupe de chaque scrutin est la ventilation officielle au moment du vote, "
-                     "tous votants compris (y compris ex-deputes et suppleants ayant quitte l'Assemblee depuis). "
+                     "tous votants compris (y compris ex-deputes et suppleants ayant quitte l'Assemblee depuis) : "
+                     "les votes de suppleant-e-s y sont deja comptes, qu'ils soient ou non individuellement "
+                     "attribues dans `suppleances`. "
                      "misesAuPoint = corrections officielles publiees au JO (le vote enregistre fait foi)."),
             'ordre': SCRUTINS},
         'groupes': groupes,
         'deputes': deputes,
         'scrutins': scrutins,
         'votes': votes,
-        'misesAuPoint': maps}
+        'misesAuPoint': maps,
+        'suppleances': suppleances}
     # --- deputes-contacts.json (générateur de courrier) ---
     # Fichier léger écrit à côté de la sortie principale : liste des député·es
     # en exercice avec adresse mail officielle, indexée par numéro de département.
@@ -174,17 +262,20 @@ def main(amo_dir, scr_dir, out_path):
 
     with open(out_path, 'w') as f:
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
+    nb_suppleances = sum(len(v) for v in suppleances.values())
     print(f"OK : {len(deputes)} deputes, {len(groupes)} groupes, {len(SCRUTINS)} scrutins, "
-          f"mises au point sur {len(maps)} scrutins -> {out_path} ({os.path.getsize(out_path)//1024} Ko)")
+          f"mises au point sur {len(maps)} scrutins, {nb_suppleances} votes de suppleant-e-s "
+          f"recuperes sur {len(suppleances_confirmees)} titulaires remplace-e-s -> {out_path} "
+          f"({os.path.getsize(out_path)//1024} Ko)")
     for lst in contacts.values():
         lst.sort(key=lambda x: int(x['circo'] or 0))
     contacts_path = os.path.join(os.path.dirname(out_path) or '.', 'deputes-contacts.json')
     with open(contacts_path, 'w') as f:
         json.dump({'meta': {'source': data['meta']['source'], 'genereLe': data['meta']['genereLe'],
-                            'note': 'Adresses mail officielles @assemblee-nationale.fr du referentiel AMO10.'},
+                            'note': 'Adresses mail officielles @assemblee-nationale.fr du referentiel AMO30.'},
                    'departements': contacts}, f, ensure_ascii=False, separators=(',', ':'))
     print(f"OK : deputes-contacts.json ({os.path.getsize(contacts_path)//1024} Ko), "
-          f"{sans_mail} depute(s) sans adresse mail dans AMO10")
+          f"{sans_mail} depute(s) sans adresse mail dans AMO30")
 
 if __name__ == '__main__':
     if len(sys.argv) != 4:

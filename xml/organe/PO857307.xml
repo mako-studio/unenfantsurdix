@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO857307</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d'information relative aux dysfonctionnements dans la gestion des impôts locaux et leurs conséquences</libelle>
+  <libelleEdition xsi:nil="true"/>
+  <libelleAbrege>DYSIMPOTSLOC</libelleAbrege>
+  <libelleAbrev>DYSIMPOTS</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-01-22</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2025-06-18</dateFin>
+  </viMoDe>
+  <organeParent>PO59048</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

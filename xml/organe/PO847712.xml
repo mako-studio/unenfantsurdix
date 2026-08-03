@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO847712</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère délégué auprès de la ministre du partenariat avec les territoires et de la décentralisation, chargé de la mer et de la pêche</libelle>
+  <libelleEdition>auprès de la ministre du partenariat avec les territoires et de la décentralisation, chargé de la mer et de la pêche</libelleEdition>
+  <libelleAbrege>Mer et pêche</libelleAbrege>
+  <libelleAbrev>PTDMP</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2024-09-22</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2024-12-13</dateFin>
+  </viMoDe>
+  <organeParent>PO847639</organeParent>
+  <preseance>27</preseance>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

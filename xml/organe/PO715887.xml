@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO715887</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'État, auprès du ministère des affaires étrangères et du développement international, chargé du commerce extérieur, de la promotion du tourisme et des Français de l'étranger</libelle>
+  <libelleEdition>, auprès du ministre des affaires étrangères et du développement international, chargé du commerce extérieur, de la promotion du tourisme et des Français de l'étranger</libelleEdition>
+  <libelleAbrege>Commerce extérieur, promotion du tourisme et Français de l'étranger</libelleAbrege>
+  <libelleAbrev>CEX</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2016-12-07</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-03-21</dateFin>
+  </viMoDe>
+  <organeParent>PO715793</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

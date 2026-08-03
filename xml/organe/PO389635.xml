@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GroupePolitique_type">
+  <uid>PO389635</uid>
+  <codeType>GP</codeType>
+  <libelle>Gauche démocrate et républicaine</libelle>
+  <libelleEdition>du groupe de la Gauche démocrate et républicaine</libelleEdition>
+  <libelleAbrege>GDR</libelleAbrege>
+  <libelleAbrev>GDR</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2007-06-27</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2012-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+  <positionPolitique>Opposition</positionPolitique>
+  <preseance>5</preseance>
+  <couleurAssociee xsi:nil="true"/>
+</organe>

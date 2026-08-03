@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO59045</uid>
+  <codeType>COMPER</codeType>
+  <libelle>Commission des affaires culturelles, familiales et sociales</libelle>
+  <libelleEdition>de la commission des affaires culturelles, familiales et sociales</libelleEdition>
+  <libelleAbrege>Affaires culturelles</libelleAbrege>
+  <libelleAbrev>CION_CULT</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1958-12-09</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2009-06-30</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature xsi:nil="true"/>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

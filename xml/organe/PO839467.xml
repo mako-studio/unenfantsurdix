@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO839467</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>1ère circonscription du Maine-et-Loire</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>49 Maine-et-Loire (° 1°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2024-07-01</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin xsi:nil="true"/>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <numero>1</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Pays de la Loire</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>49</code>
+      <libelle>Maine-et-Loire</libelle>
+    </departement>
+  </lieu>
+</organe>

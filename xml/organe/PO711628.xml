@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO711628</uid>
+  <codeType>CMP</codeType>
+  <libelle>Commission mixte paritaire chargée de proposer un texte sur les dispositions restant en discussion de la proposition de loi organique de modernisation des règles applicables à l'élection présidentielle</libelle>
+  <libelleEdition>de la commission mixte paritaire chargée de proposer un texte sur les dispositions restant en discussion de la proposition de loi organique de modernisation des règles applicables à l'élection présidentielle</libelleEdition>
+  <libelleAbrege>Modernisation des règles applicables à l'élection présidentielle (PPLO)</libelleAbrege>
+  <libelleAbrev>3201</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2016-02-19</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2016-04-05</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>14</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

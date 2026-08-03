@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO710144</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Le rôle de la Marine nationale en Méditerranée</libelle>
+  <libelleEdition>Mission d'nformation sur le rôle de la Marine nationale en Méditerranée</libelleEdition>
+  <libelleAbrege>Le rôle de la Marine nationale en Méditerranée</libelleAbrege>
+  <libelleAbrev>MARINE</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2015-11-03</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-02-07</dateFin>
+  </viMoDe>
+  <organeParent>PO59046</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>14</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

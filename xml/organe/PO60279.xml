@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExtraParlementaire_type">
+  <uid>PO60279</uid>
+  <codeType>ORGEXTPARL</codeType>
+  <libelle>Comité directeur du Fonds pour l'emploi dans les départements d'outre-mer et la collectivité territoriale de Saint-Pierre-et-Miquelon (FEDOM)</libelle>
+  <libelleEdition>du comité directeur du fonds pour l'emploi dans les départements d'outre-mer et la collectivité territoriale de Saint-Pierre-et-Miquelon (FEDOM)</libelleEdition>
+  <libelleAbrege>Départements d'outre-mer,emploi</libelleAbrege>
+  <libelleAbrev>140</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1995-08-25</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2012-05-14</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature xsi:nil="true"/>
+  <regimeJuridique>Loi 94-638 du 25 juillet 1994 ( ART. 6 codifié L 832-4 du code du travail ), décret 95-984 du 25 août 1995</regimeJuridique>
+  <siteInternet xsi:nil="true"/>
+  <nombreReunionsAnnuelles xsi:nil="true"/>
+</organe>

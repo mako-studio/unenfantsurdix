@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO782811</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Suivi de la mise en œuvre des conclusions de la commission d’enquête sur l’inclusion des élèves handicapés dans l’école et l’université de la République</libelle>
+  <libelleEdition>de la mission d'information, en application de l’article 145-8 du règlement, sur la mise en œuvre des conclusions de la commission d’enquête sur l’inclusion des élèves handicapés dans l’école et l’université de la République</libelleEdition>
+  <libelleAbrege>Suivi recommandations commission d'enquête sur l’inclusion des élèves handicapés</libelleAbrege>
+  <libelleAbrev>SUIVIHANDI</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2021-05-05</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2021-06-21</dateFin>
+  </viMoDe>
+  <organeParent>PO419604</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

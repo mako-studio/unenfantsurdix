@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L15PA721760D0001</uid>
+  <chronotag>2</chronotag>
+  <legislature>15</legislature>
+  <refActeur>PA721760</refActeur>
+  <dateCreation>2021-02-17T12:45:55.666139+00:00</dateCreation>
+  <datePublication>2021-02-17T12:47:17.747488+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>TEXTE</code>
+      <libelle>Projet ou proposition de loi ou de résolution, dans son intégralité</libelle>
+    </type>
+    <referenceTextuelle>Projet de loi de programmation relatif au développement solidaire et à la lutte contre les inégalités mondiales, n° 3699</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication/>
+</deport>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExtraParlementaire_type">
+  <uid>PO60270</uid>
+  <codeType>ORGEXTPARL</codeType>
+  <libelle>Conseil national de l'enseignement supérieur privé</libelle>
+  <libelleEdition>du conseil national de l'enseignement supérieur privé</libelleEdition>
+  <libelleAbrege>Enseignement supérieur privé</libelleAbrege>
+  <libelleAbrev>131</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1994-10-24</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2011-01-24</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature xsi:nil="true"/>
+  <regimeJuridique>Arrêté du 24 10 1994 relatif au conseil national de l'enseignement supérieur privé (ART 4 et 5)</regimeJuridique>
+  <siteInternet xsi:nil="true"/>
+  <nombreReunionsAnnuelles xsi:nil="true"/>
+</organe>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExtraParlementaire_type">
+  <uid>PO60272</uid>
+  <codeType>ORGEXTPARL</codeType>
+  <libelle>Conseil d'administration de la société nationale de programme "La Cinquième"</libelle>
+  <libelleEdition>du conseil d'administration de la société nationale de programme "La Cinquième"</libelleEdition>
+  <libelleAbrege>Cinquième (administration)</libelleAbrege>
+  <libelleAbrev>133</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1994-12-13</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2012-05-14</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature xsi:nil="true"/>
+  <regimeJuridique>loi n°2000-719 du 1/08/2000</regimeJuridique>
+  <siteInternet xsi:nil="true"/>
+  <nombreReunionsAnnuelles xsi:nil="true"/>
+</organe>

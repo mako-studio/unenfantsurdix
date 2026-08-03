@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO854014</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d'information sur la place des outre-mer dans la diplomatie française</libelle>
+  <libelleEdition>Mission d'information sur la place des outre-mer dans la diplomatie française</libelleEdition>
+  <libelleAbrege>Place des outre-mer dans la diplomatie française</libelleAbrege>
+  <libelleAbrev>PLACEOMDIP</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2024-12-16</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2025-11-13</dateFin>
+  </viMoDe>
+  <organeParent>PO675659</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

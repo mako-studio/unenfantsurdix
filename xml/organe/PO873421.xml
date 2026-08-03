@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO873421</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de l’éducation nationale, de l’enseignement supérieur et de la recherche</libelle>
+  <libelleEdition>de l’éducation nationale, de l’enseignement supérieur et de la recherche</libelleEdition>
+  <libelleAbrege>Éducation nationale, enseignement supérieur et recherche</libelleAbrege>
+  <libelleAbrev>MEN</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-10-05</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2025-10-10</dateFin>
+  </viMoDe>
+  <organeParent>PO873418</organeParent>
+  <preseance>2</preseance>
+  <organePrecedentRef>PO855069</organePrecedentRef>
+</organe>

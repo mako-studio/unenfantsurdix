@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO700755</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère du logement et de l'égalité des territoires</libelle>
+  <libelleEdition>du logement et de l'égalité des territoires</libelleEdition>
+  <libelleAbrege>Logement et égalité des territoires</libelleAbrege>
+  <libelleAbrev>LOG</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2014-04-03</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2014-08-26</dateFin>
+  </viMoDe>
+  <organeParent>PO700706</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

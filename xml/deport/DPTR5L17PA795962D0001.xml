@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L17PA795962D0001</uid>
+  <chronotag>3</chronotag>
+  <legislature>17</legislature>
+  <refActeur>PA795962</refActeur>
+  <dateCreation>2025-04-10T15:51:17.438773+00:00</dateCreation>
+  <datePublication>2025-04-10T20:35:07.708965+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>ART</code>
+      <libelle>Article(s)</libelle>
+    </type>
+    <referenceTextuelle>Article 19 de la proposition de loi n°1100 relative à la fin de vie</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Conjoint dirigeant dans le secteur des assurances&amp;nbsp;&lt;/p&gt;</explication>
+</deport>

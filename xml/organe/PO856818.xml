@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO856818</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d'information sur les conséquences pour les collectivités territoriales de la transposition et de la mise en œuvre de la directive (UE) 2020/2184 du Parlement européen et du Conseil du 16 décembre 2020 relative à la qualité des eaux destinées à la consommation humaine</libelle>
+  <libelleEdition>Mission d'information sur les conséquences pour les collectivités territoriales de la transposition et de la mise en œuvre de la directive (UE) 2020/2184 du Parlement européen et du Conseil du 16 décembre 2020 relative à la qualité des eaux destinées à la consommation humaine</libelleEdition>
+  <libelleAbrege>Qualité des eaux destinées à la consommation humaine</libelleAbrege>
+  <libelleAbrev>QUALITEAUX</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-01-15</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2026-04-15</dateFin>
+  </viMoDe>
+  <organeParent>PO744127</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

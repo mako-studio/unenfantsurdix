@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO873635</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Premier ministre</libelle>
+  <libelleEdition xsi:nil="true"/>
+  <libelleAbrege>Premier ministre</libelleAbrege>
+  <libelleAbrev>PRM</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-10-11</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin xsi:nil="true"/>
+  </viMoDe>
+  <organeParent>PO873634</organeParent>
+  <preseance>1</preseance>
+  <organePrecedentRef>PO873419</organePrecedentRef>
+</organe>

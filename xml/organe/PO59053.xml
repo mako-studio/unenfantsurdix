@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO59053</uid>
+  <codeType>DELEG</codeType>
+  <libelle>Délégation parlementaire pour les problèmes démographiques</libelle>
+  <libelleEdition>de la délégation parlementaire pour les problèmes démographiques</libelleEdition>
+  <libelleAbrege>Délégation pour les problèmes démographiques</libelleAbrege>
+  <libelleAbrev>DEM</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1986-04-16</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2009-06-15</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature xsi:nil="true"/>
+  <secretariat>
+    <secretaire01>Mme Christine Juberthie</secretaire01>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

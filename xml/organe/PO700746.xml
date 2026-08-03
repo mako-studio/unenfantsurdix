@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO700746</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de la décentralisation, de la réforme de l'État et de la fonction publique</libelle>
+  <libelleEdition>de la décentralisation, de la réforme de l'État et de la fonction publique</libelleEdition>
+  <libelleAbrege>Décentralisation, réforme de l'État et fonction publique</libelleAbrege>
+  <libelleAbrev>REF</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2014-04-03</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2014-06-03</dateFin>
+  </viMoDe>
+  <organeParent>PO700706</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

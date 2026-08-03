@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO763009</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d’application de la loi n° 2017-1839 du 30 décembre 2017 mettant fin à la recherche ainsi qu’à l’exploitation des hydrocarbures et portant diverses dispositions relatives à l’énergie et à l’environnement </libelle>
+  <libelleEdition xsi:nil="true"/>
+  <libelleAbrege>application loi n° 2017-1839 mettant fin aux hydrocarbures</libelleAbrege>
+  <libelleAbrev>HYDROCARBU</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2019-03-05</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2019-04-12</dateFin>
+  </viMoDe>
+  <organeParent>PO419865</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

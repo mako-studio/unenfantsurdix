@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO761114</uid>
+  <codeType>CNPE</codeType>
+  <libelle>Commission d'enquête sur la lutte contre les groupuscules d'extrême droite en France</libelle>
+  <libelleEdition>de la commission d'enquête sur la lutte contre les groupuscules d'extrême droite en France</libelleEdition>
+  <libelleAbrege>Commission d'enquête sur la lutte contre les groupuscules d'extrême droite</libelleAbrege>
+  <libelleAbrev>CELGROUED</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2018-12-19</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2019-06-06</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

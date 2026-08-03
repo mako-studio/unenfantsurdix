@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO427547</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de la défense et des anciens combattants</libelle>
+  <libelleEdition>de la défense et des anciens combattants</libelleEdition>
+  <libelleAbrege>Défense et anciens combattants</libelleAbrege>
+  <libelleAbrev>DEF</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2011-02-27</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2012-05-10</dateFin>
+  </viMoDe>
+  <organeParent>PO425695</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

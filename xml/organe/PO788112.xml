@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO788112</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère auprès du ministre de l’Europe et des affaires étrangère et du ministre de l’économie, des finances et de la relance - Tourisme, Français de l’étranger, francophonie, petites et moyennes entreprises</libelle>
+  <libelleEdition>auprès du ministre de l’Europe et des affaires étrangères, chargé du tourisme, des Français de l’étranger et de la francophonie, et auprès du ministre de l’économie, des finances et de la relance, chargé des petites et moyennes entreprises</libelleEdition>
+  <libelleAbrege>Tourisme, Français de l’étranger, francophonie et PME</libelleAbrege>
+  <libelleAbrev>EAECO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2021-12-09</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2022-05-16</dateFin>
+  </viMoDe>
+  <organeParent>PO773371</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

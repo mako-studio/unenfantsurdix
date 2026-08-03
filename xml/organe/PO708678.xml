@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO708678</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'État, auprès du ministre de l'économie, de l'industrie et du numérique, chargé du commerce, de l'artisanat, de la consommation et de l'économie sociale et solidaire</libelle>
+  <libelleEdition>, auprès du ministre de l'économie, de l'industrie et du numérique, chargée du commerce, de l'artisanat, de la consommation et de l'économie sociale et solidaire</libelleEdition>
+  <libelleAbrege>Commerce, artisanat, consommation et économie sociale et solidaire</libelleAbrege>
+  <libelleAbrev>ACC</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2015-06-18</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2016-08-30</dateFin>
+  </viMoDe>
+  <organeParent>PO702883</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

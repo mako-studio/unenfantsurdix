@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA721466D0001</uid>
+  <chronotag>3</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA721466</refActeur>
+  <dateCreation>2023-02-07T18:03:56.267002+00:00</dateCreation>
+  <datePublication>2023-02-07T18:19:29.460224+00:00</datePublication>
+  <portee>
+    <code>COMPLET</code>
+    <libelle>Être absent pour la totalité du processus législatif concerné</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA</code>
+    <libelle>Séance publique</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>TEXTE</code>
+      <libelle>Projet ou proposition de loi ou de résolution, dans son intégralité</libelle>
+    </type>
+    <referenceTextuelle>Proposition de loi n°672 visant à lutter contre les dérives des influenceurs sur les réseaux sociaux</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Le premier article de cette proposition de loi porte notamment sur l&amp;#39;interdiction de publicit&amp;eacute; pour les paris sportifs, les jeux d&amp;#39;argent et de hasard.&lt;br /&gt;&#13;Mon &amp;eacute;pouse &amp;eacute;tant cadre dirigeante de la Fran&amp;ccedil;aise des jeux, je souhaite me d&amp;eacute;porter de ce texte afin d&amp;#39;&amp;eacute;carter tout&amp;nbsp;soup&amp;ccedil;on&amp;nbsp;de conflit&amp;nbsp;d&amp;#39;int&amp;eacute;r&amp;ecirc;t.&amp;nbsp;&lt;br /&gt;&#13;Je ne participerai donc pas au d&amp;eacute;bat, ni &amp;agrave; la d&amp;eacute;lib&amp;eacute;ration, ni au vote de ce texte.&amp;nbsp;&lt;/p&gt;</explication>
+</deport>

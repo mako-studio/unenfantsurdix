@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO856626</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d'information sur l’élaboration d’une doctrine française en matière de diplomatie parlementaire</libelle>
+  <libelleEdition xsi:nil="true"/>
+  <libelleAbrege>Elaboration_doctrine_française_diplomatie_parlementaire</libelleAbrege>
+  <libelleAbrev>DIPLO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-01-15</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2026-05-05</dateFin>
+  </viMoDe>
+  <organeParent>PO59047</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO388018</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de la culture et de la communication</libelle>
+  <libelleEdition>de la culture et de la communication</libelleEdition>
+  <libelleAbrege>Culture et communication</libelleAbrege>
+  <libelleAbrev>CUL</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2007-06-19</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2009-06-23</dateFin>
+  </viMoDe>
+  <organeParent>PO384206</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

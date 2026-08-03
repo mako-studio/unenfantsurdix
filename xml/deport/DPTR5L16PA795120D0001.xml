@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA795120D0001</uid>
+  <chronotag>2</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA795120</refActeur>
+  <dateCreation>2022-12-01T15:48:53.746477+00:00</dateCreation>
+  <datePublication>2022-12-01T15:49:23.572458+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>AMDT</code>
+      <libelle>Amendement(s)</libelle>
+    </type>
+    <referenceTextuelle>Projet de Loi portant accélération de la production d'énergies renouvelables- Article 1er Quater A : amendements n°2282, n°2230 - après l'article 28 : amendements n° 1 et n°2</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Pr&amp;eacute;sidente de l&amp;#39;Association INES PFE (plateforme formation &amp;eacute;valuation de l&amp;#39;Institut National de l&amp;#39;Energie Solaire) jusqu&amp;#39;en juillet 2021, je suis toujours administratrice de cette asoociation qui propose des formations pouvant s&amp;#39;adresser aux architectes et aux architectes et urbanistes d&amp;#39;&amp;Eacute;tat.&amp;nbsp;&lt;/p&gt;&#13;&#13;&lt;p&gt;Ces amendements visant &amp;agrave; int&amp;eacute;grer la&amp;nbsp;question de l&amp;#39;int&amp;eacute;gration des&amp;nbsp;&amp;eacute;nergies renouvelables et notamment du solaire, dans les formations d&amp;eacute;di&amp;eacute;es aux ABF, De ce fait,&amp;nbsp;j&amp;#39;ai pr&amp;eacute;f&amp;eacute;r&amp;eacute; me d&amp;eacute;porter de ces amendements.&lt;/p&gt;&#13;&#13;&lt;p&gt;En&amp;nbsp;date du 16 novembre, j&amp;#39;avais d&amp;#39;ailleurs par anticipation, interrog&amp;eacute; le d&amp;eacute;ontologue de l&amp;#39;Assembl&amp;eacute;e sur le sujet.&lt;/p&gt;&#13;&#13;&lt;p&gt;Ce dernier m&amp;#39;a recommand&amp;eacute; de ne pas m&amp;#39;associer au d&amp;eacute;p&amp;ocirc;t de ces amendements et qu&amp;#39;un d&amp;eacute;port avec a minima absence de vote de ma part serait appropri&amp;eacute;.&lt;/p&gt;&#13;&#13;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#13;&#13;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</explication>
+</deport>

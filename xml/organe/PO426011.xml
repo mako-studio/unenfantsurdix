@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO426011</uid>
+  <codeType>DELEGBUREAU</codeType>
+  <libelle>Groupe de travail sur la prévention des conflits d'intérêts</libelle>
+  <libelleEdition>du groupe de travail sur la prévention des conflits d'intérêts</libelleEdition>
+  <libelleAbrege>Prévention des conflits d'intérêts</libelleAbrege>
+  <libelleAbrev>GTB_CI</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2010-10-06</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2012-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO384406</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>7ème circonscription de la Haute-Garonne</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>31 Haute-Garonne (° 7°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2007-06-20</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2012-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <numero>7</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Occitanie</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>31</code>
+      <libelle>Haute-Garonne</libelle>
+    </departement>
+  </lieu>
+</organe>

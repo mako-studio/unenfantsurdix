@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA795722D0001</uid>
+  <chronotag>2</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA795722</refActeur>
+  <dateCreation>2023-04-07T14:00:16.069440+00:00</dateCreation>
+  <datePublication>2023-04-07T14:00:41.719785+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA</code>
+    <libelle>Séance publique</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>ART</code>
+      <libelle>Article(s)</libelle>
+    </type>
+    <referenceTextuelle>Proposition de loi n°643 portant mesures pour bâtir la société du bien vieillir en France</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Sur la base de l&amp;rsquo;article 80-1-1 du R&amp;egrave;glement, une demande de d&amp;eacute;port &lt;strong&gt;pour le titre 3 &lt;/strong&gt;de la proposition de loi n&amp;deg;643 portant mesures pour b&amp;acirc;tir la soci&amp;eacute;t&amp;eacute; du bien vieillir en France.&amp;nbsp;&lt;/p&gt;</explication>
+</deport>

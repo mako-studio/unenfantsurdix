@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO710872</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Évaluation de l'efficacité des mécanismes européens pour prendre en charge des flux migratoires exceptionnels</libelle>
+  <libelleEdition>de la mission d'information tendant à évaluer l'efficacité des mécanismes européens pour prendre en charge des flux migratoires exceptionnels</libelleEdition>
+  <libelleAbrege>Mécanismes européens pour les flux migratoires exceptionnels</libelleAbrege>
+  <libelleAbrev>FLUXMIGR</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2015-11-18</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2016-10-25</dateFin>
+  </viMoDe>
+  <organeParent>PO59051</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>14</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

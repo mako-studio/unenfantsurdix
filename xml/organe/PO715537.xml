@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO715537</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d’information sur les incidences des nouvelles normes européennes en matière de protection des données personnelles sur la législation française</libelle>
+  <libelleEdition>de la mission d’information sur les incidences des nouvelles normes européennes en matière de protection des données personnelles sur la législation française</libelleEdition>
+  <libelleAbrege>Normes européennes en matière de protection des données personnelles</libelleAbrege>
+  <libelleAbrev>PROTECT</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2016-11-23</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-02-22</dateFin>
+  </viMoDe>
+  <organeParent>PO59051</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>14</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

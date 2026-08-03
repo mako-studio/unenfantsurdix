@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA794810D0001</uid>
+  <chronotag>3</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA794810</refActeur>
+  <dateCreation>2023-06-22T15:46:30.952170+00:00</dateCreation>
+  <datePublication>2023-06-22T15:48:11.809295+00:00</datePublication>
+  <portee>
+    <code>COMPLET</code>
+    <libelle>Être absent pour la totalité du processus législatif concerné</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>TEXTE</code>
+      <libelle>Projet ou proposition de loi ou de résolution, dans son intégralité</libelle>
+    </type>
+    <referenceTextuelle>Industrie Verte</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Conflit&amp;nbsp;d&amp;#39;int&amp;eacute;r&amp;ecirc;t&amp;nbsp;d&amp;#39;ordre familial.&amp;nbsp;&lt;/p&gt;</explication>
+</deport>

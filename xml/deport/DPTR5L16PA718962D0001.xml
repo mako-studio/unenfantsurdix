@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA718962D0001</uid>
+  <chronotag>2</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA718962</refActeur>
+  <dateCreation>2023-03-13T15:01:20.792203+00:00</dateCreation>
+  <datePublication>2023-03-13T15:01:41.038811+00:00</datePublication>
+  <portee>
+    <code>VOTES</code>
+    <libelle>Prendre la parole sans prendre part aux votes</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA</code>
+    <libelle>Séance publique</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>TEXTE</code>
+      <libelle>Projet ou proposition de loi ou de résolution, dans son intégralité</libelle>
+    </type>
+    <referenceTextuelle>Projet de loi relatif à l’accélération des procédures liées à la construction de nouvelles installations nucléaires à proximité de sites nucléaires existants et au fonctionnement des installations existantes</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p style="text-align:start"&gt;Avant d&amp;rsquo;&amp;ecirc;tre &amp;eacute;lu d&amp;eacute;put&amp;eacute;, je travaillais comme&amp;nbsp;Chef de projets pour une soci&amp;eacute;t&amp;eacute;&amp;nbsp;qui d&amp;eacute;veloppe une expertise reconnue dans la conception et la fabrication d&amp;rsquo;&amp;eacute;quipements et de solutions dans les domaines de l&amp;rsquo;industrie nucl&amp;eacute;aire, la d&amp;eacute;fense, la m&amp;eacute;decine nucl&amp;eacute;aire, l&amp;rsquo;environnement et autres industries sp&amp;eacute;cialis&amp;eacute;es. Actuellement, dans les effectifs de cette soci&amp;eacute;t&amp;eacute;, donc salari&amp;eacute; mais ne percevant aucun salaire, je d&amp;eacute;cide apr&amp;egrave;s &amp;eacute;change avec le d&amp;eacute;ontologue de l&amp;#39;Assembl&amp;eacute;e nationale de ne pas prendre part aux votes de ce projet de loi.&lt;/p&gt;&#13;&#13;&lt;p style="text-align:start"&gt;&amp;nbsp;&lt;/p&gt;</explication>
+</deport>

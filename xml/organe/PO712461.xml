@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO712461</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Application de la loi n° 2014-344 du 17 mars 2014 relative à la consommation (phase 2)</libelle>
+  <libelleEdition>de la mission de contrôle de la mise en application de la loi n° 2014-344 du 17 mars 2014 relative à la consommation (phase 2)</libelleEdition>
+  <libelleAbrege>Consommation (phase 2)</libelleAbrege>
+  <libelleAbrev>CONSO2</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2015-12-16</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2016-10-19</dateFin>
+  </viMoDe>
+  <organeParent>PO419610</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>14</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

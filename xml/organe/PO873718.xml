@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO873718</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère délégué auprès du ministre de l’économie, des finances et de la souveraineté industrielle, énergétique et numérique, chargé de l'intelligence artificielle et du numérique</libelle>
+  <libelleEdition>auprès du ministre de l’économie, des finances et de la souveraineté industrielle, énergétique et numérique, chargée de l'intelligence artificielle et du numérique</libelleEdition>
+  <libelleAbrege>Intelligence artificielle et numérique</libelleAbrege>
+  <libelleAbrev>ECOIA</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-10-13</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin xsi:nil="true"/>
+  </viMoDe>
+  <organeParent>PO873634</organeParent>
+  <preseance>31</preseance>
+  <organePrecedentRef>PO855104</organePrecedentRef>
+</organe>

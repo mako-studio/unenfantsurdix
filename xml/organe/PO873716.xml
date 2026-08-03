@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO873716</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère délégué auprès de la ministre de la transition écologique, de la biodiversité et des négociations internationales sur le climat et la nature, chargé de la mer et de la pêche</libelle>
+  <libelleEdition>auprès de la ministre de la transition écologique, de la biodiversité et des négociations internationales sur le climat et la nature, chargée de la mer et de la pêche</libelleEdition>
+  <libelleAbrege>Mer et pêche</libelleAbrege>
+  <libelleAbrev>MER</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-10-13</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin xsi:nil="true"/>
+  </viMoDe>
+  <organeParent>PO873634</organeParent>
+  <preseance>28</preseance>
+  <organePrecedentRef>PO847712</organePrecedentRef>
+</organe>

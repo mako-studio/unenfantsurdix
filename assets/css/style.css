@@ -433,6 +433,14 @@
   .vote-pill.A { background: #E8A33C; }
   .vote-pill.N { background: #D8D5E3; }
   .vote-pill.X { background: repeating-linear-gradient(45deg, #EDEBF2, #EDEBF2 3px, #FBFAFD 3px, #FBFAFD 6px); border: 1px solid #DDD9E6; }
+  /* Vote exprimé par le/la suppléant·e (siège occupé pendant que le/la titulaire était
+     au gouvernement ou en mission) : pastille bordée, jamais pleine — jamais confondue
+     avec un vote personnel du/de la titulaire. */
+  .vote-pill.S-P, .vote-pill.S-C, .vote-pill.S-A, .vote-pill.S-N { background: white; border: 2px solid; box-sizing: border-box; }
+  .vote-pill.S-P { border-color: #0EA882; }
+  .vote-pill.S-C { border-color: #D33A4B; }
+  .vote-pill.S-A { border-color: #E8A33C; }
+  .vote-pill.S-N { border-color: #D8D5E3; }
   .vote-card-toggle { font-family: var(--mono); font-size: 0.66rem; color: var(--red); cursor: pointer; text-decoration: underline; background: none; border: none; padding: 0; }
   .vote-card-detail { display: none; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--border); font-size: 0.76rem; line-height: 1.6; }
   .vote-card-detail.open { display: block; }
@@ -440,6 +448,8 @@
   .vote-card-detail-row span:first-child { flex: 1; min-width: 0; }
   .vote-card-detail-pos { font-family: var(--mono); font-weight: 600; flex-shrink: 0; }
   .vote-card-detail-pos.P { color: #0EA882; } .vote-card-detail-pos.C { color: #D33A4B; } .vote-card-detail-pos.A { color: #b8791f; } .vote-card-detail-pos.N { color: var(--ink-3); } .vote-card-detail-pos.X { color: var(--ink-3); font-weight: 400; font-style: italic; }
+  .vote-card-detail-pos.S-P, .vote-card-detail-pos.S-C, .vote-card-detail-pos.S-A, .vote-card-detail-pos.S-N { font-style: italic; border-bottom: 2px dotted; padding-bottom: 1px; }
+  .vote-card-detail-pos.S-P { color: #0EA882; border-color: #0EA882; } .vote-card-detail-pos.S-C { color: #D33A4B; border-color: #D33A4B; } .vote-card-detail-pos.S-A { color: #b8791f; border-color: #E8A33C; } .vote-card-detail-pos.S-N { color: var(--ink-3); border-color: #D8D5E3; }
   .vote-map-note { display: block; font-size: 0.68rem; color: var(--ink-3); font-style: italic; margin-top: 0.15rem; }
   .votes-empty { padding: 3rem 1.5rem; text-align: center; color: var(--ink-3); font-family: var(--mono); font-size: 0.85rem; grid-column: 1/-1; background: white; }
 

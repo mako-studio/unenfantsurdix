@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO426566</uid>
+  <codeType>GE</codeType>
+  <libelle>Entrepreneuriat au féminin</libelle>
+  <libelleEdition>Entrepreneuriat au féminin</libelleEdition>
+  <libelleAbrege>Entrepreneuriat au féminin</libelleAbrege>
+  <libelleAbrev>ENTRE</libelleAbrev>
+  <viMoDe>
+    <dateDebut xsi:nil="true"/>
+    <dateAgrement>2010-12-15</dateAgrement>
+    <dateFin>2012-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

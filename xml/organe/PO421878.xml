@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO421878</uid>
+  <codeType>CMP</codeType>
+  <libelle>Commission mixte paritaire chargée de proposer un texte sur les dispositions restant en discussion de la proposition de loi visant à rendre obligatoire l'installation de détecteurs de fumée dans tous les lieux d'habitation</libelle>
+  <libelleEdition>de la proposition de loi visant à rendre obligatoire l'installation de détecteurs de fumée dans tous les lieux d'habitation</libelleEdition>
+  <libelleAbrege>Détecteurs de fumée</libelleAbrege>
+  <libelleAbrev>56</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2009-09-29</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2010-02-25</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

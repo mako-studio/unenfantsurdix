@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO52777</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>3ème circonscription du Tarn</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>81 Tarn (° 3°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1988-06-05</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>1993-04-01</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>9</legislature>
+  <numero>3</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Occitanie</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>81</code>
+      <libelle>Tarn</libelle>
+    </departement>
+  </lieu>
+</organe>

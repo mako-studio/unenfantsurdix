@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO410976</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'Etat au commerce, à l'artisanat, aux petites et moyennes entreprises, au tourisme et aux services, auprès de la ministre de l'économie, de l'industrie et de l'emploi</libelle>
+  <libelleEdition>au commerce, à l'artisanat, aux petites et moyennes entreprises, au tourisme et aux services, auprès de la ministre de l'économie, de l'industrie et de l'emploi</libelleEdition>
+  <libelleAbrege>Commerce, artisanat, petites et moyennes entreprises, tourisme et services</libelleAbrege>
+  <libelleAbrev>CAP</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2008-03-18</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2009-06-23</dateFin>
+  </viMoDe>
+  <organeParent>PO384206</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

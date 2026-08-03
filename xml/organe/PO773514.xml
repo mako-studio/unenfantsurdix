@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO773514</uid>
+  <codeType>CNPE</codeType>
+  <libelle>Commission d’enquête pour mesurer et prévenir les effets de la crise du covid-19 sur les enfants et la jeunesse</libelle>
+  <libelleEdition>de la commission d’enquête pour mesurer et prévenir les effets de la crise du covid-19 sur les enfants et la jeunesse</libelleEdition>
+  <libelleAbrege>Commission d’enquête sur les effets de la crise du covid-19 sur les enfants</libelleAbrege>
+  <libelleAbrev>CECOVIDJ</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2020-07-07</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2020-12-16</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO410978</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'Etat à l'intérieur et aux collectivités territoriales, auprès de la ministre de l'intérieur, de l'outre-mer et des collectivités territoriales</libelle>
+  <libelleEdition>à l'intérieur et aux collectivités territoriales, auprès de la ministre de l'intérieur, de l'outre-mer et des collectivités territoriales</libelleEdition>
+  <libelleAbrege>Intérieur et collectivités territoriales</libelleAbrege>
+  <libelleAbrev>ICT</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2008-03-18</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2010-11-13</dateFin>
+  </viMoDe>
+  <organeParent>PO384206</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

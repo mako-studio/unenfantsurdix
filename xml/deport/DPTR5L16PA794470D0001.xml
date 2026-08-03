@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA794470D0001</uid>
+  <chronotag>2</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA794470</refActeur>
+  <dateCreation>2023-02-07T20:49:56.070552+00:00</dateCreation>
+  <datePublication>2023-02-07T20:52:04.929345+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>L1</code>
+    <libelle>Première lecture</libelle>
+  </lecture>
+  <instance>
+    <code>SEA</code>
+    <libelle>Séance publique</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>ART</code>
+      <libelle>Article(s)</libelle>
+    </type>
+    <referenceTextuelle>Article 1er du Projet de Loi de Financement Rectificative de la Sécurité Sociale</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication/>
+</deport>

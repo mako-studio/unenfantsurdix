@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO387998</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'Etat chargée des affaires étrangères et des droits de l'homme </libelle>
+  <libelleEdition>chargée des affaires étrangères et des droits de l'homme</libelleEdition>
+  <libelleAbrege>Affaires étrangères et droits de l'homme </libelleAbrege>
+  <libelleAbrev>ADH</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2007-06-19</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2009-06-23</dateFin>
+  </viMoDe>
+  <organeParent>PO384206</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

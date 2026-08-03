@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO840015</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>13ème circonscription des Hauts-de-Seine</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>92 Hauts-de-Seine (°13°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2024-07-01</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin xsi:nil="true"/>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <numero>13</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Ile-de-France</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>92</code>
+      <libelle>Hauts-de-Seine</libelle>
+    </departement>
+  </lieu>
+</organe>

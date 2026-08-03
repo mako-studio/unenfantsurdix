@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO715843</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de la ville, de la jeunesse et des sports</libelle>
+  <libelleEdition>de la ville, de la jeunesse et des sports</libelleEdition>
+  <libelleAbrege>Ville, jeunesse et sports</libelleAbrege>
+  <libelleAbrev>VIL</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2016-12-07</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-05-17</dateFin>
+  </viMoDe>
+  <organeParent>PO715793</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

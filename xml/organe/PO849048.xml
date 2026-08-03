@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO849048</uid>
+  <codeType>DELEGBUREAU</codeType>
+  <libelle>Délégation chargée de la recevabilité financière des propositions de loi</libelle>
+  <libelleEdition>de la délégation chargée de la recevabilité financière des propositions de loi</libelleEdition>
+  <libelleAbrege>Recevabilité financière des propositions de loi</libelleAbrege>
+  <libelleAbrev>FIN</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2024-10-18</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin xsi:nil="true"/>
+  </viMoDe>
+  <organeParent>PO845377</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

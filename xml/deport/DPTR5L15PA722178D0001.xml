@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L15PA722178D0001</uid>
+  <chronotag>2</chronotag>
+  <legislature>15</legislature>
+  <refActeur>PA722178</refActeur>
+  <dateCreation>2020-02-28T00:10:55.879973+00:00</dateCreation>
+  <datePublication>2020-02-28T00:11:15.116618+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>ART</code>
+      <libelle>Article(s)</libelle>
+    </type>
+    <referenceTextuelle>Projet de loi n°2623 instituant un système Universel de retraite articles 13, 15 et 65</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Suite &amp;agrave; la consultation&amp;nbsp;de la d&amp;eacute;ontologue, et du fait de ma d&amp;eacute;tention&amp;nbsp;d&amp;#39;actions AXA pour 17699 actions attribu&amp;eacute;es quand j&amp;#39;&amp;eacute;tais cadre dirigeant du groupe, j&amp;#39;ai d&amp;eacute;cid&amp;eacute; de ne pas prendre part au d&amp;eacute;bat ni au vote des 3 articles ayant un lien, m&amp;ecirc;me tr&amp;egrave;s t&amp;eacute;nu, avec les produits d&amp;#39;assurance retraite.&lt;/p&gt;</explication>
+</deport>

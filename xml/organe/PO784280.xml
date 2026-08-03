@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO784280</uid>
+  <codeType>CNPE</codeType>
+  <libelle>Commission d’enquête chargée de rechercher d’éventuels dysfonctionnements de la justice et de la police dans l’affaire dite Sarah Halimi et de formuler des propositions pour éviter le cas échéant leur renouvellement</libelle>
+  <libelleEdition>de la commission d’enquête chargée de rechercher d’éventuels dysfonctionnements de la justice et de la police dans l’affaire dite Sarah Halimi et de formuler des propositions pour éviter le cas échéant leur renouvellement</libelleEdition>
+  <libelleAbrege>CE Sarah Halimi</libelleAbrege>
+  <libelleAbrev>CEHALIMI</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2021-07-06</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2022-01-06</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

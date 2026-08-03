@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO870608</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d'information relative aux indus et erreurs de la caisse nationale des allocations familiales et les moyens de les résorber</libelle>
+  <libelleEdition xsi:nil="true"/>
+  <libelleAbrege>Erreurs CNAF</libelleAbrege>
+  <libelleAbrev>INDUS CNAF</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-06-04</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin xsi:nil="true"/>
+  </viMoDe>
+  <organeParent>PO59048</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

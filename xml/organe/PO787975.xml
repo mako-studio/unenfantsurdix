@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO787975</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Groupe de travail visant à étudier les suites législatives éventuelles à donner au rapport de la commission indépendante sur les abus sexuels dans l'Église</libelle>
+  <libelleEdition>du groupe de travail visant à étudier les suites législatives éventuelles à donner au rapport de la commission indépendante sur les abus sexuels dans l'Église</libelleEdition>
+  <libelleAbrege>Abus sexuels dans l'Église</libelleAbrege>
+  <libelleAbrev>ABUSEGLISE</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2021-12-01</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2022-02-16</dateFin>
+  </viMoDe>
+  <organeParent>PO59051</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

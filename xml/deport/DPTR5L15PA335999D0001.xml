@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L15PA335999D0001</uid>
+  <chronotag>5</chronotag>
+  <legislature>15</legislature>
+  <refActeur>PA335999</refActeur>
+  <dateCreation>2021-11-22T15:46:09.483279+00:00</dateCreation>
+  <datePublication>2021-11-22T15:58:48.747792+00:00</datePublication>
+  <portee>
+    <code>COMPLET</code>
+    <libelle>Être absent pour la totalité du processus législatif concerné</libelle>
+  </portee>
+  <lecture>
+    <code>SO</code>
+    <libelle>Sans Objet</libelle>
+  </lecture>
+  <instance>
+    <code>COM</code>
+    <libelle>Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>AUD</code>
+      <libelle>Audition</libelle>
+    </type>
+    <referenceTextuelle>Audition suivie d'un vote, en application de l’article 13 de la Constitution, de Mme Anne-Claire Mialot, que le Président de la République envisage de nommer dans les fonctions de directrice générale de l’Agence nationale pour la rénovation urbaine (ANRU)</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;L&amp;#39;Agence Nationale de R&amp;eacute;novation Urbaine est l&amp;#39;employeur de mon conjoint.&amp;nbsp;Je souhaite donc faire usage de la facult&amp;eacute; pr&amp;eacute;vue par l&amp;#39;alin&amp;eacute;a 2 de l&amp;#39;article 80-1-1 du R&amp;egrave;glement en ne participant ni &amp;agrave; l&amp;#39;audition&amp;nbsp;ni au vote de la Commission des Affaires &amp;Eacute;conomiques dont je suis membre.&lt;/p&gt;</explication>
+</deport>

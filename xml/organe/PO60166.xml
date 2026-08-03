@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExtraParlementaire_type">
+  <uid>PO60166</uid>
+  <codeType>ORGEXTPARL</codeType>
+  <libelle>Commission supérieure du crédit maritime mutuel</libelle>
+  <libelleEdition>de la Commission supérieure du crédit maritime mutuel</libelleEdition>
+  <libelleAbrege>Crédit maritime mutuel</libelleAbrege>
+  <libelleAbrev>20</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1975-07-11</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2016-06-20</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature xsi:nil="true"/>
+  <regimeJuridique>Articles L. 512-71 et R. 512-43 et suivants du code monétaire et financier </regimeJuridique>
+  <siteInternet xsi:nil="true"/>
+  <nombreReunionsAnnuelles xsi:nil="true"/>
+</organe>

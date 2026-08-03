@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO51144</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>5ème circonscription de l'Hérault</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>34 Hérault (° 5°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1981-07-02</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>1986-04-01</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>7</legislature>
+  <numero>5</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Occitanie</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>34</code>
+      <libelle>Hérault</libelle>
+    </departement>
+  </lieu>
+</organe>

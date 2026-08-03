@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO729964</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de la transition écologique et solidaire</libelle>
+  <libelleEdition>de la transition écologique et solidaire</libelleEdition>
+  <libelleAbrege>Transition écologique et solidaire</libelleAbrege>
+  <libelleAbrev>TRE</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2017-06-22</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2018-09-04</dateFin>
+  </viMoDe>
+  <organeParent>PO725688</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

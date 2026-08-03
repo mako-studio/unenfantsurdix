@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO53257</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>Circonscription de la Martinique</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>972 Martinique</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1945-11-06</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>1946-06-10</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>Assemblées nationales constituantes</regime>
+  <legislature xsi:nil="true"/>
+  <numero xsi:nil="true"/>
+  <lieu>
+    <region>
+      <type>Dom</type>
+      <libelle>Martinique</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>O</codeNatureDep>
+      <code>972</code>
+      <libelle>Martinique</libelle>
+    </departement>
+  </lieu>
+</organe>

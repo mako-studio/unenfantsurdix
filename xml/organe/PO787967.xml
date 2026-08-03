@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO787967</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d'évaluation de la loi n° 2017-399 du 27 mars 2017 relative au devoir de vigilance des sociétés mères et des entreprises donneuses d'ordre</libelle>
+  <libelleEdition>de la mission d'évaluation de la loi n° 2017-399 du 27 mars 2017 relative au devoir de vigilance des sociétés mères et des entreprises donneuses d'ordre</libelleEdition>
+  <libelleAbrege>Vigilance des sociétés mères et des entreprises donneuses d'ordre</libelleAbrege>
+  <libelleAbrev>STESMERES</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2021-12-01</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2022-02-22</dateFin>
+  </viMoDe>
+  <organeParent>PO59051</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L15PA719024D0001</uid>
+  <chronotag>2</chronotag>
+  <legislature>15</legislature>
+  <refActeur>PA719024</refActeur>
+  <dateCreation>2019-11-13T14:37:29.628607+00:00</dateCreation>
+  <datePublication>2019-11-13T14:37:49.457768+00:00</datePublication>
+  <portee>
+    <code>VOTES</code>
+    <libelle>Prendre la parole sans prendre part aux votes</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>ART</code>
+      <libelle>Article(s)</libelle>
+    </type>
+    <referenceTextuelle>Article 13 du projet de loi N° 2401 relatif à l’engagement dans la vie locale et à la proximité de l’action publique.</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p style="text-align:justify"&gt;Ayant exerc&amp;eacute; l&amp;#39;activit&amp;eacute; commerciale de d&amp;eacute;bit de boissons pendant vingt ans et de repr&amp;eacute;sentant syndical de la profession pendant plus de dix ans et &amp;eacute;tant encore associ&amp;eacute; dans un commerce d&amp;eacute;bit de boisson familial, sans en &amp;ecirc;tre g&amp;eacute;rant, j&amp;#39;ai cru bon d&amp;#39;aller consulter la d&amp;eacute;ontologue de l&amp;#39;Assembl&amp;eacute;e nationale afin de respecter pleinement le nouveau r&amp;eacute;glement int&amp;eacute;rieur entr&amp;eacute; en vigueur d&amp;eacute;but octobre. J&amp;#39;ai conclu de ces &amp;eacute;changes qu&amp;#39;il n&amp;#39;&amp;eacute;tait pas souhaitable que je prenne part aux votes concernant l&amp;#39;article 13 de ce projet de loi ainsi qu&amp;#39;&amp;agrave; l&amp;#39;am&amp;eacute;lioration de cet article par voie d&amp;#39;amendement. Pour autant, cela ne m&amp;#39;interdit pas de prendre part aux discussions sur cet article en s&amp;eacute;ance afin de partager mon exp&amp;eacute;rience de terrain au m&amp;ecirc;me titre que n&amp;#39;importe quel autre parlementaire qui interviendrait sur des textes qui concernent un sujet qu&amp;#39;il maitrise.&lt;/p&gt;</explication>
+</deport>

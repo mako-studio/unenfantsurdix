@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaireInternational">
+  <uid>PO274044</uid>
+  <codeType>GEVI</codeType>
+  <libelle>Groupe d'études à vocation internationale sur les problèmes de l'Érythrée</libelle>
+  <libelleEdition>du groupe d'études à vocation internationale sur les problèmes de l'Érythrée</libelleEdition>
+  <libelleAbrege>Érythrée</libelleAbrege>
+  <libelleAbrev>ERY</libelleAbrev>
+  <viMoDe>
+    <dateDebut xsi:nil="true"/>
+    <dateAgrement>2002-07-24</dateAgrement>
+    <dateFin>2007-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>12</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+  <listePays xsi:nil="true"/>
+</organe>

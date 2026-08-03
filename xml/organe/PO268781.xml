@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO268781</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministre déléguée à l'industrie, auprès du ministre de l'économie, des finances et de l'industrie </libelle>
+  <libelleEdition>auprès du ministre de l'économie, des finances et de l'industrie à l'industrie</libelleEdition>
+  <libelleAbrege>industrie</libelleAbrege>
+  <libelleAbrev>IND</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2002-06-17</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2004-03-30</dateFin>
+  </viMoDe>
+  <organeParent>PO268150</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

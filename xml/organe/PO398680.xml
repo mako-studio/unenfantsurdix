@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO398680</uid>
+  <codeType>CNPE</codeType>
+  <libelle>Commission d'enquête sur les conditions de libération des infirmières et du médecin bulgares détenus en Libye et sur les récents accords franco-libyens</libelle>
+  <libelleEdition>de la Commission d'enquête sur les conditions de libération des infirmières et du médecin bulgares détenus en Libye et sur les récents accords franco-libyens</libelleEdition>
+  <libelleAbrege>Com. enquête libération infirmières bulgares</libelleAbrege>
+  <libelleAbrev>CELIBINF</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2007-10-11</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2008-01-23</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

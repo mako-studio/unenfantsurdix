@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaireInternational">
+  <uid>PO392870</uid>
+  <codeType>GEVI</codeType>
+  <libelle>Groupe d'études à vocation internationale sur les questions de la République démocratique de Corée (Corée du Nord )</libelle>
+  <libelleEdition>de France-Groupe d'études à vocation internationale sur les questions de la République démocratique de Corée (Corée du Nord )</libelleEdition>
+  <libelleAbrege>Corée du Nord</libelleAbrege>
+  <libelleAbrev>NK</libelleAbrev>
+  <viMoDe>
+    <dateDebut xsi:nil="true"/>
+    <dateAgrement>2007-07-18</dateAgrement>
+    <dateFin>2012-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+  <listePays xsi:nil="true"/>
+</organe>

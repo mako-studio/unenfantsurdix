@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO773408</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère auprès du Premier ministre, chargé de l’égalité entre les femmes et les hommes, de la diversité et de l’égalité des chances</libelle>
+  <libelleEdition>auprès du Premier ministre, chargée de l’égalité entre les femmes et les hommes, de la diversité et de l’égalité des chances</libelleEdition>
+  <libelleAbrege>Égalité femmes-hommes, diversité et égalité des chances</libelleAbrege>
+  <libelleAbrev>ECH</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2020-07-07</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2022-05-16</dateFin>
+  </viMoDe>
+  <organeParent>PO773371</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

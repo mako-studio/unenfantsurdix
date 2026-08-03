@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA721150D0002</uid>
+  <chronotag>3</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA721150</refActeur>
+  <dateCreation>2022-07-21T14:48:42.961517+00:00</dateCreation>
+  <datePublication>2022-07-21T14:49:28.236753+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>L1</code>
+    <libelle>Première lecture</libelle>
+  </lecture>
+  <instance>
+    <code>SEA</code>
+    <libelle>Séance publique</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>AMDT</code>
+      <libelle>Amendement(s)</libelle>
+    </type>
+    <referenceTextuelle>Amendements portant sur une éventuelle contribution exceptionnelle sur les bénéfices des sociétés pétrolières et gazières</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;A 16:00 le 21/7/22:&amp;nbsp;amendements 4, 452, 509, 548, 549, 764, 855 &amp;amp;&amp;nbsp;955&amp;nbsp;&lt;/p&gt;&#13;&#13;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#13;&#13;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</explication>
+</deport>

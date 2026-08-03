@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExtraParlementaire_type">
+  <uid>PO702819</uid>
+  <codeType>ORGEXTPARL</codeType>
+  <libelle>Conseil national d'évaluation des normes</libelle>
+  <libelleEdition>du Conseil national d'évaluation des normes</libelleEdition>
+  <libelleAbrege>Evaluation normes</libelleAbrege>
+  <libelleAbrev>320</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2013-10-17</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-06-26</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature xsi:nil="true"/>
+  <regimeJuridique xsi:nil="true"/>
+  <siteInternet xsi:nil="true"/>
+  <nombreReunionsAnnuelles xsi:nil="true"/>
+</organe>

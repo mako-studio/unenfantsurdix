@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO52792</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>Circonscription du Tarn-et-Garonne</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>82 Tarn-et-Garonne</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1986-04-02</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>1988-05-14</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>8</legislature>
+  <numero xsi:nil="true"/>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Occitanie</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>82</code>
+      <libelle>Tarn-et-Garonne</libelle>
+    </departement>
+  </lieu>
+</organe>

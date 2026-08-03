@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExtraParlementaire_type">
+  <uid>PO383109</uid>
+  <codeType>ORGEXTPARL</codeType>
+  <libelle>Conseil d'administration de l'Agence nationale pour la cohésion sociale et l'égalité des chances</libelle>
+  <libelleEdition>du conseil d'administration de l'Agence nationale pour la cohésion sociale et l'égalité des chances</libelleEdition>
+  <libelleAbrege>Cohésion sociale et égalité des chance</libelleAbrege>
+  <libelleAbrev>232</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2006-07-28</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-01-01</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature xsi:nil="true"/>
+  <regimeJuridique>Article R. 121-14 du code de l’action sociale et des familles</regimeJuridique>
+  <siteInternet xsi:nil="true"/>
+  <nombreReunionsAnnuelles xsi:nil="true"/>
+</organe>

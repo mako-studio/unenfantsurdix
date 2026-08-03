@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA720764D0002</uid>
+  <chronotag>2</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA720764</refActeur>
+  <dateCreation>2023-02-09T10:52:03.960672+00:00</dateCreation>
+  <datePublication>2023-02-09T10:52:13.578033+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA</code>
+    <libelle>Séance publique</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>TEXTE</code>
+      <libelle>Projet ou proposition de loi ou de résolution, dans son intégralité</libelle>
+    </type>
+    <referenceTextuelle>texte 808 protéger le groupe EDF d'un démembrement.</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;&amp;eacute;tant en disponiblilit&amp;eacute; d&amp;#39;EDF, je ne participerai ni aux d&amp;eacute;bats ni aux votes sur ce texte.&amp;nbsp;&lt;/p&gt;</explication>
+</deport>

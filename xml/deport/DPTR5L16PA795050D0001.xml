@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA795050D0001</uid>
+  <chronotag>2</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA795050</refActeur>
+  <dateCreation>2022-08-08T14:28:52.772066+00:00</dateCreation>
+  <datePublication>2022-08-08T14:29:20.884420+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>AMDT</code>
+      <libelle>Amendement(s)</libelle>
+    </type>
+    <referenceTextuelle>Articles de loi ayant trait au commerce, à l'immobilier commercial et au transport aérien</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Fonctions professionnelles pr&amp;eacute;c&amp;eacute;dentes&amp;nbsp;&lt;/p&gt;</explication>
+</deport>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO867384</uid>
+  <codeType>CNPE</codeType>
+  <libelle>Commission d’enquête sur les effets psychologiques de TikTok sur les mineurs</libelle>
+  <libelleEdition>de la commission d’enquête sur les effets psychologiques de TikTok sur les mineurs</libelleEdition>
+  <libelleAbrege>CE TikTok</libelleAbrege>
+  <libelleAbrev>CETIKTOK</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-03-13</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2025-09-04</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO52142</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>6ème circonscription du Bas-Rhin</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>67 Bas-Rhin (° 6°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1973-04-02</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>1978-04-01</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>5</legislature>
+  <numero>6</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Grand Est</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>67</code>
+      <libelle>Bas-Rhin</libelle>
+    </departement>
+  </lieu>
+</organe>

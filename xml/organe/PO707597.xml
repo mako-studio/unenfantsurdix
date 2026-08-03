@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO707597</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Les émergents d'Asie du Sud-Est</libelle>
+  <libelleEdition>de la mission d'information sur les émergents d'Asie du Sud-Est</libelleEdition>
+  <libelleAbrege>Les émergents d'Asie du Sud-Est</libelleAbrege>
+  <libelleAbrev>ASIESU</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2013-12-11</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2015-02-04</dateFin>
+  </viMoDe>
+  <organeParent>PO59047</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>14</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

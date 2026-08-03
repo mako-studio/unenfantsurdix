@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO714843</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Évaluation de la loi n° 2013-1117 du 6 décembre 2013 relative à la lutte contre la fraude fiscale et la grande délinquance économique et financière et de la loi organique n° 2013-1115 du 6 décembre 2013 relative au procureur de la République financier </libelle>
+  <libelleEdition>de la mission d'évaluation de la loi n° 2013-1117 du 6 décembre 2013 relative à la lutte contre la fraude fiscale et la grande délinquance économique et financière et de la loi organique n° 2013-1115 relative au procureur de la République financier </libelleEdition>
+  <libelleAbrege>Lutte contre la fraude fiscale et la grande délinquance économique</libelleAbrege>
+  <libelleAbrev>FRAUFISC</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2016-09-21</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-02-08</dateFin>
+  </viMoDe>
+  <organeParent>PO59051</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>14</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

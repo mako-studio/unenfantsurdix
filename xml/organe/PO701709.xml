@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO701709</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'État, auprès du Premier ministre, chargé de la réforme de l'État et de la simplification</libelle>
+  <libelleEdition>, auprès du Premier ministre, chargé de la réforme de l'État et de la simplification</libelleEdition>
+  <libelleAbrege>Réforme de l'État et simplification</libelleAbrege>
+  <libelleAbrev>REF</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2014-06-04</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2014-08-26</dateFin>
+  </viMoDe>
+  <organeParent>PO700706</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

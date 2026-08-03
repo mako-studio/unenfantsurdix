@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA794906D0002</uid>
+  <chronotag>5</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA794906</refActeur>
+  <dateCreation>2023-01-17T15:47:14.955773+00:00</dateCreation>
+  <datePublication>2023-01-17T15:52:14.371724+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>TEXTE</code>
+      <libelle>Projet ou proposition de loi ou de résolution, dans son intégralité</libelle>
+    </type>
+    <referenceTextuelle>Proposition de résolution européenne relative à la proposition de législation européenne sur la liberté des médias</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Gabriel Amard ne prend pas la parole et ne prend pas part au vote sur ce texte en sa qualit&amp;eacute; de directeur de publication d&amp;#39;un m&amp;eacute;dia.&amp;nbsp;&lt;/p&gt;</explication>
+</deport>

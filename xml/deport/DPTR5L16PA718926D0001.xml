@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA718926D0001</uid>
+  <chronotag>2</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA718926</refActeur>
+  <dateCreation>2023-05-12T12:25:53.575187+00:00</dateCreation>
+  <datePublication>2023-05-12T12:26:44.495019+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>TEXTE</code>
+      <libelle>Projet ou proposition de loi ou de résolution, dans son intégralité</libelle>
+    </type>
+    <referenceTextuelle>Projet de loi relatif à la programmation militaire pour les années 2024 à 2030 et portant diverses dispositions intéressant la défense</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Mon &amp;eacute;pouse &amp;eacute;tant salari&amp;eacute;e d&amp;#39;une entreprise potentiellement concern&amp;eacute;e par la loi, je choisis de me d&amp;eacute;porter, par pr&amp;eacute;caution &amp;agrave; l&amp;#39;&amp;eacute;gard de tout conflit d&amp;#39;int&amp;eacute;r&amp;ecirc;t putatif.&lt;/p&gt;</explication>
+</deport>

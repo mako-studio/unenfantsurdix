@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO653262</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère chargé des anciens combattants</libelle>
+  <libelleEdition>chargé des anciens combattants</libelleEdition>
+  <libelleAbrege>Anciens combattants</libelleAbrege>
+  <libelleAbrev>ACO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2012-06-22</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2014-03-31</dateFin>
+  </viMoDe>
+  <organeParent>PO653199</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

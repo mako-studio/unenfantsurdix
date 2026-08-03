@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO855156</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère délégué auprès du Premier ministre, chargé de l’égalité entre les femmes et les hommes et de la lutte contre les discriminations</libelle>
+  <libelleEdition>auprès du Premier ministre, chargé de l’égalité entre les femmes et les hommes et de la lutte contre les discriminations</libelleEdition>
+  <libelleAbrege>Égalité entre les femmes et les hommes et lutte contre les discriminations</libelleAbrege>
+  <libelleAbrev>PRMEG</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2024-12-24</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2025-09-09</dateFin>
+  </viMoDe>
+  <organeParent>PO855052</organeParent>
+  <preseance>18</preseance>
+  <organePrecedentRef>PO847732</organePrecedentRef>
+</organe>

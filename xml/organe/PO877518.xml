@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO877518</uid>
+  <codeType>CNPE</codeType>
+  <libelle>Commission d'enquête relative aux conséquences des accords du Touquet sur l'action publique et le respect des libertés et droits fondamentaux des personnes migrantes</libelle>
+  <libelleEdition>de la commission d'enquête relative aux conséquences des accords du Touquet sur l'action publique et le respect des libertés et droits fondamentaux des personnes migrantes</libelleEdition>
+  <libelleAbrege>CE Accords du Touquet</libelleAbrege>
+  <libelleAbrev>CETOUQ</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2026-01-13</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2026-07-01</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

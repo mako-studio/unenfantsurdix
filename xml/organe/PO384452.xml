@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO384452</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>1ère circonscription du Jura</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>39 Jura (° 1°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2007-06-20</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2012-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <numero>1</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Bourgogne-Franche-Comté</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>39</code>
+      <libelle>Jura</libelle>
+    </departement>
+  </lieu>
+</organe>

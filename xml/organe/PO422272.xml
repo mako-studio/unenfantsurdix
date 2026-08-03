@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO422272</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère auprès du ministre de l'intérieur, de l'outre-mer, des collectivités territoriales, chargé de l'outre-mer</libelle>
+  <libelleEdition>chargée de l'outre-mer auprès du ministre de l'intérieur, de l'outre-mer, des collectivités territoriales</libelleEdition>
+  <libelleAbrege>Outre-mer</libelleAbrege>
+  <libelleAbrev>OUT</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2009-11-06</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2010-11-13</dateFin>
+  </viMoDe>
+  <organeParent>PO384206</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

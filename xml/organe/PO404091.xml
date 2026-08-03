@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO404091</uid>
+  <codeType>MISINFOCOM</codeType>
+  <libelle>Mission d'information commune sur la mesure des grandes données économiques et sociales</libelle>
+  <libelleEdition>de la mision d'information commune sur la mesure des grandes données économiques et sociales</libelleEdition>
+  <libelleAbrege>Mission d'information commune sur la mesure des grandes données économiques</libelleAbrege>
+  <libelleAbrev>MICINDICES</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2007-11-13</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2010-01-26</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>13</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeCirconscription_type">
+  <uid>PO52753</uid>
+  <codeType>CIRCONSCRIPTION</codeType>
+  <libelle>4ème circonscription de la Somme</libelle>
+  <libelleEdition>de la circonscription</libelleEdition>
+  <libelleAbrege>80 Somme (° 4°)</libelleAbrege>
+  <libelleAbrev>CIRCO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1993-04-02</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>1997-04-21</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>10</legislature>
+  <numero>4</numero>
+  <lieu>
+    <region>
+      <type>Métropolitain</type>
+      <libelle>Hauts-de-France</libelle>
+    </region>
+    <departement>
+      <codeNatureDep>M</codeNatureDep>
+      <code>80</code>
+      <libelle>Somme</libelle>
+    </departement>
+  </lieu>
+</organe>

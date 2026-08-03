@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO739840</uid>
+  <codeType>CMP</codeType>
+  <libelle>Commission mixte paritaire chargée de proposer un texte sur les dispositions restant en discussion du projet de loi ratifiant l'ordonnance n° 2017-644 du 27 avril 2017 relative à l'adaptation des dispositions législatives relatives au fonctionnement des ordres des professions de santé</libelle>
+  <libelleEdition>de la commission mixte paritaire chargée de proposer un texte sur les dispositions restant en discussion du projet de loi ratifiant l'ordonnance n° 2017-644 du 27 avril 2017 relative à l'adaptation des dispositions législatives relatives au fonctionnement des ordres des professions de santé</libelleEdition>
+  <libelleAbrege>Ordres des professions de santé</libelleAbrege>
+  <libelleAbrev>8</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2017-10-12</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-12-20</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

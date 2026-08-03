@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO323244</uid>
+  <codeType>GE</codeType>
+  <libelle>Préparation de l'adoption d'un traité international relatif au commerce des armes légères et de petit calibre et la question des mines anti personnel</libelle>
+  <libelleEdition>sur la préparation de l'adoption d'un traité international relatif au commerce des armes légères et de petit calibre et la question des mines anti personnel</libelleEdition>
+  <libelleAbrege>Armes légères et mines anti-personnel</libelleAbrege>
+  <libelleAbrev>ARMES</libelleAbrev>
+  <viMoDe>
+    <dateDebut xsi:nil="true"/>
+    <dateAgrement>2006-03-22</dateAgrement>
+    <dateFin>2007-06-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>12</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

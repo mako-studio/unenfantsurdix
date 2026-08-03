@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO785110</uid>
+  <codeType>CNPE</codeType>
+  <libelle>Commission d’enquête chargée d’identifier les facteurs qui ont conduit à la chute de la part de l’industrie dans le PIB de la France et de définir les moyens à mettre en œuvre pour relocaliser l’industrie et notamment celle du médicament</libelle>
+  <libelleEdition>de la commission d’enquête chargée d’identifier les facteurs qui ont conduit à la chute de la part de l’industrie dans le PIB de la France et de définir les moyens à mettre en œuvre pour relocaliser l’industrie et notamment celle du médicament</libelleEdition>
+  <libelleAbrege>CE politique industrielle</libelleAbrege>
+  <libelleAbrev>CECIFCCPI</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2021-07-28</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2022-01-19</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO847738</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'État auprès du ministre de l'enseignement supérieur et de la recherche, chargé de l’intelligence artificielle et du numérique</libelle>
+  <libelleEdition>auprès du ministre de l'enseignement supérieur et de la recherche, chargé de l’intelligence artificielle et du numérique</libelleEdition>
+  <libelleAbrege>Intelligence artificielle et numérique</libelleAbrege>
+  <libelleAbrev>ESRIA</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2024-09-22</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2024-12-13</dateFin>
+  </viMoDe>
+  <organeParent>PO847639</organeParent>
+  <preseance>42</preseance>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA718910D0002</uid>
+  <chronotag>3</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA718910</refActeur>
+  <dateCreation>2023-02-09T11:06:31.311817+00:00</dateCreation>
+  <datePublication>2023-02-09T11:07:37.919491+00:00</datePublication>
+  <portee>
+    <code>COMPLET</code>
+    <libelle>Être absent pour la totalité du processus législatif concerné</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>TEXTE</code>
+      <libelle>Projet ou proposition de loi ou de résolution, dans son intégralité</libelle>
+    </type>
+    <referenceTextuelle>Proposition de loi visant à la nationalisation du groupe Électricité de France n 671, 808</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Agent EDF en cong&amp;eacute;&amp;nbsp;longue dur&amp;eacute;e pendant la dur&amp;eacute;e de mon mandat&lt;/p&gt;</explication>
+</deport>

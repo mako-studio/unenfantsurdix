@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO849474</uid>
+  <codeType>CNPS</codeType>
+  <libelle>Commission spéciale chargée d’examiner le projet de loi de simplification de la vie économique</libelle>
+  <libelleEdition>de la commission spéciale chargée d’examiner le projet de loi de simplification de la vie économique</libelleEdition>
+  <libelleAbrege>CS PJL simplification de la vie économique</libelleAbrege>
+  <libelleAbrev>CSVIEECO</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2024-10-25</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2026-04-15</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

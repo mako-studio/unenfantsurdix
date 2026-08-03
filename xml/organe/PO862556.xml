@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO862556</uid>
+  <codeType>MISINFO</codeType>
+  <libelle>Mission d'information sur l'état des cours d'eau</libelle>
+  <libelleEdition xsi:nil="true"/>
+  <libelleAbrege>état des cours d'eau</libelleAbrege>
+  <libelleAbrev>COURSDEAU</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2025-02-05</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2025-11-12</dateFin>
+  </viMoDe>
+  <organeParent>PO419865</organeParent>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

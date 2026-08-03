@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO425710</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère du budget, des comptes publics, de la fonction publique et de la réforme de l'État</libelle>
+  <libelleEdition>du budget, des comptes publics, de la fonction publique et de la réforme de l'État</libelleEdition>
+  <libelleAbrege>Budget, comptes publics, fonction publique et réforme de l'État</libelleAbrege>
+  <libelleAbrev>BUD</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2010-11-14</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2011-06-29</dateFin>
+  </viMoDe>
+  <organeParent>PO425695</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

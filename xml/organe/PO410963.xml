@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO410963</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de la santé, de la jeunesse, des sports et de la vie associative</libelle>
+  <libelleEdition>de la santé, de la jeunesse, des sports et de la vie associative</libelleEdition>
+  <libelleAbrege>Santé, jeunesse, sports et vie associative</libelleAbrege>
+  <libelleAbrev>SAN</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2008-03-18</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2009-01-12</dateFin>
+  </viMoDe>
+  <organeParent>PO384206</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

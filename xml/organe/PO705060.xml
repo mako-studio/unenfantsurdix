@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO705060</uid>
+  <codeType>CNPE</codeType>
+  <libelle>Commission d'enquête sur les missions et modalités du maintien de l'ordre républicain dans un contexte de respect des libertés publiques et du droit de manifestation, ainsi que de protection des personnes et des biens&#13;</libelle>
+  <libelleEdition>de la commission d'enquête sur les missions et modalités du maintien de l'ordre républicain dans un contexte de respect des libertés publiques et du droit de manifestation, ainsi que de protection des personnes et des biens&#13;&#13;</libelleEdition>
+  <libelleAbrege>Commission d'enquête sur missions et modalités du maintien de l'ordre républ</libelleAbrege>
+  <libelleAbrev>CEMAINORDR</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2014-12-03</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2015-05-21</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>14</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

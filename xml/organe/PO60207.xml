@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExtraParlementaire_type">
+  <uid>PO60207</uid>
+  <codeType>ORGEXTPARL</codeType>
+  <libelle>Comité national des retraités et des personnes âgées</libelle>
+  <libelleEdition>du Comité national des retraités et des personnes âgées</libelleEdition>
+  <libelleAbrege>Retraités et personnes agées</libelleAbrege>
+  <libelleAbrev>64</libelleAbrev>
+  <viMoDe>
+    <dateDebut>1982-08-04</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2016-09-07</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature xsi:nil="true"/>
+  <regimeJuridique>Article D. 149-4 du code de l’action sociale et des familles</regimeJuridique>
+  <siteInternet xsi:nil="true"/>
+  <nombreReunionsAnnuelles xsi:nil="true"/>
+</organe>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO730027</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Secrétariat d'État, auprès du Premier ministre, chargé des relations avec le Parlement, porte-parole du Gouvernement</libelle>
+  <libelleEdition>, auprès du Premier ministre, chargé des relations avec le Parlement, porte-parole du Gouvernement</libelleEdition>
+  <libelleAbrege>Relations avec le Parlement</libelleAbrege>
+  <libelleAbrev>PAR</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2017-06-22</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2017-11-24</dateFin>
+  </viMoDe>
+  <organeParent>PO725688</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

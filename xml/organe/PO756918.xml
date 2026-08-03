@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO756918</uid>
+  <codeType>CMP</codeType>
+  <libelle>Commission mixte paritaire chargée de proposer un texte sur les dispositions restant en discussion de la proposition de loi visant à garantir la présence des parlementaires dans certains organismes extérieurs au Parlement et à simplifier les modalités de leur nomination</libelle>
+  <libelleEdition>de la commission mixte paritaire chargée de proposer un texte sur les dispositions restant en discussion de la proposition de loi visant à garantir la présence des parlementaires dans certains organismes extérieurs au Parlement et à simplifier les modalités de leur nomination</libelleEdition>
+  <libelleAbrege>Présence des parlementaires dans certains organismes extérieurs</libelleAbrege>
+  <libelleAbrev>840</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2018-06-13</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2018-07-26</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

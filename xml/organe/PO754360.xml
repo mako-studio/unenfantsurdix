@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaire_Type">
+  <uid>PO754360</uid>
+  <codeType>CNPE</codeType>
+  <libelle>Commission d’enquête sur l’alimentation industrielle : qualité nutritionnelle, rôle dans l’émergence de pathologies chroniques, impact social et environnemental de sa provenance</libelle>
+  <libelleEdition>de la commission d’enquête sur l’alimentation industrielle : qualité nutritionnelle, rôle dans l’émergence de pathologies chroniques, impact social et environnemental de sa provenance</libelleEdition>
+  <libelleAbrege>Commission d’enquête sur l’alimentation industrielle</libelleAbrege>
+  <libelleAbrev>CEALIMINDU</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2018-03-27</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2018-09-28</dateFin>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>15</legislature>
+  <secretariat>
+    <secretaire01 xsi:nil="true"/>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+</organe>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deport xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uid>DPTR5L16PA720146D0001</uid>
+  <chronotag>5</chronotag>
+  <legislature>16</legislature>
+  <refActeur>PA720146</refActeur>
+  <dateCreation>2023-05-04T16:51:49.355514+00:00</dateCreation>
+  <datePublication>2023-05-04T16:58:59.102987+00:00</datePublication>
+  <portee>
+    <code>DELIB</code>
+    <libelle>Être présent sans prendre la parole ni voter</libelle>
+  </portee>
+  <lecture>
+    <code>TL</code>
+    <libelle>Toutes lectures restantes</libelle>
+  </lecture>
+  <instance>
+    <code>SEA_COM</code>
+    <libelle>Séance publique et Commission</libelle>
+  </instance>
+  <cible>
+    <type>
+      <code>TEXTE</code>
+      <libelle>Projet ou proposition de loi ou de résolution, dans son intégralité</libelle>
+    </type>
+    <referenceTextuelle>Projet de loi N° 1033 relatif à la programmation militaire pour les années 2024 à 2030 et portant diverses dispositions intéressant la défense</referenceTextuelle>
+    <references xsi:nil="true"/>
+  </cible>
+  <explication>&lt;p&gt;Je suis actuellement en disponibilit&amp;eacute; de l&amp;#39;entreprise Thales : or, comme vu avec le d&amp;eacute;ontologue de l&amp;#39;Assembl&amp;eacute;e nationale, certains articles du projet de loi de programmation militaire sont susceptibles d&amp;rsquo;avoir un impact significatif sur les activit&amp;eacute;s des entreprises oeuvrant dans le secteur de la d&amp;eacute;fense et de la s&amp;eacute;curit&amp;eacute;, &amp;agrave; l&amp;rsquo;instar de Thales. Afin donc de pr&amp;eacute;venir toute situation qui pourrait &amp;ecirc;tre assimil&amp;eacute;e &amp;agrave; un conflit d&amp;#39;int&amp;eacute;r&amp;ecirc;ts, je souhaite ne pas prendre au vote sur ce texte de loi.&lt;/p&gt;</explication>
+</deport>

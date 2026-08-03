@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeExterne_Type">
+  <uid>PO382956</uid>
+  <codeType>MINISTERE</codeType>
+  <libelle>Ministère de l'agriculture et de la pêche</libelle>
+  <libelleEdition>de l'agriculture et de la pêche</libelleEdition>
+  <libelleAbrege>agriculture et pêche</libelleAbrege>
+  <libelleAbrev>AGR</libelleAbrev>
+  <viMoDe>
+    <dateDebut>2007-05-18</dateDebut>
+    <dateAgrement xsi:nil="true"/>
+    <dateFin>2007-06-18</dateFin>
+  </viMoDe>
+  <organeParent>PO382939</organeParent>
+  <preseance xsi:nil="true"/>
+  <organePrecedentRef xsi:nil="true"/>
+</organe>

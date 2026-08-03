@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<organe xmlns="http://schemas.assemblee-nationale.fr/referentiel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OrganeParlementaireInternational">
+  <uid>PO851527</uid>
+  <codeType>GA</codeType>
+  <libelle>France-Bruneï Malaisie</libelle>
+  <libelleEdition xsi:nil="true"/>
+  <libelleAbrege>Bruneï-Malaisie</libelleAbrege>
+  <libelleAbrev>BRMA</libelleAbrev>
+  <viMoDe>
+    <dateDebut xsi:nil="true"/>
+    <dateAgrement>2024-11-20</dateAgrement>
+    <dateFin xsi:nil="true"/>
+  </viMoDe>
+  <organeParent xsi:nil="true"/>
+  <chambre xsi:nil="true"/>
+  <regime>5ème République</regime>
+  <legislature>17</legislature>
+  <secretariat>
+    <secretaire01>M. Pascal Marchain</secretaire01>
+    <secretaire02 xsi:nil="true"/>
+  </secretariat>
+  <listePays>
+    <paysRef>GOP756461</paysRef>
+    <paysRef>GOP756463</paysRef>
+  </listePays>
+</organe>
