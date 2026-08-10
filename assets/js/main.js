@@ -135,7 +135,7 @@ const deptData = {
 const emailSubjects = {
   rapport2026: 'Traduction législative des 49 recommandations de la commission d\'enquête sur l\'inceste',
   prescriptibilite: 'Imprescriptibilité des crimes d\'inceste commis sur mineurs',
-  ppl: 'Projet de loi relatif à la protection des enfants — examen en séance publique dès le 15 juillet 2026',
+  ppl: 'Projet de loi relatif à la protection des enfants — adopté à l\'Assemblée le 21 juillet 2026, examen au Sénat prévu en octobre',
   ciivise: 'Mise en œuvre des 82 recommandations de la CIIVISE',
   budget: 'Budget consacré à la lutte contre les violences sexuelles faites aux enfants',
   formation: 'Formation obligatoire des professionnels au repérage des violences',
@@ -170,13 +170,13 @@ Citoyen·ne de ${deptNom} (département ${deptCode})
 
 Madame la Députée, Monsieur le Député,
 
-Je me permets de vous adresser ce courrier à l'occasion de l'examen en séance publique, à partir du 15 juillet 2026, du projet de loi relatif à la protection des enfants.
+Je me permets de vous adresser ce courrier au sujet du projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 par 378 voix pour, 7 voix contre et 173 abstentions. Le texte est désormais transmis au Sénat, dont l'examen est prévu la semaine du 19 octobre 2026.
 
-Le texte, adopté par la commission spéciale le 6 juillet après intégration d'une lettre rectificative du gouvernement (accélération des enquêtes, durcissement des sanctions pour crimes sexuels sur mineurs, renforcement du contrôle des établissements accueillant des mineurs), reprend plusieurs recommandations du rapport de la commission d'enquête sur le traitement judiciaire des violences sexuelles incestueuses parentales (rapport n°3005, 9 juillet 2026) : une ordonnance de protection de l'enfant permettant sa mise en sécurité dès la révélation des faits, l'obligation de mener les principaux actes d'enquête dans un délai de trois mois, et la dépénalisation de la non-représentation d'enfant en cas de suspicion de violences sexuelles.
+Le texte adopté reprend plusieurs recommandations du rapport de la commission d'enquête sur le traitement judiciaire des violences sexuelles incestueuses parentales (rapport n°3005, 9 juillet 2026) : une ordonnance de protection de l'enfant permettant sa mise en sécurité dès la révélation des faits, l'obligation de mener les principaux actes d'enquête dans un délai de trois mois, et la dépénalisation de la non-représentation d'enfant en cas de suspicion de violences sexuelles. Il consacre également l'imprescriptibilité des crimes sexuels sur mineurs (16 juillet 2026) et, rétablie lors d'une seconde délibération demandée par le gouvernement, la réclusion criminelle à perpétuité pour les viols sériels sur mineurs de quinze ans.
 
-Ces mesures répondent à un constat documenté par la commission d'enquête : 19 254 faits de violences sexuelles intrafamiliales sur mineur ont été enregistrés en 2024, pour seulement 1 406 condamnations et environ 41 % de classements sans suite pour les viols incestueux (rapport n°3005). La Proposition de loi intégrale contre les violences sexistes et sexuelles (AN n°2169, décembre 2025, 109 signataires), qui portait une réponse plus large à ces enjeux, est désormais attendue à l'automne : ce projet de loi sur la protection des enfants constitue donc, dans l'intervalle, le véhicule législatif le plus proche pour traduire ces recommandations en droit.
+Ces mesures répondent à un constat documenté par la commission d'enquête : 19 254 faits de violences sexuelles intrafamiliales sur mineur ont été enregistrés en 2024, pour seulement 1 406 condamnations et environ 41 % de classements sans suite pour les viols incestueux (rapport n°3005). La Proposition de loi intégrale contre les violences sexistes et sexuelles (AN n°2169, décembre 2025, 109 signataires), qui porte une réponse plus large à ces enjeux, est attendue à l'Assemblée à partir de début octobre 2026.
 
-Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ces dispositions, et si vous soutiendrez leur maintien lors de l'examen en séance.
+Je vous serais reconnaissant·e de bien vouloir me confirmer votre vote sur ce texte, et si vous entendez continuer à soutenir la pleine application de ces dispositions, lors de l'examen de la proposition de loi intégrale annoncée pour octobre comme lors des prochaines lois de finances.
 
 Je vous prie de croire, Madame la Députée, Monsieur le Député, à l'expression de ma haute considération.
 
@@ -194,7 +194,7 @@ Le constat de la commission, adopté par ses membres issus de l'ensemble des gro
 
 La commission formule 49 recommandations, parmi lesquelles l'imprescriptibilité des crimes commis à l'encontre de mineurs, l'obligation de mener les principaux actes d'enquête dans un délai de trois mois, la désignation systématique d'un avocat pour le mineur victime dès le dépôt de plainte, et le principe d'éloignement de l'auteur présumé plutôt que de l'enfant.
 
-Certaines de ces mesures figurent déjà dans le projet de loi relatif à la protection des enfants, examiné en séance publique à partir du 15 juillet 2026 ; d'autres pourraient être reprises dans la proposition de loi intégrale contre les violences sexistes et sexuelles attendue à l'automne. Mais la plupart des 49 recommandations restent à ce jour sans traduction législative.
+Certaines de ces mesures figurent déjà dans le projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 et transmis au Sénat (examen prévu la semaine du 19 octobre 2026) ; d'autres pourraient être reprises dans la proposition de loi intégrale contre les violences sexistes et sexuelles, attendue à l'Assemblée à partir de début octobre 2026. Mais la plupart des 49 recommandations restent à ce jour sans traduction législative.
 
 Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ces recommandations, et les initiatives que vous entendez soutenir — dans le cadre des textes en cours d'examen comme des lois de finances à venir — pour leur donner une suite concrète.
 
