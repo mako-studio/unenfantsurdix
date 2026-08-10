@@ -233,20 +233,36 @@
   .pull-quote cite { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); font-style: normal; }
 
 
-  /* ══ A — MYTHES VS RÉALITÉ — 6 items → 3×2 ═════════════ */
-  .mythes-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:1.5rem; margin:2.5rem 0; }
+  /* ══ A — IDÉES REÇUES PASSÉES AU CRIBLE — 16 items → 3×n ═════════════ */
+  .mythes-toolbar { background:#fff; border:1px solid var(--border); padding:1.1rem 1.35rem; margin:2.5rem 0 1.5rem; }
+  .mythes-chips { display:flex; gap:0.4rem; flex-wrap:wrap; }
+  .mythe-chip { font-family:var(--mono); font-size:0.62rem; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 0.8rem; border:1px solid var(--border); background:var(--paper); color:var(--ink-3); cursor:pointer; display:inline-flex; align-items:center; gap:0.45rem; transition:background 0.15s, color 0.15s; }
+  .mythe-chip:hover { color:var(--ink); }
+  .mythe-chip[data-on="1"] { background:var(--ink); color:#fff; border-color:var(--ink); }
+  .mythes-count { font-family:var(--mono); font-size:0.62rem; letter-spacing:0.06em; color:var(--ink-3); text-transform:uppercase; margin-top:0.9rem; }
+  .mythe-scale { display:inline-flex; gap:2px; flex-shrink:0; }
+  .mythe-scale i { display:block; width:11px; height:4px; background:var(--paper-2); border:1px solid var(--border); }
+  .mythe-scale i.on { background:var(--ink); border-color:var(--ink); }
+  .mythe-chip[data-on="1"] .mythe-scale i { background:rgba(255,255,255,0.18); border-color:rgba(255,255,255,0.35); }
+  .mythe-chip[data-on="1"] .mythe-scale i.on { background:#fff; border-color:#fff; }
+  .mythes-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:1.5rem; margin:0 0 2.5rem; }
   .mythe-card { border:1px solid var(--border); overflow:hidden; display:flex; flex-direction:column; }
+  .mythe-card[hidden] { display:none; }
   .mythe-face { padding:1.5rem 1.75rem; }
-  .mythe-face.myth-side { background:#0e0820; border-bottom:2px solid rgba(139,92,246,0.35); }
-  .mythe-face.truth-side { background:#fff; flex:1; }
-  .mythe-badge { font-family:var(--mono); font-size:0.58rem; letter-spacing:0.14em; text-transform:uppercase; padding:0.18rem 0.55rem; display:inline-block; margin-bottom:0.85rem; border-radius:2px; }
+  .mythe-face.myth-side { background:#0e0820; min-height:170px; display:flex; flex-direction:column; }
+  .mythe-face.truth-side { background:#fff; flex:1; display:flex; flex-direction:column; }
+  .mythe-level { display:flex; align-items:center; gap:0.6rem; padding:0.75rem 1.75rem; background:var(--paper); border-top:2px solid rgba(139,92,246,0.35); border-bottom:1px solid var(--border); }
+  .mythe-level b { font-family:var(--mono); font-size:0.6rem; letter-spacing:0.11em; text-transform:uppercase; font-weight:500; color:var(--ink); }
+  .mythe-badge { font-family:var(--mono); font-size:0.58rem; letter-spacing:0.14em; text-transform:uppercase; padding:0.18rem 0.55rem; display:inline-block; align-self:flex-start; margin-bottom:0.85rem; border-radius:2px; }
   .myth-badge { background:rgba(139,92,246,0.18); color:#c4b5fd; border:1px solid rgba(139,92,246,0.35); }
   .truth-badge { background:var(--teal-light); color:#0a7a5f; border:1px solid rgba(14,168,130,0.3); }
+  .mythe-reserve { font-size:0.78rem; color:var(--ink-3); line-height:1.6; margin-top:0.9rem; padding:0.65rem 0.85rem; background:var(--paper); border-left:2px solid var(--ink-3); }
   .mythe-text { font-size:0.9rem; line-height:1.7; }
   .mythe-face.myth-side .mythe-text { color:rgba(247,245,240,0.72); font-style:italic; }
   .mythe-face.truth-side .mythe-text { color:var(--ink-2); }
   .mythe-face.truth-side .mythe-text strong { color:var(--ink); font-weight:600; }
-  .mythe-source { font-family:var(--mono); font-size:0.6rem; letter-spacing:0.05em; color:var(--ink-3); text-transform:uppercase; margin-top:1rem; padding-top:0.75rem; border-top:1px solid var(--border); line-height:1.6; }
+  .mythe-source { font-family:var(--mono); font-size:0.6rem; letter-spacing:0.05em; color:var(--ink-3); text-transform:uppercase; margin-top:auto; padding-top:0.75rem; border-top:1px solid var(--border); line-height:1.6; }
+  .mythe-reserve + .mythe-source { margin-top:1rem; }
   .mythe-source a { color:var(--teal); text-decoration:none; }
   .mythe-source a:hover { text-decoration:underline; }
   .mythes-caveat { background:var(--paper-2); border-left:3px solid var(--ink-3); padding:1rem 1.5rem; font-size:0.78rem; color:var(--ink-3); line-height:1.65; font-family:var(--mono); letter-spacing:0.02em; margin-top:1.5rem; }
@@ -379,6 +395,10 @@
     .burger-btn { display:flex; }
     .stats-grid, .consequences-grid, .justice-grid, .compare-grid,
     .agir-grid, .res-grid, .mythes-grid, .share-grid { grid-template-columns:1fr; }
+    .mythe-face.myth-side { min-height:0; }
+    .mythe-face { padding:1.35rem 1.4rem; }
+    .mythe-level { padding:0.7rem 1.4rem; }
+    .mythes-toolbar { padding:1rem 1.15rem; }
     .counter-display { grid-template-columns:1fr; }
     .cout-display    { grid-template-columns:1fr; }
     .elu-form        { grid-template-columns:1fr; }

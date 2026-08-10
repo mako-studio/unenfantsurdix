@@ -1,83 +1,252 @@
 <section id="mythes" aria-labelledby="mythes-titre">
   <div class="section">
-    <p class="section-eyebrow" aria-hidden="true">Ce que dit la science</p>
-    <h2 id="mythes-titre">Mythes vs Réalité : idées reçues sur l'inceste</h2>
-    <p class="section-intro">Certaines représentations sur l'inceste sont fausses — et dangereuses. Elles retardent les signalements et permettent aux agresseurs de rester dans l'impunité. Ces cartes confrontent l'idée reçue aux données scientifiques vérifiées, multisources et convergentes.</p>
-    <div class="mythes-grid" role="list" aria-label="Mythes et réalités sur l'inceste">
+    <p class="section-eyebrow" aria-hidden="true">Ce que dit la recherche</p>
+    <h2 id="mythes-titre">Idées reçues, passées au crible</h2>
+    <p class="section-intro">Seize affirmations courantes sur l'inceste, confrontées à la littérature scientifique. Chaque réponse indique le niveau de certitude de la recherche — et le dit quand ce niveau n'est pas total.</p>
 
-      <div class="mythe-card">
+    <div class="mythes-toolbar">
+      <div class="mythes-chips" role="group" aria-label="Filtrer par niveau de certitude">
+        <button type="button" class="mythe-chip" data-filter="all" data-on="1">Tout afficher</button>
+        <button type="button" class="mythe-chip" data-filter="3"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span>Établi · 11</button>
+        <button type="button" class="mythe-chip" data-filter="2"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span>Chiffres variables · 5</button>
+      </div>
+      <p class="mythes-count" id="mythes-count" role="status" aria-live="polite">16 idées reçues · sources primaires citées sur chaque carte</p>
+    </div>
+
+    <div class="mythes-grid" role="list" aria-label="Idées reçues sur l'inceste et ce qu'en dit la recherche">
+
+      <div class="mythe-card" role="listitem" data-level="3">
         <div class="mythe-face myth-side">
-          <span class="mythe-badge myth-badge">Mythe</span>
-          <p class="mythe-text">« L'inceste est un problème des milieux défavorisés ou des familles en difficulté sociale. »</p>
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« L'inceste concerne surtout des adolescents. »</p>
         </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><b>Établi</b></div>
         <div class="mythe-face truth-side">
-          <span class="mythe-badge truth-badge">Ce que dit la science</span>
-          <p class="mythe-text">Trois études épidémiologiques indépendantes convergent : enquête Virage (Ined, 2015), Charruault et al. (2021), Marsican/Bajos/Pousson (2023). <strong>Aucune ne documente de sur-représentation d'une catégorie socioprofessionnelle.</strong> L'enquête Virage enregistre des déclarations dans tous les milieux sans corrélation statistiquement significative avec le revenu, le diplôme ou la zone géographique.</p>
-          <p class="mythe-source">Enquête Virage, Ined 2015 (pub. 2021) · Charruault et al., Rev. Épidémiol. Santé Publique, 2021 · Marsican/Bajos/Pousson, 2023 · <a href="https://www.rcf.fr/articles/economie-et-societe/rapport-de-la-ciivise-160-000-enfants-sont-victimes-chaque-annee-de" target="_blank" rel="noopener noreferrer">RCF · Rapport CIIVISE</a></p>
+          <p class="mythe-text">Les violences intrafamiliales commencent <strong>plus tôt</strong> que les autres. Une méta-analyse de 62 travaux portant sur 14 494 victimes établit ce début précoce. Sur dossiers judiciaires, 42,4 % des victimes intrafamiliales ont moins de 9 ans, 76,7 % moins de 12 ans. En France, l'âge moyen au début des violences est de 8,5 ans.</p>
+          <p class="mythe-reserve">Réserve — deux de ces trois sources portent sur des dossiers judiciaires : elles décrivent les cas signalés, pas la population générale.</p>
+          <p class="mythe-source">Ventus, Antfolk &amp; Salo, J. of Sexual Aggression, 2017 · Loinaz et al., Psicothema, 2019 · <a href="https://www.justice.gouv.fr/sites/default/files/2025-11/Infostat_Justice_205.pdf" target="_blank" rel="noopener noreferrer">Infostat Justice n°205, 2025</a></p>
         </div>
       </div>
 
-      <div class="mythe-card">
+      <div class="mythe-card" role="listitem" data-level="3">
         <div class="mythe-face myth-side">
-          <span class="mythe-badge myth-badge">Mythe</span>
-          <p class="mythe-text">« Les agresseurs ont un profil psychologique reconnaissable — on peut les repérer. »</p>
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« Le danger vient des inconnus. »</p>
         </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><b>Établi</b></div>
         <div class="mythe-face truth-side">
-          <span class="mythe-badge truth-badge">Ce que dit la science</span>
-          <p class="mythe-text"><strong>Il n'existe pas de profil psychologique caractéristique</strong> des auteurs de violences sexuelles intrafamiliales. Une question parlementaire au gouvernement (17<sup>e</sup> législature, QG856) le confirme explicitement : ils « sévissent dans tous les milieux et ne sont pas l'apanage des milieux défavorisés ». L'absence de profil type est précisément ce qui rend le déni social si efficace — et si dangereux.</p>
-          <p class="mythe-source"><a href="https://www.assemblee-nationale.fr/dyn/17/organes/cnpe/ce-inceste-parental" target="_blank" rel="noopener noreferrer">Commission d'enquête AN — Traitement judiciaire de l'inceste, 17<sup>e</sup> législature</a> · CIIVISE, rapport nov. 2023</p>
+          <p class="mythe-text">Même pour les violences commises hors de la famille, <strong>78 % des agresseurs sont connus de l'enfant</strong> ; 20,7 % seulement sont des inconnus. En France, 35,7 % des femmes et 21,6 % des hommes agressés avant 18 ans l'ont été par un membre de leur famille. L'inconnu dans l'espace public représente 1,7 % des cas déclarés par les femmes.</p>
+          <p class="mythe-source">Loinaz et al., Psicothema, 2019 · Russell, Child Abuse &amp; Neglect, 1983 · <a href="https://www.ined.fr/fr/publications/editions/population-et-societes/violences-sexuelles-durant-enfance-et-adolescence" target="_blank" rel="noopener noreferrer">Marsicano, Bajos &amp; Pousson, Ined, 2023</a></p>
         </div>
       </div>
 
-      <div class="mythe-card">
+      <div class="mythe-card" role="listitem" data-level="3">
         <div class="mythe-face myth-side">
-          <span class="mythe-badge myth-badge">Mythe</span>
-          <p class="mythe-text">« Les fausses accusations sont fréquentes — les enfants inventent ou sont manipulés. »</p>
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« L'inceste, c'est un parent qui abuse son enfant. »</p>
         </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><b>Établi</b></div>
         <div class="mythe-face truth-side">
-          <span class="mythe-badge truth-badge">Ce que dit la science</span>
-          <p class="mythe-text">La littérature clinique et l'association Face à l'inceste établissent que <strong>les fausses allégations spontanées d'abus sexuels sur mineurs représentent moins de 1 cas pour 1 000.</strong> La prise de parole d'un enfant est un signal à traiter sans délai. L'emprise, la honte et la dépendance affective à l'agresseur rendent le mensonge dans ce sens extrêmement rare.</p>
-          <p class="mythe-source">Association Face à l'inceste · Littérature clinique en psychotraumatologie · CIIVISE, rapport nov. 2023</p>
+          <p class="mythe-text">C'est incomplet. Les violences <strong>entre frères et sœurs</strong> sont l'une des formes les moins reconnues. Au Royaume-Uni, environ un quart des violences sexuelles intrafamiliales sont commises par un auteur de moins de 18 ans. En France, le frère est le premier agresseur intrafamilial identifié par les victimes hommes (21,8 %), devant le père ou le beau-père (20,7 %).</p>
+          <p class="mythe-reserve">Réserve — la prévalence mesurée va de 1,3 % à 7 % selon les études : les définitions retenues diffèrent fortement.</p>
+          <p class="mythe-source"><a href="https://www.csacentre.org.uk/research-resources/key-messages/intra-familial-csa/" target="_blank" rel="noopener noreferrer">CSA Centre, Royaume-Uni, 2023</a> · Bertele &amp; Talmon, Trauma, Violence &amp; Abuse, 2023 · Marsicano et al., Ined, 2023</p>
         </div>
       </div>
 
-      <div class="mythe-card">
+      <div class="mythe-card" role="listitem" data-level="3">
         <div class="mythe-face myth-side">
-          <span class="mythe-badge myth-badge">Mythe</span>
-          <p class="mythe-text">« L'inceste, c'est rare — ça n'arrive pas dans les familles "normales". »</p>
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« S'il n'y a pas de lésion, c'est qu'il ne s'est rien passé. »</p>
         </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><b>Établi</b></div>
         <div class="mythe-face truth-side">
-          <span class="mythe-badge truth-badge">Ce que dit la science</span>
-          <p class="mythe-text">L'inceste touche <strong>11 % des Français adultes</strong> (7,4 millions). 160 000 enfants en sont victimes chaque année. Dans <strong>80 % des cas, l'auteur est un membre de la famille.</strong> Un tiers des Français déclare connaître au moins une victime dans son entourage (Ipsos, 2023). Ce n'est pas rare : c'est massivement tu.</p>
-          <p class="mythe-source">Sondage Ipsos pour Face à l'inceste, oct. 2023 · CIIVISE, rapport nov. 2023 · <a href="https://www.lejdd.fr/societe/inceste-et-violences-sexuelles-les-agresseurs-coutent-chaque-annee-97-milliards-deuros-la-societe-136642" target="_blank" rel="noopener noreferrer">JDD</a></p>
+          <p class="mythe-text">Un examen <strong>normal est le cas le plus fréquent</strong>, même après des violences avérées. Dans une série publiée, 87,4 % des examens étaient normaux ; chez les filles examinées à distance des faits, 2,2 % seulement présentaient des signes diagnostiques. Les recommandations internationales rappellent trois explications possibles : aucune lésion visible, lésion cicatrisée, ou absence de contact.</p>
+          <p class="mythe-source"><a href="https://cdn.icmec.org/wp-content/uploads/2023/10/Revised-Adams-Guidelines-2023.pdf" target="_blank" rel="noopener noreferrer">Adams, Kellogg et al., Child Abuse &amp; Neglect, mise à jour 2023</a> · Adams, Harper, Knudson &amp; Revilla, Pediatrics, 1994</p>
         </div>
       </div>
 
-      <div class="mythe-card">
+      <div class="mythe-card" role="listitem" data-level="3">
         <div class="mythe-face myth-side">
-          <span class="mythe-badge myth-badge">Mythe</span>
-          <p class="mythe-text">« Si ça s'était passé, l'enfant en aurait parlé — le silence prouve l'innocence. »</p>
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« Un enfant victime le dirait avec des mots. »</p>
         </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><b>Établi</b></div>
         <div class="mythe-face truth-side">
-          <span class="mythe-badge truth-badge">Ce que dit la science</span>
-          <p class="mythe-text">Quand un enfant révèle des violences, <strong>92 % ne reçoivent pas de réponse protectrice</strong> (CIIVISE, 2023). Le silence n'est pas une preuve d'innocence : il est le produit de l'emprise, de la honte, de la peur des conséquences familiales et de la dépendance affective à l'agresseur. Le délai entre premières violences et première parole se compte souvent en décennies.</p>
-          <p class="mythe-source">CIIVISE, rapport nov. 2023 · Fondation Jean-Jaurès, avr. 2026</p>
+          <p class="mythe-text">La révélation est <strong>un processus, pas un moment</strong>. Beaucoup d'enfants s'expriment indirectement — « je ne veux plus aller chez papi », un dessin, une lettre, un changement de comportement — ou reprennent le vocabulaire de l'agresseur (« secret », « jeu »). Les enfants disent eux-mêmes qu'ils tentent de révéler lorsqu'ils envoient ces signaux, en espérant qu'un adulte les remarque. Les enfants en situation de handicap y recourent davantage.</p>
+          <p class="mythe-source"><a href="https://www.csacentre.org.uk/research-resources/key-messages/disclosures-csa/" target="_blank" rel="noopener noreferrer">Allnock, Miller &amp; Baker pour le CSA Centre, Royaume-Uni, 2019</a></p>
         </div>
       </div>
 
-      <div class="mythe-card">
+      <div class="mythe-card" role="listitem" data-level="3">
         <div class="mythe-face myth-side">
-          <span class="mythe-badge myth-badge">Mythe</span>
-          <p class="mythe-text">« L'inceste est lié à une culture, une religion ou une origine géographique particulière. »</p>
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« Si la victime ne s'est pas débattue, c'est qu'elle était d'accord. »</p>
         </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><b>Établi</b></div>
         <div class="mythe-face truth-side">
-          <span class="mythe-badge truth-badge">Ce que dit la science</span>
-          <p class="mythe-text">Les données disponibles <strong>n'établissent aucune corrélation statistiquement significative</strong> entre appartenance religieuse, origine culturelle ou zone géographique et prévalence de l'inceste. Cette représentation détourne l'attention du phénomène majoritaire. Le seul facteur documenté est le genre : <strong>97 % des auteurs sont des hommes</strong> (CIIVISE, 2023).</p>
-          <p class="mythe-source">Enquête Virage, Ined 2015 (pub. 2021) · CIIVISE, rapport nov. 2023 · <a href="https://www.rcf.fr/articles/economie-et-societe/rapport-de-la-ciivise-160-000-enfants-sont-victimes-chaque-annee-de" target="_blank" rel="noopener noreferrer">RCF</a></p>
+          <p class="mythe-text">La <strong>sidération</strong> — immobilité tonique — est une réaction réflexe involontaire déclenchée par une peur intense, documentée chez l'humain comme chez de nombreuses espèces animales. Elle provoque une paralysie motrice, l'impossibilité de crier, des tremblements. Les études recensées rapportent des taux d'immobilité significative allant de 37 % à environ 70 % des victimes selon les échantillons.</p>
+          <p class="mythe-reserve">Réserve — la majorité de ces travaux portent sur des victimes adultes ; les études consacrées spécifiquement à l'enfance sont moins nombreuses.</p>
+          <p class="mythe-source">de la Torre Laso, Trauma, Violence &amp; Abuse, 2024 · Möller, Söndergaard &amp; Helström, Acta Obstet. Gynecol. Scand., 2017 · Heidt, Marx &amp; Forsyth, Behaviour Research and Therapy, 2005</p>
+        </div>
+      </div>
+
+      <div class="mythe-card" role="listitem" data-level="3">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« Les agresseurs ont un profil psychologique reconnaissable. »</p>
+        </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><b>Établi</b></div>
+        <div class="mythe-face truth-side">
+          <p class="mythe-text">Il n'existe pas de profil caractéristique. Une méta-analyse de 78 échantillons indépendants montre que les auteurs de violences intrafamiliales présentent <strong>moins</strong> de tendances antisociales et de déviance sexuelle que les auteurs extérieurs à la famille. Le stéréotype du prédateur repérable décrit encore moins bien l'inceste que les autres violences sexuelles.</p>
+          <p class="mythe-source">Seto et al., Clinical Psychology Review, 2015 · <a href="https://www.assemblee-nationale.fr/dyn/17/organes/cnpe/ce-inceste-parental" target="_blank" rel="noopener noreferrer">Commission d'enquête AN, 17<sup>e</sup> législature</a> · CIIVISE, rapport nov. 2023</p>
+        </div>
+      </div>
+
+      <div class="mythe-card" role="listitem" data-level="3">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« Les victimes deviennent agresseurs à leur tour. »</p>
+        </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><b>Établi</b></div>
+        <div class="mythe-face truth-side">
+          <p class="mythe-text">L'immense majorité ne le devient pas. Sur 843 patients d'un centre britannique de psychothérapie médico-légale, 35 % des auteurs avaient été victimes, contre 11 % des non-auteurs. Chez les femmes, 43 % avaient été victimes — <strong>une seule</strong> était devenue auteure. Constater que des agresseurs ont été victimes ne dit rien de la proportion de victimes qui deviennent agresseurs : c'est l'inversion qui est fausse.</p>
+          <p class="mythe-reserve">Réserve — échantillon clinique médico-légal : il décrit des personnes déjà suivies, pas la population générale.</p>
+          <p class="mythe-source">Glasser, Kolvin, Campbell, Glasser, Leitch &amp; Farrelly, British Journal of Psychiatry, 2001</p>
+        </div>
+      </div>
+
+      <div class="mythe-card" role="listitem" data-level="3">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« L'inceste est un problème des milieux défavorisés. »</p>
+        </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><b>Établi</b></div>
+        <div class="mythe-face truth-side">
+          <p class="mythe-text">L'enquête Inserm 2021 mesure <strong>13,4 %</strong> de violences sexuelles avant 18 ans chez les femmes dont le père était cadre, contre <strong>12,2 %</strong> chez celles dont le père était ouvrier. Aucune étude ne documente de sur-représentation d'une catégorie socioprofessionnelle.</p>
+          <p class="mythe-source"><a href="https://www.ined.fr/fr/publications/editions/population-et-societes/violences-sexuelles-durant-enfance-et-adolescence" target="_blank" rel="noopener noreferrer">Marsicano, Bajos &amp; Pousson, Ined, 2023</a> · Enquête Virage, Ined, 2015 · Loinaz et al., Psicothema, 2019</p>
+        </div>
+      </div>
+
+      <div class="mythe-card" role="listitem" data-level="3">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« Hommes et femmes commettent ces violences dans les mêmes proportions. »</p>
+        </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><b>Établi</b></div>
+        <div class="mythe-face truth-side">
+          <p class="mythe-text">Les auteurs sont <strong>très majoritairement des hommes</strong> : 96,5 % des agressions intrafamiliales subies par des filles, 89,7 % de celles subies par des garçons. Les violences commises par des femmes existent cependant, et se heurtent à une incrédulité plus forte des professionnels — ce qui rend une partie des victimes invisibles.</p>
+          <p class="mythe-source">Marsicano, Bajos &amp; Pousson, Ined, 2023 · Loinaz et al., Psicothema, 2019 · CSA Centre, Royaume-Uni, 2023</p>
+        </div>
+      </div>
+
+      <div class="mythe-card" role="listitem" data-level="3">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« L'inceste est lié à une culture, une religion ou une origine géographique. »</p>
+        </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><b>Établi</b></div>
+        <div class="mythe-face truth-side">
+          <p class="mythe-text">Les données disponibles <strong>n'établissent aucune corrélation</strong> entre appartenance religieuse, origine culturelle ou zone géographique et prévalence de l'inceste. La synthèse britannique de référence conclut que ces violences surviennent dans les familles de toutes origines — et ajoute que les victimes issues de minorités rencontrent des obstacles supplémentaires pour en parler, ce qui les rend sous-représentées dans les données institutionnelles.</p>
+          <p class="mythe-source">Enquête Virage, Ined, 2015 · <a href="https://www.csacentre.org.uk/research-resources/key-messages/intra-familial-csa/" target="_blank" rel="noopener noreferrer">CSA Centre, Royaume-Uni, 2023</a> · CIIVISE, rapport nov. 2023</p>
+        </div>
+      </div>
+
+      <div class="mythe-card" role="listitem" data-level="2">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« Les fausses accusations sont fréquentes. »</p>
+        </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span><b>Chiffres variables</b></div>
+        <div class="mythe-face truth-side">
+          <p class="mythe-text">Elles sont <strong>rares</strong>, mais leur taux exact est débattu : la plupart des estimations cliniques se situent entre 2 % et 10 % des signalements. Quand elles surviennent, elles résultent le plus souvent de l'influence d'un tiers ou de questions mal posées, plutôt que d'une invention spontanée de l'enfant.</p>
+          <p class="mythe-reserve">Réserve — une revue critique conclut que le taux réel reste méthodologiquement indéterminable, et les taux publiés augmentent nettement dans les procédures de garde.</p>
+          <p class="mythe-source">O'Donohue, Cummings &amp; Willis, J. of Child Sexual Abuse, 2018 · <a href="https://www.csacentre.org.uk/research-resources/key-messages/disclosures-csa/" target="_blank" rel="noopener noreferrer">Allnock, Miller &amp; Baker pour le CSA Centre, 2019</a></p>
+        </div>
+      </div>
+
+      <div class="mythe-card" role="listitem" data-level="2">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« Un enfant qui se rétracte avait menti. »</p>
+        </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span><b>Chiffres variables</b></div>
+        <div class="mythe-face truth-side">
+          <p class="mythe-text">Sur 257 cas judiciairement établis, <strong>23,1 % des enfants se sont rétractés</strong> au moins une fois. La rétractation est prédite par la dépendance familiale — enfant jeune, agresseur en position parentale, parent non-agresseur peu soutenant — et non par la fausseté de l'accusation : les dossiers comportant des preuves corroborantes ne présentent pas moins de rétractations.</p>
+          <p class="mythe-reserve">Réserve — les taux publiés vont de 4 % à 23 % selon la définition retenue et la durée du suivi.</p>
+          <p class="mythe-source"><a href="https://www.icmec.org/wp-content/uploads/2015/10/Filial-Dependency-and-Recantations-of-CSA-Allegations-Malloy-2007.pdf" target="_blank" rel="noopener noreferrer">Malloy, Lyon &amp; Quas, J. of the American Academy of Child &amp; Adolescent Psychiatry, 2007</a></p>
+        </div>
+      </div>
+
+      <div class="mythe-card" role="listitem" data-level="2">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« Un inceste, c'est un dérapage isolé. »</p>
+        </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span><b>Chiffres variables</b></div>
+        <div class="mythe-face truth-side">
+          <p class="mythe-text">Sur dossiers judiciaires, <strong>88,9 %</strong> des violences intrafamiliales sont répétées, contre 55,7 % hors famille. 71 % durent plus d'un an, 24 % plus de quatre ans, 10 % plus de neuf ans. La CIIVISE documente 86 % de violences répétées : deux méthodes indépendantes, même ordre de grandeur.</p>
+          <p class="mythe-reserve">La répétition est la règle, pas une loi : une partie des faits reste un épisode unique.</p>
+          <p class="mythe-source">Loinaz et al., Psicothema, 2019 · <a href="https://www.ciivise.fr/le-rapport-public-de-2023" target="_blank" rel="noopener noreferrer">CIIVISE, rapport nov. 2023</a></p>
+        </div>
+      </div>
+
+      <div class="mythe-card" role="listitem" data-level="2">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« Si c'était vrai, l'enfant en aurait parlé. »</p>
+        </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span><b>Chiffres variables</b></div>
+        <div class="mythe-face truth-side">
+          <p class="mythe-text"><strong>55 à 66 % des victimes n'en parlent jamais à personne</strong>, et seules 5 à 13 % le signalent à une autorité. Au Royaume-Uni, 64 % des personnes violées par un parent n'en avaient parlé à personne sur le moment. Le délai moyen avant révélation est de 3 ans pour les violences intrafamiliales, contre 0,7 an hors famille.</p>
+          <p class="mythe-reserve">Le constat est stable d'une étude à l'autre ; les proportions varient beaucoup selon les pays et la façon dont la révélation est mesurée.</p>
+          <p class="mythe-source">London, Bruck, Wright &amp; Ceci, Memory, 2008 · CSA Centre, Royaume-Uni, 2023 · Loinaz et al., Psicothema, 2019</p>
+        </div>
+      </div>
+
+      <div class="mythe-card" role="listitem" data-level="2">
+        <div class="mythe-face myth-side">
+          <span class="mythe-badge myth-badge">Idée reçue</span>
+          <p class="mythe-text">« L'inceste, c'est rare — ça n'arrive pas dans les familles normales. »</p>
+        </div>
+        <div class="mythe-level"><span class="mythe-scale" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span><b>Chiffres variables</b></div>
+        <div class="mythe-face truth-side">
+          <p class="mythe-text">Les estimations varient selon la méthode — la CIIVISE retient <strong>5,4 millions</strong> d'adultes concernés, le sondage Ipsos <strong>7,4 millions</strong> — mais toutes convergent sur un phénomène massif. L'enquête Inserm 2021 mesure 4,6 % des femmes et 1,2 % des hommes pour les violences incestueuses avant 18 ans. À l'échelle mondiale, deux méta-analyses portant sur 217 travaux estiment les violences sexuelles sur enfants à 11,8 %.</p>
+          <p class="mythe-reserve">L'ampleur est confirmée par toutes les sources ; c'est la mesure exacte qui dépend de la méthode d'enquête.</p>
+          <p class="mythe-source">Stoltenborgh et al., Child Maltreatment, 2011 et Child Abuse Review, 2015 · Marsicano et al., Ined, 2023 · <a href="https://www.ciivise.fr/le-rapport-public-de-2023" target="_blank" rel="noopener noreferrer">CIIVISE, 2023</a> · <a href="https://facealinceste.fr/blog/enquete/sondage-ipsos-2023" target="_blank" rel="noopener noreferrer">Ipsos pour Face à l'inceste, 2023</a></p>
         </div>
       </div>
 
     </div>
-    <div class="mythes-caveat">Note méthodologique — Ces affirmations s'appuient sur des études épidémiologiques françaises et des données institutionnelles vérifiées. L'absence de corrélation documentée ne signifie pas l'absence du phénomène dans un milieu particulier, mais l'impossibilité de prédire son occurrence à partir d'un profil social. Sources primaires citées sur chaque carte.</div>
+    <div class="mythes-caveat">Note méthodologique — Une affirmation ne figure ici que si elle est soutenue par une revue systématique, une méta-analyse, ou plusieurs études indépendantes convergentes. Les réserves signalent une limite réelle des données, pas un doute sur le phénomène. Sources primaires citées sur chaque carte.</div>
   </div>
 </section>
+
+<script>
+(function () {
+  var section = document.getElementById('mythes');
+  if (!section) return;
+  var chips = Array.prototype.slice.call(section.querySelectorAll('.mythe-chip'));
+  var cards = Array.prototype.slice.call(section.querySelectorAll('.mythe-card'));
+  var count = document.getElementById('mythes-count');
+  if (!chips.length || !cards.length) return;
+
+  function apply(filter) {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var ok = filter === 'all' || card.getAttribute('data-level') === filter;
+      card.hidden = !ok;
+      if (ok) shown++;
+    });
+    if (count) {
+      count.textContent = shown + (shown > 1 ? ' idées reçues affichées' : ' idée reçue affichée') + ' · sources primaires citées sur chaque carte';
+    }
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (other) { other.setAttribute('data-on', other === chip ? '1' : '0'); });
+      apply(chip.getAttribute('data-filter'));
+    });
+  });
+})();
+</script>
