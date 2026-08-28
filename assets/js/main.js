@@ -156,9 +156,9 @@ La CIIVISE (Commission Indépendante sur l'Inceste et les Violences Sexuelles fa
 
 Ce délai est documenté et compris. Les mécanismes de l'emprise, de la honte et de la dépendance affective à l'agresseur expliquent que la parole des victimes intervienne fréquemment des décennies après les faits. La loi actuelle ne prend pas en compte cette réalité clinique.
 
-La Proposition de loi intégrale contre les violences sexistes et sexuelles (AN n°2169, décembre 2025), cosignée par 109 député·es de 8 groupes politiques, prévoit l'imprescriptibilité des crimes d'inceste commis sur mineurs. Un sondage Ipsos réalisé pour l'association Face à l'inceste en octobre 2023 indique que 90 % des Français se déclarent favorables à cette mesure.
+La Proposition de loi intégrale contre les violences sexistes et sexuelles, déposée une première fois en décembre 2025, a été redéposée le 11 août 2026 dans une nouvelle version de 69 articles (AN n°3106) et prévoit l'imprescriptibilité des crimes d'inceste commis sur mineurs. Un sondage Ipsos réalisé pour l'association Face à l'inceste en octobre 2023 indique que 90 % des Français se déclarent favorables à cette mesure.
 
-Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ce sujet, et, le cas échéant, les démarches que vous entendez entreprendre pour que cette proposition soit inscrite à l'ordre du jour de l'Assemblée nationale.
+Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ce sujet, et, le cas échéant, les démarches que vous entendez entreprendre pour que cette disposition soit maintenue lors de l'examen du texte, prévu fin septembre ou début octobre 2026.
 
 Je vous prie de croire, Madame la Députée, Monsieur le Député, à l'expression de ma haute considération.
 
@@ -174,7 +174,7 @@ Je me permets de vous adresser ce courrier au sujet du projet de loi relatif à 
 
 Le texte adopté reprend plusieurs recommandations du rapport de la commission d'enquête sur le traitement judiciaire des violences sexuelles incestueuses parentales (rapport n°3005, 9 juillet 2026) : une ordonnance de protection de l'enfant permettant sa mise en sécurité dès la révélation des faits, l'obligation de mener les principaux actes d'enquête dans un délai de trois mois, et la dépénalisation de la non-représentation d'enfant en cas de suspicion de violences sexuelles. Il consacre également l'imprescriptibilité des crimes sexuels sur mineurs (16 juillet 2026) et, rétablie lors d'une seconde délibération demandée par le gouvernement, la réclusion criminelle à perpétuité pour les viols sériels sur mineurs de quinze ans.
 
-Ces mesures répondent à un constat documenté par la commission d'enquête : 19 254 faits de violences sexuelles intrafamiliales sur mineur ont été enregistrés en 2024, pour seulement 1 406 condamnations et environ 41 % de classements sans suite pour les viols incestueux (rapport n°3005). La Proposition de loi intégrale contre les violences sexistes et sexuelles (AN n°2169, décembre 2025, 109 signataires), qui porte une réponse plus large à ces enjeux, est attendue à l'Assemblée à partir de début octobre 2026.
+Ces mesures répondent à un constat documenté par la commission d'enquête : 19 254 faits de violences sexuelles intrafamiliales sur mineur ont été enregistrés en 2024, pour seulement 1 406 condamnations et environ 41 % de classements sans suite pour les viols incestueux (rapport n°3005). La Proposition de loi intégrale contre les violences sexistes et sexuelles, qui porte une réponse plus large à ces enjeux, a été redéposée le 11 août 2026 (AN n°3106, 69 articles) ; son examen en commission spéciale est prévu fin septembre ou début octobre 2026, en procédure accélérée.
 
 Je vous serais reconnaissant·e de bien vouloir me confirmer votre vote sur ce texte, et si vous entendez continuer à soutenir la pleine application de ces dispositions, lors de l'examen de la proposition de loi intégrale annoncée pour octobre comme lors des prochaines lois de finances.
 
@@ -194,7 +194,7 @@ Le constat de la commission, adopté par ses membres issus de l'ensemble des gro
 
 La commission formule 49 recommandations, parmi lesquelles l'imprescriptibilité des crimes commis à l'encontre de mineurs, l'obligation de mener les principaux actes d'enquête dans un délai de trois mois, la désignation systématique d'un avocat pour le mineur victime dès le dépôt de plainte, et le principe d'éloignement de l'auteur présumé plutôt que de l'enfant.
 
-Certaines de ces mesures figurent déjà dans le projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 et transmis au Sénat (examen prévu la semaine du 19 octobre 2026) ; d'autres pourraient être reprises dans la proposition de loi intégrale contre les violences sexistes et sexuelles, attendue à l'Assemblée à partir de début octobre 2026. Mais la plupart des 49 recommandations restent à ce jour sans traduction législative.
+Certaines de ces mesures figurent déjà dans le projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 et transmis au Sénat (examen prévu la semaine du 19 octobre 2026) ; d'autres pourraient être reprises dans la proposition de loi intégrale contre les violences sexistes et sexuelles, redéposée le 11 août 2026 (AN n°3106) et dont l'examen en commission spéciale est prévu fin septembre ou début octobre 2026. Mais la plupart des 49 recommandations restent à ce jour sans traduction législative.
 
 Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ces recommandations, et les initiatives que vous entendez soutenir — dans le cadre des textes en cours d'examen comme des lois de finances à venir — pour leur donner une suite concrète.
 
@@ -214,7 +214,7 @@ En novembre 2023, la Commission Indépendante sur l'Inceste et les Violences Sex
 
 Le bilan chiffré actuel est le suivant : 160 000 enfants victimes par an, moins de 1 % des affaires aboutissant à une condamnation, et un coût social évalué à 9,7 milliards d'euros annuels, dont les deux tiers résultent des conséquences à long terme sur la santé physique et mentale des victimes (CIIVISE, avis juin 2023). Ce constat n'est pas partisan : il est formulé par une instance créée par le gouvernement lui-même, dont les conclusions ont été saluées par l'ensemble du spectre politique lors de leur présentation.
 
-Je vous serais reconnaissant·e de bien vouloir m'indiquer votre position sur les recommandations non retenues, et si vous entendez, dans le cadre de votre mandat, soutenir leur adoption par voie législative ou réglementaire — que ce soit via la PPL intégrale (AN n°2169, déc. 2025) ou tout autre vecteur approprié.
+Je vous serais reconnaissant·e de bien vouloir m'indiquer votre position sur les recommandations non retenues, et si vous entendez, dans le cadre de votre mandat, soutenir leur adoption par voie législative ou réglementaire — que ce soit via la PPL intégrale (AN n°3106, redéposée le 11 août 2026) ou tout autre vecteur approprié.
 
 Avec l'expression de mes respectueuses salutations,
 
@@ -252,7 +252,7 @@ La CIIVISE a documenté que 92 % des enfants qui révèlent des violences ne re�
 
 Les outils existent et sont disponibles. Le programme pédagogique « Mélissa et les autres », conçu par la CIIVISE, est en accès libre et a été téléchargé par plus de 8 000 organismes de formation. Les ressources produites par la MIPROF (Mission Interministérielle pour la Protection des Femmes) couvrent les professionnels de santé et du droit. Ce qui fait défaut, c'est le cadre légal rendant cette formation obligatoire et son financement garanti dans la durée.
 
-La Proposition de loi intégrale contre les violences sexistes et sexuelles (AN n°2169, décembre 2025) prévoit précisément cette obligation. En l'absence d'inscription à l'ordre du jour, la mesure demeure inappliquée : les professionnels continuent d'agir sans socle commun de formation sur un sujet qui touche statistiquement au moins un enfant dans chaque classe de trente élèves.
+La Proposition de loi intégrale contre les violences sexistes et sexuelles (AN n°3106, redéposée le 11 août 2026) prévoit précisément cette obligation. Son examen n'a pas encore eu lieu : les professionnels continuent d'agir sans socle commun de formation sur un sujet qui touche statistiquement au moins un enfant dans chaque classe de trente élèves.
 
 Pourriez-vous me faire connaître votre position sur cette mesure, et les initiatives que vous envisagez de soutenir afin que la formation au repérage des violences sexuelles sur mineurs devienne effective et obligatoire ?
 
@@ -274,7 +274,7 @@ La France compte en effet 3,2 procureurs pour 100 000 habitants, contre une méd
 
 Les victimes déposent plainte. La capacité institutionnelle de traiter ces plaintes dans des délais et avec des moyens d'investigation adaptés est, en l'état, insuffisante. Il s'agit d'une question de politique budgétaire et d'organisation judiciaire autant que d'une question de droit.
 
-Je vous serais reconnaissant·e de bien vouloir me préciser votre position sur le renforcement des moyens des parquets spécialisés dans les affaires de crimes sexuels sur mineurs, ainsi que sur les dispositions de la PPL intégrale (AN n°2169) relatives à la réforme du traitement judiciaire de ces plaintes.
+Je vous serais reconnaissant·e de bien vouloir me préciser votre position sur le renforcement des moyens des parquets spécialisés dans les affaires de crimes sexuels sur mineurs, ainsi que sur les dispositions de la PPL intégrale (AN n°3106) relatives à la réforme du traitement judiciaire de ces plaintes.
 
 Avec l'expression de mes respectueuses salutations,
 
