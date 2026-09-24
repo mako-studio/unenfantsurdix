@@ -135,6 +135,7 @@ const deptData = {
 const emailSubjects = {
   rapport2026: 'Traduction législative des 49 recommandations de la commission d\'enquête sur l\'inceste',
   prescriptibilite: 'Imprescriptibilité des crimes d\'inceste commis sur mineurs',
+  loiintegrale: 'Proposition de loi intégrale (AN n°3106) — vote solennel du 13 octobre 2026',
   ppl: 'Projet de loi relatif à la protection des enfants — adopté à l\'Assemblée le 21 juillet 2026, examen au Sénat prévu en octobre',
   ciivise: 'Mise en œuvre des 82 recommandations de la CIIVISE',
   budget: 'Budget consacré à la lutte contre les violences sexuelles faites aux enfants',
@@ -143,6 +144,25 @@ const emailSubjects = {
 };
 
 const emailTemplates = {
+
+  loiintegrale: (nom, deptNom, deptCode) =>
+`${nom}
+Citoyen·ne de ${deptNom} (département ${deptCode})
+
+Madame la Députée, Monsieur le Député,
+
+Je me permets de vous écrire au sujet de la proposition de loi apportant une réponse intégrale au phénomène des violences sexuelles et sexistes contre les femmes et les enfants (AN n°3106), déposée le 11 août 2026. Adoptée par la commission spéciale le 23 septembre 2026, elle est examinée en séance publique à partir du 1er octobre, avant un vote solennel prévu le 13 octobre 2026.
+
+Selon la CIIVISE (rapport public de novembre 2023), 160 000 enfants sont victimes de violences sexuelles chaque année en France, et moins de 1 % des affaires d'inceste aboutissent à une condamnation.
+
+Dans sa version déposée, le texte prévoit notamment la création d'un crime autonome d'inceste et, à son article 55, un parcours de soins coordonné du psychotraumatisme pris en charge par l'Assurance maladie. Le 21 septembre 2026, la CIIVISE a demandé que ce parcours de soins soit étendu aux personnes majeures ayant subi des violences sexuelles et l'inceste durant leur enfance, le dévoilement intervenant en moyenne autour de 44 ans.
+
+Je vous serais reconnaissant·e de bien vouloir m'indiquer si vous participerez au vote solennel du 13 octobre, quelle position vous entendez y défendre, et comment vous comptez soutenir, lors de l'examen du projet de loi de finances pour 2027, les moyens nécessaires à l'application de ce texte.
+
+Je vous prie de croire, Madame la Députée, Monsieur le Député, à l'expression de ma haute considération.
+
+${nom}`,
+
 
   prescriptibilite: (nom, deptNom, deptCode) =>
 `${nom}
@@ -158,7 +178,7 @@ Ce délai est documenté et compris. Les mécanismes de l'emprise, de la honte e
 
 La Proposition de loi intégrale contre les violences sexistes et sexuelles, déposée une première fois en décembre 2025, a été redéposée le 11 août 2026 dans une nouvelle version de 69 articles (AN n°3106) et prévoit l'imprescriptibilité des crimes d'inceste commis sur mineurs. Un sondage Ipsos réalisé pour l'association Face à l'inceste en octobre 2023 indique que 90 % des Français se déclarent favorables à cette mesure.
 
-Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ce sujet, et, le cas échéant, les démarches que vous entendez entreprendre pour que cette disposition soit maintenue lors de l'examen du texte : la commission spéciale a débuté ses travaux le 7 septembre 2026, avec des articles examinés du 21 au 25 septembre avant une séance publique du 28 septembre au 7 octobre 2026.
+Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ce sujet, et, le cas échéant, les démarches que vous entendez entreprendre pour que cette disposition soit maintenue lors de l'examen du texte : adopté en commission spéciale le 23 septembre 2026, il est examiné en séance publique à partir du 1er octobre, avant un vote solennel le 13 octobre 2026.
 
 Je vous prie de croire, Madame la Députée, Monsieur le Député, à l'expression de ma haute considération.
 
@@ -170,13 +190,13 @@ Citoyen·ne de ${deptNom} (département ${deptCode})
 
 Madame la Députée, Monsieur le Député,
 
-Je me permets de vous adresser ce courrier au sujet du projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 par 378 voix pour, 7 voix contre et 173 abstentions. Le texte est désormais transmis au Sénat, dont l'examen est prévu la semaine du 19 octobre 2026.
+Je me permets de vous adresser ce courrier au sujet du projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 par 378 voix pour, 7 voix contre et 173 abstentions. Le texte est désormais transmis au Sénat, où son examen est prévu en octobre 2026.
 
 Le texte adopté reprend plusieurs recommandations du rapport de la commission d'enquête sur le traitement judiciaire des violences sexuelles incestueuses parentales (rapport n°3005, 9 juillet 2026) : une ordonnance de protection de l'enfant permettant sa mise en sécurité dès la révélation des faits, l'obligation de mener les principaux actes d'enquête dans un délai de trois mois, et la dépénalisation de la non-représentation d'enfant en cas de suspicion de violences sexuelles. Il consacre également l'imprescriptibilité des crimes sexuels sur mineurs (16 juillet 2026) et, rétablie lors d'une seconde délibération demandée par le gouvernement, la réclusion criminelle à perpétuité pour les viols sériels sur mineurs de quinze ans.
 
-Ces mesures répondent à un constat documenté par la commission d'enquête : 19 254 faits de violences sexuelles intrafamiliales sur mineur ont été enregistrés en 2024, pour seulement 1 406 condamnations et environ 41 % de classements sans suite pour les viols incestueux (rapport n°3005). La Proposition de loi intégrale contre les violences sexistes et sexuelles, qui porte une réponse plus large à ces enjeux, a été redéposée le 11 août 2026, accompagnée d'une proposition de loi organique sur l'autorité judiciaire (AN n°3106 et n°3107, 69 articles) ; la commission spéciale chargée de les examiner s'est installée le 7 septembre 2026, pour des articles examinés du 21 au 25 septembre puis une séance publique du 28 septembre au 7 octobre 2026, en procédure accélérée.
+Ces mesures répondent à un constat documenté par la commission d'enquête : 19 254 faits de violences sexuelles intrafamiliales sur mineur ont été enregistrés en 2024, pour seulement 1 406 condamnations et environ 41 % de classements sans suite pour les viols incestueux (rapport n°3005). La Proposition de loi intégrale contre les violences sexistes et sexuelles, qui porte une réponse plus large à ces enjeux, a été redéposée le 11 août 2026, accompagnée d'une proposition de loi organique sur l'autorité judiciaire (AN n°3106 et n°3107, 69 articles) ; la proposition de loi a été adoptée en commission spéciale le 23 septembre 2026 et est examinée en séance publique à partir du 1er octobre, avant un vote solennel le 13 octobre 2026, en procédure accélérée.
 
-Je vous serais reconnaissant·e de bien vouloir me confirmer votre vote sur ce texte, et si vous entendez continuer à soutenir la pleine application de ces dispositions, lors de l'examen de la proposition de loi intégrale en séance publique (28 septembre-7 octobre) comme lors des prochaines lois de finances.
+Je vous serais reconnaissant·e de bien vouloir me confirmer votre vote sur ce texte, et si vous entendez continuer à soutenir la pleine application de ces dispositions, lors de l'examen de la proposition de loi intégrale en séance publique (à partir du 1er octobre, vote solennel le 13 octobre) comme lors des prochaines lois de finances.
 
 Je vous prie de croire, Madame la Députée, Monsieur le Député, à l'expression de ma haute considération.
 
@@ -194,7 +214,7 @@ Le constat de la commission, adopté par ses membres issus de l'ensemble des gro
 
 La commission formule 49 recommandations, parmi lesquelles l'imprescriptibilité des crimes commis à l'encontre de mineurs, l'obligation de mener les principaux actes d'enquête dans un délai de trois mois, la désignation systématique d'un avocat pour le mineur victime dès le dépôt de plainte, et le principe d'éloignement de l'auteur présumé plutôt que de l'enfant.
 
-Certaines de ces mesures figurent déjà dans le projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 et transmis au Sénat (examen prévu la semaine du 19 octobre 2026) ; d'autres pourraient être reprises dans la proposition de loi intégrale contre les violences sexistes et sexuelles, redéposée le 11 août 2026 (AN n°3106), accompagnée d'une proposition de loi organique sur l'autorité judiciaire (n°3107) : leur commission spéciale s'est installée le 7 septembre 2026, pour un examen des articles du 21 au 25 septembre et une séance publique du 28 septembre au 7 octobre 2026. Mais la plupart des 49 recommandations restent à ce jour sans traduction législative.
+Certaines de ces mesures figurent déjà dans le projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 et transmis au Sénat (examen prévu en octobre 2026) ; d'autres pourraient être reprises dans la proposition de loi intégrale contre les violences sexistes et sexuelles, redéposée le 11 août 2026 (AN n°3106), accompagnée d'une proposition de loi organique sur l'autorité judiciaire (n°3107) : la proposition de loi a été adoptée en commission spéciale le 23 septembre 2026 et est examinée en séance publique à partir du 1er octobre, avant un vote solennel le 13 octobre 2026. Mais la plupart des 49 recommandations restent à ce jour sans traduction législative.
 
 Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ces recommandations, et les initiatives que vous entendez soutenir — dans le cadre des textes en cours d'examen comme des lois de finances à venir — pour leur donner une suite concrète.
 
@@ -252,7 +272,7 @@ La CIIVISE a documenté que 92 % des enfants qui révèlent des violences ne re�
 
 Les outils existent et sont disponibles. Le programme pédagogique « Mélissa et les autres », conçu par la CIIVISE, est en accès libre et a été téléchargé par plus de 8 000 organismes de formation. Les ressources produites par la MIPROF (Mission Interministérielle pour la Protection des Femmes) couvrent les professionnels de santé et du droit. Ce qui fait défaut, c'est le cadre légal rendant cette formation obligatoire et son financement garanti dans la durée.
 
-La Proposition de loi intégrale contre les violences sexistes et sexuelles (AN n°3106, redéposée le 11 août 2026) prévoit précisément cette obligation. Sa commission spéciale a débuté ses travaux le 7 septembre 2026 (articles examinés du 21 au 25 septembre, séance publique du 28 septembre au 7 octobre) : dans l'attente de son adoption définitive, les professionnels continuent d'agir sans socle commun de formation sur un sujet qui touche statistiquement au moins un enfant dans chaque classe de trente élèves.
+La Proposition de loi intégrale contre les violences sexistes et sexuelles (AN n°3106, redéposée le 11 août 2026) prévoit précisément cette obligation. Adoptée en commission spéciale le 23 septembre 2026, elle est examinée en séance publique à partir du 1er octobre, avant un vote solennel le 13 octobre 2026 : dans l'attente de son adoption définitive, les professionnels continuent d'agir sans socle commun de formation sur un sujet qui touche statistiquement au moins un enfant dans chaque classe de trente élèves.
 
 Pourriez-vous me faire connaître votre position sur cette mesure, et les initiatives que vous envisagez de soutenir afin que la formation au repérage des violences sexuelles sur mineurs devienne effective et obligatoire ?
 
@@ -274,7 +294,7 @@ La France compte en effet 3,2 procureurs pour 100 000 habitants, contre une méd
 
 Les victimes déposent plainte. La capacité institutionnelle de traiter ces plaintes dans des délais et avec des moyens d'investigation adaptés est, en l'état, insuffisante. Il s'agit d'une question de politique budgétaire et d'organisation judiciaire autant que d'une question de droit.
 
-Je vous serais reconnaissant·e de bien vouloir me préciser votre position sur le renforcement des moyens des parquets spécialisés dans les affaires de crimes sexuels sur mineurs, ainsi que sur les dispositions de la PPL intégrale (AN n°3106) et de la proposition de loi organique sur l'autorité judiciaire (AN n°3107) relatives à la réforme du traitement judiciaire de ces plaintes — deux textes dont la commission spéciale, installée le 7 septembre 2026, examine les articles du 21 au 25 septembre avant une séance publique du 28 septembre au 7 octobre.
+Je vous serais reconnaissant·e de bien vouloir me préciser votre position sur le renforcement des moyens des parquets spécialisés dans les affaires de crimes sexuels sur mineurs, ainsi que sur les dispositions de la PPL intégrale (AN n°3106) et de la proposition de loi organique sur l'autorité judiciaire (AN n°3107) relatives à la réforme du traitement judiciaire de ces plaintes — deux textes adoptés en commission spéciale le 23 septembre 2026 et examinés en séance publique à partir du 1er octobre, avant un vote solennel le 13 octobre.
 
 Avec l'expression de mes respectueuses salutations,
 
