@@ -155,7 +155,7 @@ Je me permets de vous écrire au sujet de la proposition de loi apportant une r�
 
 Selon la CIIVISE (rapport public de novembre 2023), 160 000 enfants sont victimes de violences sexuelles chaque année en France, et moins de 1 % des affaires d'inceste aboutissent à une condamnation.
 
-Dans sa version déposée, le texte prévoit notamment la création d'un crime autonome d'inceste et, à son article 55, un parcours de soins coordonné du psychotraumatisme pris en charge par l'Assurance maladie. Le 21 septembre 2026, la CIIVISE a demandé que ce parcours de soins soit étendu aux personnes majeures ayant subi des violences sexuelles et l'inceste durant leur enfance, le dévoilement intervenant en moyenne autour de 44 ans.
+Dans sa version déposée, le texte prévoit notamment une définition autonome de l'inceste dans le code pénal (article 19) et, à son article 55, un parcours de soins coordonné du psychotraumatisme pris en charge par l'Assurance maladie. Le 21 septembre 2026, la CIIVISE a demandé que ce parcours de soins soit étendu aux personnes majeures ayant subi des violences sexuelles et l'inceste durant leur enfance, le dévoilement intervenant en moyenne autour de 44 ans.
 
 Je vous serais reconnaissant·e de bien vouloir m'indiquer si vous participerez au vote solennel du 13 octobre, quelle position vous entendez y défendre, et comment vous comptez soutenir, lors de l'examen du projet de loi de finances pour 2027, les moyens nécessaires à l'application de ce texte.
 
@@ -176,9 +176,9 @@ La CIIVISE (Commission Indépendante sur l'Inceste et les Violences Sexuelles fa
 
 Ce délai est documenté et compris. Les mécanismes de l'emprise, de la honte et de la dépendance affective à l'agresseur expliquent que la parole des victimes intervienne fréquemment des décennies après les faits. La loi actuelle ne prend pas en compte cette réalité clinique.
 
-La Proposition de loi intégrale contre les violences sexistes et sexuelles, déposée une première fois en décembre 2025, a été redéposée le 11 août 2026 dans une nouvelle version de 69 articles (AN n°3106) et prévoit l'imprescriptibilité des crimes d'inceste commis sur mineurs. Un sondage Ipsos réalisé pour l'association Face à l'inceste en octobre 2023 indique que 90 % des Français se déclarent favorables à cette mesure.
+La Proposition de loi intégrale contre les violences sexistes et sexuelles, déposée une première fois en décembre 2025, a été redéposée le 11 août 2026 dans une nouvelle version de 69 articles (AN n°3106). Dans sa version déposée, elle étend la prescription glissante à l'ensemble des violences sexuelles (article 15) mais ne prévoit pas l'imprescriptibilité ; celle-ci figure en revanche dans le projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 et transmis au Sénat. Un sondage Ipsos réalisé pour l'association Face à l'inceste en octobre 2023 indique que 90 % des Français se déclarent favorables à cette mesure.
 
-Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ce sujet, et, le cas échéant, les démarches que vous entendez entreprendre pour que cette disposition soit maintenue lors de l'examen du texte : adopté en commission spéciale le 23 septembre 2026, il est examiné en séance publique à partir du 1er octobre, avant un vote solennel le 13 octobre 2026.
+Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ce sujet, et les démarches que vous entendez entreprendre pour que l'imprescriptibilité soit maintenue lors de l'examen du projet de loi au Sénat, et introduite, si vous le jugez opportun, dans la proposition de loi intégrale (adoptée en commission spéciale le 23 septembre 2026, examinée en séance publique à partir du 1er octobre, vote solennel le 13 octobre 2026).
 
 Je vous prie de croire, Madame la Députée, Monsieur le Député, à l'expression de ma haute considération.
 
@@ -230,7 +230,7 @@ Madame la Députée, Monsieur le Député,
 
 Je me permets de vous adresser ce courrier pour vous soumettre une question relative à la mise en œuvre des recommandations de la CIIVISE, dont le suivi me semble insuffisant au regard de l'ampleur du problème documenté.
 
-En novembre 2023, la Commission Indépendante sur l'Inceste et les Violences Sexuelles faites aux Enfants a rendu un rapport fondé sur 30 000 témoignages et deux ans d'auditions. Elle y formule 82 recommandations concrètes, articulées autour de quatre axes : prévention, repérage, protection judiciaire et soutien aux victimes. Le gouvernement n'en a retenu que 41. Les recommandations écartées couvrent notamment l'imprescriptibilité des crimes sur mineurs, le renforcement des parquets spécialisés, la formation obligatoire des professionnels et le financement pérenne des associations d'aide aux victimes.
+En novembre 2023, la Commission Indépendante sur l'Inceste et les Violences Sexuelles faites aux Enfants a rendu un rapport fondé sur 30 000 témoignages et deux ans d'auditions. Elle y formule 82 recommandations concrètes, articulées autour de quatre axes : prévention, repérage, protection judiciaire et soutien aux victimes. Dans son bilan de mise en œuvre du 15 juin 2026, la CIIVISE relève que 3 seulement de ses 17 mesures prioritaires sont pleinement effectives, et que le traitement judiciaire et la réparation restent les principaux manques.
 
 Le bilan chiffré actuel est le suivant : 160 000 enfants victimes par an, moins de 1 % des affaires aboutissant à une condamnation, et un coût social évalué à 9,7 milliards d'euros annuels, dont les deux tiers résultent des conséquences à long terme sur la santé physique et mentale des victimes (CIIVISE, avis juin 2023). Ce constat n'est pas partisan : il est formulé par une instance créée par le gouvernement lui-même, dont les conclusions ont été saluées par l'ensemble du spectre politique lors de leur présentation.
 
