@@ -2,6 +2,8 @@
 <nav class="breadcrumb" aria-label="Fil d'Ariane">
   <a href="/">Accueil</a>
   <span class="breadcrumb-sep" aria-hidden="true">/</span>
+  {% if page.breadcrumb_parent %}<a href="{{ page.breadcrumb_parent_url }}">{{ page.breadcrumb_parent }}</a>
+  <span class="breadcrumb-sep" aria-hidden="true">/</span>{% endif %}
   <span class="breadcrumb-current" aria-current="page">{{ page.breadcrumb | default: page.title }}</span>
 </nav>
 {% endunless %}
