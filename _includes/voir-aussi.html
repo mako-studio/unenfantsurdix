@@ -1,0 +1,26 @@
+{% comment %}
+  Maillage interne : liens contextuels en bas de page.
+  Piloté par la clé `voir_aussi` du front matter de chaque page, ex. :
+    voir_aussi: [chiffres, mythes, ressources]
+  Clés disponibles : chiffres, mythes, votes-deputes, votes-senateurs,
+  observatoire-ciivise, observatoire-an, ecrire, ressources.
+{% endcomment %}
+{% if page.voir_aussi %}
+<nav class="voir-aussi" aria-label="À lire aussi">
+  <p class="voir-aussi-titre">À lire aussi</p>
+  <ul class="voir-aussi-liste" role="list">
+  {% for cle in page.voir_aussi %}
+    {% case cle %}
+      {% when 'chiffres' %}<li><a href="/chiffres/"><strong>Chiffres de l'inceste en France</strong><span>Ampleur, impunité, coût : les données officielles, source par source.</span></a></li>
+      {% when 'mythes' %}<li><a href="/mythes-vs-realite/"><strong>Idées reçues sur l'inceste</strong><span>Ce que dit la recherche, avec son niveau de certitude.</span></a></li>
+      {% when 'votes-deputes' %}<li><a href="/votes-deputes/"><strong>Votes des député·es</strong><span>Les scrutins publics sur la protection de l'enfance, élu·e par élu·e.</span></a></li>
+      {% when 'votes-senateurs' %}<li><a href="/votes-senateurs/"><strong>Votes des sénateur·rices</strong><span>Les scrutins publics du Sénat, élu·e par élu·e.</span></a></li>
+      {% when 'observatoire-ciivise' %}<li><a href="/observatoire-ciivise/"><strong>Suivi des 82 recommandations de la CIIVISE</strong><span>Le bilan officiel de mise en œuvre, recommandation par recommandation.</span></a></li>
+      {% when 'observatoire-an' %}<li><a href="/observatoire-commission-enquete/"><strong>Les 49 recommandations de la commission d'enquête</strong><span>Rapport de l'Assemblée nationale et traduction législative.</span></a></li>
+      {% when 'ecrire' %}<li><a href="/ecrire-a-mon-elu/"><strong>Écrire à mon élu·e</strong><span>Un courrier prêt à envoyer, en 30 secondes.</span></a></li>
+      {% when 'ressources' %}<li><a href="/ressources/"><strong>Ressources et soutien</strong><span>Numéros d'écoute, associations et démarches.</span></a></li>
+    {% endcase %}
+  {% endfor %}
+  </ul>
+</nav>
+{% endif %}

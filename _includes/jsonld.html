@@ -17,6 +17,12 @@
    "@id": "https://unenfantsurdix.com/#organization",
    "name": "Un enfant sur dix",
    "url": "https://unenfantsurdix.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://unenfantsurdix.com/assets/img/logo-512.png",
+    "width": 512,
+    "height": 512
+   },
    "knowsAbout": ["Inceste", "Violences sexuelles sur mineurs", "CIIVISE", "Protection de l'enfance en France", "Droit pénal français", "Votes du Parlement français"]
   },
   {
@@ -27,7 +33,7 @@
    "description": {{ page.description | jsonify }},
    "inLanguage": "fr-FR",
    "isPartOf": { "@id": "https://unenfantsurdix.com/#website" },
-   "dateModified": "{{ site.time | date: '%Y-%m-%d' }}",
+   "dateModified": "{{ page.last_modified_at | default: site.time | date: '%Y-%m-%d' }}",
    "breadcrumb": { "@id": "https://unenfantsurdix.com{{ page.url }}#breadcrumb" }{% if page.url == '/' %},
    "speakable": {
     "@type": "SpeakableSpecification",
@@ -39,7 +45,7 @@
    "@id": "https://unenfantsurdix.com{{ page.url }}#breadcrumb",
    "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://unenfantsurdix.com/" }{% unless page.url == '/' %},
-    { "@type": "ListItem", "position": 2, "name": {{ page.title | split: ' — ' | first | jsonify }}, "item": "https://unenfantsurdix.com{{ page.url }}" }{% endunless %}
+    { "@type": "ListItem", "position": 2, "name": {{ page.breadcrumb | default: page.title | jsonify }}, "item": "https://unenfantsurdix.com{{ page.url }}" }{% endunless %}
    ]
   }{% case page.url %}{% when '/' %},
   {
@@ -58,7 +64,7 @@
    "description": "Analyse sourcée des données institutionnelles françaises sur les violences sexuelles intrafamiliales : prévalence, taux de condamnation, coût social.",
    "inLanguage": "fr-FR",
    "datePublished": "2024-01-01T00:00:00+01:00",
-   "dateModified": "{{ site.time | date: '%Y-%m-%d' }}",
+   "dateModified": "{{ page.last_modified_at | default: site.time | date: '%Y-%m-%d' }}",
    "author": { "@id": "https://unenfantsurdix.com/#organization" },
    "publisher": { "@id": "https://unenfantsurdix.com/#organization" },
    "mainEntityOfPage": { "@id": "https://unenfantsurdix.com/chiffres/#webpage" },

@@ -2,6 +2,23 @@ title: "Un enfant sur dix"
 description: "Inceste en France : chiffres officiels CIIVISE et rapport d'enquête de l'Assemblée nationale 2026, observatoire des recommandations, votes des parlementaires, générateur de courrier aux élu·es et ressources d'aide aux victimes."
 url: "https://unenfantsurdix.com"
 lang: fr
+locale: fr_FR
+
+# Logo de l'éditeur (repris par jekyll-seo-tag dans les données structurées)
+logo: /assets/img/logo-512.png
+
+# Image de partage par défaut (Open Graph / cartes LinkedIn, WhatsApp, X…).
+# Pour une image propre à une page, ajouter un bloc `image:` identique
+# dans le front matter de cette page.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/img/partage-1200x630.png
+        width: 1200
+        height: 630
+        alt: "Un enfant sur dix — L'inceste en France, données officielles"
 
 plugins:
   - jekyll-seo-tag
