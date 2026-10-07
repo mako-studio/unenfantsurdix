@@ -23,6 +23,7 @@
     "width": 512,
     "height": 512
    },
+   "founder": { "@type": "Person", "name": "Benoît Sommerlad" },
    "knowsAbout": ["Inceste", "Violences sexuelles sur mineurs", "CIIVISE", "Protection de l'enfance en France", "Droit pénal français", "Votes du Parlement français"]
   },
   {
@@ -141,27 +142,9 @@
     }
    ]
   }{% when '/mythes-vs-realite/' %},
-  {
-   "@type": "FAQPage",
-   "@id": "https://unenfantsurdix.com/mythes-vs-realite/#faq",
-   "mainEntity": [
-    {
-     "@type": "Question",
-     "name": "L'inceste est-il plus fréquent dans certains milieux sociaux ?",
-     "acceptedAnswer": { "@type": "Answer", "text": "Non. Trois études épidémiologiques indépendantes convergent : l'enquête Virage (INED, 2015), Charruault et al. (2021) et Marsican/Bajos/Pousson (2023). Aucune ne documente de sur-représentation d'une catégorie socioprofessionnelle. L'inceste touche tous les milieux sociaux, sans corrélation statistiquement significative avec le revenu, le diplôme ou la zone géographique." }
-    },
-    {
-     "@type": "Question",
-     "name": "Quelles sont les conséquences de l'inceste sur la santé des victimes ?",
-     "acceptedAnswer": { "@type": "Answer", "text": "Les conséquences de l'inceste sont graves et durables : plus de 50 % des victimes effectuent au moins une tentative de suicide au cours de leur vie (risque multiplié par 15 par rapport à la population générale), risque de dépression chronique multiplié par 4, traumatismes persistants sur des décennies. Dans 92 % des cas, les enfants qui révèlent les violences ne reçoivent pas de réponse protectrice. Sources : Ipsos/AIVI, 2010 ; G. Lopez, Institut de victimologie de Paris, 2015 ; CIIVISE 2023." }
-    },
-    {
-     "@type": "Question",
-     "name": "Pourquoi les victimes d'inceste parlent-elles si tard ?",
-     "acceptedAnswer": { "@type": "Answer", "text": "La parole des victimes intervient fréquemment des décennies après les faits, en raison des mécanismes d'emprise, de honte et de dépendance affective à l'agresseur. En 2023, 75 % des témoignages recueillis par la CIIVISE portaient sur des faits prescrits, privant ainsi la grande majorité des victimes de tout accès à la justice. La loi française actuelle ne prend pas suffisamment en compte cette réalité clinique. Source : CIIVISE 2023 ; Sénat, exposé des motifs PPL n°127, novembre 2025." }
-    }
-   ]
-  }{% when '/ressources/' %},
+  {% comment %}Généré par scripts/generate_mythes_faq.py à partir de _includes/mythes.html{% endcomment %}
+  {% include mythes-faq.json %}
+  {% when '/ressources/' %},
   {
    "@type": "FAQPage",
    "@id": "https://unenfantsurdix.com/ressources/#faq",

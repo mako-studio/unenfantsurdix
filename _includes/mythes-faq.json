@@ -1,0 +1,134 @@
+{
+ "@type": "FAQPage",
+ "@id": "https://unenfantsurdix.com/mythes-vs-realite/#faq",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "« L'inceste concerne surtout des adolescents. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Les violences intrafamiliales commencent plus tôt que les autres. Une méta-analyse de 62 travaux portant sur 14 494 victimes établit ce début précoce. Sur dossiers judiciaires, 42,4 % des victimes intrafamiliales ont moins de 9 ans, 76,7 % moins de 12 ans. En France, l'âge moyen au début des violences est de 8,5 ans. Réserve — deux de ces trois sources portent sur des dossiers judiciaires : elles décrivent les cas signalés, pas la population générale. Sources : Ventus, Antfolk & Salo, J. of Sexual Aggression, 2017 · Loinaz et al., Psicothema, 2019 · Infostat Justice n°205, 2025"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« Le danger vient des inconnus. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Même pour les violences commises hors de la famille, 78 % des agresseurs sont connus de l'enfant ; 20,7 % seulement sont des inconnus. En France, 35,7 % des femmes et 21,6 % des hommes agressés avant 18 ans l'ont été par un membre de leur famille. L'inconnu dans l'espace public représente 1,7 % des cas déclarés par les femmes. Sources : Loinaz et al., Psicothema, 2019 · Russell, Child Abuse & Neglect, 1983 · Marsicano, Bajos & Pousson, Ined, 2023"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« L'inceste, c'est un parent qui abuse son enfant. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "C'est incomplet. Les violences entre frères et sœurs sont l'une des formes les moins reconnues. Au Royaume-Uni, environ un quart des violences sexuelles intrafamiliales sont commises par un auteur de moins de 18 ans. En France, le frère est le premier agresseur intrafamilial identifié par les victimes hommes (21,8 %), devant le père ou le beau-père (20,7 %). Réserve — la prévalence mesurée va de 1,3 % à 7 % selon les études : les définitions retenues diffèrent fortement. Sources : CSA Centre, Royaume-Uni, 2023 · Bertele & Talmon, Trauma, Violence & Abuse, 2023 · Marsicano et al., Ined, 2023"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« S'il n'y a pas de lésion, c'est qu'il ne s'est rien passé. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Un examen normal est le cas le plus fréquent, même après des violences avérées. Dans une série publiée, 87,4 % des examens étaient normaux ; chez les filles examinées à distance des faits, 2,2 % seulement présentaient des signes diagnostiques. Les recommandations internationales rappellent trois explications possibles : aucune lésion visible, lésion cicatrisée, ou absence de contact. Sources : Adams, Kellogg et al., Child Abuse & Neglect, mise à jour 2023 · Adams, Harper, Knudson & Revilla, Pediatrics, 1994"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« Un enfant victime le dirait avec des mots. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "La révélation est un processus, pas un moment. Beaucoup d'enfants s'expriment indirectement — « je ne veux plus aller chez papi », un dessin, une lettre, un changement de comportement — ou reprennent le vocabulaire de l'agresseur (« secret », « jeu »). Les enfants disent eux-mêmes qu'ils tentent de révéler lorsqu'ils envoient ces signaux, en espérant qu'un adulte les remarque. Les enfants en situation de handicap y recourent davantage. Sources : Allnock, Miller & Baker pour le CSA Centre, Royaume-Uni, 2019"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« Si la victime ne s'est pas débattue, c'est qu'elle était d'accord. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "La sidération — immobilité tonique — est une réaction réflexe involontaire déclenchée par une peur intense, documentée chez l'humain comme chez de nombreuses espèces animales. Elle provoque une paralysie motrice, l'impossibilité de crier, des tremblements. Les études recensées rapportent des taux d'immobilité significative allant de 37 % à environ 70 % des victimes selon les échantillons. Réserve — la majorité de ces travaux portent sur des victimes adultes ; les études consacrées spécifiquement à l'enfance sont moins nombreuses. Sources : de la Torre Laso, Trauma, Violence & Abuse, 2024 · Möller, Söndergaard & Helström, Acta Obstet. Gynecol. Scand., 2017 · Heidt, Marx & Forsyth, Behaviour Research and Therapy, 2005"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« Les agresseurs ont un profil psychologique reconnaissable. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Il n'existe pas de profil caractéristique. Une méta-analyse de 78 échantillons indépendants montre que les auteurs de violences intrafamiliales présentent moins de tendances antisociales et de déviance sexuelle que les auteurs extérieurs à la famille. Le stéréotype du prédateur repérable décrit encore moins bien l'inceste que les autres violences sexuelles. Sources : Seto et al., Clinical Psychology Review, 2015 · Commission d'enquête AN, 17e législature · CIIVISE, rapport nov. 2023"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« Les victimes deviennent agresseurs à leur tour. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "L'immense majorité ne le devient pas. Sur 843 patients d'un centre britannique de psychothérapie médico-légale, 35 % des auteurs avaient été victimes, contre 11 % des non-auteurs. Chez les femmes, 43 % avaient été victimes — une seule était devenue auteure. Constater que des agresseurs ont été victimes ne dit rien de la proportion de victimes qui deviennent agresseurs : c'est l'inversion qui est fausse. Réserve — échantillon clinique médico-légal : il décrit des personnes déjà suivies, pas la population générale. Sources : Glasser, Kolvin, Campbell, Glasser, Leitch & Farrelly, British Journal of Psychiatry, 2001"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« L'inceste est un problème des milieux défavorisés. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "L'enquête Inserm 2021 mesure 13,4 % de violences sexuelles avant 18 ans chez les femmes dont le père était cadre, contre 12,2 % chez celles dont le père était ouvrier. Aucune étude ne documente de sur-représentation d'une catégorie socioprofessionnelle. Sources : Marsicano, Bajos & Pousson, Ined, 2023 · Enquête Virage, Ined, 2015 · Loinaz et al., Psicothema, 2019"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« Hommes et femmes commettent ces violences dans les mêmes proportions. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Les auteurs sont très majoritairement des hommes : 96,5 % des agressions intrafamiliales subies par des filles, 89,7 % de celles subies par des garçons. Les violences commises par des femmes existent cependant, et se heurtent à une incrédulité plus forte des professionnels — ce qui rend une partie des victimes invisibles. Sources : Marsicano, Bajos & Pousson, Ined, 2023 · Loinaz et al., Psicothema, 2019 · CSA Centre, Royaume-Uni, 2023"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« L'inceste est lié à une culture, une religion ou une origine géographique. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Les données disponibles n'établissent aucune corrélation entre appartenance religieuse, origine culturelle ou zone géographique et prévalence de l'inceste. La synthèse britannique de référence conclut que ces violences surviennent dans les familles de toutes origines — et ajoute que les victimes issues de minorités rencontrent des obstacles supplémentaires pour en parler, ce qui les rend sous-représentées dans les données institutionnelles. Sources : Enquête Virage, Ined, 2015 · CSA Centre, Royaume-Uni, 2023 · CIIVISE, rapport nov. 2023"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« Les fausses accusations sont fréquentes. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Elles sont rares, mais leur taux exact est débattu : la plupart des estimations cliniques se situent entre 2 % et 10 % des signalements. Quand elles surviennent, elles résultent le plus souvent de l'influence d'un tiers ou de questions mal posées, plutôt que d'une invention spontanée de l'enfant. Réserve — une revue critique conclut que le taux réel reste méthodologiquement indéterminable, et les taux publiés augmentent nettement dans les procédures de garde. Sources : O'Donohue, Cummings & Willis, J. of Child Sexual Abuse, 2018 · Allnock, Miller & Baker pour le CSA Centre, 2019"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« Un enfant qui se rétracte avait menti. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sur 257 cas judiciairement établis, 23,1 % des enfants se sont rétractés au moins une fois. La rétractation est prédite par la dépendance familiale — enfant jeune, agresseur en position parentale, parent non-agresseur peu soutenant — et non par la fausseté de l'accusation : les dossiers comportant des preuves corroborantes ne présentent pas moins de rétractations. Réserve — les taux publiés vont de 4 % à 23 % selon la définition retenue et la durée du suivi. Sources : Malloy, Lyon & Quas, J. of the American Academy of Child & Adolescent Psychiatry, 2007"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« Un inceste, c'est un dérapage isolé. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sur dossiers judiciaires, 88,9 % des violences intrafamiliales sont répétées, contre 55,7 % hors famille. 71 % durent plus d'un an, 24 % plus de quatre ans, 10 % plus de neuf ans. La CIIVISE documente 86 % de violences répétées : deux méthodes indépendantes, même ordre de grandeur. La répétition est la règle, pas une loi : une partie des faits reste un épisode unique. Sources : Loinaz et al., Psicothema, 2019 · CIIVISE, rapport nov. 2023"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« Si c'était vrai, l'enfant en aurait parlé. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "55 à 66 % des victimes n'en parlent jamais à personne, et seules 5 à 13 % le signalent à une autorité. Au Royaume-Uni, 64 % des personnes violées par un parent n'en avaient parlé à personne sur le moment. Le délai moyen avant révélation est de 3 ans pour les violences intrafamiliales, contre 0,7 an hors famille. Le constat est stable d'une étude à l'autre ; les proportions varient beaucoup selon les pays et la façon dont la révélation est mesurée. Sources : London, Bruck, Wright & Ceci, Memory, 2008 · CSA Centre, Royaume-Uni, 2023 · Loinaz et al., Psicothema, 2019"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "« L'inceste, c'est rare — ça n'arrive pas dans les familles normales. » Vrai ou faux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Les estimations varient selon la méthode — la CIIVISE retient 5,4 millions d'adultes concernés, le sondage Ipsos 7,4 millions — mais toutes convergent sur un phénomène massif. L'enquête Inserm 2021 mesure 4,6 % des femmes et 1,2 % des hommes pour les violences incestueuses avant 18 ans. À l'échelle mondiale, deux méta-analyses portant sur 217 travaux estiment les violences sexuelles sur enfants à 11,8 %. L'ampleur est confirmée par toutes les sources ; c'est la mesure exacte qui dépend de la méthode d'enquête. Sources : Stoltenborgh et al., Child Maltreatment, 2011 et Child Abuse Review, 2015 · Marsicano et al., Ined, 2023 · CIIVISE, 2023 · Ipsos pour Face à l'inceste, 2023"
+   }
+  }
+ ]
+}
