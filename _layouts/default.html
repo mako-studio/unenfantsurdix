@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}">
 {% include jsonld.html %}
 </head>
 <body>
@@ -70,18 +70,18 @@
 {% endif %}
 
 <script defer src="https://cloud.umami.is/script.js" data-website-id="db716e39-c53b-4a7a-a845-3e0b55be0218"></script>
-<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}"></script>
 {% if page.url == '/votes-deputes/' %}
-<script src="{{ '/assets/js/votes-logic.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/votes-logic.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}"></script>
 {% endif %}
 {% if page.url == '/observatoire-ciivise/' %}
-<script src="{{ '/assets/js/observatoire-logic.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/observatoire-logic.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}"></script>
 {% endif %}
 {% if page.url == '/observatoire-commission-enquete/' %}
-<script src="{{ '/assets/js/observatoire-an-logic.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/observatoire-an-logic.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}"></script>
 {% endif %}
 {% if page.url == '/votes-senateurs/' %}
-<script src="{{ '/assets/js/votes-senat-logic.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/votes-senat-logic.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}"></script>
 {% endif %}
 
 </body>
