@@ -4,6 +4,10 @@ url: "https://unenfantsurdix.com"
 lang: fr
 locale: fr_FR
 
+# Validation de propriété (balise meta générée par jekyll-seo-tag)
+webmaster_verifications:
+  bing: 4BE3A5223AE867C9E990989B8D6029E9
+
 # Logo de l'éditeur (repris par jekyll-seo-tag dans les données structurées)
 logo: /assets/img/logo-512.png
 
