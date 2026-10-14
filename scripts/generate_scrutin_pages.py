@@ -37,6 +37,7 @@ SORTIE = RACINE / "scrutins"
 EN_CLAIR = {
     "8308": "amendement instaurant l'imprescriptibilité des crimes sexuels sur mineurs",
     "8429": "rétablissement de la réclusion criminelle à perpétuité pour viol sériel sur mineur de quinze ans",
+    "8551": "article réorganisant les infractions incestueuses dans le code pénal (proposition de loi « intégrale »)",
 }
 
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",

@@ -30,12 +30,12 @@ import xml.etree.ElementTree as ET
 
 NS = '{http://schemas.assemblee-nationale.fr/referentiel}'
 
-# Les 18 scrutins retenus (audit thématique — voir passation)
+# Les 20 scrutins retenus (audit thématique — voir passation ; 8551 et 8705 ajoutés le 2026-10-14)
 SCRUTINS = ["VTANR5L17V657","VTANR5L17V805","VTANR5L17V1018","VTANR5L17V1196",
             "VTANR5L17V1624","VTANR5L17V1725","VTANR5L17V4714","VTANR5L17V4723",
             "VTANR5L17V5192","VTANR5L17V5226","VTANR5L17V5244","VTANR5L17V5283",
             "VTANR5L17V6563","VTANR5L17V7258","VTANR5L17V7904","VTANR5L17V8308",
-            "VTANR5L17V8429","VTANR5L17V8430"]
+            "VTANR5L17V8429","VTANR5L17V8430","VTANR5L17V8551","VTANR5L17V8705"]
 
 COULEURS = {  # couleurs officielles conservées de la V1 (clés = abréviations officielles)
     "EPR":"#7B4591","SOC":"#C4547D","RN":"#313567","DR":"#4A7AB5","UDR":"#3367A7",
@@ -226,8 +226,8 @@ def main(amo_dir, scr_dir, out_path):
     data = {
         'meta': {
             'legislature': 17,
-            'genereLe': '2026-08-03',
-            'source': 'data.assemblee-nationale.fr (open data officiel, jeu "Votes" et referentiel AMO30 du 2026-05-18)',
+            'genereLe': '2026-10-14',
+            'source': 'data.assemblee-nationale.fr (open data officiel, jeu "Votes" et referentiel AMO30 telecharge le 2026-10-14)',
             'perimetre': "Scrutins publics nominatifs de la 17e legislature (depuis juillet 2024) relatifs a la protection de l'enfance, aux violences faites aux femmes et aux enfants, et a la famille. Liste etablie par audit exhaustif des 7906 scrutins de la legislature.",
             'note': ("P=pour, C=contre, A=abstention, N=non-votant (categorie officielle). "
                      "Absence de cle pour un depute sur un scrutin = n'a pas pris part au vote "
