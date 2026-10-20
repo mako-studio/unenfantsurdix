@@ -136,7 +136,7 @@ const emailSubjects = {
   rapport2026: 'Traduction législative des 49 recommandations de la commission d\'enquête sur l\'inceste',
   prescriptibilite: 'Imprescriptibilité des crimes d\'inceste commis sur mineurs',
   loiintegrale: 'Proposition de loi intégrale (AN n°3106) — adoptée par l\'Assemblée nationale le 13 octobre 2026, suite de la navette',
-  ppl: 'Projet de loi relatif à la protection des enfants — adopté à l\'Assemblée le 21 juillet 2026, examen au Sénat prévu en octobre',
+  ppl: 'Projet de loi relatif à la protection des enfants — adopté à l\'Assemblée le 21 juillet 2026, examiné en séance au Sénat du 27 octobre au 3 novembre 2026',
   ciivise: 'Mise en œuvre des 82 recommandations de la CIIVISE',
   budget: 'Budget consacré à la lutte contre les violences sexuelles faites aux enfants',
   formation: 'Formation obligatoire des professionnels au repérage des violences',
@@ -190,7 +190,7 @@ Citoyen·ne de ${deptNom} (département ${deptCode})
 
 Madame la Députée, Monsieur le Député,
 
-Je me permets de vous adresser ce courrier au sujet du projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 par 378 voix pour, 7 voix contre et 173 abstentions. Le texte est désormais transmis au Sénat, où son examen est prévu en octobre 2026.
+Je me permets de vous adresser ce courrier au sujet du projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 par 378 voix pour, 7 voix contre et 173 abstentions. Le texte est désormais transmis au Sénat, qui l'examine en séance publique du 27 octobre au 3 novembre 2026.
 
 Le texte adopté reprend plusieurs recommandations du rapport de la commission d'enquête sur le traitement judiciaire des violences sexuelles incestueuses parentales (rapport n°3005, 9 juillet 2026) : une ordonnance de protection de l'enfant permettant sa mise en sécurité dès la révélation des faits, l'obligation de mener les principaux actes d'enquête dans un délai de trois mois, et la dépénalisation de la non-représentation d'enfant en cas de suspicion de violences sexuelles. Il consacre également l'imprescriptibilité des crimes sexuels sur mineurs (16 juillet 2026) et, rétablie lors d'une seconde délibération demandée par le gouvernement, la réclusion criminelle à perpétuité pour les viols sériels sur mineurs de quinze ans.
 
@@ -214,7 +214,7 @@ Le constat de la commission, adopté par ses membres issus de l'ensemble des gro
 
 La commission formule 49 recommandations, parmi lesquelles l'imprescriptibilité des crimes commis à l'encontre de mineurs, l'obligation de mener les principaux actes d'enquête dans un délai de trois mois, la désignation systématique d'un avocat pour le mineur victime dès le dépôt de plainte, et le principe d'éloignement de l'auteur présumé plutôt que de l'enfant.
 
-Certaines de ces mesures figurent déjà dans le projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 et transmis au Sénat (examen prévu en octobre 2026) ; d'autres pourraient être reprises dans la proposition de loi intégrale contre les violences sexistes et sexuelles, redéposée le 11 août 2026 (AN n°3106), accompagnée d'une proposition de loi organique sur l'autorité judiciaire (n°3107) : la proposition de loi a été adoptée en première lecture par l'Assemblée nationale le 13 octobre 2026. Mais la plupart des 49 recommandations restent à ce jour sans traduction législative.
+Certaines de ces mesures figurent déjà dans le projet de loi relatif à la protection des enfants, adopté par l'Assemblée nationale le 21 juillet 2026 et transmis au Sénat (examen en séance publique du 27 octobre au 3 novembre 2026) ; d'autres pourraient être reprises dans la proposition de loi intégrale contre les violences sexistes et sexuelles, redéposée le 11 août 2026 (AN n°3106), accompagnée d'une proposition de loi organique sur l'autorité judiciaire (n°3107) : la proposition de loi a été adoptée en première lecture par l'Assemblée nationale le 13 octobre 2026. Mais la plupart des 49 recommandations restent à ce jour sans traduction législative.
 
 Je vous serais reconnaissant·e de bien vouloir me faire connaître votre position sur ces recommandations, et les initiatives que vous entendez soutenir — dans le cadre des textes en cours d'examen comme des lois de finances à venir — pour leur donner une suite concrète.
 
