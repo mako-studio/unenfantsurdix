@@ -3,7 +3,12 @@
 sauvegardées localement + le référentiel sénateurs ODSEN_GENERAL.csv.
 
 Usage :
-    python3 generate_votes_senat.py <dossier> <sortie.json>
+    python3 generate_votes_senat.py <dossier> <sortie.json> [<ancien.json>]
+
+<ancien.json> (facultatif) : un senat-votes-data.json déjà généré. Pour tout scrutin
+de SCRUTINS dont la page n'est pas dans <dossier>, le résultat et les positions
+nominatives sont repris de ce fichier (pages d'origine non conservées). Les positions
+reprises sont, comme les autres, restreintes aux sénateur·rices en exercice.
 
 <dossier> doit contenir :
 - les pages de scrutin sauvegardées depuis senat.fr (« Scrutin n°NNN - séance du ... - Sénat.html »),
@@ -48,6 +53,13 @@ SCRUTINS = [
     ("scr2024-326", 326, "2025-06-18"),
     ("scr2025-185", 185, "2026-02-10"),
     ("scr2025-226", 226, "2026-04-09"),
+    # Ajouts validés par Ben le 2026-11-05 (veille du 5/11) :
+    # - scr2026-43 : amendements rétablissant l'imprescriptibilité (art. 11 bis A du PJL
+    #   protection des enfants) — exception à la règle « sur l'ensemble », par symétrie
+    #   avec le scrutin AN n° 8308, signalée dans la méthodologie de la page ;
+    # - scr2026-46 : ensemble du PJL protection des enfants.
+    ("scr2026-43", 43, "2026-10-28"),
+    ("scr2026-46", 46, "2026-11-03"),
 ]
 
 # Nom officiel du groupe (page scrutin) → code court + couleur.
@@ -56,15 +68,17 @@ GROUPES = {
     "Les Républicains":                                            ("LR",     "#4A7AB5"),
     "Socialiste, Écologiste et Républicain":                       ("SER",    "#C4547D"),
     "Union Centriste":                                             ("UC",     "#F07E26"),
+    "Union Centriste et Indépendants":                             ("UC",     "#F07E26"),  # intitulé depuis oct. 2026
     "Les Indépendants - République et Territoires":                ("LIRT",   "#3367A7"),
     "Rassemblement des démocrates, progressistes et indépendants": ("RDPI",   "#7B4591"),
     "Communiste Républicain Citoyen et Écologiste - Kanaky":       ("CRCE-K", "#830E21"),
     "du Rassemblement Démocratique et Social Européen":            ("RDSE",   "#B8860B"),
     "Écologiste - Solidarité et Territoires":                      ("GEST",   "#4C8C4E"),
+    "Union Nationale pour les Territoires":                        ("UNT",    "#2E6F73"),  # nouveau groupe (oct. 2026) — couleur provisoire, à valider
     "_NI":                                                         ("NI",     "#8D949A"),
 }
 # Codes du CSV ODSEN → codes courts ci-dessus
-CSV_GROUPES = {"Les Républicains": "LR", "SER": "SER", "UC": "UC",
+CSV_GROUPES = {"Les Républicains": "LR", "SER": "SER", "UC": "UC", "UCI": "UC", "UNT": "UNT",
                "Les Indépendants": "LIRT", "RDPI": "RDPI", "CRCE-K": "CRCE-K",
                "RDSE": "RDSE", "GEST": "GEST", "NI": "NI"}
 
@@ -79,13 +93,17 @@ def clean(s):
 
 def parse_scrutin(path):
     t = open(path, encoding="utf-8").read()
+    # Selon le navigateur, la page sauvegardée encode les accents en entités
+    # (&eacute;, &Eacute;, &deg;…) : on les décode, sauf &nbsp; (ciblé par les regex)
+    # et les entités de structure (&lt; &gt; &amp; &quot;).
+    t = re.sub(r"&(?!(?:nbsp|lt|gt|amp|quot);)[A-Za-z]+;", lambda m: htmllib.unescape(m.group(0)), t)
 
     # Numéro et date (titre de page)
     m = re.search(r"Scrutin n°(\d+) - séance du ([^<]+?) -", t)
     num = int(m.group(1))
 
     # Objet + sort ("sur l'ensemble de la proposition de loi ... " + "Adopté"/"Rejeté")
-    m = re.search(r"(sur l['’]ensemble d[^<]{20,500}?)</", t)
+    m = re.search(r"(sur (?:l['’]ensemble d|les amendements|l['’]amendement)[^<]{20,700}?)</", t)
     objet = clean(m.group(1)) if m else None
     sort = "Adopté" if re.search(r">\s*Adopté\s*<", t) else ("Rejeté" if re.search(r">\s*Rejeté\s*<", t) else None)
 
@@ -147,6 +165,9 @@ def parse_scrutin(path):
     for k, (p, label, code) in enumerate(idx):
         fin = idx[k + 1][0] if k + 1 < len(idx) else len(detail)
         seg = detail[p:fin]
+        # Depuis oct. 2026, la page liste aussi les délégations de vote (délégant « à »
+        # délégataire) après les non-votants : ces noms ne sont pas une position, on coupe.
+        seg = re.split(r"Ont\s+délégué\s+leur\s+droit\s+de\s+vote", seg)[0]
         for mm in re.finditer(r"/senateur/([a-z0-9_]+?)(\d{2}\d{3}[a-z])\.html", seg):
             votes[mm.group(2).upper()] = code
     return num, {"titre": objet, "date": None, "sort": sort, "synthese": synthese,
@@ -173,7 +194,8 @@ def parse_senateurs(csv_path):
     return sens
 
 
-def main(dossier, out_path):
+def main(dossier, out_path, ancien_path=None):
+    ancien = json.load(open(ancien_path, encoding="utf-8")) if ancien_path else None
     sens = parse_senateurs(os.path.join(dossier, "ODSEN_GENERAL.csv"))
     print(f"{len(sens)} sénateur·rices actifs (ODSEN)")
 
@@ -186,6 +208,13 @@ def main(dossier, out_path):
     scrutins, votes, ordre = {}, {}, []
     for sid, num, date in SCRUTINS:
         if num not in fichiers:
+            if ancien and sid in ancien.get("scrutins", {}):
+                scrutins[sid] = ancien["scrutins"][sid]
+                vm = ancien["votes"].get(sid, {})
+                votes[sid] = {mat: pos for mat, pos in vm.items() if mat in sens}
+                ordre.append(sid)
+                print(f"{sid} repris de {os.path.basename(ancien_path)} — {len(votes[sid])} positions conservées")
+                continue
             sys.exit(f"Fichier manquant pour le scrutin n°{num} ({sid})")
         n, sc, vm = parse_scrutin(fichiers[num])
         assert n == num
@@ -211,11 +240,13 @@ def main(dossier, out_path):
     data = {
         "meta": {
             "chambre": "Sénat",
-            "genereLe": "2026-07-06",
+            "genereLe": "2026-11-05",
             "source": "senat.fr (pages officielles des scrutins publics) et data.senat.fr (base Sénateurs ODSEN, licence open data Sénat)",
-            "perimetre": ("Scrutins publics « sur l'ensemble » des sessions 2024-2025 et 2025-2026 relatifs à la protection de l'enfance, "
+            "perimetre": ("Scrutins publics « sur l'ensemble » des sessions 2024-2025 à 2026-2027 relatifs à la protection de l'enfance, "
                           "aux violences sexuelles et sexistes et aux mineurs — périmètre aligné sur le tracker Assemblée nationale. "
-                          "Sélection validée le 2026-07-06 (voir passation/candidats-scrutins-senat.md)."),
+                          "Exception : le scrutin n° 43 (2026-2027), sur les amendements rétablissant l'imprescriptibilité, retenu par "
+                          "symétrie avec le scrutin AN n° 8308. Sélection validée le 2026-07-06 (voir passation/candidats-scrutins-senat.md), "
+                          "complétée le 2026-11-05."),
             "note": ("P=pour, C=contre, A=abstention, N=« n'a pas pris part au vote » (catégorie officielle unique du Sénat : "
                      "elle couvre sans distinction l'absence et le non-vote volontaire ; P+C+A+N = effectif du groupe). "
                      "Absence de clé pour un·e sénateur·rice = pas encore en fonction à cette date ou position non publiée. "
@@ -232,6 +263,6 @@ def main(dossier, out_path):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
+    if len(sys.argv) not in (3, 4):
         sys.exit(__doc__)
     main(*sys.argv[1:])

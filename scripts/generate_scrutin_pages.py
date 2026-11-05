@@ -40,6 +40,11 @@ EN_CLAIR = {
     "8551": "article réorganisant les infractions incestueuses dans le code pénal (proposition de loi « intégrale »)",
 }
 
+# Idem pour le Sénat. Clé : identifiant du scrutin (scrAAAA-N).
+EN_CLAIR_SENAT = {
+    "scr2026-43": "amendements rétablissant l'imprescriptibilité des viols commis sur des mineurs (projet de loi relatif à la protection des enfants)",
+}
+
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",
         "août", "septembre", "octobre", "novembre", "décembre"]
 
@@ -225,6 +230,7 @@ def pages_senat() -> list:
         annee, num = re.match(r"scr(\d{4})-(\d+)$", uid).groups()
         session = f"{annee}-{int(annee) + 1}"
         obj = objet(s["titre"])
+        clair = EN_CLAIR_SENAT.get(uid) or sujet(s["titre"])
         syn = s["synthese"]
         votes = d["votes"].get(uid, {})
         url = f"/votes-senateurs/scrutin-{annee}-{num}/"
@@ -243,7 +249,7 @@ def pages_senat() -> list:
 
         corps = f"""<section class="section prose scrutin" aria-labelledby="scrutin-titre">
   <p class="section-eyebrow" aria-hidden="true">Sénat · {date_fr(s['date'])}</p>
-  <h1 class="page-title" id="scrutin-titre">Sénat, scrutin n° {num} : {e(sujet(s['titre']))}</h1>
+  <h1 class="page-title" id="scrutin-titre">Sénat, scrutin n° {num} : {e(clair)}</h1>
   <p class="section-intro">Scrutin public du {date_fr(s['date'])} au Sénat (session {session}). Vote sur {e(obj[0].lower() + obj[1:])}. Résultat : {e(s['sort'][0].lower() + s['sort'][1:])}.</p>
 
   <ul class="scrutin-synthese">
@@ -272,7 +278,7 @@ def pages_senat() -> list:
         corps = re.sub(r"\n\s*\n(\s*\n)+", "\n\n", corps)
         front = {
             "layout": "default",
-            "title": yaml_str(tronque(f"Sénat, scrutin n° {num} : {sujet(s['titre'])}", 95)),
+            "title": yaml_str(tronque(f"Sénat, scrutin n° {num} : {clair}", 95)),
             "description": yaml_str(tronque(
                 f"Scrutin public n° {num} du {date_fr(s['date'])} au Sénat : {syn['pour']} pour, "
                 f"{syn['contre']} contre, {syn['abstentions']} abstention(s). "
@@ -284,7 +290,7 @@ def pages_senat() -> list:
             "voir_aussi": "[votes-senateurs, votes-deputes, observatoire-ciivise]",
         }
         ecrire_page(SORTIE / f"senat-{annee}-{num}.html", front, corps)
-        index.append((s["date"], f'<li><a href="{url}">Scrutin n° {num}</a> · {date_fr(s["date"])} — {e(sujet(s["titre"]))}</li>'))
+        index.append((s["date"], f'<li><a href="{url}">Scrutin n° {num}</a> · {date_fr(s["date"])} — {e(clair)}</li>'))
     return index
 
 

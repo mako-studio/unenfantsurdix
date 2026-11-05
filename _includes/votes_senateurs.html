@@ -6,7 +6,7 @@
       <a href="/votes-senateurs/" class="active" aria-current="page">Sénat</a>
     </div>
     <h1 class="page-title" style="font-family:var(--serif);font-size:clamp(2rem, 4vw, 3.2rem);margin-bottom:1rem" id="votes-senat-titre">Comment vote votre sénateur·rice&nbsp;?</h1>
-    <p class="votes-intro">Ces 6 scrutins publics « sur l'ensemble » — sessions 2024-2025 et 2025-2026, périmètre aligné sur le tracker des député·es — couvrent les violences sexuelles, la protection de l'enfance et la justice des mineurs. Positions officielles uniquement, aucune interprétation. Contrairement à l'Assemblée, le Sénat ne distingue pas l'absence du non-vote : une seule catégorie officielle, « n'a pas pris part au vote ».</p>
+    <p class="votes-intro">Ces 8 scrutins publics — sessions 2024-2025 à 2026-2027, votes « sur l'ensemble » d'un texte et un vote sur l'imprescriptibilité, périmètre aligné sur le tracker des député·es — couvrent les violences sexuelles, la protection de l'enfance et la justice des mineurs. Positions officielles uniquement, aucune interprétation. Contrairement à l'Assemblée, le Sénat ne distingue pas l'absence du non-vote : une seule catégorie officielle, « n'a pas pris part au vote ».</p>
 
     <div class="votes-legend">
       <span><span class="vote-pill P" aria-hidden="true"></span>Pour</span>
@@ -33,17 +33,17 @@
     </div>
 
     <details class="votes-methodo">
-      <summary>Méthodologie et liste des 6 scrutins suivis</summary>
+      <summary>Méthodologie et liste des 8 scrutins suivis</summary>
       <div class="votes-methodo-content">
-        <p>Le Sénat ne publie pas ses scrutins en open data : les données ci-dessus sont extraites des pages officielles de chaque scrutin public (senat.fr/scrutin-public/). Le périmètre est aligné sur celui du tracker des député·es : scrutins publics relatifs à la protection de l'enfance, aux violences sexuelles et sexistes et aux mineurs depuis juillet 2024 — mais seuls les votes « sur l'ensemble » d'un texte sont retenus, comme à l'Assemblée. Beaucoup de textes du périmètre ont été adoptés à main levée au Sénat et ne laissent aucune trace nominative : ils ne peuvent pas figurer ici (c'est le cas notamment de la proposition de loi sur l'exposition des mineurs aux réseaux sociaux, présente dans le tracker Assemblée).</p>
+        <p>Le Sénat ne publie pas ses scrutins en open data : les données ci-dessus sont extraites des pages officielles de chaque scrutin public (senat.fr/scrutin-public/). Le périmètre est aligné sur celui du tracker des député·es : scrutins publics relatifs à la protection de l'enfance, aux violences sexuelles et sexistes et aux mineurs depuis juillet 2024 — mais seuls les votes « sur l'ensemble » d'un texte sont retenus, avec une exception : le scrutin n° 43 du 28 octobre 2026, sur les amendements rétablissant l'imprescriptibilité des viols commis sur des mineurs (article 11 bis A du projet de loi relatif à la protection des enfants), retenu par symétrie avec le scrutin n° 8308 de l'Assemblée sur l'amendement qui l'avait introduite. Beaucoup de textes du périmètre ont été adoptés à main levée au Sénat et ne laissent aucune trace nominative : ils ne peuvent pas figurer ici (c'est le cas notamment de la proposition de loi sur l'exposition des mineurs aux réseaux sociaux, présente dans le tracker Assemblée).</p>
         <ul id="senat-scrutins-list"></ul>
         <p>« N'a pas pris part au vote » est la catégorie officielle unique du Sénat : elle couvre sans distinction possible l'absence, l'empêchement, la délégation non exercée ou le choix de ne pas voter (dont le président de séance, par usage) — elle n'équivaut pas à un vote contre. Pour chaque groupe, pour + contre + abstentions + « n'a pas pris part au vote » = effectif du groupe au moment du vote. Le groupe affiché sur les fiches individuelles est le groupe actuel du/de la sénateur·rice (référentiel officiel ODSEN) ; le graphique par groupe utilise la ventilation officielle au moment de chaque vote, tous votants compris — y compris sénateur·rices ayant quitté le Sénat depuis, dont les votes ne sont pas attribués nominativement. Lorsqu'une mise au point a été publiée en séance, elle est signalée sous le scrutin — le vote enregistré fait foi.</p>
-        <p>Le renouvellement partiel du 27 septembre 2026 (sénatoriales) modifie la composition du Sénat : une partie des sénateur·rices de cette page ne siège plus. Les fiches seront mises à jour à partir des données officielles du Sénat, sur le modèle du traitement des ex-député·es ; d'ici là, les groupes affichés sont ceux d'avant le renouvellement.</p>
-        <p style="font-family:var(--mono);font-size:0.66rem;letter-spacing:0.05em;color:var(--ink-3);margin-top:1rem">Sources : senat.fr (pages officielles des scrutins publics, consultées le 6 juillet 2026) · data.senat.fr, base « Sénateurs » ODSEN (licence open data Sénat) · Généré le 6 juillet 2026.</p>
+        <p>Depuis le renouvellement partiel du 27 septembre 2026, les fiches portent sur les 348 sénateur·rices en exercice, avec leur groupe actuel. Comme pour les ex-député·es, les votes exprimés par les sénateur·rices qui ne siègent plus ne sont pas attribués nominativement, mais restent comptés dans les résultats officiels et dans le graphique par groupe.</p>
+        <p style="font-family:var(--mono);font-size:0.66rem;letter-spacing:0.05em;color:var(--ink-3);margin-top:1rem">Sources : senat.fr (pages officielles des scrutins publics, consultées le 6 juillet 2026 puis le 5 novembre 2026) · data.senat.fr, base « Sénateurs » ODSEN (licence open data Sénat) · Généré le 6 juillet 2026 · Scrutins n° 43 et 46 (session 2026-2027) ajoutés et référentiel des sénateur·rices actualisé le 5 novembre 2026.</p>
       </div>
     </details>
     <div class="scrutins-index">
-      <h2 id="scrutins-un-par-un">Les 6 scrutins du Sénat, un par un</h2>
+      <h2 id="scrutins-un-par-un">Les 8 scrutins du Sénat, un par un</h2>
       <p>Chaque page donne le résultat, la répartition par groupe et le vote nominatif.</p>
       {% include scrutins-senat-liste.html %}
     </div>

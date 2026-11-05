@@ -30,12 +30,15 @@ import xml.etree.ElementTree as ET
 
 NS = '{http://schemas.assemblee-nationale.fr/referentiel}'
 
-# Les 20 scrutins retenus (audit thématique — voir passation ; 8551 et 8705 ajoutés le 2026-10-14)
+# Les 21 scrutins retenus (audit thématique — voir passation ; 8551 et 8705 ajoutés le 2026-10-14)
 SCRUTINS = ["VTANR5L17V657","VTANR5L17V805","VTANR5L17V1018","VTANR5L17V1196",
             "VTANR5L17V1624","VTANR5L17V1725","VTANR5L17V4714","VTANR5L17V4723",
             "VTANR5L17V5192","VTANR5L17V5226","VTANR5L17V5244","VTANR5L17V5283",
             "VTANR5L17V6563","VTANR5L17V7258","VTANR5L17V7904","VTANR5L17V8308",
-            "VTANR5L17V8429","VTANR5L17V8430","VTANR5L17V8551","VTANR5L17V8705"]
+            "VTANR5L17V8429","VTANR5L17V8430","VTANR5L17V8551","VTANR5L17V8705",
+            # 9241 ajouté le 2026-11-05 (parcours de soins des victimes de violences sexuelles),
+            # injecté ce jour-là via ajouter_scrutin_an_html.py faute d'archive open data à jour
+            "VTANR5L17V9241"]
 
 COULEURS = {  # couleurs officielles conservées de la V1 (clés = abréviations officielles)
     "EPR":"#7B4591","SOC":"#C4547D","RN":"#313567","DR":"#4A7AB5","UDR":"#3367A7",
